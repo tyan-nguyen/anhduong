@@ -1,0 +1,3433 @@
+/*
+Css Style for MultiPurpose addons for Visual Composer
+*/
+.vclogo,
+.vclogo h1,
+.vclogo h2,
+.vclogo h3,
+.vclogo h4,
+.vclogo h5 {
+	line-height:1.3;
+}
+.vclogo-inline-block {
+	display:inline-block;
+}
+.vclogo-block {
+	display:block;
+}
+.vclogo-align-left,
+.vc-row-h-align-left,
+.vc-column-h-align-left {
+	text-align:left;
+}
+.vclogo-align-right,
+.vc-row-h-align-right,
+.vc-column-h-align-right {
+	text-align:right;
+}
+.vclogo-align-center,
+.vc-row-h-align-center,
+.vc-column-h-align-center {
+	text-align:center;
+}
+
+/*
+ * Date
+ */
+ .vclogo-date i {
+	margin-right:8px; 
+ }
+
+/*
+ * Icon with text
+ */
+ .vclogo-icon-with-text i {
+	margin-right:8px; 
+ }
+
+/*
+ * Social
+ */
+ .vclogo-social span {
+    padding-right: inherit;
+ }
+ .vclogo-social span a {
+    color: inherit;
+    font-size: inherit;
+ } 
+/*
+ * Menu
+ */
+ 
+nav {
+	padding:0;
+}
+nav ul {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+nav > ul {
+	margin: 0 50px;
+    text-align: left;
+	border-left: 1px solid #333333;
+    display: inline-block;
+}
+nav ul li {
+	display:inline-block;
+	float: left;
+}
+nav ul li.current_page_item {
+    background: #e7685d;
+}
+nav ul li a {
+	color:#ffffff;
+	transition: all 0.3s ease 0s;
+}
+nav ul li a:hover {
+	color:#ffffff;
+	background: #e7685d;
+	transition: all 0.3s ease 0s;
+}
+nav ul > li a {
+	font-weight:bold;
+	padding:15px 25px;
+	text-transform:uppercase;
+	display:block;
+	transition: all 0.3s ease 0s;
+}
+nav li a {
+	letter-spacing:2px;
+}
+nav li {
+	position:relative;
+}
+nav i {
+	font-size:11px;
+}
+nav > ul {
+	margin-left:0;
+}
+ul.sub-menu,
+.sub-menu {
+	display:none;
+	border:1px solid #f4f4f4;
+	border-top:2px solid #e7685d;
+}
+ul.sub-menu .sub-menu {
+	margin-left:-1px;
+	margin-top:-1px;
+	border-top:1px solid #f4f4f4;
+}
+ul.sub-menu li:first-child .sub-menu {
+	border-top:1px solid #e7685d;
+}
+nav li:hover > ul.sub-menu,
+nav li:hover > .sub-menu {
+	display:block;
+	position:absolute;
+	text-align:left;	
+	z-index:99999999;
+}
+nav li ul.sub-menu li a {
+	font-size:12px;
+	color:#333333;
+	font-weight:bold;
+	transition: all 0.3s ease 0s;
+}
+nav li ul.sub-menu li a:hover {
+	transition: all 0.3s ease 0s;
+}
+nav li ul.sub-menu li {
+	border-bottom:1px solid #f4f4f4;
+}
+nav li ul.sub-menu li:last-child {
+	border-bottom:0;
+}
+nav li:hover ul.sub-menu li {
+	width:230px;
+	display:block;
+}
+nav li:hover ul.sub-menu li {
+	margin:0;
+}
+nav li:hover ul.sub-menu li a {
+	padding:15px 10px;
+	display:block;
+	text-transform:uppercase;
+}
+nav li:hover > ul.sub-menu > li:hover > ul.sub-menu {
+	display:block;
+	left: 231px;
+    top: 0;	
+}
+
+
+/*
+ * Separator
+ */
+.vclogo-separator.vclogo-separator-hline:before {
+    content: "\2212";
+}	
+.vclogo-separator.vclogo-separator-vline:before {
+    content: "\0399";
+}	
+.vclogo-separator.vclogo-separator-point:before {
+    content: "\2022";
+}	
+/*
+ * Title Box Style 1
+ */
+ 
+.vclogo-title-box-style1 {
+	display:block;
+}	
+.vclogo-title-box-style1 .vclogo-subtitle,
+.vclogo-title-box-style1 .vclogo-title {
+	display: block;
+	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #009688;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.vclogo-title-box-style1 .vclogo-title {
+	word-spacing: 999px;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: 2px;
+    color: #000000;
+}
+}
+.vclogo-title-box-style1 .vclogo-subtitle {
+	font-size:16px;
+	margin-bottom:20px;
+	color:#009688;
+}
+.vclogo-title-box-style1 .vclogo-subtitle:after {
+    content: "■";
+    display: inline-block;
+    margin-left: 5px;
+    color: #009688;
+	font-size:1.7em;
+	line-height:16px;
+	letter-spacing:0;
+}
+.vclogo-title-box-style1 .vclogo-text {
+	font-size: 14px;
+	line-height: 2.4;
+	text-align: justify;
+	display: block;
+	margin-left: 25px;
+	letter-spacing: 1px;
+	color: #707070;
+	font-weight: 300;
+	margin-top: -6px;
+}
+.vclogo-title-box-style1 .vclogo-subtitle.vclogo-rtl,
+.vclogo-title-box-style1 .vclogo-title.vclogo-rtl {
+	text-align:left;
+}
+.vclogo-title-box-style1 .vclogo-subtitle.vclogo-rtl:before {
+    content: "■";
+    display: inline-block;
+    margin-right: 5px;
+    color: #009688;
+	font-size:1.7em;
+	line-height:16px;
+	letter-spacing:0;
+}
+.vclogo-title-box-style1 .vclogo-subtitle.vclogo-rtl:after {
+	content: none;
+}
+
+/*
+ * Title Box Style 2
+ */
+ 
+.vclogo-title-box-style2 {
+	display:block;
+}	
+.vclogo-title-box-style2 .vclogo-subtitle,
+.vclogo-title-box-style2 .vclogo-title {
+	display:block;
+	text-align:right;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+.vclogo-title-box-style2 .vclogo-title {
+	word-spacing: 999px; 
+	line-height:0.8;
+	font-size: 45px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: #000000;
+}
+.vclogo-title-box-style2 .vclogo-subtitle {
+	font-size:16px;
+	margin-bottom:20px;
+	color:#009688;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+.vclogo-title-box-style2 .vclogo-subtitle:after {
+    content: "■";
+    display: inline-block;
+    margin-left: 5px;
+    color: #009688;
+	font-size:1.7em;
+	line-height:16px;
+	letter-spacing:0;	
+}
+.vclogo-title-box-style2 .vclogo-text {
+	font-size:14px;
+	text-align:justify;
+	display:block;
+	margin-top:25px;
+	line-height: 2.4;
+	letter-spacing: 1px;
+	color: #707070;
+	font-weight: 300;
+}
+.vclogo-title-box-style2 .vclogo-subtitle.vclogo-rtl,
+.vclogo-title-box-style2 .vclogo-title.vclogo-rtl {
+	text-align:left;
+}
+.vclogo-title-box-style2 .vclogo-subtitle.vclogo-rtl:before {
+    content: "■";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    color: #009688;
+	font-size:1.7em;
+	line-height:16px;
+	letter-spacing:0;
+}
+.vclogo-title-box-style2 .vclogo-subtitle.vclogo-rtl:after {
+	content: none;
+}
+
+/*
+ * Title Box Style 3
+ */
+ 
+.vclogo-title-box-style3 {
+	display:block;
+}
+.vclogo-title-box-style3 .vclogo-title-box-container {
+    text-align: left;
+}
+.vclogo-title-box-style3 .vclogo-subtitle,
+.vclogo-title-box-style3 .vclogo-title {
+	display:inline-block;
+	text-align:right;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+.vclogo-title-box-style3 .vclogo-title {
+	font-size:45px;
+	color:#000000;
+	line-height:0.8;
+	margin-left:20px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	
+}
+.vclogo-title-box-style3 .vclogo-subtitle {
+	font-size:16px;
+	color:#009688;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+.vclogo-title-box-style3 .vclogo-subtitle:after {
+    content: "■";
+    display: inline-block;
+    margin-left: 5px;
+    color: #009688;
+	font-size:1.7em;
+	line-height:16px;
+	letter-spacing:0;
+}
+.vclogo-title-box-style3 .vclogo-text {
+	font-size:14px;
+	display:block;
+	margin-top:25px;
+	text-align: left;
+	line-height: 2;
+	letter-spacing: 1px;
+	color: #707070;
+	font-weight: 300;
+}
+.vclogo-title-box-style3 .vclogo-subtitle.vclogo-rtl,
+.vclogo-title-box-style3 .vclogo-title.vclogo-rtl {
+	text-align:left;
+}
+.vclogo-title-box-style3 .vclogo-title.vclogo-rtl {
+	margin-right:20px;
+	margin-left:0;
+}
+.vclogo-title-box-style3 .vclogo-subtitle.vclogo-rtl:before {
+    content: "■";
+    display: inline-block;
+    margin-right: 5px;
+    color: #009688;
+	font-size:1.7em;
+	line-height:16px;
+	letter-spacing:0;
+}
+.vclogo-title-box-style3 .vclogo-subtitle.vclogo-rtl:after {
+	content: none;
+}
+
+/*
+ * Title Box Style 4
+ */
+ 
+.vclogo-title-box-style4 {
+	display:block;
+	text-align:center;
+}	
+.vclogo-title-box-style4 .vclogo-subtitle,
+.vclogo-title-box-style4 .vclogo-title {
+	display:block;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+.vclogo-title-box-style4 .vclogo-title {
+	font-size: 45px;
+	color: #000000;
+	line-height: 0.8;
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+.vclogo-title-box-style4 .vclogo-subtitle {
+	font-size:16px;
+	color:#000000;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+.vclogo-title-box-style4 .vclogo-text {
+	font-size:14px;
+	line-height:2;
+	text-align:justify;
+	display:block;
+	margin-top:50px;
+}
+.vclogo-title-box-style4 .vclogo-separator {
+	border-style:solid;
+	border-top-width:2px;
+	border-bottom:0;
+	border-left:0;
+	border-right:0;
+	border-color:#009688;
+	margin-left:auto!important;
+	margin-right:auto!important;
+	width:4%;
+	display:block;
+	margin-bottom:20px
+}	
+
+/*
+ * Title Box Style 5
+ */
+ 
+.vclogo-title-box-style5 {
+	display:block;
+	text-align:center;
+}	
+.vclogo-title-box-style5 .vclogo-subtitle,
+.vclogo-title-box-style5 .vclogo-title {
+	display:block;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+.vclogo-title-box-style5 .vclogo-title {
+	font-size: 45px;
+	color: #000000;
+	line-height: 0.8;
+	font-weight: 900;
+	letter-spacing: 2px;
+	margin-bottom:20px;
+}
+.vclogo-title-box-style5 .vclogo-subtitle {
+	font-size:16px;
+	color:#000000;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+.vclogo-title-box-style5 .vclogo-text {
+	font-size:14px;
+	line-height:1.2;
+	text-align:justify;
+	display:block;
+	margin-top:50px;
+}
+.vclogo-title-box-style5 .vclogo-separator {
+	border-style:solid;
+	border-top-width:2px;
+	border-bottom:0;
+	border-left:0;
+	border-right:0;
+	border-color:#009688;
+	margin-left:auto!important;
+	margin-right:auto!important;
+	width:4%;
+	display:block;
+	margin-bottom:10px
+}
+
+/*
+ * Icon
+ */ 
+.vclogo-icon .vclogo-icon-line {
+    display: inline-block;
+    vertical-align: middle;
+}
+.vclogo-icon.vclogo-icon-line {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
+
+/*
+ * Heading
+ */
+ .vclogo.vclogo-heading {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333333;
+    letter-spacing: 1.3;
+    line-height: 1.3;
+}
+.vclogo-heading.vclogo-inline-block {
+    margin: 0 6px 0 0;
+}
+.vclogo-heading.vclogo-inline-block:last-child {
+    margin: 0px;
+}
+  
+
+/*
+ * Heading Line
+ */ 
+ .vclogo.vclogo-heading-line {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333333;
+    letter-spacing: 1.3;
+    line-height: 1.3;
+}
+.vclogo-heading-line .vclogo-heading-line {
+    display: inline-block;
+    vertical-align: middle;
+}
+.vclogo-heading-line.vclogo-heading-line {
+	display: flex;
+    align-items: center;
+	/*justify-content: center;*/
+}
+
+
+/*
+ * Heading Line
+ */ 
+.vclogo-counter-container {
+	display:block;
+}
+.vclogo-counter-container .vclogo-counter {
+	display:inline-block;
+	line-height:1;
+}
+.vclogo-heading-line {
+    margin: 0 5px;
+}
+
+/*
+ * Pie Chart / Bar Chart
+ */
+.vclogo-chart-item-container.hidden {
+	display:none;
+}
+.vclogo-chart-container {
+	text-align:center;
+}
+.vclogo-chart {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  opacity:1;
+}
+.vclogo-chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.vclogo-percent {
+  display: inline-block;
+  z-index: 2;
+  font-size:30px;
+}
+.vclogo-percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+/* BAR CHARTS */
+.vclogo-bar-main-container {
+  margin: 10px auto;
+  height: 50px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 0.8em;
+  color: #FFF;
+}
+.vclogo-bar-chart-style1 .vclogo-bar-percentage {
+    background: none repeat scroll 0 0 #2E5C89;
+    border-radius: 5px 0 0 5px;
+    float: left;
+    font-size: 16px;
+    height: 30px;
+    padding: 8px 0;
+    width: 18%;
+	text-align:center;
+	line-height:1;
+}
+.vclogo-bar-chart-style1 .vclogo-bar {
+    border-radius: 0 5px 5px 0;
+    float: left;
+    height: 100%;
+    opacity: 1;
+}
+.vclogo-bar-chart-style1 .vclogo-bar-container {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.13);
+    border-radius: 0 5px 5px 0;
+    float: right;
+    height: 30px;
+    overflow: hidden;
+    width: 82%;
+}
+.vclogo-bar-chart-style2 .vclogo-bar-percentage {
+    float: left;
+    font-size: 20px;
+    width: 18%;
+	text-align:center;
+}
+.vclogo-bar-main-container.vclogo-bar-chart-style2 .vclogo-bar-chart-wrap {
+	display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.vclogo-bar-chart-style2 .vclogo-bar-container {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    box-shadow: 0 0 2px #555555 inset;
+    float: right;
+    height: 10px;
+    overflow: hidden;
+    width: 82%;
+}
+.vclogo-bar-chart-style2 .vclogo-bar {
+    border-radius: 10px;
+    float: left;
+    height: 100%;
+    opacity: 1;
+}
+@media only screen and (max-width: 480px) {
+	.vclogo_pie_chart_responsive .vclogo-chart {
+		width:300px!important;
+		height:300px!important;
+	}
+	.vclogo_pie_chart_responsive .vclogo-percent {
+		line-height:300px!important;
+	}
+	.vclogo_pie_chart_responsive .vclogo-chart canvas {
+		max-width:100%;
+	}
+} 
+
+/*
+ * Button
+ */ 
+ 
+.vclogo-border-round a {
+	border-radius:20px;	
+}
+.vclogo-inline-block {
+	margin:10px;
+}
+.vclogo-button a {
+	margin-bottom:10px;
+}
+.vclogo-button i {
+	margin-right:10px;
+}
+.vclogo-button a {
+	text-decoration:none;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	display:inline-block;	
+}
+.vclogo-button a:hover {
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;	
+}
+.vclogo-button.flat-button-mini a {
+	padding:0.4em 0.9em;
+	border-width:1px;
+}
+.vclogo-button.flat-button-small a {
+	padding:0.8em 1.2em;
+	border-width:1px;
+}
+.vclogo-button.flat-button-medium a {
+	padding:1.2em 1.5em;
+	border-width:1px;
+}
+.vclogo-button.flat-button-large a {
+	padding:1.5em 1.8em;
+	border-width:1px;
+}
+.vclogo-button.bg-none-button-mini a {
+	padding:0.4em 0.9em;
+	border-width:1px;
+}
+.vclogo-button.bg-none-button-small a {
+	padding:0.8em 1.2em;
+	border-width:1px;
+}
+.vclogo-button.bg-none-button-medium a {
+	padding:1.2em 1.5em;
+	border-width:1px;
+}
+.vclogo-button.bg-none-button-large a {
+	padding:1.5em 1.8em;
+	border-width:1px;
+}
+.vclogo-button.d-button-mini a {
+    padding:0.4em 0.9em;
+}
+.vclogo-button.d-button-small a {
+	padding:0.8em 1.2em;
+}
+.vclogo-button.d-button-medium a {
+	padding:1.2em 1.5em;
+}
+.vclogo-button.d-button-large a {
+	padding:1.5em 1.8em;
+} 
+
+/*
+ * Map
+ */
+.vclogo-googleMap img {
+	max-width:none;
+}
+@media screen and (max-width: 900px) {
+	.vclogo-googleMap {
+		max-width:100%;
+		max-height:300px;
+	}
+	.vclogo-map-container {
+		max-height:310px;
+	}
+}
+
+
+/*
+ * Interactive Box Style 1
+ */
+ 
+ .vclogo-interactive-box {
+	width:300px;
+	margin:0 auto;
+	height:300px;
+	padding:25px;
+	display: block;
+	text-align:center;
+	background:#FFFFFF;
+	transition: all .3s ease-in;	
+	position:relative;
+ }
+
+ @media only screen and (max-width: 480px) {
+	.vclogo-interactive-box {
+		width:100%;
+	}
+ }
+ 
+ .vclogo-interactive-box .vclogo-interactive-box-container span {
+	 display:block;
+	 transition: all .3s ease-in;
+ }
+ .vclogo-interactive-box i {
+	 font-size:60px;
+	 color:#009688;
+	 transition: all .3s ease-in;
+	 margin-bottom:35px;
+ }
+ .vclogo-interactive-box .vclogo-interactive-box-title {
+	 font-size:22px;
+	 color:#000000;
+	 transition: all .3s ease-in;	
+	 text-transform:uppercase;
+ }  
+ .vclogo-interactive-box-container-link a {
+	color:#FFFFFF;
+	transition: all .3s ease-in;
+ }
+ .vclogo-interactive-box-container-link { 
+	opacity:0; 
+	transition: all .3s ease-in; 
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;	
+	z-index:1;
+	background:#009688;
+}
+ .vclogo-interactive-box:hover .vclogo-interactive-box-container-link {
+	transition: all .3s ease-in;
+	opacity:1;
+ }
+ .vclogo-interactive-box-container-link a {
+	border:1px solid #FFFFFF;
+	padding:10px 15px;
+	transition: all .3s ease-in;
+	display:block;
+	margin-top:30px;
+	width: 60%;
+	margin: auto;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);	 
+ }
+ .vclogo-interactive-box-container-link a:hover {
+	 border:1px solid #000000;
+	 padding:10px 15px;
+	 color:#000000;
+	 transition: all .3s ease-in;
+ } 
+ .vclogo-interactive-box-container {
+ 	width: 80%;
+	margin: auto;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);	
+ }
+
+ /*
+ * Interactive Box Style 2
+ */ 
+
+ .vclogo-interactive-box-style2 .vclogo-interactive-box-container-hover { 
+	opacity:0; 
+	transition: all .3s ease-in; 
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;	
+	z-index:1;
+	background:#009688;
+	padding:20px;
+ }
+ .vclogo-interactive-box-style2.vclogo-interactive-box:hover .vclogo-interactive-box-container-hover {
+	transition: all .3s ease-in;
+	opacity:1;
+ } 
+ .vclogo-interactive-box-style2.vclogo-interactive-box .vclogo-interactive-box-container-hover span {
+	 display:block;
+	 transition: all .3s ease-in;
+ }
+ .vclogo-interactive-box-style2.vclogo-interactive-box .vclogo-interactive-box-container-hover i {
+	 font-size:60px;
+	 color:#FFFFFF;
+	 transition: all .3s ease-in;
+	 margin-bottom:20px;
+ }
+ .vclogo-interactive-box-style2.vclogo-interactive-box .vclogo-interactive-box-container-hover .vclogo-interactive-box-title {
+	 color:#FFFFFF;
+	 transition: all .3s ease-in;	
+	 text-transform:uppercase;
+	 font-size:20px;
+	 font-weight:bold;
+	 margin-bottom:20px;
+ }   
+ .vclogo-interactive-box-style2 .vclogo-interactive-box-text {
+	 color:#FFFFFF;
+	 font-size:14px;
+ }
+ .vclogo-interactive-box-style2 .vclogo-interactive-box-container-hover-wrap {
+ 	width: 80%;
+	margin: auto;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);	
+ }
+ 
+ /*
+ * Team Style 1
+ */ 
+ .vclogo-team {
+	box-sizing:border-box;
+	padding-left:15px;
+	padding-right:15px;
+	float:left;
+ }
+ .vclogo-team-container {
+	 background-position:center center;
+	 background-size:cover;
+ }
+ .vclogo-team-col-1 .vclogo-team {
+	margin: 0 auto;
+	float: none;
+ }
+ .vclogo-team-col-2 .vclogo-team {
+	 width:50%;
+ }
+ .vclogo-team-col-3 .vclogo-team {
+	 width:33.333333333%;
+ }
+ .vclogo-team-col-4 .vclogo-team {
+	 width:25%;
+ }
+ .vclogo-team-container {
+	 height:100%;
+	 position:relative;
+ }
+ .vclogo-team-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.7);
+	 opacity:0;
+	 transition: all .3s ease-in;
+ }
+ .vclogo-team-container-wrap {
+ 	width: 90%;
+	margin: auto;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+	z-index:1;
+	opacity:0;
+	transition: all .3s ease-in;
+	text-align:center;
+ }
+ .vclogo-team-style1.vclogo-team-col-1 .vclogo-team {
+	 width:400px;
+	 height:400px;
+ }
+ .vclogo-team-style1.vclogo-team-col-2 .vclogo-team {
+	 width:50%;
+	 height:400px;
+ }
+ .vclogo-team-style1.vclogo-team-col-3 .vclogo-team {
+	 width:33.333333333%;
+	 height:300px;
+ }
+ .vclogo-team-style1 .vclogo-team,
+ .vclogo-team-style2 .vclogo-team,
+ .vclogo-team-style3 .vclogo-team,
+ .vclogo-team-style4 .vclogo-team,
+ .vclogo-team-style5 .vclogo-team,
+ .vclogo-team-style6 .vclogo-team,
+ .vclogo-team-style7 .vclogo-team {
+	 margin-bottom:50px;
+ }
+ .vclogo-team-style1.vclogo-team-col-4 .vclogo-team {
+	 width:25%;
+	 height:200px;
+ } 
+ .vclogo-team-style1 .vclogo-team-container-wrap span,
+ .vclogo-team-style1 .vclogo-team-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-style1 .vclogo-team-container:hover .vclogo-team-pattern,
+ .vclogo-team-style1 .vclogo-team-container:hover .vclogo-team-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-style1 .vclogo-team-name {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+	letter-spacing:2px;
+	font-weight:bold;
+ }
+ .vclogo-team-style1 .vclogo-team-role {
+    font-size: 18px;
+    color: #ffffff;
+	letter-spacing: 0.5px;
+	font-weight:normal;
+ } 
+ .vclogo-team-style1 .vclogo-team-social-container a {
+	margin-right:20px;
+	font-size:18px;
+	margin-top: 20px;
+	color:#fff;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style1.vclogo-team-col-1 .vclogo-team-social-container a:hover,
+ .vclogo-team-style1.vclogo-team-col-2 .vclogo-team-social-container a:hover {
+	 color:#ccc;
+	 transition: all .3s ease-in; 
+ }
+ .vclogo-team-style1 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-style1.vclogo-team-col-1 .vclogo-team-social-container .vclogo-team-container-wrap a:last-childe,
+ .vclogo-team-style1.vclogo-team-col-2 .vclogo-team-social-container .vclogo-team-container-wrap a:last-childe {
+	margin-right:0; 
+ }
+ .vclogo-team-style1 .vclogo-team-container {
+	margin:0 auto;
+ }
+ .vclogo-team-style1.vclogo-team-col-3 .vclogo-team-social-container a:hover {
+	 color:#ccc;
+	 transition: all .3s ease-in; 
+ }
+ .vclogo-team-style1.vclogo-team-col-3 .vclogo-team-name {
+	font-size:28px;	
+ }
+ .vclogo-team-style1.vclogo-team-col-3 .vclogo-team-role {
+	font-size:18px;
+ }
+ .vclogo-team-style1.vclogo-team-col-4 .vclogo-team-name {
+	font-size:22px;
+ }
+ .vclogo-team-style1.vclogo-team-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-style1.vclogo-team-col-4 .vclogo-team-social-container a {
+	font-size:16px;
+ }
+ .vclogo-team-style1.vclogo-team-col-3 .vclogo-team-social-container a:last-child,
+ .vclogo-team-style1.vclogo-team-col-4 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ } 
+ @media only screen and (max-width: 480px) {
+	.vclogo-team-col-1 .vclogo-team,
+	.vclogo-team-col-2 .vclogo-team,
+	.vclogo-team-col-3 .vclogo-team,
+	.vclogo-team-col-4 .vclogo-team,
+	.vclogo-team-style1.vclogo-team-col-1 .vclogo-team, 
+	.vclogo-team-style1.vclogo-team-col-2 .vclogo-team,
+	.vclogo-team-style1.vclogo-team-col-3 .vclogo-team,
+	.vclogo-team-style1.vclogo-team-col-4 .vclogo-team {
+		width:100%;
+		height:400px;
+	}
+ } 
+ @media only screen and (min-width: 481px) and (max-width: 800px) {
+	.vclogo-team-col-1 .vclogo-team,
+	.vclogo-team-col-2 .vclogo-team,
+	.vclogo-team-col-3 .vclogo-team,
+	.vclogo-team-col-4 .vclogo-team,
+	.vclogo-team-style1.vclogo-team-col-1 .vclogo-team, 
+	.vclogo-team-style1.vclogo-team-col-2 .vclogo-team,
+	.vclogo-team-style1.vclogo-team-col-3 .vclogo-team,
+	.vclogo-team-style1.vclogo-team-col-4 .vclogo-team	{
+		width:50%;
+		height:400px;
+	}
+ } 
+ /*
+  * Team Style 2
+  */
+ 
+ .vclogo-team-style2.vclogo-team-col-1 .vclogo-team .vclogo-team-container {
+	 height:400px;
+	 width:400px;
+ }
+ .vclogo-team-style2.vclogo-team-col-2 .vclogo-team .vclogo-team-container {
+	 height:400px;
+	 width:400px;
+ }
+ .vclogo-team-style2.vclogo-team-col-3 .vclogo-team .vclogo-team-container {
+	 height:330px;
+	 width:330px;
+ }
+ .vclogo-team-style2.vclogo-team-col-4 .vclogo-team .vclogo-team-container {
+	 width:230px;
+	 height:230px;
+ }
+ .vclogo-team-style2.vclogo-team-col-4 .vclogo-team-container-wrap, .vclogo-team-style2.vclogo-team-col-3 .vclogo-team-container-wrap, .vclogo-team-style2.vclogo-team-col-1 .vclogo-team-container-wrap, .vclogo-team-style2.vclogo-team-col-2 .vclogo-team-container-wrap {
+	 top:55%;
+ }
+ .vclogo-team-style2 .vclogo-team-container-wrap span,
+ .vclogo-team-style2 .vclogo-team-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-style2 .vclogo-team-container:hover .vclogo-team-pattern,
+ .vclogo-team-style2 .vclogo-team-container:hover .vclogo-team-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-style2 .vclogo-team-name {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+	letter-spacing:2px;
+	font-weight:bold;
+ }
+ .vclogo-team-style2 .vclogo-team-role {
+    font-size: 18px;
+    color: #ffffff;
+	font-weight:normal;
+	letter-spacing: 0.5px;
+ } 
+ .vclogo-team-style2 .vclogo-team-social-container a {
+	margin-right:20px;
+	font-size:18px;
+	margin-top: 20px;
+	color:#ffffff;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style2 .vclogo-team-social-container a:hover {
+	color:#cccccc;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style2 .vclogo-team-social-container a:last-child,
+ .vclogo-team-style2.vclogo-team-col-3 .vclogo-team-social-container a:last-child,
+ .vclogo-team-style2.vclogo-team-col-4 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-style2 .vclogo-team-container {
+	width: 100%;
+	margin:0 auto;
+	border-radius:50%;
+ } 
+ .vclogo-team-style2.vclogo-team-col-3 .vclogo-team-name {
+	font-size:28px;	
+ }
+ .vclogo-team-style2.vclogo-team-col-3 .vclogo-team-role {
+	font-size:18px;
+ }
+ .vclogo-team-style2.vclogo-team-col-4 .vclogo-team-name {
+	font-size:22px;
+ }
+ .vclogo-team-style2.vclogo-team-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-style2.vclogo-team-col-4 .vclogo-team-social-container a {
+	font-size:16px;
+ }
+ .vclogo-team-style2 .vclogo-team-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.7);
+	 opacity:0;
+	 transition: all .3s ease-in;
+	 border-radius:50%;
+ }
+ /*
+  * Team Style 3
+  */
+ .vclogo-team-style3.vclogo-team-col-1 .vclogo-team .vclogo-team-container {
+	 height:400px;
+	 width:400px;
+ }
+ .vclogo-team-style3.vclogo-team-col-2 .vclogo-team .vclogo-team-container {
+	 height:400px;
+	 width:400px;
+ }
+ .vclogo-team-style3.vclogo-team-col-3 .vclogo-team .vclogo-team-container {
+	 height:330px;
+	 width:330px;
+ }
+ .vclogo-team-style3.vclogo-team-col-4 .vclogo-team .vclogo-team-container {
+	 height:230px;
+	 width:230px;
+ }
+ .vclogo-team-style3 .vclogo-team-container-wrap span,
+ .vclogo-team-style3 .vclogo-team-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-style3 .vclogo-team-container:hover .vclogo-team-pattern,
+ .vclogo-team-style3 .vclogo-team-container:hover .vclogo-team-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-style3 .vclogo-team-social-container a {
+	margin-right:25px;
+	font-size:24px;
+	color:#ffffff;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style3 .vclogo-team-social-container a:hover {
+	color:#969696;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style3 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-style3 .vclogo-team-container {
+	width: 100%;
+	margin:0 auto;
+	border-radius:50%;
+ }
+ .vclogo-team-style3 .vclogo-team-name {
+	font-size:36px;	
+	display:block;
+	margin:15px auto 5px auto;
+	text-align:center;
+	color:#2e2e2e;
+	letter-spacing:0.5px;
+	font-weight:bold;
+ }
+ .vclogo-team-style3 .vclogo-team-role {
+	font-size:18px;	
+	display:block;
+	text-align:center;
+	color: #969696;
+	letter-spacing:0.5px;
+	font-weight:normal;
+ }
+ .vclogo-team-style3.vclogo-team-col-3 .vclogo-team-name {
+	font-size:28px;	
+ }
+ .vclogo-team-style3.vclogo-team-col-3 .vclogo-team-role {
+	font-size:18px;	
+ }
+ .vclogo-team-style3.vclogo-team-col-4 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-style3.vclogo-team-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-style3.vclogo-team-col-4 .vclogo-team-social-container a {
+	font-size:18px;
+	color:#ffffff;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style3.vclogo-team-col-4 .vclogo-team-social-container a:hover {
+	color:#969696;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style3 .vclogo-team-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.6);
+	 opacity:0;
+	 transition: all .3s ease-in;
+	 border-radius:50%;
+ } 
+/*
+  * Team Style 4
+  */
+ .vclogo-team-style4.vclogo-team-col-1 .vclogo-team .vclogo-team-container {
+	 height:400px;
+	 width:400px;
+ }
+ .vclogo-team-style4.vclogo-team-col-2 .vclogo-team .vclogo-team-container {
+	 height:400px;
+	 width:400px;
+ }
+ .vclogo-team-style4.vclogo-team-col-3 .vclogo-team .vclogo-team-container {
+	 height:280px;
+	 width:280px;
+ }
+ .vclogo-team-style4.vclogo-team-col-4 .vclogo-team .vclogo-team-container {
+	 height:200px;
+	 height:200px;
+ }
+ .vclogo-team-style4 .vclogo-team-container-wrap span,
+ .vclogo-team-style4 .vclogo-team-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-style4 .vclogo-team-container:hover .vclogo-team-pattern,
+ .vclogo-team-style4 .vclogo-team-container:hover .vclogo-team-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-style4 .vclogo-team-name {
+	font-size:36px;	
+	display:block;
+	margin:15px auto 5px auto;
+	text-align:center;
+	color:#2e2e2e;
+	letter-spacing:0.5px;
+	font-weight:bold;
+ }
+ .vclogo-team-style4 .vclogo-team-role {
+	font-size:18px;	
+	display:block;
+	text-align:center;
+	color: #969696;
+	letter-spacing:0.5px;
+	font-weight:normal;
+ } 
+ .vclogo-team-style4 .vclogo-team-social-container a {
+	margin-right:25px;
+	font-size:24px;
+	color:#ffffff;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style4 .vclogo-team-social-container a:hover {
+	color:#969696;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style4 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-style4 .vclogo-team-container {
+	width: 100%;
+	margin:0 auto;
+ }
+ .vclogo-team-style4.vclogo-team-col-3 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-style4.vclogo-team-col-3 .vclogo-team-role {
+	font-size:18px;	
+ }
+ .vclogo-team-style4.vclogo-team-col-4 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-style4.vclogo-team-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-style4.vclogo-team-col-4 .vclogo-team-social-container a {
+	font-size:18px;
+ }
+ .vclogo-team-style4 .vclogo-team-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.6);
+	 opacity:0;
+	 transition: all .3s ease-in;
+ }
+ /*
+  * Team Style 5
+  */
+ .vclogo-team-style5.vclogo-team-col-1 .vclogo-team .vclogo-team-container {
+	 height:400px;
+	 width:400px;
+ }
+ .vclogo-team-style5.vclogo-team-col-2 .vclogo-team .vclogo-team-container {
+	 height:400px;
+ }
+ .vclogo-team-style5.vclogo-team-col-3 .vclogo-team .vclogo-team-container {
+	 height:280px;
+ }
+ .vclogo-team-style5.vclogo-team-col-4 .vclogo-team .vclogo-team-container {
+	 height:200px;
+ }
+ .vclogo-team-style5.vclogo-team-col-3 .vclogo-team-name {
+	font-size:20px;	
+ }
+ .vclogo-team-style5.vclogo-team-col-3 .vclogo-team-role {
+	font-size:12px;	
+ }
+ .vclogo-team-style5 .vclogo-team-container-wrap span,
+ .vclogo-team-style5 .vclogo-team-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-style5 .vclogo-team-container:hover .vclogo-team-pattern,
+ .vclogo-team-style5 .vclogo-team-container:hover .vclogo-team-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-style5 .vclogo-team-name {
+    font-size:36px;	
+	display:block;
+	margin:15px auto 5px auto;
+	text-align:center;
+	color:#2e2e2e;
+	letter-spacing:0.5px;
+	font-weight:normal;
+ }
+ .vclogo-team-style5 .vclogo-team-role {
+	font-size:18px;	
+	display:block;
+	text-align:center;
+	color: #969696;
+	letter-spacing:0.5px;
+	font-weight:300;
+ } 
+ .vclogo-team-style5 .vclogo-team-social-container a {
+	margin-right:25px;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;	
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style5 .vclogo-team-social-container a:hover {
+	color: #969696;
+	border: 1px solid #969696;
+	transition: all .3s ease-in;	
+ } 
+ .vclogo-team-style5 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-style5 .vclogo-team-container {
+	width: 100%;
+	margin:0 auto;
+ }
+ .vclogo-team-style5.vclogo-team-col-3 .vclogo-team-social-container a {
+	font-size:18px;
+	padding:0;
+ }
+ .vclogo-team-style5.vclogo-team-col-3 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-style5.vclogo-team-col-3 .vclogo-team-role {
+	font-size:18px;	
+ }
+ .vclogo-team-style5.vclogo-team-col-4 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-style5.vclogo-team-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-style5.vclogo-team-col-4 .vclogo-team-social-container a {
+	padding:0px;
+	font-size: 16px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	margin-right:15px;
+ }
+ .vclogo-team-style5.vclogo-team-col-4 .vclogo-team-social-container a:last-child {
+    margin-right: 0;
+ }
+ .vclogo-team-style5 .vclogo-team-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.6);
+	 opacity:0;
+	 transition: all .3s ease-in;
+ }
+ /*
+  * Team Style 6
+  */
+ .vclogo-team-style6.vclogo-team-col-1 .vclogo-team,
+ .vclogo-team-style6.vclogo-team-col-2 .vclogo-team,
+ .vclogo-team-style6.vclogo-team-col-3 .vclogo-team,
+ .vclogo-team-style6.vclogo-team-col-4 .vclogo-team {
+	 height:auto;
+ }
+ .vclogo-team-style6.vclogo-team-col-1 .vclogo-team .vclogo-team-container {
+	 height:400px;
+	 width:400px;
+ }
+ .vclogo-team-style6.vclogo-team-col-2 .vclogo-team .vclogo-team-container {
+	 height:400px;
+ }
+ .vclogo-team-style6.vclogo-team-col-3 .vclogo-team .vclogo-team-container {
+	 height:280px;
+ }
+ .vclogo-team-style6.vclogo-team-col-4 .vclogo-team .vclogo-team-container {
+	 height:200px;
+ }
+ .vclogo-team-style6.vclogo-team-col-3 .vclogo-team-name {
+	font-size:20px;	
+ }
+ .vclogo-team-style6.vclogo-team-col-3 .vclogo-team-role {
+	font-size:12px;	
+ }
+ .vclogo-team-style6 .vclogo-team-container-wrap span,
+ .vclogo-team-style6 .vclogo-team-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-style6 .vclogo-team-container:hover .vclogo-team-pattern,
+ .vclogo-team-style6 .vclogo-team-container:hover .vclogo-team-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-style6 .vclogo-team-name {
+    font-size:36px;	
+	display:block;
+	margin:15px auto 5px auto;
+	text-align:center;
+	color:#2e2e2e;
+	letter-spacing:0.5px;
+	font-weight:bold;
+ }
+ .vclogo-team-style6 .vclogo-team-role {
+	font-size:18px;	
+	display:block;
+	text-align:center;
+	color: #969696;
+	letter-spacing:0.5px;
+	font-weight:normal;
+ } 
+ .vclogo-team-style6 .vclogo-team-social-container a {
+	margin-right:25px;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;	
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style6 .vclogo-team-social-container a:hover {
+	color: #969696;
+	border: 1px solid #969696;
+	transition: all .3s ease-in;	
+ }
+ .vclogo-team-style6 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-style6 .vclogo-team-social-container a:hover {
+	color:#969696;
+	border:1px solid #969696;	
+ }
+ .vclogo-team-style6 .vclogo-team-container {
+	width: 100%;
+	margin:0 auto;
+ }
+ .vclogo-team-style6.vclogo-team-col-3 .vclogo-team-social-container a {
+	font-size:18px;
+	padding:0;
+ }
+ .vclogo-team-style6.vclogo-team-col-3 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-style6.vclogo-team-col-3 .vclogo-team-role {
+	font-size:18px;	
+ }
+ .vclogo-team-style6.vclogo-team-col-4 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-style6.vclogo-team-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-style6.vclogo-team-col-4 .vclogo-team-social-container a {
+	padding:0px;
+	font-size: 16px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	margin-right:15px;
+ }
+ .vclogo-team-style6.vclogo-team-col-4 .vclogo-team-social-container a:last-child {
+    margin-right: 0;
+ }
+ .vclogo-team-style6 .vclogo-team-container-wrap {
+  	width: 100%;
+ 	margin: auto;
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	z-index:1;
+ 	opacity:0;
+ 	transition: all .3s ease-in;
+ 	text-align:center;
+ 	padding: 20px;
+	background:rgba(0,0,0,0.6);
+	transform:none;
+	top: inherit;
+ }
+ .vclogo-team-style6 .vclogo-team-social-container a {
+	margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 0px;
+    border: 1px solid #FFFFFF;
+ }
+ .vclogo-team-style6 .vclogo-team-social-container a:hover {
+    border: 1px solid #969696;
+	color: #969696;
+ } 
+/*
+  * Team Style 7
+  */
+ .vclogo-team-style7.vclogo-team-col-1 .vclogo-team,
+ .vclogo-team-style7.vclogo-team-col-2 .vclogo-team,
+ .vclogo-team-style7.vclogo-team-col-3 .vclogo-team,
+ .vclogo-team-style7.vclogo-team-col-4 .vclogo-team {
+	 height:auto;
+ }
+ .vclogo-team-style7.vclogo-team-col-1 .vclogo-team .vclogo-team-container {
+	 height:400px;
+	 width:400px;
+ }
+ .vclogo-team-style7.vclogo-team-col-2 .vclogo-team .vclogo-team-container {
+	 height:400px;
+ }
+ .vclogo-team-style7.vclogo-team-col-3 .vclogo-team .vclogo-team-container {
+	 height:280px;
+ }
+ .vclogo-team-style7.vclogo-team-col-4 .vclogo-team .vclogo-team-container {
+	 height:200px;
+ }
+ .vclogo-team-style7 .vclogo-team-container-wrap span,
+ .vclogo-team-style7 .vclogo-team-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-style7 .vclogo-team-container:hover .vclogo-team-pattern,
+ .vclogo-team-style7 .vclogo-team-container:hover .vclogo-team-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-style7 .vclogo-team-name {
+    font-size:36px;	
+	display:block;
+	margin:15px auto 5px auto;
+	text-align:center;
+	color:#2e2e2e;
+	letter-spacing:0.5px;
+	font-weight:bold;
+ }
+ .vclogo-team-style7 .vclogo-team-role {
+	font-size:18px;	
+	display:block;
+	text-align:center;
+	color: #969696;
+	letter-spacing:0.5px;
+	font-weight:normal;
+ } 
+ .vclogo-team-style7 .vclogo-team-social-container a {
+	margin-right:25px;
+	color: #ffffff;
+	line-height: 1px;
+	text-align: center;
+	font-size:20px;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-style7 .vclogo-team-social-container a:hover {
+	color: #969696;
+	transition: all .3s ease-in;
+ } 
+ .vclogo-team-style7 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-style7 .vclogo-team-container {
+	width: 100%;
+	margin:0 auto;
+ }
+ .vclogo-team-style7.vclogo-team-col-3 .vclogo-team-social-container a {
+	font-size:18px;
+	padding:0;
+ }
+ .vclogo-team-style7.vclogo-team-col-3 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-style7.vclogo-team-col-3 .vclogo-team-role {
+	font-size:18px;	
+ }
+ .vclogo-team-style7.vclogo-team-col-4 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-style7.vclogo-team-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-style7 .vclogo-team-container-wrap {
+  	width: 100%;
+ 	margin: auto;
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	z-index:1;
+ 	opacity:0;
+ 	transition: all .3s ease-in;
+ 	text-align:center;
+ 	padding: 20px;
+	background:rgba(0,0,0,0.6);
+	transform:none;
+	top: inherit;
+ }
+ .vclogo-team-style7.vclogo-team-col-2 .vclogo-team-container-wrap, .vclogo-team-style7.vclogo-team-col-1 .vclogo-team-container-wrap {
+ 	padding: 30px;
+ }
+
+ /*
+ * Team Carousel Style 1
+ */ 
+ .vclogo-team-carousel {
+	box-sizing:border-box;
+ }
+ .vclogo-team-carousel-container {
+	 background-position:center center;
+	 background-size:cover;
+ } 
+ .vclogo-team-carousel-container {
+	 height:100%;
+	 position:relative;
+ }
+ .vclogo-team-carousel-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.7);
+	 opacity:0;
+	 transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-container-wrap {
+ 	width: 90%;
+	margin: auto;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+	z-index:1;
+	opacity:0;
+	transition: all .3s ease-in;
+	text-align:center;
+ }
+ .vclogo-team-carousel-style1 .vclogo-team-carousel-container-wrap span,
+ .vclogo-team-carousel-style1 .vclogo-team-carousel-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-carousel-style1 .vclogo-team-carousel-container:hover .vclogo-team-carousel-pattern,
+ .vclogo-team-carousel-style1 .vclogo-team-carousel-container:hover .vclogo-team-carousel-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-carousel-style1 .vclogo-team-name {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+	letter-spacing:2px;
+	font-weight:bold;
+ }
+ .vclogo-team-carousel-style1 .vclogo-team-role {
+    font-size: 18px;
+    line-height: 1;
+	font-weight: normal;
+	color: #ffffff;
+	letter-spacing: 0.5px;
+ } 
+ .vclogo-team-carousel-style1 .vclogo-team-social-container a {
+	margin-right:25px;
+	font-size:18px;
+	margin-top: 20px;
+	color:#ffffff;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style1 .vclogo-team-social-container a:hover {
+	color: #969696;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style1 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-carousel-style1.vclogo-team-carousel-col-3 .vclogo-team-name {
+	font-size:28px;
+	margin-bottom:8px;	
+ }
+ .vclogo-team-carousel-style1.vclogo-team-carousel-col-3 .vclogo-team-role {
+	font-size:18px;
+ }
+ .vclogo-team-carousel-style1.vclogo-team-carousel-col-3 .vclogo-team-social-container a {
+	margin-right: 20px;
+	font-size: 18px;
+	margin-top: 20px;
+ }
+ .vclogo-team-carousel-style1.vclogo-team-carousel-col-4 .vclogo-team-name {
+	font-size: 22px;
+ }
+ .vclogo-team-carousel-style1.vclogo-team-carousel-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-carousel-style1.vclogo-team-carousel-col-4 .vclogo-team-social-container a {
+	font-size:16px;
+	margin-top:20px;
+	color:#ffffff;
+ }
+ .vclogo-team-carousel-style1.vclogo-team-carousel-col-4 .vclogo-team-social-container a:hover {
+	color: #969696;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style1.vclogo-team-carousel-col-3 .vclogo-team-social-container a:last-child,
+ .vclogo-team-carousel-style1.vclogo-team-carousel-col-4 .vclogo-team-social-container a:last-child {
+	margin-right:0;
+ } 
+ .vclogo-team-owl-carousel.owl-theme .owl-controls .owl-nav [class*=owl-] {
+	padding: 0;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+ }
+ .vclogo-team-owl-carousel.owl-theme .owl-dots .owl-dot span,
+ .vclogo-team-owl-carousel.owl-theme .owl-dots .owl-dot.active span {
+	background:#FFFFFF;
+ }
+ .vclogo-team-owl-carousel .owl-controls .owl-prev {
+	position:absolute;
+	left:0;
+	top:50%;
+	margin-top:-16.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ }
+ .vclogo-team-owl-carousel .owl-controls .owl-next {
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-16.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-team-owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+	opacity:0;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-team-owl-carousel.owl-theme .owl-controls {
+	margin:0;
+ }
+ .vclogo-team-owl-carousel:hover .owl-controls .owl-prev,
+ .vclogo-team-owl-carousel:hover .owl-controls .owl-next,
+ .vclogo-team-owl-carousel:hover .owl-dots {
+	opacity:1;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-team-owl-carousel.owl-theme .owl-dots .owl-dot span {
+	border-radius:0;
+	opacity:0.3;
+ }
+ .vclogo-team-owl-carousel.owl-theme .owl-dots .owl-dot.active span {
+	opacity:1;
+ }
+ .vclogo-team-owl-carousel.owl-theme .owl-controls .owl-nav [class*=owl-]:hover { transition: all .3s ease-in; }
+ .vclogo-team-owl-carousel.owl-theme .owl-controls .owl-nav [class*=owl-] { transition: all .3s ease-in; } 
+ /*
+  * Team Carousel Style 2
+  */
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-1 .vclogo-team-carousel .vclogo-team-carousel-container img, 
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-1 .vclogo-team-carousel .vclogo-team-carousel-container {
+	 height:600px;
+	 width:600px;
+	 margin:0 auto;
+ }
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-2 .vclogo-team-carousel .vclogo-team-carousel-container img, 
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-2 .vclogo-team-carousel .vclogo-team-carousel-container {
+	 height:500px;
+	 width:500px;
+	 margin:0 auto;
+ }
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-3 .vclogo-team-carousel .vclogo-team-carousel-container img, 
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-3 .vclogo-team-carousel .vclogo-team-carousel-container {
+	 height:330px;
+	 width:330px;
+	 margin:0 auto;
+ }
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-4 .vclogo-team-carousel .vclogo-team-carousel-container img, 
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-4 .vclogo-team-carousel .vclogo-team-carousel-container {
+	 width:230px;
+	 height:230px;
+	 margin:0 auto;
+ }
+ .vclogo-team-carousel-style2 .vclogo-team-carousel-container-wrap span,
+ .vclogo-team-carousel-style2 .vclogo-team-carousel-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-carousel-style2 .vclogo-team-carousel-container:hover .vclogo-team-carousel-pattern,
+ .vclogo-team-carousel-style2 .vclogo-team-carousel-container:hover .vclogo-team-carousel-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-carousel-style2 .vclogo-team-name {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+	letter-spacing:2px;
+	font-weight:bold;
+ }
+ .vclogo-team-carousel-style2 .vclogo-team-role {
+    font-size: 18px;
+    line-height: 1;
+	font-weight: normal;
+	color: #ffffff;
+	letter-spacing: 0.5px;
+ } 
+ .vclogo-team-carousel-style2 .vclogo-team-social-container a {
+	margin-right:25px;
+	font-size:18px;
+	margin-top: 20px;
+	color:#ffffff;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style2 .vclogo-team-social-container a:hover {
+	color: #969696;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style2 .vclogo-team-social-container a:last-child,
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-3 .vclogo-team-social-container a:last-child,
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-4 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-carousel-style2 .vclogo-team-carousel-container img {
+	width: 100%;
+	margin:0 auto;
+	border-radius:50%;
+ } 
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-3 .vclogo-team-name {
+	font-size:28px;
+	margin-bottom:8px;	
+ }
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-3 .vclogo-team-role {
+	font-size:18px;
+ }
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-3 .vclogo-team-social-container a {
+	margin-right: 20px;
+	font-size: 18px;
+	margin-top: 20px;
+ }
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-4 .vclogo-team-name {
+	font-size: 22px;
+ }
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-carousel-style2.vclogo-team-carousel-col-4 .vclogo-team-social-container a {
+	font-size:16px;
+ }
+ .vclogo-team-carousel-style2 .vclogo-team-carousel-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.7);
+	 opacity:0;
+	 transition: all .3s ease-in;
+	 border-radius:50%;
+ } 
+ .vclogo-team-owl-carousel.vclogo-team-carousel-style2.owl-theme .owl-dots .owl-dot span,
+ .vclogo-team-owl-carousel.vclogo-team-carousel-style2.owl-theme .owl-controls .owl-nav [class*=owl-],
+ .vclogo-team-owl-carousel.vclogo-team-carousel-style3.owl-theme .owl-dots .owl-dot span,
+ .vclogo-team-owl-carousel.vclogo-team-carousel-style3.owl-theme .owl-controls .owl-nav [class*=owl-] {
+	 border-radius:50%;
+ }
+ /*
+  * Team Carousel Style 3
+  */ 
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-1 .vclogo-team-carousel .vclogo-team-carousel-container img,
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-1 .vclogo-team-carousel .vclogo-team-carousel-container {
+	 height:600px;
+	 width:600px;
+	 border-radius:50%;
+ }
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-2 .vclogo-team-carousel .vclogo-team-carousel-container img,
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-2 .vclogo-team-carousel .vclogo-team-carousel-container {
+	 height:500px;
+	 width:500px;
+	 border-radius:50%;
+ }
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-3 .vclogo-team-carousel .vclogo-team-carousel-container img,
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-3 .vclogo-team-carousel .vclogo-team-carousel-container {
+	 height:330px;
+	 width:330px;
+	 border-radius:50%;
+ }
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-4 .vclogo-team-carousel .vclogo-team-carousel-container img,
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-4 .vclogo-team-carousel .vclogo-team-carousel-container {
+	 height:230px;
+	 width:230px;
+	 border-radius:50%;
+ }
+ .vclogo-team-carousel-style3 .vclogo-team-carousel-container-wrap span,
+ .vclogo-team-carousel-style3 .vclogo-team-carousel-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-carousel-style3 .vclogo-team-carousel-container:hover .vclogo-team-carousel-pattern,
+ .vclogo-team-carousel-style3 .vclogo-team-carousel-container:hover .vclogo-team-carousel-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-carousel-style3 .vclogo-team-social-container a {
+	margin-right:25px;
+	font-size:24px;
+	color: #ffffff;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style3 .vclogo-team-social-container a:hover {
+	color: #969696;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style3 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-carousel-style3 .vclogo-team-carousel-container {
+	width: 100%;
+	margin:0 auto;
+	border-radius:50%;
+ }
+ .vclogo-team-carousel-style3 .vclogo-team-name {
+	font-size: 36px;
+	display: block;
+	margin: 15px auto 5px auto;
+	text-align: center;
+	color: #000000;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+ }
+ .vclogo-team-carousel-style3 .vclogo-team-role {
+	font-size: 18px;
+	display: block;
+	text-align: center;
+	color: #969696;
+	letter-spacing: 0.5px;
+	font-weight: normal;
+	line-height:1;
+ } 
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-3 .vclogo-team-name {
+	font-size:28px;
+	margin-bottom:8px;	
+ }
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-3 .vclogo-team-role {
+	font-size:18px;
+ }
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-3 .vclogo-team-social-container a {
+	margin-right: 20px;
+	font-size: 18px;
+	margin-top: 20px;
+ }
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-4 .vclogo-team-name {
+	font-size: 22px;
+ }
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-carousel-style3.vclogo-team-carousel-col-4 .vclogo-team-social-container a {
+	font-size:18px;
+ }
+ .vclogo-team-carousel-style3 .vclogo-team-carousel-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.4);
+	 opacity:0;
+	 transition: all .3s ease-in;
+	 border-radius:50%;
+ } 
+ /*
+  * Team Carousel Style 4
+  */ 
+ .vclogo-team-carousel-style4 .vclogo-team-carousel-container-wrap span,
+ .vclogo-team-carousel-style4 .vclogo-team-carousel-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-carousel-style4 .vclogo-team-carousel-container:hover .vclogo-team-carousel-pattern,
+ .vclogo-team-carousel-style4 .vclogo-team-carousel-container:hover .vclogo-team-carousel-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-carousel-style4 .vclogo-team-name {
+    font-size: 36px;
+    color: #000000;
+    text-transform: uppercase;
+    margin:12px auto 7px auto;
+	display:block;
+	letter-spacing:2px;
+	text-align:center;
+	font-weight:bold;
+ }
+ .vclogo-team-carousel-style4 .vclogo-team-role {
+	font-size:18px;	
+	display:block;
+	text-align:center;
+	color: #AFAFAF;
+	letter-spacing:2px;
+	font-weight:normal;
+ } 
+ .vclogo-team-carousel-style4 .vclogo-team-social-container a {
+	margin-right:25px;
+	font-size:24px;
+	transition: all .3s ease-in;
+	color:#ffffff;
+ }
+ .vclogo-team-carousel-style4 .vclogo-team-social-container a:hover {
+	color: #969696;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style4 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-carousel-style4 .vclogo-team-carousel-container {
+	width: 100%;
+	margin:0 auto;
+ }
+ .vclogo-team-carousel-style4.vclogo-team-carousel-col-4 .vclogo-team-name {
+	font-size:22px;	
+ }
+ .vclogo-team-carousel-style4.vclogo-team-carousel-col-4 .vclogo-team-role {
+	font-size:16px;	
+ }
+ .vclogo-team-carousel-style4.vclogo-team-carousel-col-4 .vclogo-team-social-container a {
+	font-size:18px;
+ }
+ .vclogo-team-carousel-style4 .vclogo-team-carousel-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.4);
+	 opacity:0;
+	 transition: all .3s ease-in;
+ }
+ /*
+  * Team Carousel Style 5
+  */
+ .vclogo-team-carousel-style5 .vclogo-team-carousel-container-wrap span,
+ .vclogo-team-carousel-style5 .vclogo-team-carousel-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-carousel-style5 .vclogo-team-carousel-container:hover .vclogo-team-carousel-pattern,
+ .vclogo-team-carousel-style5 .vclogo-team-carousel-container:hover .vclogo-team-carousel-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-carousel-style5 .vclogo-team-name {
+    font-size: 22px;
+    color: #000000;
+    text-transform: uppercase;
+    margin:12px auto 7px auto;
+	display:block;
+	letter-spacing:2px;
+	text-align:center;
+ }
+ .vclogo-team-carousel-style5 .vclogo-team-role {
+	font-size:14px;	
+	display:block;
+	text-align:center;
+	color: #AFAFAF;
+	letter-spacing:2px;
+ } 
+ .vclogo-team-carousel-style5 .vclogo-team-social-container a {
+	margin-right: 25px;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style5 .vclogo-team-social-container a:hover {
+	color:#AFAFAF;
+	border:1px solid #AFAFAF;	
+ } 
+ .vclogo-team-carousel-style5 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-carousel-style5 .vclogo-team-carousel-container {
+	width: 100%;
+	margin:0 auto;
+ }
+ .vclogo-team-carousel-style5.vclogo-team-carousel-col-3 .vclogo-team-social-container a {
+	font-size:16px;
+	padding:10px;
+ }
+ .vclogo-team-carousel-style5.vclogo-team-carousel-col-4 .vclogo-team-name {
+	font-size:18px;	
+ }
+ .vclogo-team-carousel-style5.vclogo-team-carousel-col-4 .vclogo-team-role {
+	font-size:12px;	
+ }
+ .vclogo-team-carousel-style5.vclogo-team-carousel-col-4 .vclogo-team-social-container a {
+	font-size:16px;
+	padding:10px;
+ }
+ .vclogo-team-carousel-style5 .vclogo-team-carousel-pattern {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 height:100%;
+	 width:100%;
+	 background:rgba(0,0,0,0.4);
+	 opacity:0;
+	 transition: all .3s ease-in;
+ }
+ /*
+  * Team Carousel Style 6
+  */
+ .vclogo-team-carousel-style6 .vclogo-team-carousel-container-wrap span,
+ .vclogo-team-carousel-style6 .vclogo-team-carousel-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-carousel-style6 .vclogo-team-carousel-container:hover .vclogo-team-carousel-pattern,
+ .vclogo-team-carousel-style6 .vclogo-team-carousel-container:hover .vclogo-team-carousel-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-carousel-style6 .vclogo-team-name {
+    font-size: 22px;
+    color: #000000;
+    text-transform: uppercase;
+    margin:12px auto 7px auto;
+	display:block;
+	letter-spacing:2px;
+	text-align:center;
+ }
+ .vclogo-team-carousel-style6 .vclogo-team-role {
+	font-size:14px;	
+	display:block;
+	text-align:center;
+	color: #AFAFAF;
+	letter-spacing:2px;
+ } 
+ .vclogo-team-carousel-style6 .vclogo-team-social-container a {
+	margin-right:25px;
+	font-size:16px;
+	border:1px solid #FFFFFF;
+	padding:10px;
+	color:#FFFFFF;
+ }
+ .vclogo-team-carousel-style6 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-carousel-style6 .vclogo-team-social-container a:hover {
+	color:#AFAFAF;
+	border:1px solid #AFAFAF;	
+ }
+ .vclogo-team-carousel-style6 .vclogo-team-carousel-container {
+	width: 100%;
+	margin:0 auto;
+ }
+ .vclogo-team-carousel-style6.vclogo-team-carousel-col-3 .vclogo-team-social-container a {
+	font-size: 14px;
+	padding: 0;
+	line-height: 40px;
+ }
+ .vclogo-team-carousel-style6.vclogo-team-carousel-col-4 .vclogo-team-name {
+	font-size:18px;	
+ }
+ .vclogo-team-carousel-style6.vclogo-team-carousel-col-4 .vclogo-team-role {
+	font-size:12px;	
+ }
+ .vclogo-team-carousel-style6.vclogo-team-carousel-col-4 .vclogo-team-social-container a {
+	font-size:16px;
+ }
+ .vclogo-team-carousel-style6 .vclogo-team-carousel-container-wrap {
+  	width: 100%;
+ 	margin: auto;
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	z-index:1;
+ 	opacity:0;
+ 	transition: all .3s ease-in;
+ 	text-align:center;
+ 	padding: 20px;
+	background:rgba(0,0,0,0.5);
+	transform:none;
+	top: inherit;
+ }
+ .vclogo-team-carousel-style6 .vclogo-team-social-container a {
+	margin-right: 25px;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style6 .vclogo-team-social-container a:hover {
+    border: 1px solid #AFAFAF;
+	color: #AFAFAF;
+ } 
+/*
+  * Team Carousel Style 7
+  */
+ .vclogo-team-carousel-style7 .vclogo-team-carousel-container-wrap span,
+ .vclogo-team-carousel-style7 .vclogo-team-carousel-container-wrap .vclogo-team-social-container {
+	display:block;
+ }
+ .vclogo-team-carousel-style7 .vclogo-team-carousel-container:hover .vclogo-team-carousel-pattern,
+ .vclogo-team-carousel-style7 .vclogo-team-carousel-container:hover .vclogo-team-carousel-container-wrap {
+	opacity:1;
+	transition: all .3s ease-in;  
+ }
+ .vclogo-team-carousel-style7 .vclogo-team-name {
+    font-size: 22px;
+    color: #000000;
+    text-transform: uppercase;
+    margin:12px auto 7px auto;
+	display:block;
+	letter-spacing:2px;
+	text-align:center;
+ }
+ .vclogo-team-carousel-style7 .vclogo-team-role {
+	font-size:14px;	
+	display:block;
+	text-align:center;
+	color: #AFAFAF;
+	letter-spacing:2px;
+ } 
+ .vclogo-team-carousel-style7 .vclogo-team-social-container a {
+	margin-right:25px;
+	font-size:24px;
+	color:#ffffff;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style7 .vclogo-team-social-container a:hover {
+	color:#969696;
+	transition: all .3s ease-in;
+ }
+ .vclogo-team-carousel-style7 .vclogo-team-social-container a:last-child {
+	 margin-right:0;
+ }
+ .vclogo-team-carousel-style7 .vclogo-team-carousel-container {
+	width: 100%;
+	margin:0 auto;
+ }
+ .vclogo-team-carousel-style7.vclogo-team-carousel-col-4 .vclogo-team-name {
+	font-size:18px;	
+ }
+ .vclogo-team-carousel-style7.vclogo-team-carousel-col-4 .vclogo-team-role {
+	font-size:12px;	
+ }
+ .vclogo-team-carousel-style7.vclogo-team-carousel-col-4 .vclogo-team-social-container a {
+	font-size:22px;
+ }
+ .vclogo-team-carousel-style7 .vclogo-team-carousel-container-wrap {
+  	width: 100%;
+ 	margin: auto;
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	z-index:1;
+ 	opacity:0;
+ 	transition: all .3s ease-in;
+ 	text-align:center;
+ 	padding: 20px;
+	background:rgba(0,0,0,0.5);
+	transform:none;
+	top: inherit;
+ }
+ 
+ /*
+  * Logo Carousel
+  */ 
+ .vclogo-logo-owl-carousel.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+ } 
+ .vclogo-logo-owl-carousel.owl-theme .owl-controls .owl-nav [class*=owl-] {
+	padding:8px 14px;
+	font-size:14px;
+ }
+ .vclogo-logo-owl-carousel.owl-theme .owl-dots .owl-dot span,
+ .vclogo-logo-owl-carousel.owl-theme .owl-dots .owl-dot.active span {
+	background:#FFFFFF;
+ }
+ .vclogo-logo-owl-carousel .owl-controls .owl-prev {
+	position:absolute;
+	left:0;
+	top:50%;
+	margin-top:-15.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ }
+ .vclogo-logo-owl-carousel .owl-controls .owl-next {
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-15.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ }
+ .vclogo-logo-carousel-pagination-true.vclogo-logo-owl-carousel .owl-controls .owl-next,
+ .vclogo-logo-carousel-pagination-true.vclogo-logo-owl-carousel .owl-controls .owl-prev {
+	margin-top:-27.5px;
+ }
+ .vclogo-logo-owl-carousel .owl-dots {
+	opacity:0;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-logo-owl-carousel.owl-theme .owl-controls {
+	margin:0;
+ }
+ .vclogo-logo-owl-carousel:hover .owl-controls .owl-prev,
+ .vclogo-logo-owl-carousel:hover .owl-controls .owl-next,
+ .vclogo-logo-owl-carousel:hover .owl-dots {
+	opacity:1;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-logo-owl-carousel.owl-theme .owl-dots .owl-dot span {
+	border-radius:0;
+	opacity:0.3;
+ }
+ .vclogo-logo-owl-carousel.owl-theme .owl-dots .owl-dot.active span {
+	opacity:1;
+ }
+ .vclogo-logo-owl-carousel.owl-theme .owl-controls .owl-nav [class*=owl-]:hover { transition: all .3s ease-in; }
+ .vclogo-logo-owl-carousel.owl-theme .owl-controls .owl-nav [class*=owl-] { transition: all .3s ease-in; }  
+/*
+ * Blog Carousel 
+ */
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-controls .owl-nav [class*=owl-] {
+	padding:8px 14px;
+	font-size:14px;
+	color:#747474;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+	color:#009688;  
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-controls .owl-nav [class*=owl-] i {
+	 margin-right:0;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-dots .owl-dot span,
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-dots .owl-dot.active span {
+	background:#009688;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .owl-controls .owl-prev {
+	position:absolute;
+	left:0;
+	top:50%;
+	margin-top:-15.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .owl-controls .owl-next {
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-15.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ }
+ .vclogo-bp-vc-element-carousel-blog-pagination-true.vclogo-bp-vc-element-carousel-blog .owl-controls .owl-next,
+ .vclogo-bp-vc-element-carousel-blog-pagination-true.vclogo-bp-vc-element-carousel-blog .owl-controls .owl-prev {
+	margin-top:-27.5px;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .owl-dots {
+	opacity:0;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-controls {
+	margin:0;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog:hover .owl-controls .owl-prev,
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog:hover .owl-controls .owl-next,
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog:hover .owl-dots {
+	opacity:1;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-dots .owl-dot span {
+	border-radius:0;
+	opacity:0.3;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-dots .owl-dot.active span {
+	opacity:1;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-controls .owl-nav [class*=owl-]:hover { transition: all .3s ease-in; }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog.owl-theme .owl-controls .owl-nav [class*=owl-] { transition: all .3s ease-in; }   
+ 
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-1 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-1 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-600-1 .vclogo-bp-vc-element-carousel-blog .article-title a {
+	font-size:28px;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-1 .vclogo-bp-vc-element-carousel-blog .article-category a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-1 .vclogo-bp-vc-element-carousel-blog .article-date,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-1 .vclogo-bp-vc-element-carousel-blog .article-comments,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-1 .vclogo-bp-vc-element-carousel-blog .article-separator,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-1 .vclogo-bp-vc-element-carousel-blog .article-author a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-1 .vclogo-bp-vc-element-carousel-blog .article-category a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-1 .vclogo-bp-vc-element-carousel-blog .article-date,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-1 .vclogo-bp-vc-element-carousel-blog .article-comments,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-1 .vclogo-bp-vc-element-carousel-blog .article-separator,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-1 .vclogo-bp-vc-element-carousel-blog .article-author a {
+	font-size:14px;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-1 .vclogo-bp-vc-element-carousel-blog .article-category i,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-1 .vclogo-bp-vc-element-carousel-blog .article-category i {
+	font-size:13px;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .article-title a, 
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .article-title a {
+	font-size:18px;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-blogs-style5 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-blogs-style6 .vclogo-bp-vc-element-carousel-blog .others-post .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-blogs-style5 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-blogs-style6 .vclogo-bp-vc-element-carousel-blog .others-post .article-title a {
+	font-size:14px;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .article-category a,
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .article-date,
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .article-comments,
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .article-separator,
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog .article-author a {
+	font-size:12px;
+ }
+ .vclogo-bp-vc-element-blogs .vclogo-bp-vc-element-carousel-blog  .article-category i {
+	font-size:11px;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-3 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-3 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-600-3 .vclogo-bp-vc-element-carousel-blog .article-title a {
+	font-size:16px;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-3 .vclogo-bp-vc-element-carousel-blog .article-category a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-3 .vclogo-bp-vc-element-carousel-blog .article-date,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-3 .vclogo-bp-vc-element-carousel-blog .article-comments,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-3 .vclogo-bp-vc-element-carousel-blog .article-separator,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-3 .vclogo-bp-vc-element-carousel-blog .article-author a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-3 .vclogo-bp-vc-element-carousel-blog .article-category a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-3 .vclogo-bp-vc-element-carousel-blog .article-date,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-3 .vclogo-bp-vc-element-carousel-blog .article-comments,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-3 .vclogo-bp-vc-element-carousel-blog .article-separator,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-3 .vclogo-bp-vc-element-carousel-blog .article-author a {
+	font-size:10px;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-3 .vclogo-bp-vc-element-carousel-blog .article-category i,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-3 .vclogo-bp-vc-element-carousel-blog .article-category i {
+	font-size:9px;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-4 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-4 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-600-4 .vclogo-bp-vc-element-carousel-blog .article-title a {
+	font-size:12px!important;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-4 .vclogo-bp-vc-element-carousel-blog .article-date,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-4 .vclogo-bp-vc-element-carousel-blog .article-comments,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-4 .vclogo-bp-vc-element-carousel-blog .article-separator,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-4 .vclogo-bp-vc-element-carousel-blog .article-author a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-4 .vclogo-bp-vc-element-carousel-blog .article-date,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-4 .vclogo-bp-vc-element-carousel-blog .article-comments,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-4 .vclogo-bp-vc-element-carousel-blog .article-separator,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-4 .vclogo-bp-vc-element-carousel-blog .article-author a {
+	display:none!important;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-4 .vclogo-bp-vc-element-carousel-blog .article-category a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-4 .vclogo-bp-vc-element-carousel-blog .article-category a {
+	font-size:10px!important;
+ } 
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-4 .vclogo-bp-vc-element-carousel-blog .article-category i,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-4 .vclogo-bp-vc-element-carousel-blog .article-category i {
+	font-size:9px!important;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-5 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-5 .vclogo-bp-vc-element-carousel-blog .article-title a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-600-5 .vclogo-bp-vc-element-carousel-blog .article-title a {
+	font-size:10px!important;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-5 .vclogo-bp-vc-element-carousel-blog .article-date,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-5 .vclogo-bp-vc-element-carousel-blog .article-comments,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-5 .vclogo-bp-vc-element-carousel-blog .article-separator,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-5 .vclogo-bp-vc-element-carousel-blog .article-author a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-5 .vclogo-bp-vc-element-carousel-blog .article-date,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-5 .vclogo-bp-vc-element-carousel-blog .article-comments,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-5 .vclogo-bp-vc-element-carousel-blog .article-separator,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-5 .vclogo-bp-vc-element-carousel-blog .article-author a {
+	display:none!important;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-5 .vclogo-bp-vc-element-carousel-blog .article-category a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-5 .vclogo-bp-vc-element-carousel-blog .article-category a {
+	font-size:10px!important;
+ } 
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-5 .vclogo-bp-vc-element-carousel-blog .article-category i,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-vc-blogs-carousel-item-show-900-5 .vclogo-bp-vc-element-carousel-blog .article-category i {
+	font-size:9px!important;
+ }
+ .vclogo-bp-vc-element-blogs.vclogo-bp-blogs-style4.vclogo-bp-vc-blogs-carousel-item-show-4 .vclogo-bp-vc-element-carousel-blog .article-author a, 
+ .vclogo-bp-vc-element-blogs.vclogo-bp-blogs-style4.vclogo-bp-vc-blogs-carousel-item-show-900-4 .vclogo-bp-vc-element-carousel-blog .article-author a,
+ .vclogo-bp-vc-element-blogs.vclogo-bp-blogs-style4.vclogo-bp-vc-blogs-carousel-item-show-5 .vclogo-bp-vc-element-carousel-blog .article-author a, 
+ .vclogo-bp-vc-element-blogs.vclogo-bp-blogs-style4.vclogo-bp-vc-blogs-carousel-item-show-900-5 .vclogo-bp-vc-element-carousel-blog .article-author a {
+	display:block!important; 
+ }
+/*
+ * News Carousel
+ */
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-] {
+	padding:8px 14px;
+	font-size:14px;
+	color:#747474;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+	color:#009688;  
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-] i {
+	 margin-right:0;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-dots .owl-dot span,
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-dots .owl-dot.active span {
+	background:#009688;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .owl-controls .owl-prev {
+	position:absolute;
+	left:0;
+	top:50%;
+	margin-top:-15.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .owl-controls .owl-next {
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-15.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ }
+ .vclogo-np-vc-element-carousel-news-pagination-true.vclogo-np-vc-element-carousel-news .owl-controls .owl-next,
+ .vclogo-np-vc-element-carousel-news-pagination-true.vclogo-np-vc-element-carousel-news .owl-controls .owl-prev {
+	margin-top:-27.5px;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .owl-dots {
+	opacity:0;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls {
+	margin:0;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news:hover .owl-controls .owl-prev,
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news:hover .owl-controls .owl-next,
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news:hover .owl-dots {
+	opacity:1;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-dots .owl-dot span {
+	border-radius:0;
+	opacity:0.3;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-dots .owl-dot.active span {
+	opacity:1;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-]:hover { transition: all .3s ease-in; }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-] { transition: all .3s ease-in; }   
+ 
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-600-1 .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:28px;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-author a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-author a {
+	font-size:14px;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-category i,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-category i {
+	font-size:13px;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .article-title a, 
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:18px;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-news-style5 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-news-style6 .vclogo-np-vc-element-carousel-news .others-post .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-news-style5 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-news-style6 .vclogo-np-vc-element-carousel-news .others-post .article-title a {
+	font-size:14px;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news .article-author a {
+	font-size:12px;
+ }
+ .vclogo-np-vc-element-news .vclogo-np-vc-element-carousel-news  .article-category i {
+	font-size:11px;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-600-3 .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:16px;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-author a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-author a {
+	font-size:10px;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-category i,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-category i {
+	font-size:9px;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-600-4 .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:12px!important;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-author a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-author a {
+	display:none!important;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-category a {
+	font-size:10px!important;
+ } 
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-category i,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-category i {
+	font-size:9px!important;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-600-5 .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:10px!important;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-author a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-author a {
+	display:none!important;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-category a {
+	font-size:10px!important;
+ } 
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-category i,
+ .vclogo-np-vc-element-news.vclogo-np-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-category i {
+	font-size:9px!important;
+ }
+ .vclogo-np-vc-element-news.vclogo-np-news-style4.vclogo-np-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-author a, 
+ .vclogo-np-vc-element-news.vclogo-np-news-style4.vclogo-np-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-author a,
+ .vclogo-np-vc-element-news.vclogo-np-news-style4.vclogo-np-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-author a, 
+ .vclogo-np-vc-element-news.vclogo-np-news-style4.vclogo-np-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-author a {
+	display:block!important; 
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-] {
+	padding:8px 14px;
+	font-size:14px;
+	color:#747474;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
+	color:#009688;  
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-] i {
+	 margin-right:0;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-dots .owl-dot span,
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-dots .owl-dot.active span {
+	background:#009688;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .owl-controls .owl-prev {
+	position:absolute;
+	left:0;
+	top:50%;
+	margin-top:-15.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .owl-controls .owl-next {
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-15.5px;
+	opacity:0;
+	transition: opacity .3s ease-in;
+ }
+ .vclogo-np-vc-element-carousel-news-pagination-true.vclogo-np-vc-element-carousel-news .owl-controls .owl-next,
+ .vclogo-np-vc-element-carousel-news-pagination-true.vclogo-np-vc-element-carousel-news .owl-controls .owl-prev {
+	margin-top:-27.5px;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .owl-dots {
+	opacity:0;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls {
+	margin:0;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news:hover .owl-controls .owl-prev,
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news:hover .owl-controls .owl-next,
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news:hover .owl-dots {
+	opacity:1;	
+	transition: opacity .3s ease-in;
+ } 
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-dots .owl-dot span {
+	border-radius:0;
+	opacity:0.3;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-dots .owl-dot.active span {
+	opacity:1;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-]:hover { transition: all .3s ease-in; }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news.owl-theme .owl-controls .owl-nav [class*=owl-] { transition: all .3s ease-in; }   
+ 
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-600-1 .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:28px;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-author a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-author a {
+	font-size:14px;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-1 .vclogo-np-vc-element-carousel-news .article-category i,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-1 .vclogo-np-vc-element-carousel-news .article-category i {
+	font-size:13px;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .article-title a, 
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:18px;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-news-style5 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-news-style6 .vclogo-np-vc-element-carousel-news .others-post .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-news-style5 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-news-style6 .vclogo-np-vc-element-carousel-news .others-post .article-title a {
+	font-size:14px;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news .article-author a {
+	font-size:12px;
+ }
+ .vclogo-np-v2-vc-element-news .vclogo-np-vc-element-carousel-news  .article-category i {
+	font-size:11px;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-600-3 .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:16px;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-author a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-data,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-comments,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-separator,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-author a {
+	font-size:10px;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-3 .vclogo-np-vc-element-carousel-news .article-category i,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-3 .vclogo-np-vc-element-carousel-news .article-category i {
+	font-size:9px;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-600-4 .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:12px!important;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-category a {
+	font-size:10px!important;
+ } 
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-category i,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-category i {
+	font-size:9px!important;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-title a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-600-5 .vclogo-np-vc-element-carousel-news .article-title a {
+	font-size:10px!important;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-info-top,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-info-top {
+	display:none!important;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-category a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-category a {
+	font-size:10px!important;
+ } 
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-category i,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-category i {
+	font-size:9px!important;
+ }
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-news-style4.vclogo-np-v2-vc-news-carousel-item-show-4 .vclogo-np-vc-element-carousel-news .article-author a, 
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-news-style4.vclogo-np-v2-vc-news-carousel-item-show-900-4 .vclogo-np-vc-element-carousel-news .article-author a,
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-news-style4.vclogo-np-v2-vc-news-carousel-item-show-5 .vclogo-np-vc-element-carousel-news .article-author a, 
+ .vclogo-np-v2-vc-element-news.vclogo-np-v2-news-style4.vclogo-np-v2-vc-news-carousel-item-show-900-5 .vclogo-np-vc-element-carousel-news .article-author a {
+	display:block!important; 
+ } 
+ 
+ 
+ /*TIMELINE STYLE1*/
+ 
+ .vclogo-timeline {
+	margin-bottom:20px;
+}
+.vclogo-timeline * {  
+	box-sizing: border-box; 
+	-moz-box-sizing: border-box;	
+}
+.vclogo-timeline .clearfix:before, 
+.vclogo-timeline .clearfix:after { 
+	content: ''; 
+	display: table; 
+}
+.vclogo-timeline .clearfix:after { 
+	clear: both; 
+}
+.vclogo-timeline .clearfix:after { 
+	clear: both; 
+}
+.vclogo-timeline {
+	overflow: hidden;
+	width: 100%;
+	list-style: none;
+}
+.vclogo-timeline iframe {
+	height:300px;
+}
+.vclogo-timeline a {
+	text-decoration:none;
+}
+.vclogo-timeline-image img {
+	border-radius:0;
+	box-shadow:0 0 0;
+	-webkit-transition: all 0.7s ease;
+  	-moz-transition: all 0.7s ease;
+  	-o-transition: all 0.7s ease;
+  	transition: all 0.7s ease;		
+}
+.vclogo_gallery .vclogo-timeline-image:hover img {
+	-webkit-transition: all 0.7s ease;
+  	-moz-transition: all 0.7s ease;
+  	-o-transition: all 0.7s ease;
+  	transition: all 0.7s ease;
+	opacity:0.5;		
+}
+.vclogo-timeline .vclogo-container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.vclogo-timeline .vclogo-container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.vclogo-timeline #vclogo-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.vclogo-timeline.vclogo-timeline-1::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 4px;
+	background: rgba(0,0,0,0.3);
+	margin-left: -2px;
+}
+@media only screen and (min-width: 1170px) {
+  .vclogo-timeline #vclogo-timeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .vclogo-timeline #vclogo-timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+.vclogo-timeline .vclogo-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+.vclogo-timeline .vclogo-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.vclogo-timeline .vclogo-timeline-block:first-child {
+  margin-top: 0;
+}
+.vclogo-timeline .vclogo-timeline-block:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 1170px) {
+  .vclogo-timeline .vclogo-timeline-block {
+    margin: 4em 0;
+  }
+  .vclogo-timeline .vclogo-timeline-block:first-child {
+    margin-top: 0;
+  }
+  .vclogo-timeline .vclogo-timeline-block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.vclogo-timeline .vclogo-timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+.vclogo-timeline .vclogo-timeline-img img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+@media only screen and (min-width: 1170px) {
+  .vclogo-timeline .vclogo-timeline-img {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  .vclogo-timeline .cssanimations .vclogo-timeline-img.is-hidden {
+    visibility: hidden;
+  }
+  .vclogo-timeline .cssanimations .vclogo-timeline-img.bounce-in {
+    visibility: visible;
+    -webkit-animation: vclogo-bounce-1 0.6s;
+    -moz-animation: vclogo-bounce-1 0.6s;
+    animation: vclogo-bounce-1 0.6s;
+  }
+}
+
+@-webkit-keyframes vclogo-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes vclogo-bounce-1 {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: scale(1.2);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@keyframes vclogo-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.vclogo-timeline .vclogo-timeline-content {
+  position: relative;
+  margin-left: 60px;
+  padding: 1em;
+}
+.vclogo-timeline .vclogo-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.vclogo-timeline .vclogo-timeline-content h2 {
+  color: #303e49;
+}
+.vclogo-timeline .vclogo-timeline-content p, 
+.vclogo-timeline .vclogo-timeline-content .vclogo-read-more, 
+.vclogo-timeline .vclogo-timeline-content .vclogo-date {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+.vclogo-timeline .vclogo-timeline-content .vclogo-read-more, 
+.vclogo-timeline .vclogo-timeline-content .vclogo-date {
+  display: inline-block;
+}
+.vclogo-timeline .vclogo-timeline-content p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+.vclogo-timeline .vclogo-timeline-content .vclogo-read-more {
+  float: right;
+  padding: 0.5em 1em;
+}
+.vclogo-timeline .no-touch .vclogo-timeline-content .vclogo-read-more:hover {
+  background-color: #bac4cb;
+}
+.vclogo-timeline .vclogo-timeline-content .vclogo-date {
+  float: left;
+  padding: .8em 0;
+  opacity: .7;
+}
+.vclogo-timeline .vclogo-timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+}
+@media only screen and (min-width: 768px) {
+  .vclogo-timeline .vclogo-timeline-content h2 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  .vclogo-timeline .vclogo-timeline-content p {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .vclogo-timeline .vclogo-timeline-content .vclogo-read-more, 
+  .vclogo-timeline .vclogo-timeline-content .vclogo-date {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .vclogo-timeline .vclogo-timeline-content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%;
+  }
+  .vclogo-timeline .vclogo-timeline-content::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+  }
+  .vclogo-timeline .vclogo-timeline-content .vclogo-read-more {
+    float: left;
+  }
+  .vclogo-timeline .vclogo-timeline-content .vclogo-date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .vclogo-timeline .vclogo-timeline-block:nth-child(even) .vclogo-timeline-content {
+    float: right;
+  }
+  .vclogo-timeline .vclogo-timeline-block:nth-child(even) .vclogo-timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+  }
+  .vclogo-timeline .vclogo-timeline-block:nth-child(even) .vclogo-timeline-content .vclogo-read-more {
+    float: right;
+  }
+  .vclogo-timeline .vclogo-timeline-block:nth-child(even) .vclogo-timeline-content .vclogo-date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+  .vclogo-timeline .cssanimations .vclogo-timeline-content.is-hidden {
+    visibility: hidden;
+  }
+  .vclogo-timeline .cssanimations .vclogo-timeline-content.bounce-in {
+    visibility: visible;
+    -webkit-animation: vclogo-bounce-2 0.6s;
+    -moz-animation: vclogo-bounce-2 0.6s;
+    animation: vclogo-bounce-2 0.6s;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .vclogo-timeline .cssanimations .vclogo-timeline-block:nth-child(even) .vclogo-timeline-content.bounce-in {
+    -webkit-animation: vclogo-bounce-2-inverse 0.6s;
+    -moz-animation: vclogo-bounce-2-inverse 0.6s;
+    animation: vclogo-bounce-2-inverse 0.6s;
+  }
+}
+@-webkit-keyframes vclogo-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes vclogo-bounce-2 {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(20px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes vclogo-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes vclogo-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes vclogo-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(-20px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes vclogo-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.vclogo_format_icon > span {
+    display: block;
+    font-size: 20px !important;
+    height: 60px;
+    padding: 19px;
+    width: 60px;
+	background:#FFF;
+}
+/* STYLE 1 */
+.vclogo-timeline-style1 .vclogo-timeline-content {
+	border-radius: 1em;
+}
+.vclogo-timeline-style1 .vclogo-timeline-img {
+	border-radius:50%;
+}
+.vclogo-timeline-style1 .vclogo-timeline-image {
+	border-radius:3px;
+}
+.vclogo-timeline-style1 .vclogo-timeline-content .vclogo-read-more {
+	border-radius: 0.25em;
+}
+.vclogo-timeline-style1 .vclogo_format_icon > span {
+	border-radius:50%;	
+}
+
+
+/* GALLERY */
+.vclogo-timeline-image {
+	position:relative;
+	overflow:hidden;
+}
+.vclogo-timeline-image .vclogo-timeline-zoom {
+	height:100%;
+	width:100%;
+}
+.vclogo-timeline-image .vclogo-timeline-zoom a {
+	top:-100%;
+	left:50%;
+	width:32px;
+	height:32px;
+	font-size:16px;
+	margin-left:-16px;
+	margin-top:-16px;
+	position:absolute;
+	-webkit-transition: all 0.7s ease;
+  	-moz-transition: all 0.7s ease;
+  	-o-transition: all 0.7s ease;
+  	transition: all 0.7s ease;		
+}
+.vclogo-timeline-image:hover .vclogo-timeline-zoom a {
+	top:50%;
+	-webkit-transition: all 0.7s ease;
+  	-moz-transition: all 0.7s ease;
+  	-o-transition: all 0.7s ease;
+  	transition: all 0.7s ease;		
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

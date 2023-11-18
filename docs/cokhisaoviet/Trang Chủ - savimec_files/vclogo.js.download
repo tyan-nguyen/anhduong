@@ -1,0 +1,119 @@
+/*
+ * VC Logo addons for Visual Composer
+ */
+ 
+ jQuery(document).ready(function($){
+	"use strict"; 
+	$(".vclogo-custom-js").each(function( index ) {
+		var custom_css = $(this).attr("data-vclogo-custom-css");
+		$( custom_css ).appendTo( "head" );
+	});
+	
+    $('.vclogo-team-owl-carousel').each( function() {
+        var $carousel = $(this);
+        $carousel.owlCarousel({
+			dots : $carousel.data("vclogo-carousel-owl-pagination"),
+			margin : $carousel.data("vclogo-carousel-owl-margin"),
+			nav : $carousel.data("vclogo-carousel-owl-navigation"),
+			rtl : $carousel.data("vclogo-carousel-owl-rtl"),
+			loop: $carousel.data("vclogo-carousel-owl-loop"),
+			smartSpeed: $carousel.data("vclogo-carousel-owl-smart-speed"),
+			autoplay : true,
+			autoplayTimeout : $carousel.data("vclogo-carousel-owl-autoplay"),
+			navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items: $carousel.data("vclogo-carousel-owl-items-600")
+				},
+				600:{
+					items: $carousel.data("vclogo-carousel-owl-items-900")
+				},
+				1000:{
+					items: $carousel.data("vclogo-carousel-owl-items")
+				}
+			}			
+        });
+    });	
+
+    $('.vclogo-logo-owl-carousel').each( function() {
+        var $carousel = $(this);
+        $carousel.owlCarousel({
+			dots : $carousel.data("vclogo-logo-owl-pagination"),
+			margin : $carousel.data("vclogo-logo-owl-margin"),
+			nav : $carousel.data("vclogo-logo-owl-navigation"),
+			rtl : $carousel.data("vclogo-logo-owl-rtl"),
+			loop: $carousel.data("vclogo-logo-owl-loop"),
+			smartSpeed: $carousel.data("vclogo-logo-owl-smart-speed"),
+			autoplay : true,
+			autoplayTimeout : $carousel.data("vclogo-logo-owl-autoplay"),
+			navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items: $carousel.data("vclogo-logo-owl-items-600")
+				},
+				600:{
+					items: $carousel.data("vclogo-logo-owl-items-900")
+				},
+				1000:{
+					items: $carousel.data("vclogo-logo-owl-items")
+				}
+			}			
+        });
+    });	
+
+    $('.vclogo-bp-vc-element-carousel-blog').each( function() {
+        var $carousel = $(this);
+        $carousel.owlCarousel({
+			dots : $carousel.data("vclogo-blog-carousel-owl-pagination"),
+			margin : $carousel.data("vclogo-blog-carousel-owl-margin"),
+			nav : $carousel.data("vclogo-blog-carousel-owl-navigation"),
+			rtl : $carousel.data("vclogo-blog-carousel-owl-rtl"),
+			loop: $carousel.data("vclogo-blog-carousel-owl-loop"),
+			smartSpeed: $carousel.data("vclogo-blog-carousel-owl-smart-speed"),
+			autoplay : true,
+			autoplayTimeout : $carousel.data("vclogo-blog-carousel-owl-autoplay"),
+			navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items: $carousel.data("vclogo-blog-carousel-owl-items-600")
+				},
+				600:{
+					items: $carousel.data("vclogo-blog-carousel-owl-items-900")
+				},
+				1000:{
+					items: $carousel.data("vclogo-blog-carousel-owl-items")
+				}
+			}			
+        });
+    });
+
+    $('.vclogo-np-vc-element-carousel-news').each( function() {
+        var $carousel = $(this);
+        $carousel.owlCarousel({
+			dots : $carousel.data("vclogo-news-carousel-owl-pagination"),
+			margin : $carousel.data("vclogo-news-carousel-owl-margin"),
+			nav : $carousel.data("vclogo-news-carousel-owl-navigation"),
+			rtl : $carousel.data("vclogo-news-carousel-owl-rtl"),
+			loop: $carousel.data("vclogo-news-carousel-owl-loop"),
+			smartSpeed: $carousel.data("vclogo-news-carousel-owl-smart-speed"),
+			autoplay : true,
+			autoplayTimeout : $carousel.data("vclogo-news-carousel-owl-autoplay"),
+			navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+			responsive:{
+				0:{
+					items: $carousel.data("vclogo-news-carousel-owl-items-600")
+				},
+				600:{
+					items: $carousel.data("vclogo-news-carousel-owl-items-900")
+				},
+				1000:{
+					items: $carousel.data("vclogo-news-carousel-owl-items")
+				}
+			}			
+        });
+    });
+
+	
+	
+	
+ });
