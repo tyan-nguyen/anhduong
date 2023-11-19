@@ -1,0 +1,2002 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>Lean JSC &#8211; We make innovation simple</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Dòng thông tin Lean JSC &raquo;" href="https://leanjsc.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Dòng phản hồi Lean JSC &raquo;" href="https://leanjsc.com/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/leanjsc.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://leanjsc.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link {
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+    font-size: 1.125em
+}
+.wp-block-file__button {
+    background: #32373c;
+    color: #fff;
+    text-decoration: none
+}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body {
+--wp--preset--color--black: #000000;
+--wp--preset--color--cyan-bluish-gray: #abb8c3;
+--wp--preset--color--white: #ffffff;
+--wp--preset--color--pale-pink: #f78da7;
+--wp--preset--color--vivid-red: #cf2e2e;
+--wp--preset--color--luminous-vivid-orange: #ff6900;
+--wp--preset--color--luminous-vivid-amber: #fcb900;
+--wp--preset--color--light-green-cyan: #7bdcb5;
+--wp--preset--color--vivid-green-cyan: #00d084;
+--wp--preset--color--pale-cyan-blue: #8ed1fc;
+--wp--preset--color--vivid-cyan-blue: #0693e3;
+--wp--preset--color--vivid-purple: #9b51e0;
+--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6,147,227,1) 0%, rgb(155,81,224) 100%);
+--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122,220,180) 0%, rgb(0,208,130) 100%);
+--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252,185,0,1) 0%, rgba(255,105,0,1) 100%);
+--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255,105,0,1) 0%, rgb(207,46,46) 100%);
+--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238,238,238) 0%, rgb(169,184,195) 100%);
+--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74,234,220) 0%, rgb(151,120,209) 20%, rgb(207,42,186) 40%, rgb(238,44,130) 60%, rgb(251,105,98) 80%, rgb(254,248,76) 100%);
+--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255,206,236) 0%, rgb(152,150,240) 100%);
+--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254,205,165) 0%, rgb(254,45,45) 50%, rgb(107,0,62) 100%);
+--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255,203,112) 0%, rgb(199,81,192) 50%, rgb(65,88,208) 100%);
+--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255,245,203) 0%, rgb(182,227,212) 50%, rgb(51,167,181) 100%);
+--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202,248,128) 0%, rgb(113,206,126) 100%);
+--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2,3,129) 0%, rgb(40,116,252) 100%);
+--wp--preset--font-size--small: 13px;
+--wp--preset--font-size--medium: 20px;
+--wp--preset--font-size--large: 36px;
+--wp--preset--font-size--x-large: 42px;
+--wp--preset--spacing--20: 0.44rem;
+--wp--preset--spacing--30: 0.67rem;
+--wp--preset--spacing--40: 1rem;
+--wp--preset--spacing--50: 1.5rem;
+--wp--preset--spacing--60: 2.25rem;
+--wp--preset--spacing--70: 3.38rem;
+--wp--preset--spacing--80: 5.06rem;
+--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+}
+:where(.is-layout-flex) {
+gap: 0.5em;
+}
+:where(.is-layout-grid) {
+gap: 0.5em;
+}
+body .is-layout-flow > .alignleft {
+    float: left;
+    margin-inline-start: 0;
+    margin-inline-end: 2em;
+}
+body .is-layout-flow > .alignright {
+    float: right;
+    margin-inline-start: 2em;
+    margin-inline-end: 0;
+}
+body .is-layout-flow > .aligncenter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+body .is-layout-constrained > .alignleft {
+    float: left;
+    margin-inline-start: 0;
+    margin-inline-end: 2em;
+}
+body .is-layout-constrained > .alignright {
+    float: right;
+    margin-inline-start: 2em;
+    margin-inline-end: 0;
+}
+body .is-layout-constrained > .aligncenter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+max-width: var(--wp--style--global--content-size);
+margin-left: auto !important;
+margin-right: auto !important;
+}
+body .is-layout-constrained > .alignwide {
+    max-width: var(--wp--style--global--wide-size);
+}
+body .is-layout-flex {
+    display: flex;
+}
+body .is-layout-flex {
+    flex-wrap: wrap;
+    align-items: center;
+}
+body .is-layout-flex > * {
+    margin: 0;
+}
+body .is-layout-grid {
+    display: grid;
+}
+body .is-layout-grid > * {
+    margin: 0;
+}
+:where(.wp-block-columns.is-layout-flex) {
+gap: 2em;
+}
+:where(.wp-block-columns.is-layout-grid) {
+gap: 2em;
+}
+:where(.wp-block-post-template.is-layout-flex) {
+gap: 1.25em;
+}
+:where(.wp-block-post-template.is-layout-grid) {
+gap: 1.25em;
+}
+.has-black-color {
+    color: var(--wp--preset--color--black) !important;
+}
+.has-cyan-bluish-gray-color {
+    color: var(--wp--preset--color--cyan-bluish-gray) !important;
+}
+.has-white-color {
+    color: var(--wp--preset--color--white) !important;
+}
+.has-pale-pink-color {
+    color: var(--wp--preset--color--pale-pink) !important;
+}
+.has-vivid-red-color {
+    color: var(--wp--preset--color--vivid-red) !important;
+}
+.has-luminous-vivid-orange-color {
+    color: var(--wp--preset--color--luminous-vivid-orange) !important;
+}
+.has-luminous-vivid-amber-color {
+    color: var(--wp--preset--color--luminous-vivid-amber) !important;
+}
+.has-light-green-cyan-color {
+    color: var(--wp--preset--color--light-green-cyan) !important;
+}
+.has-vivid-green-cyan-color {
+    color: var(--wp--preset--color--vivid-green-cyan) !important;
+}
+.has-pale-cyan-blue-color {
+    color: var(--wp--preset--color--pale-cyan-blue) !important;
+}
+.has-vivid-cyan-blue-color {
+    color: var(--wp--preset--color--vivid-cyan-blue) !important;
+}
+.has-vivid-purple-color {
+    color: var(--wp--preset--color--vivid-purple) !important;
+}
+.has-black-background-color {
+    background-color: var(--wp--preset--color--black) !important;
+}
+.has-cyan-bluish-gray-background-color {
+    background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+}
+.has-white-background-color {
+    background-color: var(--wp--preset--color--white) !important;
+}
+.has-pale-pink-background-color {
+    background-color: var(--wp--preset--color--pale-pink) !important;
+}
+.has-vivid-red-background-color {
+    background-color: var(--wp--preset--color--vivid-red) !important;
+}
+.has-luminous-vivid-orange-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+}
+.has-luminous-vivid-amber-background-color {
+    background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+}
+.has-light-green-cyan-background-color {
+    background-color: var(--wp--preset--color--light-green-cyan) !important;
+}
+.has-vivid-green-cyan-background-color {
+    background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+}
+.has-pale-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+}
+.has-vivid-cyan-blue-background-color {
+    background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+}
+.has-vivid-purple-background-color {
+    background-color: var(--wp--preset--color--vivid-purple) !important;
+}
+.has-black-border-color {
+    border-color: var(--wp--preset--color--black) !important;
+}
+.has-cyan-bluish-gray-border-color {
+    border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+}
+.has-white-border-color {
+    border-color: var(--wp--preset--color--white) !important;
+}
+.has-pale-pink-border-color {
+    border-color: var(--wp--preset--color--pale-pink) !important;
+}
+.has-vivid-red-border-color {
+    border-color: var(--wp--preset--color--vivid-red) !important;
+}
+.has-luminous-vivid-orange-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+}
+.has-luminous-vivid-amber-border-color {
+    border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+}
+.has-light-green-cyan-border-color {
+    border-color: var(--wp--preset--color--light-green-cyan) !important;
+}
+.has-vivid-green-cyan-border-color {
+    border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+}
+.has-pale-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+}
+.has-vivid-cyan-blue-border-color {
+    border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+}
+.has-vivid-purple-border-color {
+    border-color: var(--wp--preset--color--vivid-purple) !important;
+}
+.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+    background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+}
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+    background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+}
+.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+}
+.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+    background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+}
+.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+    background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+}
+.has-cool-to-warm-spectrum-gradient-background {
+    background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+}
+.has-blush-light-purple-gradient-background {
+    background: var(--wp--preset--gradient--blush-light-purple) !important;
+}
+.has-blush-bordeaux-gradient-background {
+    background: var(--wp--preset--gradient--blush-bordeaux) !important;
+}
+.has-luminous-dusk-gradient-background {
+    background: var(--wp--preset--gradient--luminous-dusk) !important;
+}
+.has-pale-ocean-gradient-background {
+    background: var(--wp--preset--gradient--pale-ocean) !important;
+}
+.has-electric-grass-gradient-background {
+    background: var(--wp--preset--gradient--electric-grass) !important;
+}
+.has-midnight-gradient-background {
+    background: var(--wp--preset--gradient--midnight) !important;
+}
+.has-small-font-size {
+    font-size: var(--wp--preset--font-size--small) !important;
+}
+.has-medium-font-size {
+    font-size: var(--wp--preset--font-size--medium) !important;
+}
+.has-large-font-size {
+    font-size: var(--wp--preset--font-size--large) !important;
+}
+.has-x-large-font-size {
+    font-size: var(--wp--preset--font-size--x-large) !important;
+}
+.wp-block-navigation a:where(:not(.wp-element-button)) {
+color: inherit;
+}
+:where(.wp-block-post-template.is-layout-flex) {
+gap: 1.25em;
+}
+:where(.wp-block-post-template.is-layout-grid) {
+gap: 1.25em;
+}
+:where(.wp-block-columns.is-layout-flex) {
+gap: 2em;
+}
+:where(.wp-block-columns.is-layout-grid) {
+gap: 2em;
+}
+.wp-block-pullquote {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://leanjsc.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='bigger-fonts-css' href='https://fonts.googleapis.com/css?family=Rubik%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CPoppins%3A100%2C100i%2C200%2C200i%2C300%2C300i%2C400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%2C900%2C900i&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://leanjsc.com/wp-content/themes/bigger/css/bootstrap.css?ver=4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bigger-awesome-font-css' href='https://leanjsc.com/wp-content/themes/bigger/css/fontawesome.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bigger-stroke-gap-icon-css' href='https://leanjsc.com/wp-content/themes/bigger/css/stroke-gap-icons.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicon-font-css' href='https://leanjsc.com/wp-content/themes/bigger/css/ionicon.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-slider-css' href='https://leanjsc.com/wp-content/themes/bigger/css/slick.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-theme-css' href='https://leanjsc.com/wp-content/themes/bigger/css/slick-theme.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bigger-style-css' href='https://leanjsc.com/wp-content/themes/bigger-child/style.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='https://leanjsc.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.21.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://leanjsc.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.15.3' type='text/css' media='all' />
+<style id='elementor-frontend-inline-css' type='text/css'>
+.elementor-kit-3207{--e-global-color-primary:#6EC1E4;--e-global-color-secondary:#54595F;--e-global-color-text:#7A7A7A;--e-global-color-accent:#61CE70;--e-global-typography-primary-font-family:"Roboto";--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Roboto Slab";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Roboto";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Roboto";--e-global-typography-accent-font-weight:500;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-bottom:20px;}.elementor-element{--widgets-spacing:20px;}{}h1.entry-title{display:var(--page-title-display);}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}
+.elementor-widget-heading .elementor-heading-title{color:var( --e-global-color-primary );font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-text-editor{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-widget-button .elementor-button{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );background-color:var( --e-global-color-accent );}.elementor-widget-divider{--divider-color:var( --e-global-color-secondary );}.elementor-widget-divider .elementor-divider__text{color:var( --e-global-color-secondary );font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );}.elementor-widget-divider.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-secondary );}.elementor-widget-divider.elementor-view-framed .elementor-icon, .elementor-widget-divider.elementor-view-default .elementor-icon{color:var( --e-global-color-secondary );border-color:var( --e-global-color-secondary );}.elementor-widget-divider.elementor-view-framed .elementor-icon, .elementor-widget-divider.elementor-view-default .elementor-icon svg{fill:var( --e-global-color-secondary );}.elementor-widget-image-box .elementor-image-box-title{color:var( --e-global-color-primary );font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-image-box .elementor-image-box-description{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-icon.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-primary );}.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon svg{fill:var( --e-global-color-primary );}.elementor-widget-icon-box.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-primary );}.elementor-widget-icon-box.elementor-view-framed .elementor-icon, .elementor-widget-icon-box.elementor-view-default .elementor-icon{fill:var( --e-global-color-primary );color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-widget-icon-box .elementor-icon-box-title{color:var( --e-global-color-primary );}.elementor-widget-icon-box .elementor-icon-box-title, .elementor-widget-icon-box .elementor-icon-box-title a{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-icon-box .elementor-icon-box-description{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-star-rating .elementor-star-rating__title{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-image-gallery .gallery-item .gallery-caption{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-widget-icon-list .elementor-icon-list-item:not(:last-child):after{border-color:var( --e-global-color-text );}.elementor-widget-icon-list .elementor-icon-list-icon i{color:var( --e-global-color-primary );}.elementor-widget-icon-list .elementor-icon-list-icon svg{fill:var( --e-global-color-primary );}.elementor-widget-icon-list .elementor-icon-list-item > .elementor-icon-list-text, .elementor-widget-icon-list .elementor-icon-list-item > a{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-icon-list .elementor-icon-list-text{color:var( --e-global-color-secondary );}.elementor-widget-counter .elementor-counter-number-wrapper{color:var( --e-global-color-primary );font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-counter .elementor-counter-title{color:var( --e-global-color-secondary );font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );}.elementor-widget-progress .elementor-progress-wrapper .elementor-progress-bar{background-color:var( --e-global-color-primary );}.elementor-widget-progress .elementor-title{color:var( --e-global-color-primary );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-testimonial .elementor-testimonial-content{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-testimonial .elementor-testimonial-name{color:var( --e-global-color-primary );font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-testimonial .elementor-testimonial-job{color:var( --e-global-color-secondary );font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-weight:var( --e-global-typography-secondary-font-weight );}.elementor-widget-tabs .elementor-tab-title, .elementor-widget-tabs .elementor-tab-title a{color:var( --e-global-color-primary );}.elementor-widget-tabs .elementor-tab-title.elementor-active,
+					 .elementor-widget-tabs .elementor-tab-title.elementor-active a{color:var( --e-global-color-accent );}.elementor-widget-tabs .elementor-tab-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-tabs .elementor-tab-content{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-accordion .elementor-accordion-icon, .elementor-widget-accordion .elementor-accordion-title{color:var( --e-global-color-primary );}.elementor-widget-accordion .elementor-accordion-icon svg{fill:var( --e-global-color-primary );}.elementor-widget-accordion .elementor-active .elementor-accordion-icon, .elementor-widget-accordion .elementor-active .elementor-accordion-title{color:var( --e-global-color-accent );}.elementor-widget-accordion .elementor-active .elementor-accordion-icon svg{fill:var( --e-global-color-accent );}.elementor-widget-accordion .elementor-accordion-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-accordion .elementor-tab-content{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-toggle .elementor-toggle-title, .elementor-widget-toggle .elementor-toggle-icon{color:var( --e-global-color-primary );}.elementor-widget-toggle .elementor-toggle-icon svg{fill:var( --e-global-color-primary );}.elementor-widget-toggle .elementor-tab-title.elementor-active a, .elementor-widget-toggle .elementor-tab-title.elementor-active .elementor-toggle-icon{color:var( --e-global-color-accent );}.elementor-widget-toggle .elementor-toggle-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-toggle .elementor-tab-content{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-alert .elementor-alert-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-alert .elementor-alert-description{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-widget-text-path{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}
+.elementor-272 .elementor-element.elementor-element-6b55f8e > .elementor-element-populated{padding:0px 0px 0px 0px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-4b508f4{background-color:#cadbe8;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-4b508f4 .slick-slide-bg{background-image:url(https://leanjsc.com/wp-content/uploads/2023/10/z4805076939757_f195d63c7f51d3fd98223a4dbb3791a4.jpg);background-size:cover;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-4b508f4 .slick-slide-inner .bigger-background-overlay{mix-blend-mode:screen;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-4b508f4 .slick-slide-inner .bigger-slide-content{margin-right:auto;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-4b508f4 .slick-slide-inner .slide-button_1{background-color:#FFFFFF00;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-b57a573{background-color:#cadbe8;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-b57a573 .slick-slide-bg{background-image:url(https://leanjsc.com/wp-content/uploads/2023/10/41208861_m-2880w.webp);background-size:cover;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-b57a573 .slick-slide-inner .bigger-background-overlay{mix-blend-mode:screen;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-b57a573 .slick-slide-inner .bigger-slide-content{margin-right:auto;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-b57a573 .slick-slide-inner .slide-button_1{background-color:#FFFFFF00;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-6757a6a{background-color:#cadbe8;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-6757a6a .slick-slide-bg{background-image:url(https://leanjsc.com/wp-content/uploads/2023/09/phuc-vu-nganh-xay-dung_slide_2-scaled.jpg);background-size:cover;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-6757a6a .slick-slide-inner .bigger-background-overlay{mix-blend-mode:luminosity;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-6757a6a .bigger-slide-content{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .elementor-repeater-item-6757a6a .slick-slide-inner .slide-button_1{background-color:#FFFFFF00;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slick-slide{height:500px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slick-slide-inner{max-width:93%;text-align:left;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .bigger-slide-content{max-width:66%;padding:0px 0px 0px 0px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slide-subtitle{font-size:60px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .bigger-slide-heading{font-weight:100;line-height:100px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slide-button_1{font-family:"Roboto", Sans-serif;font-weight:500;text-decoration:underline;border-width:0px;color:#1A70BA;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slide-button_1:hover{color:#FDBA2C;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slide-button_1:focus{color:#FDBA2C;}.elementor-272 .elementor-element.elementor-element-8bb0b38 > .elementor-widget-container{margin:0px 0px 0px 0px;}.elementor-272 .elementor-element.elementor-element-8bb0b38{--e-transform-transition-duration:100ms;}.elementor-272 .elementor-element.elementor-element-429603d{--display:flex;--background-transition:0.3s;}.elementor-272 .elementor-element.elementor-element-d42742a{--spacer-size:50px;}.elementor-272 .elementor-element.elementor-element-1639e08{text-align:center;}.elementor-272 .elementor-element.elementor-element-1639e08 .elementor-heading-title{color:#1E99C8;font-family:"Noto Sans", Sans-serif;font-weight:600;}.elementor-272 .elementor-element.elementor-element-997ceaf .elementor-heading-title{color:#1A70BA;font-family:"Noto Sans", Sans-serif;font-weight:600;text-decoration:underline;}.elementor-272 .elementor-element.elementor-element-e9ac789 .project-item .inner h4{margin-bottom:0px;}.elementor-272 .elementor-element.elementor-element-e9ac789 .project-item .inner h4 a{font-family:"Helvetica", Sans-serif;}.elementor-272 .elementor-element.elementor-element-e9ac789 .project-item .inner.is-hover:hover .item-hover{background-color:#FFFFFFB3;}.elementor-272 .elementor-element.elementor-element-e9ac789 .project-item .inner .item-hover p{color:#000000;}.elementor-272 .elementor-element.elementor-element-e9ac789 .pagelink.gray{color:#000000;}.elementor-272 .elementor-element.elementor-element-e9ac789 > .elementor-widget-container{padding:0px 0px 0px 0px;background-color:var( --e-global-color-primary );}.elementor-272 .elementor-element.elementor-element-7176f18{--display:flex;--background-transition:0.3s;}.elementor-272 .elementor-element.elementor-element-83dbda3{--spacer-size:50px;}.elementor-272 .elementor-element.elementor-element-09b245f{text-align:center;}.elementor-272 .elementor-element.elementor-element-09b245f .elementor-heading-title{color:#1E99C8;font-family:"Noto Sans", Sans-serif;font-weight:600;}.elementor-272 .elementor-element.elementor-element-d80ce0a .elementor-heading-title{color:#1A70BA;font-family:"Noto Sans", Sans-serif;font-weight:600;text-decoration:underline;}.elementor-272 .elementor-element.elementor-element-719ae5a .box-content h4{font-family:"Noto Sans", Sans-serif;font-size:27px;}.elementor-272 .elementor-element.elementor-element-719ae5a .pagelink{text-decoration:underline;}.elementor-272 .elementor-element.elementor-element-26a8060{--display:flex;--background-transition:0.3s;}.elementor-272 .elementor-element.elementor-element-752c122{--spacer-size:50px;}.elementor-272 .elementor-element.elementor-element-665fa66{text-align:center;}.elementor-272 .elementor-element.elementor-element-665fa66 .elementor-heading-title{color:#1E99C8;font-family:"Noto Sans", Sans-serif;font-weight:600;}.elementor-272 .elementor-element.elementor-element-3781f6a > .elementor-widget-container{padding:45px 0px 45px 0px;background-color:#f2f4f6;}@media(max-width:1024px){.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slick-slide-inner{max-width:90%;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .bigger-slide-content{max-width:100%;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slick-slide-inner .bigger-slide-heading:not(:last-child){margin-bottom:15px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .bigger-slide-heading{line-height:70px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .bigger-slide-description{line-height:24px;}}@media(max-width:767px){.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slick-slide{height:600px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .bigger-slide-content{max-width:100%;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slide-subtitle{font-size:36px;line-height:1.2em;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .bigger-slide-heading{font-size:36px;line-height:1.2em;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .bigger-slide-description{font-size:14px;line-height:24px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slide-button_1{padding:10px 28px 10px 28px;}.elementor-272 .elementor-element.elementor-element-8bb0b38 .bigger-slides .slide-button_2{font-size:14px;padding:10px 28px 10px 28px;}.elementor-272 .elementor-element.elementor-element-120c364{padding:0px 0px 0px 0px;}}
+</style>
+<link rel='stylesheet' id='swiper-css' href='https://leanjsc.com/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CNoto+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;subset=vietnamese&#038;ver=6.3.2' type='text/css' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<script type='text/javascript' src='https://leanjsc.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0' id='jquery-core-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://leanjsc.com/wp-json/" />
+<link rel="alternate" type="application/json" href="https://leanjsc.com/wp-json/wp/v2/pages/272" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://leanjsc.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.3.2" />
+<link rel="canonical" href="https://leanjsc.com/" />
+<link rel='shortlink' href='https://leanjsc.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://leanjsc.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fleanjsc.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://leanjsc.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fleanjsc.com%2F&#038;format=xml" />
+<style type="text/css">
+body, p{font-family: "Noto Sans";}h1{font-family: "Noto Sans";}h2{font-family: "Noto Sans";}h3{font-family: "Noto Sans";}h4{font-family: "Noto Sans";}h5{font-family: "Noto Sans";}h6{font-family: "Noto Sans";}.main-navigation a, .main-navigation ul ul a{font-family: "Noto Sans";}    h1{font-family:Noto Sans, Arial, sans-serif}    h2{font-family:Noto Sans, Arial, sans-serif}    h3{font-family:Noto Sans, Arial, sans-serif}    h4{font-family:Noto Sans, Arial, sans-serif}    h5{font-family:Noto Sans, Arial, sans-serif}    h6{font-family:Noto Sans, Arial, sans-serif}
+</style>
+<meta name="generator" content="Elementor 3.15.3; features: e_dom_optimization, e_optimized_assets_loading, additional_custom_breakpoints; settings: css_print_method-internal, google_font-enabled, font_display-auto">
+<link rel="icon" href="https://leanjsc.com/wp-content/uploads/2023/08/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://leanjsc.com/wp-content/uploads/2023/08/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://leanjsc.com/wp-content/uploads/2023/08/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://leanjsc.com/wp-content/uploads/2023/08/cropped-favicon-270x270.png" />
+<style type="text/css" id="wp-custom-css">
+			body.page-template-default.page.page-id-11.logged-in.admin-bar.theme-bigger.woocommerce-account.woocommerce-page.woocommerce-js.woocommerce-active.elementor-default.elementor-kit-3207.customize-support
+  #primary-sidebar {
+  display: none;
+}
+body.page-template-default.page.page-id-10.logged-in.admin-bar.theme-bigger.woocommerce-checkout.woocommerce-page.woocommerce-js.woocommerce-active.elementor-default.elementor-kit-3207.customize-support {
+  display: none;
+}
+body {
+  font-family: "Noto sans" !important;
+  overflow: hidden;
+}
+.page-title {
+  font-family: "Noto sans" !important;
+}
+.font-NotoSans {
+  font-family: "Noto sans" !important;
+}
+
+.textPrimary {
+  color: #1e99c8;
+}
+
+.text400 {
+  font-weight: 400;
+}
+
+/* hidden button back-to-top*/
+#back-to-top {
+  display: none;
+  visibility: hidden !important;
+}
+
+/* fix icon dropdown of menu */
+/* .main-navigation ul li.menu-item-has-children > a:after {
+
+} */
+.main-navigation a {
+	cursor: pointer;
+}
+.main-navigation ul li.menu-item-has-children > a {
+  padding-right: 24px;
+}
+
+.main-navigation ul li:not(.menu-item-has-children) > a:last-child {
+  padding-right: 12px;
+}
+
+/* color main menu */
+.main-navigation ul li a {
+  color: #131313;
+}
+
+.header-style-4 .h-cart-btn,
+.header-style-4 .toggle_search {
+  border-color: #131313;
+}
+
+.search-cart-box .h-cart-btn i,
+.search-cart-box .toggle_search i {
+  color: #131313;
+}
+
+/* padding mainmenu */
+.header-style-2 .main-navigation > ul > li > a,
+.header-style-4 .main-navigation > ul > li > a {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-navigation ul li.menu-item-has-children > a:after {
+  top: 43px;
+}
+
+@media (min-width: 1199px) {
+  .header-style-4 .search-cart-box {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+}
+
+.search-cart-box .h-cart-btn,
+.search-cart-box .toggle_search {
+  padding: 0 0 0 30px;
+}
+.search-cart-box .h-cart-btn i,
+.search-cart-box .toggle_search i {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.site-logo a img {
+  margin: 0;
+}
+
+.header-mainnav {
+  padding-right: 10vw !important;
+}
+@media screen and (max-width: 1600px) {
+	.header-mainnav {
+      padding-right: 0vw !important;
+  }
+}
+/* css button has color warning */
+.btn_warning {
+  color: #363636;
+  border: 1px solid #b7b7b7;
+  padding: 10px 20px;
+  transition: all 0.3s linear;
+  text-align: center;
+  line-height: 1.42857143;
+}
+
+.btn_warning:hover {
+  color: #fff !important;
+  background: #fdba2c;
+  border-color: #fdba2c;
+}
+
+/* service text */
+.home_service_text:hover {
+  transition: all 0.3s linear;
+  color: #fdba2c !important;
+}
+
+/* hover item sản phẩm */
+
+.item-hover .text-light a {
+  color: #000000;
+}
+
+.item-hover .text-light a:hover {
+  color: #fdba2c;
+}
+
+.item-hover > .pagelink {
+  color: #1a70ba !important;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 20%;
+  font-family: "Noto Sans";
+}
+
+.item-hover > .pagelink:hover {
+  color: #fdba2c !important;
+}
+
+/* custom footer */
+.main-footer {
+  padding: 85px 0 0 0;
+}
+.main-footer .widget:last-child {
+  padding-bottom: 0;
+}
+.custom-footer {
+  font-family: "Noto Sans";
+  background: url(https://leanjsc.com/wp-content/uploads/2023/09/BG.jpg) no-repeat;
+
+  background-size: 100% 100%;
+  margin: -15px;
+  display: flex;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 50px 40px 100px;
+  flex-direction: column;
+}
+.custom-footer p {
+  margin: 3px;
+}
+
+.custom-footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.custom-footer-logo > img {
+  width: 225px;
+}
+
+.custom-footer-button {
+  width: 230px;
+  background-color: #ffffff;
+  height: 60px;
+  text-transform: uppercase;
+  color: #1e99c8;
+  border: none;
+  font-weight: 600;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.custom-footer-button:hover {
+  color: #ffffff;
+  background-color: #fdba2c;
+}
+.custom-footer > .custom-footer-address {
+  display: flex;
+  column-gap: 60px;
+}
+.custom-footer-address-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.custom-footer > .custom-footer-address > div > p > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.custom-footer > .custom-footer-address > div > p {
+  display: flex;
+  align-items: start;
+}
+.custom-footer-social {
+  margin-top: 25px;
+}
+
+.custom-footer-social > a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 0.75rem;
+  border: 1px solid #ffffff;
+  transition: all 0.5s ease;
+  border-radius: 0;
+  line-height: 1.5em;
+  padding: 6px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+.custom-footer-social > a > i {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.custom-footer-social > a > i > svg {
+  width: 100%;
+  height: 100%;
+  fill: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.custom-footer-social > a:hover {
+  color: #ffffff;
+  background-color: #fdba2c;
+  border: 1px solid #fdba2c;
+}
+
+.custom-footer-social > a:hover > i > svg {
+  fill: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .main-footer > .container {
+    width: 100vw !important;
+    margin: 0;
+  }
+}
+
+@media (max-width: 786px) {
+  .custom-footer {
+    padding: 10px 20px 40px 40px;
+  }
+  .custom-footer > .custom-footer-address {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .custom-footer > .custom-footer-address > div:last-child {
+    flex: 1;
+  }
+  .custom-footer-social {
+    text-align: center;
+  }
+  .custom-footer > .custom-footer-address > div:last-child {
+    text-align: center;
+  }
+  .custom-footer-button {
+    width: 230px;
+    margin-right: 0px;
+    cursor: pointer;
+  }
+  .custom-footer-social > a:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-footer {
+    padding: 10px 30px 40px 30px;
+    font-size: 12px;
+  }
+  .custom-footer-logo {
+    margin-bottom: 10px;
+  }
+  .custom-footer-logo > img {
+    width: 130px;
+  }
+  .custom-footer > .custom-footer-address {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .custom-footer-address-title {
+    font-size: 16px;
+  }
+  .custom-footer > .custom-footer-address > div:last-child {
+    flex: 1;
+  }
+  .custom-footer-social {
+    text-align: center;
+  }
+
+  .custom-footer > .custom-footer-address > div > p > img {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  .custom-footer > .custom-footer-address > div:last-child {
+    text-align: center;
+  }
+  .custom-footer-button {
+    width: 200px;
+    background-color: #ffffff;
+    height: 35px;
+    text-transform: uppercase;
+    color: #1e99c8;
+    border: none;
+    font-weight: 600;
+    margin-right: 0px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .custom-footer-social > a:last-child {
+    margin-right: 0px;
+  }
+  .custom-footer-social > a {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* fix slide at home page */
+.bigger-slide-content {
+  background-color: #ffffffbf;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto sans";
+  padding: 0px 25px !important;
+  width: 250px;
+  height: 300px;
+  color: #000000;
+}
+
+.bigger-slide-content a {
+  text-align: left;
+}
+@media (max-width: 720px) {
+  .bigger-slide-content {
+    background-color: #ffffffbf;
+    text-align: left;
+    font-family: "Noto sans";
+    padding: 0px 20px !important;
+    width: 38%;
+    height: 40%;
+    color: #000000;
+  }
+}
+
+@media (max-width: 480px) {
+  .bigger-slide-content {
+    background-color: #ffffffbf;
+    text-align: left;
+    font-family: "Noto sans";
+    padding: 0px 20px !important;
+    width: 100%;
+    height: 40%;
+    color: #000000;
+  }
+}
+
+.bigger-slide-content .bigger-slide-button {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.bigger-slide-content .btn {
+  min-height: auto !important;
+}
+
+.bigger-slide-description {
+  margin-bottom: 0 !important;
+  animation-delay: 0.4s !important;
+}
+
+.bigger-slides .slick-slide.slick-active .slick-slide-bg {
+  animation-timing-function: linear;
+  animation-duration: 0.4s !important;
+}
+
+.project-item .inner .title-cat {
+  position: absolute;
+  top: 75%;
+  bottom: auto;
+  left: 30px;
+}
+
+/* css for button for */
+.button-more {
+  color: #1a70ba !important;
+  text-decoration: underline;
+  transition: all 0.3s linear;
+  font-family: "Noto sans" !important;
+}
+
+.button-more:hover {
+  color: #fdba2c !important;
+}
+
+/* css for button more at service box */
+.service-box .pagelink {
+  font-family: "Noto sans" !important;
+  color: #1a70ba;
+}
+.service-box .pagelink:hover {
+  color: #fdba2c;
+}
+
+/* css for table in page */
+.table_container {
+  width: 100%;
+  overflow-x: auto;
+}
+.table_container table {
+  table-layout: fixed;
+}
+.table_container th,
+td {
+  border: 1px solid #fff;
+}
+
+.table_metals {
+  font-family: "Noto Sans";
+  width: 100%;
+  font-size: 16px;
+}
+.table_metals > thead th {
+  text-align: center;
+}
+
+.table_metals > tbody th:first-child {
+  text-align: center;
+}
+
+.table_metals > tbody > tr:nth-child(odd) {
+  background-color: #f3f3f5;
+}
+
+.table_metals > tbody > tr:nth-child(even) {
+  background-color: #d4eff8;
+}
+
+.table_metals thead {
+  background-color: #2aa9d4;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.table_building_sector th,
+td {
+  text-align: center;
+}
+
+.table-product {
+  background-color: #f3f3f5;
+}
+.table-product th,
+td {
+  text-align: left;
+}
+.table-product p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .table_metals {
+    font-size: 10px !important;
+  }
+  .table_building_sector th,
+  td {
+    font-size: 10px !important;
+  }
+
+  .table_building_sector > thread > tr > th {
+    font-size: 12px !important;
+  }
+  .table-product {
+    font-size: 10px !important;
+  }
+}
+/* css page introduce */
+.intro_product_service,
+.intro_product_service ul {
+  line-height: 28px;
+  font-family: "Noto Sans";
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.intro_product_service > li {
+  text-transform: uppercase;
+}
+
+.intro_product_service > li > ul {
+  text-transform: none;
+}
+
+.intro_product_service ul li::before {
+  content: "\25CF";
+  color: #fdba2c;
+  margin-right: 10px;
+  background: none;
+  font-size: 24px;
+}
+
+.intro_product_service ul ul li::before {
+  content: "\25A0";
+  color: #fdba2c;
+  background: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+@media (max-width: 480px) {
+  .intro_product_service {
+    font-size: 12px;
+  }
+  .intro_product_service ul {
+    line-height: 20px;
+  }
+
+  .intro_product_service ul li::before {
+    content: "\25CF";
+    color: #fdba2c;
+    margin-right: 10px;
+    background: none;
+    font-size: 18px;
+  }
+
+  .intro_product_service ul ul li::before {
+    content: "\25A0";
+    color: #fdba2c;
+    background: none;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .intro_title {
+    font-size: 26px;
+  }
+}
+
+/* css widget left menu of product */
+.menu-product-list .elementor-widget-container {
+  font-family: "Noto Sans";
+  margin-bottom: 15px;
+  background: #f2f4f6;
+  border: 1px solid #eee;
+  padding: 30px;
+  font-size: 16px;
+  line-height: 1.625;
+  font-weight: 400;
+}
+.menu-product-list .elementor-widget-container ul li {
+  list-style-type: none;
+}
+
+.menu-product-list .elementor-widget-container h5 {
+  color: #363636;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 18px;
+  color: #1e99c8;
+}
+
+.menu-product-list .elementor-widget-container ul {
+  padding: 0;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.menu-product-list .elementor-widget-container ul li:not(:last-child) {
+  margin-bottom: 23px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* css for caret-up */
+.chevron-down {
+  fill: #1e99c8;
+  font-size: 12px;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  display: inline-block;
+}
+.chevron-down-active {
+  transform: rotate(-90deg) !important;
+}
+/* css contact */
+.contact-info {
+  font-weight: 400;
+}
+@media (max-width: 480px) {
+  .contact-info {
+    flex-direction: column;
+  }
+}
+
+/* css page tuyen dung */
+.recruitment_slot {
+  display: flex;
+  justify-content: space-between;
+}
+.button-seeFile {
+  color: #1a70ba;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #b7b7b7;
+  padding: 0px 14px;
+}
+
+.button-seeFile:hover {
+  color: #ffffff;
+  background-color: #fdba2c;
+  border-color: #fdba2c;
+}
+
+.recruitment_slot {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.recruitment_slot > a {
+  height: 22px;
+}
+
+@media (max-width: 480px) {
+  .recruitment_slot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+/* edit widget at news page */
+.widget-title {
+  font-family: "Noto Sans" !important;
+}
+.post-box .inner-post .entry-meta {
+  font-family: "Noto Sans" !important;
+}
+.entry-header a {
+  font-family: "Noto Sans" !important;
+}
+.entry-header .post-on .entry-date {
+  font-family: "Noto Sans" !important;
+}
+.cat-item a {
+  font-family: "Noto Sans" !important;
+}
+
+/* css for translate */
+.gt_switcher_wrapper > a {
+  padding: 3px;
+}
+/* css service trong home*/
+.service h4{
+	  display: block;
+  	display: -webkit-box;
+  	-webkit-line-clamp: 2; 
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}		
+</style>
+<style id="kirki-inline-styles">
+#logo-header a img{width:220px;height:80px;}#logo-header{padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;}.main-header{background:#f4f4f4;}#royal_preloader.royal_preloader_logo .royal_preloader_percentage{font-family:Noto Sans;}.page-header{background-image:url("https://leanjsc.com/wp-content/themes/bigger/images/bg-pheader.jpg");}.breadc-box .row{min-height:300px;}.page-title{font-size:30px;}.main-footer h4, .main-footer .padd-textwidget, .main-footer .text-primary, .site-footer .main-footer ul li a{color:#131313;}#logo-footer{padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;}/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6DRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr4TRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr5DRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6TRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr5jRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6jRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6zRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr5TRGSf6M7Q.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6DRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr4TRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr5DRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6TRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr5jRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6jRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6zRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr5TRGSf6M7Q.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6DRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr4TRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr5DRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6TRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr5jRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6jRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr6zRGSf6M7VBj.woff) format('woff');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://leanjsc.com/wp-content/fonts/noto-sans/o-0IIpQlx3QUlC5A4PNr5TRGSf6M7Q.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+</head>
+
+<body class="home page-template-default page page-id-272 elementor-default elementor-kit-3207 elementor-page elementor-page-272">
+<div id="page" class="site">
+  <header id="site-header" class="site-header sticky-header mobile-header-sticky mobile-header-light header-style-4"> 
+    <!-- Main header start -->
+    <div class="main-header md-hidden sm-hidden">
+      <div class="container container-bigger">
+        <div class="dtable">
+          <div id="logo-header" class="site-logo dcell"> <a href="https://leanjsc.com/"> <img class="logo-static" src="https://leanjsc.com/wp-content/uploads/2023/10/Logo-Lean.svg" alt="Lean JSC"> <img class="logo-scroll" src="https://leanjsc.com/wp-content/uploads/2023/10/Logo-Lean.svg" alt="Lean JSC"> </a> </div>
+          <div class="header-mainnav dcell">
+            <div class="search-cart-box f-right">
+              <div class="toggle_search f-right"><i class="fas fa-search"></i></div>
+              <div class="h-search-form-field">
+                <form role="search" method="get" id="search-form" class="search-form" action="https://leanjsc.com/" >
+                  <input type="search" class="search-field" placeholder="Enter key search&hellip;" value="" name="s" />
+                  <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+            <nav id="site-navigation" class="main-navigation f-right">
+              <ul id="primary-menu" class="menu">
+                <li id="menu-item-2872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-272 current_page_item menu-item-2872"><a href="https://leanjsc.com/" aria-current="page">Trang Chủ</a></li>
+                <li id="menu-item-6934" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6934"><a>Giới thiệu</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-6700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6700"><a href="https://leanjsc.com/gioi-thieu/ve-chung-toi/">Về chúng tôi</a></li>
+                    <li id="menu-item-6699" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6699"><a href="https://leanjsc.com/gioi-thieu/nha-sang-lap/">Nhà sáng lập</a></li>
+                    <li id="menu-item-6698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6698"><a href="https://leanjsc.com/gioi-thieu/nang-luc-nha-may/">Năng lực nhà máy</a></li>
+                  </ul>
+                </li>
+                <li id="menu-item-4147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4147"><a href="https://leanjsc.com/danh-sach-san-pham/">Sản phẩm</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-6707" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6707"><a href="https://leanjsc.com/san-pham/nhom-va-hop-kim-nhom/">Nhôm và hợp kim nhôm</a></li>
+                    <li id="menu-item-6708" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6708"><a href="https://leanjsc.com/san-pham/dong-va-hop-kim-dong/">Đồng và hợp kim đồng</a></li>
+                    <li id="menu-item-6709" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6709"><a href="https://leanjsc.com/san-pham/nhua-ky-thua/">Nhựa kỹ thuật</a></li>
+                    <li id="menu-item-6710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6710"><a href="https://leanjsc.com/san-pham/inox-dac-chung/">Inox đặc chủng</a></li>
+                    <li id="menu-item-6711" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6711"><a href="https://leanjsc.com/san-pham/hop-kim-niken/">Hợp kim Niken</a></li>
+                    <li id="menu-item-6712" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6712"><a href="https://leanjsc.com/san-pham/titan-va-cac-hop-kim-dac-biet-khac/">Titan và các hợp kim đặc biệt khác</a></li>
+                  </ul>
+                </li>
+                <li id="menu-item-7453" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7453"><a>Dịch vụ</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-7397" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7397"><a href="https://leanjsc.com/dich-vu/gia-cong-cat-tam-va-xe-bang">Gia công cắt tấm &#038; xẻ băng</a></li>
+                    <li id="menu-item-7398" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7398"><a href="https://leanjsc.com/dich-vu/gia-cong-cat-le-va-phay-4-6-mat/">Gia công cắt lẻ &#038; phay 4, 6 mặt</a></li>
+                    <li id="menu-item-7399" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7399"><a href="https://leanjsc.com/dich-vu/gia-cong-san-pham-nhom-hoan-thien-xay-dung-va-kien-truc-noi-ngoai-that/">Gia công sản phẩm nhôm hoàn thiện ngành xây dựng &#038; kiến trúc nội, ngoại thất</a></li>
+                  </ul>
+                </li>
+                <li id="menu-item-3772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3772"><a href="https://leanjsc.com/tin-tuc/">Tin Tức</a></li>
+                <li id="menu-item-3912" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3912"><a href="https://leanjsc.com/tuyen-dung/">Tuyển Dụng</a></li>
+                <li id="menu-item-2876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2876"><a href="https://leanjsc.com/lien-he/">Liên Hệ</a></li>
+              </ul>
+            </nav>
+            <!-- #site-navigation --> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main header close -->
+    <div class="header_mobile">
+      <div class="mlogo_wrapper dtable clearfix">
+        <div class="mobile_logo dcell"> <a href="https://leanjsc.com/"><img src="https://leanjsc.com/wp-content/uploads/2023/10/Logo-Lean.svg" alt="Lean JSC"></a> </div>
+        <div id="mmenu_toggle" class="dcell">
+          <button></button>
+        </div>
+      </div>
+      <div class="mmenu_wrapper">
+        <div class="mobile_nav collapse">
+          <ul id="menu-main-menu" class="mobile_mainmenu">
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-272 current_page_item menu-item-2872"><a href="https://leanjsc.com/" aria-current="page">Trang Chủ</a></li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6934"><a>Giới thiệu</a>
+              <ul class="sub-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6700"><a href="https://leanjsc.com/gioi-thieu/ve-chung-toi/">Về chúng tôi</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6699"><a href="https://leanjsc.com/gioi-thieu/nha-sang-lap/">Nhà sáng lập</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6698"><a href="https://leanjsc.com/gioi-thieu/nang-luc-nha-may/">Năng lực nhà máy</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4147"><a href="https://leanjsc.com/danh-sach-san-pham/">Sản phẩm</a>
+              <ul class="sub-menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6707"><a href="https://leanjsc.com/san-pham/nhom-va-hop-kim-nhom/">Nhôm và hợp kim nhôm</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6708"><a href="https://leanjsc.com/san-pham/dong-va-hop-kim-dong/">Đồng và hợp kim đồng</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6709"><a href="https://leanjsc.com/san-pham/nhua-ky-thua/">Nhựa kỹ thuật</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6710"><a href="https://leanjsc.com/san-pham/inox-dac-chung/">Inox đặc chủng</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6711"><a href="https://leanjsc.com/san-pham/hop-kim-niken/">Hợp kim Niken</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6712"><a href="https://leanjsc.com/san-pham/titan-va-cac-hop-kim-dac-biet-khac/">Titan và các hợp kim đặc biệt khác</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7453"><a>Dịch vụ</a>
+              <ul class="sub-menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7397"><a href="https://leanjsc.com/dich-vu/gia-cong-cat-tam-va-xe-bang">Gia công cắt tấm &#038; xẻ băng</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7398"><a href="https://leanjsc.com/dich-vu/gia-cong-cat-le-va-phay-4-6-mat/">Gia công cắt lẻ &#038; phay 4, 6 mặt</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7399"><a href="https://leanjsc.com/dich-vu/gia-cong-san-pham-nhom-hoan-thien-xay-dung-va-kien-truc-noi-ngoai-that/">Gia công sản phẩm nhôm hoàn thiện ngành xây dựng &#038; kiến trúc nội, ngoại thất</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3772"><a href="https://leanjsc.com/tin-tuc/">Tin Tức</a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3912"><a href="https://leanjsc.com/tuyen-dung/">Tuyển Dụng</a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2876"><a href="https://leanjsc.com/lien-he/">Liên Hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- #site-header -->
+  
+  <div id="content" class="site-content">
+    <div data-elementor-type="wp-page" data-elementor-id="272" class="elementor elementor-272">
+      <section class="elementor-section elementor-top-section elementor-element elementor-element-baf03b5 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="baf03b5" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-no">
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6b55f8e" data-id="6b55f8e" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-8bb0b38 animated-fast bigger--h-position-left bigger--v-position-middle elementor-invisible elementor-widget elementor-widget-bigger-slider" data-id="8bb0b38" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;,&quot;_animation_delay&quot;:0}" data-widget_type="bigger-slider.default">
+                <div class="elementor-widget-container">
+                  <div class="bigger-slides-wrapper navigation-arrows navigation-tablet-arrows navigation-mobile-arrows" dir="ltr">
+                    <div class="arrows-wrapper">
+                      <div class="arrows-inner arrows-container-fluid"></div>
+                    </div>
+                    <div class="bigger-slides" data-slider_options="{&quot;slidesToShow&quot;:1,&quot;autoplaySpeed&quot;:3000,&quot;autoplay&quot;:true,&quot;infinite&quot;:true,&quot;pauseOnHover&quot;:true,&quot;speed&quot;:0,&quot;arrows&quot;:true,&quot;dots&quot;:false,&quot;rtl&quot;:false,&quot;fade&quot;:false}" data-animation="slideInRight">
+                      <div class="elementor-repeater-item-4b508f4 slick-slide">
+                        <div class="slick-slide-bg" data-animation="slideInRight"></div>
+                        <div class="slick-slide-inner">
+                          <div class="bigger-background-overlay"></div>
+                          <div class="bigger-slide-content" data-animation="slideInRight">
+                            <div class="bigger-slide-description">
+                              <div class="home-slide-content">
+                                <h5 style="text-align: center;">Nhà nhập khẩu, phân phối, cung cấp các giải pháp về vật liệu gia công cơ khí</h5>
+                              </div>
+                            </div>
+                            <a href="https://leanjsc.com/nhap-khau-phan-phoi-kim-loai" class="bigger-slide-button slide-button_1 btn"><span style="text-transform: capitalize;">Xem</span> thêm</a></div>
+                        </div>
+                      </div>
+                      <div class="elementor-repeater-item-b57a573 slick-slide">
+                        <div class="slick-slide-bg" data-animation="slideInRight"></div>
+                        <div class="slick-slide-inner">
+                          <div class="bigger-background-overlay"></div>
+                          <div class="bigger-slide-content" data-animation="slideInRight">
+                            <div class="bigger-slide-description">
+                              <div class="home-slide-content">
+                                <h5 style="text-align: center;">Cung cấp sản phẩm và dịch vụ trong lĩnh vực gia công cơ khí</h5>
+                              </div>
+                              <div class="ddict_btn" style="top: 21px; left: 152.969px;"> </div>
+                            </div>
+                            <a href="https://leanjsc.com/linh-vuc-gia-cong-co-khi/" class="bigger-slide-button slide-button_1 btn"><span style="text-transform: capitalize;">Xem</span> thêm</a></div>
+                        </div>
+                      </div>
+                      <div class="elementor-repeater-item-6757a6a slick-slide">
+                        <div class="slick-slide-bg" data-animation="slideInRight"></div>
+                        <div class="slick-slide-inner">
+                          <div class="bigger-background-overlay"></div>
+                          <div class="bigger-slide-content" data-animation="slideInRight">
+                            <div class="bigger-slide-description">
+                              <div class="home-slide-content">
+                                <h5 style="text-align: center;">Cung cấp sản phẩm và dịch vụ ứng dụng trong ngành kiến trúc, xây dựng</h5>
+                              </div>
+                            </div>
+                            <a href="https://leanjsc.com/phuc-vu-trong-nganh-xay-dung" class="bigger-slide-button slide-button_1 btn"><span style="text-transform: capitalize;">Xem</span> thêm</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elementor-element elementor-element-429603d e-flex e-con-boxed e-con" data-id="429603d" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+                <div class="e-con-inner">
+                  <div class="elementor-element elementor-element-d42742a elementor-widget elementor-widget-spacer" data-id="d42742a" data-element_type="widget" data-widget_type="spacer.default">
+                    <div class="elementor-widget-container">
+                      <div class="elementor-spacer">
+                        <div class="elementor-spacer-inner"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-1639e08 elementor-widget elementor-widget-heading" data-id="1639e08" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                      <h3 class="elementor-heading-title elementor-size-default"><span style="font-family: Noto sans">Sản phẩm của chúng tôi</span></h3>
+                    </div>
+                  </div>
+                  <div class="elementor-element elementor-element-997ceaf elementor-widget elementor-widget-heading" data-id="997ceaf" data-element_type="widget" data-widget_type="heading.default">
+                    <div class="elementor-widget-container"> <span class="elementor-heading-title elementor-size-default"><a href="https://leanjsc.com/danh-sach-san-pham"><span style="font-family: Noto sans" class="button-more">Xem tất cả</span></a></span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="elementor-section elementor-top-section elementor-element elementor-element-120c364 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="120c364" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-no">
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7153996" data-id="7153996" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-e9ac789 elementor-widget elementor-widget-bigger-slider-portfolio" data-id="e9ac789" data-element_type="widget" data-widget_type="bigger-slider-portfolio.default">
+                <div class="elementor-widget-container">
+                  <div class="project-slider-wraper">
+                    <div class="project-slider projects" data-show="4" data-arrow="true" data-dots="" data-auto="true">
+                      <div>
+                        <div class="project-item  ">
+                          <div class="inner is-hover"> <a href="https://leanjsc.com/san-pham/nhom-va-hop-kim-nhom/"><img fetchpriority="high" width="750" height="936" src="https://leanjsc.com/wp-content/uploads/2023/09/nhom-5052_doc.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://leanjsc.com/wp-content/uploads/2023/09/nhom-5052_doc.jpg 750w, https://leanjsc.com/wp-content/uploads/2023/09/nhom-5052_doc-240x300.jpg 240w" sizes="(max-width: 750px) 100vw, 750px" />
+                            <div class="item-overlay"></div>
+                            </a>
+                            <div class="title-cat">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/nhom-va-hop-kim-nhom/">Nhôm và hợp kim nhôm</a> </h4>
+                              <h6><span>, </span></h6>
+                            </div>
+                            <div class="item-hover">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/nhom-va-hop-kim-nhom/">Nhôm và hợp kim nhôm</a> </h4>
+                              <h6><span>, </span></h6>
+                              <p>Là sản phẩm tấm nhôm hợp kim A5052 đặc biệt có độ gia công chính xác cao, nhiều tính...</p>
+                              <a class="pagelink gray" href="https://leanjsc.com/san-pham/nhom-va-hop-kim-nhom/">Xem chi tiết</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="project-item  ">
+                          <div class="inner is-hover"> <a href="https://leanjsc.com/san-pham/dong-va-hop-kim-dong/"><img width="420" height="525" src="https://leanjsc.com/wp-content/uploads/2023/10/dong-va-hop-kim-dong.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://leanjsc.com/wp-content/uploads/2023/10/dong-va-hop-kim-dong.jpg 420w, https://leanjsc.com/wp-content/uploads/2023/10/dong-va-hop-kim-dong-240x300.jpg 240w" sizes="(max-width: 420px) 100vw, 420px" />
+                            <div class="item-overlay"></div>
+                            </a>
+                            <div class="title-cat">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/dong-va-hop-kim-dong/">Đồng và hợp kim đồng</a> </h4>
+                              <h6><span>, </span></h6>
+                            </div>
+                            <div class="item-hover">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/dong-va-hop-kim-dong/">Đồng và hợp kim đồng</a> </h4>
+                              <h6><span>, </span></h6>
+                              <p>Đặc điểm và ứng dụng Đồng có ký hiệu hóa học là Cu và khối lượng nguyên tử là...</p>
+                              <a class="pagelink gray" href="https://leanjsc.com/san-pham/dong-va-hop-kim-dong/">Xem chi tiết</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="project-item  ">
+                          <div class="inner is-hover"> <a href="https://leanjsc.com/san-pham/nhua-ky-thua/"><img width="750" height="936" src="https://leanjsc.com/wp-content/uploads/2023/09/vat-lieu-nhua-ku-thuat-va-phu-kien_doc.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://leanjsc.com/wp-content/uploads/2023/09/vat-lieu-nhua-ku-thuat-va-phu-kien_doc.jpg 750w, https://leanjsc.com/wp-content/uploads/2023/09/vat-lieu-nhua-ku-thuat-va-phu-kien_doc-240x300.jpg 240w" sizes="(max-width: 750px) 100vw, 750px" />
+                            <div class="item-overlay"></div>
+                            </a>
+                            <div class="title-cat">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/nhua-ky-thua/">Nhựa kỹ thuật</a> </h4>
+                              <h6><span>, </span></h6>
+                            </div>
+                            <div class="item-hover">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/nhua-ky-thua/">Nhựa kỹ thuật</a> </h4>
+                              <h6><span>, </span></h6>
+                              <p>Là loại nhựa kỹ thuật chuyên dùng để phục vụ trong một số ngành kỹ thuật công nghiệp đặc...</p>
+                              <a class="pagelink gray" href="https://leanjsc.com/san-pham/nhua-ky-thua/">Xem chi tiết</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="project-item  ">
+                          <div class="inner is-hover"> <a href="https://leanjsc.com/san-pham/inox-dac-chung/"><img loading="lazy" width="922" height="1152" src="https://leanjsc.com/wp-content/uploads/2023/09/inox-dac-chung_doc.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://leanjsc.com/wp-content/uploads/2023/09/inox-dac-chung_doc.jpg 922w, https://leanjsc.com/wp-content/uploads/2023/09/inox-dac-chung_doc-240x300.jpg 240w, https://leanjsc.com/wp-content/uploads/2023/09/inox-dac-chung_doc-820x1024.jpg 820w, https://leanjsc.com/wp-content/uploads/2023/09/inox-dac-chung_doc-768x960.jpg 768w" sizes="(max-width: 922px) 100vw, 922px" />
+                            <div class="item-overlay"></div>
+                            </a>
+                            <div class="title-cat">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/inox-dac-chung/">Inox đặc chủng</a> </h4>
+                              <h6><span>, </span></h6>
+                            </div>
+                            <div class="item-hover">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/inox-dac-chung/">Inox đặc chủng</a> </h4>
+                              <h6><span>, </span></h6>
+                              <p>Thép không gỉ là thép hợp kim có tỉ trọng nguyên tố Crom (Cr) từ 10.5% trở lên. Cr...</p>
+                              <a class="pagelink gray" href="https://leanjsc.com/san-pham/inox-dac-chung/">Xem chi tiết</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="project-item  ">
+                          <div class="inner is-hover"> <a href="https://leanjsc.com/san-pham/hop-kim-niken/"><img loading="lazy" width="564" height="704" src="https://leanjsc.com/wp-content/uploads/2023/09/hinh-anh-niken_doc.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://leanjsc.com/wp-content/uploads/2023/09/hinh-anh-niken_doc.jpg 564w, https://leanjsc.com/wp-content/uploads/2023/09/hinh-anh-niken_doc-240x300.jpg 240w" sizes="(max-width: 564px) 100vw, 564px" />
+                            <div class="item-overlay"></div>
+                            </a>
+                            <div class="title-cat">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/hop-kim-niken/">Hợp kim Niken</a> </h4>
+                              <h6><span>, </span></h6>
+                            </div>
+                            <div class="item-hover">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/hop-kim-niken/">Hợp kim Niken</a> </h4>
+                              <h6><span>, </span></h6>
+                              <p>Niken hợp kim dễ dàng tương tác với hầu hết các kim loại như đồng, crom, sắt và molypden....</p>
+                              <a class="pagelink gray" href="https://leanjsc.com/san-pham/hop-kim-niken/">Xem chi tiết</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="project-item  ">
+                          <div class="inner is-hover"> <a href="https://leanjsc.com/san-pham/titan-va-cac-hop-kim-dac-biet-khac/"><img loading="lazy" width="750" height="936" src="https://leanjsc.com/wp-content/uploads/2023/09/hop-kim-titan-va-phu-kien_doc.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://leanjsc.com/wp-content/uploads/2023/09/hop-kim-titan-va-phu-kien_doc.jpg 750w, https://leanjsc.com/wp-content/uploads/2023/09/hop-kim-titan-va-phu-kien_doc-240x300.jpg 240w" sizes="(max-width: 750px) 100vw, 750px" />
+                            <div class="item-overlay"></div>
+                            </a>
+                            <div class="title-cat">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/titan-va-cac-hop-kim-dac-biet-khac/">Titan và các hợp kim đặc biệt khác</a> </h4>
+                              <h6><span>, </span></h6>
+                            </div>
+                            <div class="item-hover">
+                              <h4 class="text-light"> <a href="https://leanjsc.com/san-pham/titan-va-cac-hop-kim-dac-biet-khac/">Titan và các hợp kim đặc biệt khác</a> </h4>
+                              <h6><span>, </span></h6>
+                              <p>Titan và Hợp Kim Titan là gì? Sau đây là tổng quan về các hợp kim titan và các...</p>
+                              <a class="pagelink gray" href="https://leanjsc.com/san-pham/titan-va-cac-hop-kim-dac-biet-khac/">Xem chi tiết</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="elementor-element elementor-element-7176f18 e-flex e-con-boxed e-con" data-id="7176f18" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+        <div class="e-con-inner">
+          <div class="elementor-element elementor-element-83dbda3 elementor-widget elementor-widget-spacer" data-id="83dbda3" data-element_type="widget" data-widget_type="spacer.default">
+            <div class="elementor-widget-container">
+              <div class="elementor-spacer">
+                <div class="elementor-spacer-inner"></div>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-09b245f elementor-widget elementor-widget-heading" data-id="09b245f" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+              <h3 class="elementor-heading-title elementor-size-default"><span style="font-family: Noto sans">Dịch vụ của chúng tôi</span></h3>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-d80ce0a elementor-widget elementor-widget-heading" data-id="d80ce0a" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container"> <span class="elementor-heading-title elementor-size-default"><a href="https://leanjsc.com/danh-sach-san-pham"><span style="font-family: Noto sans" class="button-more">Xem tất cả</span></a></span> </div>
+          </div>
+        </div>
+      </div>
+      <section class="elementor-section elementor-top-section elementor-element elementor-element-1254461 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1254461" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2904d66" data-id="2904d66" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-719ae5a elementor-widget elementor-widget-bigger-list-service" data-id="719ae5a" data-element_type="widget" data-widget_type="bigger-list-service.default">
+                <div class="elementor-widget-container">
+                  <div class="service service-grid row">
+                    <div class="service-box col-md-4 col-sm-6">
+                      <div class="box-content">
+                        <div class="content-img"><a href="https://leanjsc.com/dich-vu/gia-cong-cat-tam-va-xe-bang/"><img loading="lazy" width="1516" height="863" src="https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-tam-nhom-facade-kien-truc_2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-tam-nhom-facade-kien-truc_2.jpg 1516w, https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-tam-nhom-facade-kien-truc_2-300x171.jpg 300w, https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-tam-nhom-facade-kien-truc_2-1024x583.jpg 1024w, https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-tam-nhom-facade-kien-truc_2-768x437.jpg 768w" sizes="(max-width: 1516px) 100vw, 1516px" /></a></div>
+                        <h4><a href="https://leanjsc.com/dich-vu/gia-cong-cat-tam-va-xe-bang/"> Gia công cắt tấm &#038; xẻ băng </a></h4>
+                        <p>Hoạt động xây dựng bắt đầu bằng việc lên kế hoạch, thiết kế, lập dự toán và thi công tới khi dự án hoàn tất và sẵn sàng đưa vào sử dụng</p>
+                        <a href="https://leanjsc.com/dich-vu/gia-cong-cat-tam-va-xe-bang/" class="pagelink">Xem chi tiết</a> </div>
+                    </div>
+                    <div class="service-box col-md-4 col-sm-6">
+                      <div class="box-content">
+                        <div class="content-img"><a href="https://leanjsc.com/dich-vu/gia-cong-cat-le-va-phay-4-6-mat/"><img loading="lazy" width="1516" height="863" src="https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-vach-trang-tri-cnc-nhom_2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-vach-trang-tri-cnc-nhom_2.jpg 1516w, https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-vach-trang-tri-cnc-nhom_2-300x171.jpg 300w, https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-vach-trang-tri-cnc-nhom_2-1024x583.jpg 1024w, https://leanjsc.com/wp-content/uploads/2023/09/gia-cong-vach-trang-tri-cnc-nhom_2-768x437.jpg 768w" sizes="(max-width: 1516px) 100vw, 1516px" /></a></div>
+                        <h4><a href="https://leanjsc.com/dich-vu/gia-cong-cat-le-va-phay-4-6-mat/"> Gia công cắt lẻ &#038; phay 4, 6 mặt </a></h4>
+                        <p>Hoạt động xây dựng bắt đầu bằng việc lên kế hoạch, thiết kế, lập dự toán và thi công tới khi dự án hoàn tất và sẵn sàng đưa vào sử dụng</p>
+                        <a href="https://leanjsc.com/dich-vu/gia-cong-cat-le-va-phay-4-6-mat/" class="pagelink">Xem chi tiết</a> </div>
+                    </div>
+                    <div class="service-box col-md-4 col-sm-6">
+                      <div class="box-content">
+                        <div class="content-img"><a href="https://leanjsc.com/dich-vu/gia-cong-san-pham-nhom-hoan-thien-xay-dung-va-kien-truc-noi-ngoai-that/"><img loading="lazy" width="1516" height="863" src="https://leanjsc.com/wp-content/uploads/2023/09/tam-nhom-tran-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://leanjsc.com/wp-content/uploads/2023/09/tam-nhom-tran-2.jpg 1516w, https://leanjsc.com/wp-content/uploads/2023/09/tam-nhom-tran-2-300x171.jpg 300w, https://leanjsc.com/wp-content/uploads/2023/09/tam-nhom-tran-2-1024x583.jpg 1024w, https://leanjsc.com/wp-content/uploads/2023/09/tam-nhom-tran-2-768x437.jpg 768w" sizes="(max-width: 1516px) 100vw, 1516px" /></a></div>
+                        <h4><a href="https://leanjsc.com/dich-vu/gia-cong-san-pham-nhom-hoan-thien-xay-dung-va-kien-truc-noi-ngoai-that/"> Gia công sản phẩm nhôm hoàn thiện ngành xây dựng &#038; kiến trúc nội, ngoại thất </a></h4>
+                        <p>Chúng tôi cung cấp dịch vụ trong nhiều lĩnh vực khác nhau, từ gia công kim loại, sản xuất nội thất, máy móc thiết bị, xây dựng...</p>
+                        <a href="https://leanjsc.com/dich-vu/gia-cong-san-pham-nhom-hoan-thien-xay-dung-va-kien-truc-noi-ngoai-that/" class="pagelink">Xem chi tiết</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="elementor-element elementor-element-26a8060 e-flex e-con-boxed e-con" data-id="26a8060" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+        <div class="e-con-inner">
+          <div class="elementor-element elementor-element-752c122 elementor-widget elementor-widget-spacer" data-id="752c122" data-element_type="widget" data-widget_type="spacer.default">
+            <div class="elementor-widget-container">
+              <div class="elementor-spacer">
+                <div class="elementor-spacer-inner"></div>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-665fa66 elementor-widget elementor-widget-heading" data-id="665fa66" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+              <h3 class="elementor-heading-title elementor-size-default"><font face="Noto sans">Khách hàng &amp; đối tác</font></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="elementor-section elementor-top-section elementor-element elementor-element-eac183d elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="eac183d" data-element_type="section">
+        <div class="elementor-container elementor-column-gap-default">
+          <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8ceec4f" data-id="8ceec4f" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div class="elementor-element elementor-element-3781f6a animated-fast elementor-invisible elementor-widget elementor-widget-bigger-image-carousel" data-id="3781f6a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="bigger-image-carousel.default">
+                <div class="elementor-widget-container">
+                  <div class="image-carousel-wraper">
+                    <div class="image-carousel" data-show="7" data-arrow="true" data-dots="false" data-auto="true">
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-amanda-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Hisa-elevator.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-savimec-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/10/Logo-trumpf_1.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-roders-tec-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-quanda-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-power-best-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-mitsubishi-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="98" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-Bystronic-.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-general-electric-2-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="98" height="109" src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-ATP.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/10/Logo-schaefler-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/10/Logo-sunhouse-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/10/Logo-lvd-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/10/Logo-jpy-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="img-item">
+                          <figure><img loading="lazy" width="215" height="109" src="https://leanjsc.com/wp-content/uploads/2023/10/Logo-alimex-ngang.jpg" class="attachment-full size-full" alt="" decoding="async" /></figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- #content -->
+  
+  <footer id="site-footer" class="site-footer">
+    <div class="main-footer section-padd">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="custom_html-4" class="widget_text widget widget_custom_html">
+              <div class="textwidget custom-html-widget">
+                <div class="custom-footer">
+                  <div class="custom-footer-logo"> <img src="https://leanjsc.com/wp-content/uploads/2023/09/Logo-Lean-02-300x199.png" alt="logo" /> </div>
+                  <div class="custom-footer-address">
+                    <div>
+                      <p class="custom-footer-address-title">Văn Phòng</p>
+                      <div style="width: 50px; height: 3px; background-color: #ffffff; margin-bottom:20px"></div>
+                      <p> <img src="https://leanjsc.com/wp-content/uploads/2023/09/location.svg" alt="location"> <span>Tầng 10 - Vincom Center, 72 Lê Thánh Tôn, Quận 1, Tp. Hồ Chí Minh</span> </p>
+                      <p><img src="https://leanjsc.com/wp-content/uploads/2023/09/Phone.svg" alt="phone"/><span>(+84) 963 441 636</span></p>
+                      <p><img src="	https://leanjsc.com/wp-content/uploads/2023/09/mail.svg" alt="mail"/><span>marketing@leanjsc.com</span></p>
+                    </div>
+                    <div>
+                      <p class="custom-footer-address-title">Nhà xưởng</p>
+                      <div style="width: 50px; height: 3px; background-color: #ffffff; margin-bottom:20px"></div>
+                      <p> <img src="https://leanjsc.com/wp-content/uploads/2023/09/location.svg"> <span>K11, Khu B, Đường CN5, Khu xưởng Kizuna 3, KCN Tân Kim Mở Rộng, Thị trấn Cần
+                        Giuộc, Tỉnh Long An, Việt Nam</span> </p>
+                      <p><img src="https://leanjsc.com/wp-content/uploads/2023/09/Phone.svg" alt="phone"/><span>(+84) 963 441 636</span></p>
+                      <p><img src="	https://leanjsc.com/wp-content/uploads/2023/09/mail.svg" alt="mail"/><span>info@leanjsc.com</span></p>
+                    </div>
+                    <div>
+                      <button class="custom-footer-button">
+                      <a style="color:inherit" href="/download/Catalogue-LEAN-18112022.pdf" target="_blank" rel="noopener">Tải hồ sơ công ty</a>
+                      </button>
+                      <div class="custom-footer-social"> <a class="" target="_blank" href="https://www.facebook.com/profile.php?id=61551106690248" rel="noopener"> <i class="icon-social_facebook" style="background-image: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10.387 20" style="enable-background:new 0 0 10.387 20">
+                          <path d="M10.387 3.317l-1.884.005c-1.477 0-1.76.699-1.76 1.73V7.32h3.521l-.46 3.553H6.743V20H3.07v-9.122H0V7.32h3.07V4.698C3.07 1.658 4.929 0 7.644 0c1.301 0 2.416.097 2.743.142v3.175z"></path>
+                        </svg>
+                        </i> </a> <a class="" target="_blank" href="https://www.youtube.com" rel="noopener"> <i class="icon-social_youtube" style="background-image: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 14.075" style="enable-background:new 0 0 20 14.075">
+                          <path d="M19.22 1.208C18.499.35 17.166 0 14.62 0H5.38C2.776 0 1.42.373.701 1.286 0 2.177 0 3.49 0 5.307v3.462c0 3.519.832 5.306 5.38 5.306h9.24c2.208 0 3.431-.309 4.222-1.066.812-.777 1.158-2.045 1.158-4.24V5.307c0-1.916-.054-3.237-.78-4.099zm-6.38 6.308L8.644 9.709a.644.644 0 0 1-.944-.572V4.765a.646.646 0 0 1 .942-.572l4.196 2.179a.646.646 0 0 1 .002 1.144z"></path>
+                        </svg>
+                        </i> </a> <a class="" target="_blank" href="#" rel="noopener"> <i class="icon-social_twitter" style="background-image: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 18 14.988" style="enable-background:new 0 0 18 14.988">
+                          <path d="M16.45 3.728c-.139 6.468-4.216 10.963-10.401 11.244-2.534.144-4.36-.7-6.049-1.682 1.826.281 4.223-.425 5.485-1.552-1.826-.137-2.951-1.118-3.515-2.67.564.144 1.127 0 1.545 0C1.826 8.506.708 7.524.564 5.272c.425.281.981.425 1.543.425C.845 4.991 0 2.32.989.631c1.826 1.97 4.07 3.659 7.729 3.94-.981-3.94 4.36-6.047 6.468-3.378.981-.137 1.689-.562 2.388-.837-.281.981-.844 1.545-1.545 2.107.702-.143 1.409-.28 1.971-.561-.144.699-.844 1.263-1.55 1.826z"></path>
+                        </svg>
+                        </i> </a> <a class="" target="_blank" href="https://www.linkedin.com/company/96971544/admin/feed/posts/?feedType=following" rel="noopener"> <i class="icon-social_twitter" style="background-image: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewbox="0 0 50 50">
+                          <path d="M 8 3.0097656 C 4.53 3.0097656 2.0097656 5.0892187 2.0097656 7.9492188 C 2.0097656 10.819219 4.59 12.990234 8 12.990234 C 11.47 12.990234 13.990234 10.870625 13.990234 7.890625 C 13.830234 5.020625 11.36 3.0097656 8 3.0097656 z M 3 15 C 2.45 15 2 15.45 2 16 L 2 45 C 2 45.55 2.45 46 3 46 L 13 46 C 13.55 46 14 45.55 14 45 L 14 16 C 14 15.45 13.55 15 13 15 L 3 15 z M 18 15 C 17.45 15 17 15.45 17 16 L 17 45 C 17 45.55 17.45 46 18 46 L 27 46 C 27.552 46 28 45.552 28 45 L 28 30 L 28 29.75 L 28 29.5 C 28 27.13 29.820625 25.199531 32.140625 25.019531 C 32.260625 24.999531 32.38 25 32.5 25 C 32.62 25 32.739375 24.999531 32.859375 25.019531 C 35.179375 25.199531 37 27.13 37 29.5 L 37 45 C 37 45.552 37.448 46 38 46 L 47 46 C 47.55 46 48 45.55 48 45 L 48 28 C 48 21.53 44.529063 15 36.789062 15 C 33.269062 15 30.61 16.360234 29 17.490234 L 29 16 C 29 15.45 28.55 15 28 15 L 18 15 z"></path>
+                        </svg>
+                        </i> </a> <a class="" target="_blank" href="#" rel="noopener"> <i class="icon-social_instagram" style="background-image: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" style="enable-background:new 0 0 20 20">
+                          <path d="M10.006 1.802c2.672 0 2.989.012 4.039.059.977.043 1.504.207 1.856.344.465.18.801.399 1.148.746.352.352.566.684.75 1.149.137.352.301.883.344 1.856.047 1.055.059 1.371.059 4.04s-.012 2.989-.059 4.04c-.043.977-.207 1.504-.344 1.856-.18.465-.398.801-.746 1.148a3.142 3.142 0 0 1-1.148.75c-.352.137-.883.301-1.856.344-1.055.047-1.371.059-4.04.059s-2.989-.012-4.04-.059c-.977-.043-1.504-.207-1.856-.344a3.096 3.096 0 0 1-1.149-.746 3.142 3.142 0 0 1-.75-1.148c-.137-.352-.301-.883-.344-1.856-.047-1.055-.059-1.371-.059-4.04s.012-2.99.059-4.041c.043-.977.207-1.504.344-1.856.18-.465.399-.801.746-1.149a3.138 3.138 0 0 1 1.149-.75c.352-.137.883-.301 1.856-.344 1.051-.047 1.368-.058 4.041-.058zm0-1.801c-2.715 0-3.055.012-4.122.059C4.821.106 4.09.278 3.458.524A4.884 4.884 0 0 0 1.685 1.68 4.881 4.881 0 0 0 .529 3.45C.282 4.088.11 4.814.063 5.877.016 6.948.004 7.287.004 10.003s.012 3.055.059 4.122c.047 1.063.219 1.793.465 2.426.258.66.598 1.219 1.156 1.773a4.89 4.89 0 0 0 1.77 1.153c.637.246 1.363.418 2.426.465 1.066.046 1.406.058 4.122.058s3.055-.012 4.122-.059c1.063-.047 1.793-.219 2.426-.465a4.894 4.894 0 0 0 1.77-1.153 4.898 4.898 0 0 0 1.153-1.77c.246-.637.418-1.363.465-2.426.047-1.066.059-1.406.059-4.122s-.012-3.055-.059-4.122c-.047-1.063-.219-1.793-.465-2.426a4.684 4.684 0 0 0-1.145-1.778 4.89 4.89 0 0 0-1.77-1.153C15.921.28 15.195.108 14.132.061c-1.07-.049-1.41-.061-4.126-.06z"></path>
+                          <path d="M10.006 4.865a5.139 5.139 0 1 0 5.138 5.138 5.14 5.14 0 0 0-5.138-5.138zm0 8.47a3.332 3.332 0 1 1 0-6.665 3.332 3.332 0 0 1 0 6.665zM16.545 4.661a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"></path>
+                        </svg>
+                        </i> </a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end col-lg-3 --> 
+          
+        </div>
+      </div>
+    </div>
+    <!-- .main-footer --> 
+    <!-- #back-to-top --> 
+    <a id="back-to-top" href="#" class="show"><i class="icon ion-md-arrow-up"></i></a> </footer>
+  <!-- #site-footer --> 
+</div>
+<!-- #page --> 
+
+<script>
+					window.chatBubbleConfig = {"ajax_url":"https:\/\/leanjsc.com\/wp-admin\/admin-ajax.php","options":{"enabled":1,"enabled_font_opensans":1,"class":"","color":"#ffb30f","premium":0,"intro":"Chat v\u1edbi ch\u00fang t\u00f4i","enabled_intro":1,"enabled_greeting":1,"greeting_show":0,"greeting_name":"Lean JSC","greeting_label":"We make innovation simple","greeting":"Ch\u00e0o m\u1eebng b\u1ea1n \u0111\u1ebfn v\u1edbi Lean JSC","links":[{"u":"https:\/\/leanjsc.com\/","t":"Trang ch\u1ee7","b":"1"},{"u":"https:\/\/www.facebook.com\/profile.php?id=61551106690248","t":"Facebook","b":"1"}],"callback_simple_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/calling.svg","callback_advanced_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/calling.svg","phone_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/calling.svg","url_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/awwwards.svg","email_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/mailto.svg","messenger_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/fbmessenger.svg","telegram_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/telegram.svg","line_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/line.svg","skype_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/skype.svg","viber_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/viber.svg","whatsapp_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/whatsapp.svg","zalo_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/zalo.svg","tawkto_icon":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/tawkto.svg","messenger":{"enabled":"1","title":"FB Messenger","facebook":"61551106690248","blank":"1","place":"inner","pos":"0"},"url":{"enabled":"0","title":"Blue Coral","url":"http:\/\/bluecoral.vn","blank":"1","place":"inner","pos":"2"},"greeting_avatar":"https:\/\/leanjsc.com\/wp-content\/plugins\/chat-bubble\/assets\/images\/avatar_default.png","phone":{"enabled":"1","title":"Phone","phone":"0963441636","place":"inner","pos":"1"},"email":{"enabled":"0","title":"Email","mail":"","place":"inner","pos":"3"},"telegram":{"enabled":"0","title":"Telegram","telegram":"","blank":"0","place":"inner","pos":"4"},"line":{"enabled":"0","title":"LINE","line":"","blank":"0","place":"inner","pos":"5"},"skype":{"enabled":"0","title":"Skype","skype":"","blank":"0","place":"inner","pos":"6"},"viber":{"enabled":"0","title":"Viber","viber":"","blank":"0","place":"inner","pos":"7"},"whatsapp":{"enabled":"0","title":"Whatsapp","whatsapp":"","blank":"0","place":"inner","pos":"8"},"zalo":{"enabled":"1","title":"Zalo","zalo":"0909497261","blank":"1","place":"inner","pos":"9"},"tawkto":{"enabled":"0","title":"Tawk.to","tawkto":"","place":"inner","pos":"10"},"callback_simple":{"enabled":"0","title":"G\u1ecdi t\u00f4i ngay","header":"G\u1ecdi ch\u00fang t\u00f4i ngay","footer_textarea":"\u0110\u00e2y l\u00e0 n\u1ed9i dung footer","submit_lbl":"G\u1eedi","input_name_lbl":"T\u00ean c\u1ee7a b\u1ea1n","input_name_ph":"Nh\u1eadp t\u00ean c\u1ee7a b\u1ea1n","input_phone_lbl":"S\u1ed1 \u0111i\u1ec7n tho\u1ea1i c\u1ee7a b\u1ea1n","input_phone_ph":"Nh\u1eadp s\u1ed1 \u0111i\u1ec7n tho\u1ea1i c\u1ee7a b\u1ea1n","input_option_lbl":"Contact Type","input_option_val":"Sales, Customer Support","place":"inner","pos":"11"},"callback_advanced":{"enabled":"0","title":"G\u1ecdi t\u00f4i ngay","callmenow_title":"G\u1ecdi t\u00f4i ngay","callmenow_header":"B\u1ea1n c\u00f3 mu\u1ed1n nh\u1eadn cu\u1ed9c g\u1ecdi l\u1ea1i kh\u00f4ng?","callmenow_notice":"","callmenow_footer_textarea":"D\u1eef li\u1ec7u b\u1ea1n nh\u1eadp v\u00e0o \u0111\u01b0\u1ee3c qu\u1ea3n l\u00fd b\u1edfi ch\u00fang t\u00f4i","callmenow_submit":"G\u1ecdi t\u00f4i ngay","callmenow_input_phone_ph":"Nh\u1eadp s\u1ed1 \u0111i\u1ec7n tho\u1ea1i c\u1ee7a b\u1ea1n","callmelater_title":"G\u1ecdi l\u1ea1i sau","callmelater_header":"Ch\u1ecdn th\u1eddi gian cho vi\u1ec7c g\u1ecdi l\u1ea1i","callmelater_notice":"","callmelater_footer_textarea":"D\u1eef li\u1ec7u b\u1ea1n nh\u1eadp v\u00e0o \u0111\u01b0\u1ee3c qu\u1ea3n l\u00fd b\u1edfi ch\u00fang t\u00f4i","callmelater_submit":"G\u1ecdi l\u1ea1i sau","callmelater_input_phone_ph":"Nh\u1eadp s\u1ed1 \u0111i\u1ec7n tho\u1ea1i c\u1ee7a b\u1ea1n","callmelater_days":"0","callmelater_time_min":"8","callmelater_time_max":"18","callmelater_min_interval":"30","leaveamsg_title":"\u0110\u1ec3 l\u1ea1i l\u1eddi nh\u1eafn","leaveamsg_header":"\u0110\u1ec3 l\u1ea1i l\u1eddi nh\u1eafn c\u1ee7a b\u1ea1n, ch\u00fang t\u00f4i s\u1ebd li\u00ean l\u1ea1c v\u1edbi b\u1ea1n s\u1edbm.","leaveamsg_notice":"","leaveamsg_footer_textarea":"D\u1eef li\u1ec7u b\u1ea1n nh\u1eadp v\u00e0o \u0111\u01b0\u1ee3c qu\u1ea3n l\u00fd b\u1edfi ch\u00fang t\u00f4i","leaveamsg_submit":"G\u1eedi","leaveamsg_input_message_ph":"Nh\u1eadp l\u1eddi nh\u1eafn c\u1ee7a b\u1ea1n","leaveamsg_input_phone_ph":"\u0110i\u1ec7n tho\u1ea1i c\u1ee7a b\u1ea1n","leaveamsg_input_email_ph":"Email c\u1ee7a b\u1ea1n","info_header":"Ch\u00fang t\u00f4i mu\u1ed1n bi\u1ebft v\u1ec1 b\u1ea1n nhi\u1ec1u h\u01a1n","info_submit":"G\u1eedi","info_input_email_lbl":"\u0110\u1ecba ch\u1ec9 email c\u1ee7a b\u1ea1n","info_input_email_ph":"Nh\u1eadp email c\u1ee7a b\u1ea1n","info_input_name_lbl":"T\u00ean c\u1ee7a b\u1ea1n","info_input_name_ph":"Nh\u1eadp t\u00ean c\u1ee7a b\u1ea1n","place":"inner","pos":"12"}},"nonce":{"cbb_callback":"cf9a9ce7d5"}}				
+				</script> 
+
+<!-- Chat Bubble -->
+<noscript>
+You need to enable JavaScript to run this app.
+</noscript>
+<div id="chat-bubble-root"></div>
+<script>!function(e){function t(t){for(var n,a,i=t[0],c=t[1],l=t[2],s=0,p=[];s<i.length;s++)a=i[s],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&p.push(o[a][0]),o[a]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(f&&f(t);p.length;)p.shift()();return u.push.apply(u,l||[]),r()}function r(){for(var e,t=0;t<u.length;t++){for(var r=u[t],n=!0,i=1;i<r.length;i++){var c=r[i];0!==o[c]&&(n=!1)}n&&(u.splice(t--,1),e=a(a.s=r[0]))}return e}var n={},o={1:0},u=[];function a(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,a),r.l=!0,r.exports}a.e=function(e){var t=[],r=o[e];if(0!==r)if(r)t.push(r[2]);else{var n=new Promise((function(t,n){r=o[e]=[t,n]}));t.push(r[2]=n);var u,i=document.createElement("script");i.charset="utf-8",i.timeout=120,a.nc&&i.setAttribute("nonce",a.nc),i.src=function(e){return a.p+"static/js/"+({}[e]||e)+"."+{3:"a985462a"}[e]+".chunk.js"}(e);var c=new Error;u=function(t){i.onerror=i.onload=null,clearTimeout(l);var r=o[e];if(0!==r){if(r){var n=t&&("load"===t.type?"missing":t.type),u=t&&t.target&&t.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,r[1](c)}o[e]=void 0}};var l=setTimeout((function(){u({type:"timeout",target:i})}),12e4);i.onerror=i.onload=u,document.head.appendChild(i)}return Promise.all(t)},a.m=e,a.c=n,a.d=function(e,t,r){a.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,t){if(1&t&&(e=a(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(a.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)a.d(r,n,function(t){return e[t]}.bind(null,n));return r},a.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(t,"a",t),t},a.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},a.p="/",a.oe=function(e){throw console.error(e),e};var i=this["webpackJsonpchat-bubble"]=this["webpackJsonpchat-bubble"]||[],c=i.push.bind(i);i.push=t,i=i.slice();for(var l=0;l<i.length;l++)t(i[l]);var f=c;r()}([])</script> 
+<!-- // end Chat Bubble -->
+
+<div class="gtranslate_wrapper" id="gt-wrapper-12366638"></div>
+<script>
+const linkNews = "tin-tuc";
+const linkIndustry ="phuc-vu-trong-nganh-xay-dung";
+const linkProductProcessing ="gia-cong-san-pham-nhom-hoan-thien-xay-dung-va-kien-truc-noi-ngoai-that"
+	
+const setAttributeForSearchInput = ()=>{
+	const header = document.querySelector('.header-mainnav')
+    const inputSearch = header.querySelector("input[type=search]").setAttribute("placeholder", "Tìm kiếm...");
+}
+
+const changeButtonMoreOfPosts =()=>{
+	if(window.location.pathname.split("/").includes(linkNews)){
+		const buttonMore = document.querySelectorAll('.entry-footer > a');
+	    buttonMore.forEach((element)=>{
+		   element.innerHTML = "<span style='text-transform: capitalize;'>Xem</span> thêm";
+		   element.classList.add("button-more");
+		   element.style.textDecoration ="none"
+	    })
+	}
+}
+
+const editColorForTitlePrimarySlidebar =()=>{
+	if(window.location.pathname.split("/").includes(linkNews)){
+	   const primarySidebar = document.querySelector('.primary-sidebar');
+	   const titles = primarySidebar.querySelectorAll(".widget-title");
+	   titles.forEach(title =>{
+	   	title.style.color ="#1e99c8";
+	   })
+	}
+}
+
+const removeAttributeHrefService =()=>{
+	if(window.location.pathname.split("/").includes(linkIndustry)){
+		const service = document.querySelector(".service");
+		const elements= service.querySelectorAll("a");
+		elements.forEach((element)=>{
+			element.removeAttribute("href");
+		})
+	}
+}
+
+const removePaddingContainerPageHeader =()=>{
+	if(window.location.pathname.split("/").includes(linkProductProcessing)){
+		const container = document.querySelector(".page-header > .container");	
+		if (window.matchMedia("(min-width: 1200px)").matches) {
+			container.style.width ="1325px"
+		}			
+	}
+	
+}
+// run
+setAttributeForSearchInput();
+changeButtonMoreOfPosts();
+editColorForTitlePrimarySlidebar();
+removeAttributeHrefService();
+removePaddingContainerPageHeader();
+</script> 
+<script id="tmpl-rwmb-media-item" type="text/html">
+	<input type="hidden" name="{{{ data.controller.fieldName }}}" value="{{{ data.id }}}" class="rwmb-media-input">
+	<div class="rwmb-file-icon">
+		<# if ( data.sizes ) { #>
+			<# if ( data.sizes.thumbnail ) { #>
+				<img src="{{{ data.sizes.thumbnail.url }}}">
+			<# } else { #>
+				<img src="{{{ data.sizes.full.url }}}">
+			<# } #>
+		<# } else { #>
+			<# if ( data.image && data.image.src && data.image.src !== data.icon ) { #>
+				<img src="{{ data.image.src }}" />
+			<# } else { #>
+				<img src="{{ data.icon }}" />
+			<# } #>
+		<# } #>
+	</div>
+	<div class="rwmb-file-info">
+		<a href="{{{ data.url }}}" class="rwmb-file-title" target="_blank">
+			<# if( data.title ) { #>
+				{{{ data.title }}}
+			<# } else { #>
+				{{{ i18nRwmbMedia.noTitle }}}
+			<# } #>
+		</a>
+		<div class="rwmb-file-name">{{{ data.filename }}}</div>
+		<div class="rwmb-file-actions">
+			<a class="rwmb-edit-media" title="{{{ i18nRwmbMedia.edit }}}" href="{{{ data.editLink }}}" target="_blank">
+				{{{ i18nRwmbMedia.edit }}}
+			</a>
+			<a href="#" class="rwmb-remove-media" title="{{{ i18nRwmbMedia.remove }}}">
+				{{{ i18nRwmbMedia.remove }}}
+			</a>
+		</div>
+	</div>
+</script> 
+<script id="tmpl-rwmb-media-status" type="text/html">
+	<# if ( data.maxFiles > 0 ) { #>
+		{{{ data.length }}}/{{{ data.maxFiles }}}
+		<# if ( 1 < data.maxFiles ) { #>{{{ i18nRwmbMedia.multiple }}}<# } else {#>{{{ i18nRwmbMedia.single }}}<# } #>
+	<# } #>
+</script> 
+<script id="tmpl-rwmb-media-button" type="text/html">
+	<a class="button">{{{ data.text }}}</a>
+</script> 
+<script id="tmpl-rwmb-image-item" type="text/html">
+	<input type="hidden" name="{{{ data.controller.fieldName }}}" value="{{{ data.id }}}" class="rwmb-media-input">
+	<div class="rwmb-file-icon">
+		<# if ( 'image' === data.type && data.sizes ) { #>
+			<# if ( data.sizes[data.controller.imageSize] ) { #>
+				<img src="{{{ data.sizes[data.controller.imageSize].url }}}">
+			<# } else { #>
+				<img src="{{{ data.sizes.full.url }}}">
+			<# } #>
+		<# } else { #>
+			<# if ( data.image && data.image.src && data.image.src !== data.icon ) { #>
+				<img src="{{ data.image.src }}" />
+			<# } else { #>
+				<img src="{{ data.icon }}" />
+			<# } #>
+		<# } #>
+	</div>
+	<div class="rwmb-image-overlay"></div>
+	<div class="rwmb-image-actions">
+		<a class="rwmb-image-edit rwmb-edit-media" title="{{{ i18nRwmbMedia.edit }}}" href="{{{ data.editLink }}}" target="_blank">
+			<span class="dashicons dashicons-edit"></span>
+		</a>
+		<a href="#" class="rwmb-image-delete rwmb-remove-media" title="{{{ i18nRwmbMedia.remove }}}">
+			<span class="dashicons dashicons-no-alt"></span>
+		</a>
+	</div>
+</script>
+<link rel='stylesheet' id='cbb-main-css' href='https://leanjsc.com/wp-content/plugins/chat-bubble/assets/css/main.css?ver=6.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animations-css' href='https://leanjsc.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.15.3' type='text/css' media='all' />
+<script type='text/javascript' src='https://leanjsc.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8' id='swv-js'></script> 
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/leanjsc.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8' id='contact-form-7-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/themes/bigger/js/jquery.isotope.min.js?ver=20180910' id='isotope-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/themes/bigger/js/slick.min.js?ver=20190221' id='slick-slider-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/themes/bigger/js/elementor.js?ver=20190221' id='elementor-widget-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/themes/bigger/js/scripts.js?ver=20180910' id='bigger-scripts-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/themes/bigger/js/header-mobile.js?ver=20190221' id='header-mobile-scripts-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b' id='jquery-masonry-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/plugins/chat-bubble/assets/js/runtime.js?ver=6.3.2' id='cbb-runtime-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/plugins/chat-bubble/assets/js/main.js?ver=6.3.2' id='cbb-main-js'></script> 
+<script id="gt_widget_script_12366638-js-before" type="text/javascript">
+window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {};window.gtranslateSettings['12366638'] = {"default_language":"vi","languages":["en","ja","ko","vi"],"url_structure":"none","flag_style":"3d","flag_size":24,"wrapper_selector":"#gt-wrapper-12366638","alt_flags":[],"horizontal_position":"right","vertical_position":"top","flags_location":"\/wp-content\/plugins\/gtranslate\/flags\/"};
+</script><script src="https://leanjsc.com/wp-content/plugins/gtranslate/js/flags.js?ver=6.3.2" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/" data-gt-orig-domain="leanjsc.com" data-gt-widget-id="12366638" defer></script><script type='text/javascript' src='https://leanjsc.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.15.3' id='elementor-webpack-runtime-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.15.3' id='elementor-frontend-modules-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script> 
+<script id="elementor-frontend-js-before" type="text/javascript">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Chia s\u1ebb tr\u00ean Facebook","shareOnTwitter":"Chia s\u1ebb tr\u00ean Twitter","pinIt":"Ghim n\u00f3","download":"T\u1ea3i xu\u1ed1ng","downloadImage":"T\u1ea3i h\u00ecnh \u1ea3nh","fullscreen":"To\u00e0n m\u00e0n h\u00ecnh","zoom":"Thu ph\u00f3ng","share":"Chia s\u1ebb","playVideo":"Ch\u01a1i Video","previous":"Previous","next":"Next","close":"\u0110\u00f3ng","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},
+"version":"3.15.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"landing-pages":true},"urls":{"assets":"https:\/\/leanjsc.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":272,"title":"Lean%20JSC%20%E2%80%93%20We%20make%20innovation%20simple","excerpt":"","featuredImage":false}};
+</script> 
+<script type='text/javascript' src='https://leanjsc.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.15.3' id='elementor-frontend-js'></script>
+</body>
+</html>
