@@ -1,0 +1,21 @@
+a.scroll-top{
+	color:white;
+	background-color: var(--secondary-color);
+	text-decoration: none;
+}
+a.scroll-top:hover{
+	background-color: var(--primary-color);
+	color:white;
+}
+
+.a-in-top{
+	cursor: pointer;
+}
+.a-in-top:hover{
+	color:white !important;
+}
+
+.scroll-top.on {
+    right: 30px;
+    bottom: 140px;
+}
