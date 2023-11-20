@@ -1,3 +1,4 @@
+
 a.scroll-top{
 	color:white;
 	background-color: var(--secondary-color);
@@ -18,4 +19,18 @@ a.scroll-top:hover{
 .scroll-top.on {
     right: 30px;
     bottom: 140px;
+}
+
+#primary-menu{
+	margin-bottom: 0px;
+}
+
+.dt-mobile-header .mini-contacts {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.mini-contacts a{
+	color: var(--secondary-color);
+    text-decoration: none;
 }

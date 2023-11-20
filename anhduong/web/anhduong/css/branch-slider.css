@@ -7,15 +7,15 @@
 }
 
 
-.slick-slide {
-  height: 500px;
+.branch-slider .slick-slide {
+  height: 100px;
 }
 
 
 
 .branch-slider-container {
   position: relative;
-  height: 100%;
+  height: 100px;
   width: 100%;
   
   min-width: 100%;

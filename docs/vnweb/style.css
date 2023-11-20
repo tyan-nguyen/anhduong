@@ -141,7 +141,7 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #36344D;
+  background-color: #673de6;
 }
 @media screen and (max-width: 580px) and (min-width: 0px) {
   h1, p, .link-container {

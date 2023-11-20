@@ -864,7 +864,8 @@ blockquote,
 }
 .top-bar {
   min-height: 0px;
-  padding: 5px 0px 5px;
+  padding: 0px;
+  /*padding: 5px 0px 5px;*/
 }
 .top-bar,
 .top-bar a:not(.wpml-ls-link):not(.wpml-ls-item-toggle),

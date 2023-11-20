@@ -40,7 +40,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 13px;
-  color: #53bb01;
+  color: var(--primary-color);
   position: absolute;
   right: 100%;
   white-space: nowrap;

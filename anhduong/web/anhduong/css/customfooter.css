@@ -15,7 +15,7 @@
   display: flex;
   color: #ffffff;
   font-size: 16px;
-  padding: 35px 50px 40px 100px;
+  padding:80px 50px 150px 50px;
   flex-direction: column;
 }
 .custom-footer p {
@@ -30,7 +30,8 @@
 }
 
 .custom-footer-logo > img {
-  width: 225px;
+  /*width: 225px;*/
+  width: 350px;
 }
 
 .custom-footer-button {
@@ -86,7 +87,7 @@
   transition: all 0.5s ease;
   border-radius: 0;
   line-height: 1.5em;
-  padding: 6px;
+  padding: 3px;
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -157,7 +158,8 @@
     margin-bottom: 10px;
   }
   .custom-footer-logo > img {
-    width: 130px;
+    /*width: 130px;*/
+    width: 225px;
   }
   .custom-footer > .custom-footer-address {
     flex-wrap: wrap;
@@ -187,12 +189,13 @@
     background-color: #ffffff;
     height: 35px;
     text-transform: uppercase;
-    color: #1e99c8;
+    color: var(--primary-color);
     border: none;
     font-weight: 600;
     margin-right: 0px;
     cursor: pointer;
     font-size: 12px;
+    padding: 10px 10px;
   }
   .custom-footer-social > a:last-child {
     margin-right: 0px;
