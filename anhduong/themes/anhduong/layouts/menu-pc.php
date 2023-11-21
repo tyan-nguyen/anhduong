@@ -7,7 +7,10 @@
         </div>
       </div>
       <div class="right-widgets mini-widgets">
-      	<a href="#" class="mini-contacts show-on-desktop in-top-bar-left in-menu-second-switch a-in-top"><i class="fa-solid fa-chart-line"></i> Kiến tạo thi công và hoàn thiện</a> &nbsp;
+      
+      
+            
+      	<a href="#" class="mini-contacts show-on-desktop in-top-bar-left in-menu-second-switch a-in-top"><i class="fa-solid fa-chart-line"></i> Kiến tạo & thi công hoàn thiện</a> &nbsp;
       	<span class="mini-contacts phone show-on-desktop in-top-bar-left in-menu-second-switch">
       		<a href="tel:0388923998"><i class="fa-solid fa-headphones"></i> 0388.923.998</a>
       	</span>
@@ -23,6 +26,32 @@
             </ul>
           </div>
         </div>
+        
+          <div class="search-box mini-contacts show-on-desktop in-top-bar-left in-menu-second-switch a-in-top">
+       <form id="frm1" action="" class="search-form">
+                <div class="form-group has-feedback" style="margin-bottom:0px;border-radius: 40px;">
+            		<label for="search" class="sr-only">Search</label>
+            		<input type="text" class="form-control" name="search" id="search" placeholder="search" style="padding-top:0px">
+              		<span class="glyphicon glyphicon-search form-control-feedback"></span>
+              		
+            	</div>
+            </form>           
+            
+      </div>
+      
+      <div class="search-box search-box-mobile mini-contacts in-top-bar-left in-menu-second-switch a-in-top">
+       <form id="frm2" action="" >
+          <div class="input-group">
+            <input type="text" name="search" class="form-control" placeholder="Search" style="margin-bottom:0px;border-top-left-radius: 40px;border-bottom-left-radius: 40px;">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"  style="padding:10px 5px 4px 5px; border-top-right-radius: 40px;border-bottom-right-radius: 40px;">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
       </div>
     </div>
     <header class="header-bar">
