@@ -25,7 +25,7 @@ class PageAsset extends AssetBundle
         'anhduong/bootstrap-3.3.7/dist/css/bootstrap.min.css',
         '//fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C600%2C700%7CRoboto+Condensed%3A400%2C600%2C700&#038;ver=7.6.2.3',
         'anhduong/css/main.css?v=1.0.0',
-        'anhduong/css/custom.css?v=1.0.0', //for header
+        'anhduong/css/custom.css?v=1.0.1', //for header
         'anhduong/css/wc-dt-custom.css?v=1.0.0', //for sidebar sản phẩm mới, danh mục sản phẩm
         'anhduong/css/media.css?v=1.0.0', //ảnh hưởng chia cột
         'anhduong/fontawesome-free-6.4.2-web/css/all.min.css', //fontawesome 6x

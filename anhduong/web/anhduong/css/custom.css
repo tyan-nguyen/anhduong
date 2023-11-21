@@ -1990,14 +1990,16 @@ li:not(.dt-mega-menu) .sub-nav {
   background-color: rgba(0,102,171,0.07);
   background: rgba(0,102,171,0.07);
   background: -webkit-linear-gradient(135deg, rgba(0,102,171,0.07) 30%, rgba(60,180,231,0.07) 100%);
-  background: linear-gradient(135deg, rgba(0,102,171,0.07) 30%, rgba(60,180,231,0.07) 100%);
+  /*background: linear-gradient(135deg, rgba(184,63,38,0.07) 30%, rgba(223,126,28,0.07) 100%);*/
+  background: linear-gradient(135deg, rgba(184,63,38,0.07) 30%, rgba(223,126,28,0.07) 100%);
 }
 .top-header .sub-nav.hover-style-bg > li:not(.dt-mega-parent).act > a,
 .top-header .sub-nav.gradient-hover.hover-style-bg > li:not(.dt-mega-parent).act > a {
   background-color: rgba(0,102,171,0.07);
   background: rgba(0,102,171,0.07);
   background: -webkit-linear-gradient(135deg, rgba(0,102,171,0.07) 30%, rgba(60,180,231,0.07) 100%);
-  background: linear-gradient(135deg, rgba(0,102,171,0.07) 30%, rgba(60,180,231,0.07) 100%);
+  /*background: linear-gradient(135deg, rgba(184,63,38,0.07) 30%, rgba(223,126,28,0.07) 100%);*/
+  background: linear-gradient(135deg, rgba(184,63,38,0.07) 30%, rgba(223,126,28,0.07) 100%);
 }
 .main-nav .sub-nav > li.act:not(.dt-mega-parent):not(.wpml-ls-item):not(.wpml-ls-item) > a,
 .main-nav .sub-nav > li.act:not(.dt-mega-parent):not(.wpml-ls-item) > a i[class^="fa"],
