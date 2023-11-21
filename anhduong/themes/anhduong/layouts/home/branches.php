@@ -1,6 +1,11 @@
 <div style="margin:20px 10px 60px 10px;">
   <div class="container-fluid" style="margin:0 auto;padding:0;">
-  
+  <div class="row">
+	<div class="col-md-12" style="text-align: center">
+		<h2 class="h2-block-title">KHÁCH HÀNG VÀ ĐỐI TÁC</h2>
+	</div>
+</div>
+
 <div class="branch-slider">
   <div>
     <div class="branch-slider-container">

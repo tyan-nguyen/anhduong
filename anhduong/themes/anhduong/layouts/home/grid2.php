@@ -2,7 +2,7 @@
 <div class="container">
 <div class="row">
 	<div class="col-md-12" style="text-align: center">
-		<h2 style="margin-bottom:20px;font-size:1.5em">TIÊU CHUẨN KỸ THUẬT</h2>
+		<h2 class="h2-block-title">TIÊU CHUẨN KỸ THUẬT</h2>
 	</div>
 	<div class="col-md-6">
 		<div style="padding-bottom:30px;margin-bottom:30px;background-color: #ddd;text-align: center;">

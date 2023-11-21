@@ -34,3 +34,9 @@ a.scroll-top:hover{
 	color: var(--secondary-color);
     text-decoration: none;
 }
+
+.h2-block-title{
+	margin-bottom:20px;
+	font-size:1.5em;
+	color: var(--secondary-color);
+}

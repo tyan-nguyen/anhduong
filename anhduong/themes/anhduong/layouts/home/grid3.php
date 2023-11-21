@@ -2,7 +2,7 @@
 <div class="container">
 <div class="row">
 	<div class="col-md-12" style="text-align: center">
-		<h2 style="margin-bottom:10px;font-size:1.5em">SẢN PHẨM</h2>
+		<h2 class="h2-block-title">SẢN PHẨM</h2>
 		<p style="margin-bottom:30px;font-size:1.1em">
 			Ánh Dương là công ty hàng đầu trong lĩnh vực gia công inox trang trí, phục vụ nhiều dự án, chúng tôi không ngừng phát triển và nâng cao chất lượng sản phẩm, dịch vụ, đáp ứng các tiêu chuẩn kỹ thuật cao.
 		</p>
