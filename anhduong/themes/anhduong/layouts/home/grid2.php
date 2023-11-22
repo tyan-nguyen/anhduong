@@ -6,7 +6,7 @@
 	</div>
 	<div class="col-md-6">
 		<div style="padding-bottom:30px;margin-bottom:30px;background-color: #ddd;text-align: center;">
-	<img class="vc_single_image-img" style="width:100%" src="/anhduong/images/tieuchuankythuat.jpg" alt="anh-nha-may-1" title="anh-nha-may-1">
+	<img class="vc_single_image-img" style="width:100%" src="/anhduong/images/vat-lieu-gia-cong-1.jpg" alt="anh-nha-may-1" title="anh-nha-may-1">
 
 <h2 style="font-weight:bold;margin-top:10px;margin-bottom:20px;font-size: 1.3em;">VẬT LIỆU GIA CÔNG</h2>
 
@@ -18,7 +18,7 @@
 		<div style="padding-bottom:30px;margin-bottom:30px;background-color: #ddd;text-align: center;">
 
 
-<img class="vc_single_image-img" style="width:100%" src="/anhduong/images/tieuchuankythuat.jpg" alt="anh-nha-may-1" title="anh-nha-may-1">
+<img class="vc_single_image-img" style="width:100%" src="/anhduong/images/nang-luc-nha-may-1.jpg" alt="anh-nha-may-1" title="anh-nha-may-1">
 
 <h2 style="font-weight:bold;margin-top:10px;margin-bottom:20px;font-size: 1.3em;">NĂNG LỰC NHÀ MÁY</h2>
 

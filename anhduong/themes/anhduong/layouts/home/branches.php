@@ -9,49 +9,45 @@
 <div class="branch-slider">
   <div>
     <div class="branch-slider-container">
-       <img src="/anhduong/images/branch-1.png" alt="branch" /> 
+       <img src="/anhduong/images/doi-tac/doitac-1.webp" alt="branch" /> 
     </div>
   </div>
   <div>
    <div class="branch-slider-container">
-       <img src="/anhduong/images/branch-1.png" alt="branch" /> 
+       <img src="/anhduong/images/doi-tac/doitac-2.webp" alt="branch" /> 
     </div>
   </div>
   <div>
     <div class="branch-slider-container">
-       <img src="/anhduong/images/branch-1.png" alt="branch" /> 
+       <img src="/anhduong/images/doi-tac/doitac-3.webp" alt="branch" /> 
     </div>
   </div>
   
   <div>
     <div class="branch-slider-container">
-       <img src="/anhduong/images/branch-1.png" alt="branch" /> 
+       <img src="/anhduong/images/doi-tac/doitac-4.webp" alt="branch" /> 
     </div>
   </div>
   
   <div>
     <div class="branch-slider-container">
-       <img src="/anhduong/images/branch-1.png" alt="branch" /> 
+       <img src="/anhduong/images/doi-tac/doitac-5.webp" alt="branch" /> 
     </div>
   </div>
   
   <div>
     <div class="branch-slider-container">
-       <img src="/anhduong/images/branch-1.png" alt="branch" /> 
+       <img src="/anhduong/images/doi-tac/doitac-6.webp" alt="branch" /> 
     </div>
   </div>
   
   <div>
     <div class="branch-slider-container">
-       <img src="/anhduong/images/branch-1.png" alt="branch" /> 
+       <img src="/anhduong/images/doi-tac/doitac-7.webp" alt="branch" /> 
     </div>
   </div>
   
-  <div>
-    <div class="branch-slider-container">
-       <img src="/anhduong/images/branch-1.png" alt="branch" /> 
-    </div>
-  </div>
+ 
   
 </div>
   

@@ -33,10 +33,10 @@ class IndexAsset extends AssetBundle
         'anhduong/js/slick/slick.css?v=1.0.0',
         'anhduong/js/slick/slick-theme.css?v=1.0.0',
         'anhduong/css/slide.css?v=1.0.0',
-        'anhduong/css/branch-slider.css?v=1.0.0',
+        'anhduong/css/branch-slider.css?v=1.0.1',
         
         'anhduong/css/chat.css?v=1.0.0', //chat bundle css
-        'anhduong/css/me.css?v=1.0.3', //additional custom css
+        'anhduong/css/me.css?v=1.0.4', //additional custom css
     ];
     public $js = [
         //in head

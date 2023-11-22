@@ -31,7 +31,7 @@
        <form id="frm1" action="" class="search-form">
                 <div class="form-group has-feedback" style="margin-bottom:0px;border-radius: 40px;">
             		<label for="search" class="sr-only">Search</label>
-            		<input type="text" class="form-control" name="search" id="search" placeholder="search" style="padding-top:0px">
+            		<input type="text" class="form-control" name="search" id="search" placeholder="search" style="padding-top:3px;height:25px;font-size: 12px">
               		<span class="glyphicon glyphicon-search form-control-feedback"></span>
               		
             	</div>
@@ -39,12 +39,12 @@
             
       </div>
       
-      <div class="search-box search-box-mobile mini-contacts in-top-bar-left in-menu-second-switch a-in-top">
+      <div class="search-box search-box-mobile mini-contacts in-top-bar-left in-menu-second-switch a-in-top" style="margin-top:10px">
        <form id="frm2" action="" >
           <div class="input-group">
             <input type="text" name="search" class="form-control" placeholder="Search" style="margin-bottom:0px;border-top-left-radius: 40px;border-bottom-left-radius: 40px;">
             <div class="input-group-btn">
-              <button class="btn btn-default" type="submit"  style="padding:10px 5px 4px 5px; border-top-right-radius: 40px;border-bottom-right-radius: 40px;">
+              <button class="btn btn-default" type="submit"  style="padding:11px 15px 4px 15px; border-top-right-radius: 40px;border-bottom-right-radius: 40px;">
                 <i class="glyphicon glyphicon-search"></i>
               </button>
             </div>
