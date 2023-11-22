@@ -32,7 +32,7 @@ class IndexAsset extends AssetBundle
         //for slider & branches
         'anhduong/js/slick/slick.css?v=1.0.0',
         'anhduong/js/slick/slick-theme.css?v=1.0.0',
-        'anhduong/css/slide.css?v=1.0.0',
+        'anhduong/css/slide.css?v=1.0.1',
         'anhduong/css/branch-slider.css?v=1.0.1',
         
         'anhduong/css/chat.css?v=1.0.0', //chat bundle css
