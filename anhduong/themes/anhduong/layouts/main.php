@@ -66,7 +66,7 @@ var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Twee
 </script> 
 
 <!-- for main.js -->
-<script type='text/javascript' src='https://savimec.vn/wp-content/themes/dt-the7/js/above-the-fold.min.js'></script>
+<script type='text/javascript' src='/anhduong/js/above-the-fold.min.js'></script>
 
 </head>
 
@@ -93,6 +93,9 @@ var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Twee
     <!-- #footer --> 
     
     <a href="#" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a> 
+    <a href="https://www.messenger.com/t/anyu1989" target="_blank" class="button-action-bottom button-messenger"><img src="/anhduong/images/fbmessenger.svg" /></a> 
+    <a href="tel:0388923998" class="button-action-bottom button-call"><img src="/anhduong/images/calling.svg" /></a>     
+    <a href="https://zalo.me/0374711908" target="_blank" class="button-action-bottom button-zalo"><img src="/anhduong/images/zalo.svg" /></a>
 </div><!-- #page --> 
 
 
@@ -100,14 +103,14 @@ var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Twee
 window.chatBubbleConfig = {
 	"ajax_url":"#",
 	"options":{
-		"enabled":1,
+		"enabled":0,
 		"enabled_font_opensans":1,
 		"class":"",
 		"color":"#df7e1c",
 		"premium":0,
 		"intro":"Chat với chúng tôi",
-		"enabled_intro":1,
-		"enabled_greeting":1,
+		"enabled_intro":0,
+		"enabled_greeting":0,
 		"greeting_show":0,
 		"greeting_name":"Ánh Dương Metal",
 		"greeting_label":"We make innovation simple",

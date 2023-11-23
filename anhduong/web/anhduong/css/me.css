@@ -3,6 +3,9 @@ a.scroll-top{
 	color:white;
 	background-color: var(--secondary-color);
 	text-decoration: none;
+	border-radius: 60px;
+	width: 44px;
+    height: 44px; 
 }
 a.scroll-top:hover{
 	background-color: var(--primary-color);
@@ -18,7 +21,7 @@ a.scroll-top:hover{
 
 .scroll-top.on {
     right: 30px;
-    bottom: 140px;
+    bottom: 175px;
 }
 
 #primary-menu{
@@ -39,6 +42,30 @@ a.scroll-top:hover{
 	margin-bottom:20px;
 	font-size:1.5em;
 	color: var(--secondary-color);
+}
+
+/*button bottom*/
+.button-action-bottom{
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+    height: 44px;  
+    color:white;
+	text-decoration: none; 
+}
+.button-messenger{ 
+	right: 30px;
+    bottom: 10px;
+}
+.button-zalo{
+	right: 30px;
+    bottom: 65px;
+}
+.button-call{
+	right: 30px;
+    bottom: 120px;
 }
 
 /**search**/

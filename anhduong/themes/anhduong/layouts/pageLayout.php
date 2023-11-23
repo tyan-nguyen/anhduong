@@ -62,7 +62,7 @@ var dtLocal = {
 var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp","google":"Share on Google Plus"},"overlayOpacity":"85"};
 
 </script> 
-<script type='text/javascript' src='https://savimec.vn/wp-content/themes/dt-the7/js/above-the-fold.min.js?ver=7.6.2.3'></script>
+<script type='text/javascript' src='/anhduong/js/above-the-fold.min.js'></script>
 
 </head>
 <body data-rsssl=1 class="page-template-default page page-id-95 the7-core-ver-2.0.4 woocommerce-no-js dt-responsive-on accent-gradient srcset-enabled btn-flat custom-btn-color custom-btn-hover-color phantom-fade phantom-shadow-decoration phantom-main-logo-on floating-top-bar sticky-mobile-header top-header first-switch-logo-left first-switch-menu-right second-switch-logo-left second-switch-menu-right right-mobile-menu layzr-loading-on popup-message-style dt-fa-compatibility the7-ver-7.6.2.3 wpb-js-composer js-comp-ver-6.0.2 vc_responsive">
