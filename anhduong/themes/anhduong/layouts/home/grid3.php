@@ -9,11 +9,11 @@
 	</div>
 	<div class="col-md-4">
 		<div style="margin-bottom:30px;text-align: center;">
-	<img class="vc_single_image-img" style="width:100%" src="/anhduong/images/sp-1.jpg" alt="anh-nha-may-1" title="anh-nha-may-1">
+	<img class="vc_single_image-img" style="width:100%" src="/anhduong/images/sp-1.jpg?v=1" alt="anh-nha-may-1" title="anh-nha-may-1">
 
 <h2 style="font-weight:bold;margin-top:10px;font-size: 1.3em;">TRẦN KIM LOẠI</h2>
 
-<p style="margin-bottom:20px;font-size: 1em;">Với chất liệu inox bền bỉ, được mạ lên nhiều màu sắc độc đáo như vàng, trắng, vàng hồng,… cùng với hai loại inox phổ biến inox bóng gương và inox sọc nhuyễn, giúp thỏa sức sáng tạo ra nhiều sản phẩm đa dạng hơn cả về mẫu mã, chủng loại của sản phẩm. </p>
+<p style="margin-bottom:20px;font-size: 1em;text-align: justify;">Công Ty Ánh Dương có thể thiết kế và gia công và lắp ráp các loại trần mọi công trình, bao gồm B-C-U celling, clip-in và Honey comb</p>
 
 <div class="btn-align-center"><a href="#" class="default-btn-shortcode dt-btn dt-btn-s  vc_custom_1565709180471" id="default-btn-97a14c8d502be058ab160a4afc979b6e"><span>XEM THÊM</span></a></div>
 		</div>
@@ -27,7 +27,7 @@
 
 <h2 style="font-weight:bold;margin-top:10px;font-size: 1.3em;">TẤM ỐP</h2>
 
-<p style="margin-bottom:20px;font-size: 1em;">Với chất liệu inox bền bỉ, được mạ lên nhiều màu sắc độc đáo như vàng, trắng, vàng hồng,… cùng với hai loại inox phổ biến inox bóng gương và inox sọc nhuyễn, giúp thỏa sức sáng tạo ra nhiều sản phẩm đa dạng hơn cả về mẫu mã, chủng loại của sản phẩm. </p>
+<p style="margin-bottom:20px;font-size: 1em;text-align: justify;">Với chất liệu inox bền bỉ, được mạ lên nhiều màu sắc độc đáo như vàng, trắng, vàng hồng,… cùng với hai loại inox phổ biến inox bóng gương và inox sọc nhuyễn, giúp thỏa sức sáng tạo ra nhiều sản phẩm đa dạng hơn cả về mẫu mã, chủng loại của sản phẩm. </p>
 
 <div class="btn-align-center"><a href="#" class="default-btn-shortcode dt-btn dt-btn-s  vc_custom_1565709180471" id="default-btn-97a14c8d502be058ab160a4afc979b6e"><span>XEM THÊM</span></a></div>
 		</div>
@@ -42,7 +42,7 @@
 
 <h2 style="font-weight:bold;margin-top:10px;font-size: 1.3em;">CỬA INOX</h2>
 
-<p style="margin-bottom:20px;font-size: 1em;">Với chất liệu inox bền bỉ, được mạ lên nhiều màu sắc độc đáo như vàng, trắng, vàng hồng,… cùng với hai loại inox phổ biến inox bóng gương và inox sọc nhuyễn, giúp thỏa sức sáng tạo ra nhiều sản phẩm đa dạng hơn cả về mẫu mã, chủng loại của sản phẩm. </p>
+<p style="margin-bottom:20px;font-size: 1em;text-align: justify;">Khung cửa inox còn được thiết kế với những tạo hình đặc biệt, góp phần tạo nên vẻ đẹp riêng cho từng không gian. Chính vì vậy trước khi chọn được khung mẫu cửa inox đẹp, phù hợp với không gian. Bạn cần xác định cấu trúc của khung cửa là dạng vòm hay dạng uốn cong, dạng thẳng hay ngang thông thường... Từ đó có thể lựa chọn được mẫu khung cửa inox phù hợp.</p>
 
 <div class="btn-align-center"><a href="#" class="default-btn-shortcode dt-btn dt-btn-s  vc_custom_1565709180471" id="default-btn-97a14c8d502be058ab160a4afc979b6e"><span>XEM THÊM</span></a></div>
 		</div>

@@ -3,7 +3,7 @@
   
 <div class="slider">
   <div>
-    <div class="slideCopy-container" style="background-image: url(/anhduong/images/slide-6.jpg);">
+    <div class="slideCopy-container" style="background-image: url(/anhduong/images/slide-6.jpg?v=5);">
     	<!-- <div class="slideCopy-tilte"><h2>Design and Build</h2></div> -->
         <div class="slideCopy-content">
         <h2>Design & Build</h2>
@@ -13,7 +13,7 @@
     </div>
   </div>
   <div>
-    <div class="slideCopy-container" style="background-image: url(/anhduong/images/slide-7.jpg);">
+    <div class="slideCopy-container" style="background-image: url(/anhduong/images/slide-7.jpg?v=1);">
     	
     	<!-- <div class="slideCopy-tilte"><h2>Ốp thang máy</h2></div> -->
         <div class="slideCopy-content">
@@ -24,7 +24,7 @@
     </div>
   </div>
   <div>
-    <div class="slideCopy-container" style="background-image: url(/anhduong/images/slide-8.jpg);">
+    <div class="slideCopy-container" style="background-image: url(/anhduong/images/slide-8.jpg?v=5);">
     	<!-- <div class="slideCopy-tilte"><h2>Năng lực thi công công trình</h2></div> -->
         <div class="slideCopy-content">
         <h2>Năng lực thi công công trình</h2>

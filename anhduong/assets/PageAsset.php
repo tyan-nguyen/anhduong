@@ -32,7 +32,7 @@ class PageAsset extends AssetBundle
         'anhduong/css/customfooter.css?v=1.0.1', //for footer
         'anhduong/css/chat.css?v=1.0.0', //chat bundle css
         //'anhduong/css/copy-from-index.css',
-        'anhduong/css/me.css?v=1.0.4', //additional custom css
+        'anhduong/css/me.css?v=1.0.5', //additional custom css
     ];
     public $js = [
         //in head

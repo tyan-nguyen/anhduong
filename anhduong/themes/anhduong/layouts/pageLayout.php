@@ -82,7 +82,10 @@ var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Twee
     <?=  $this->render('footer_leanjs') ?>
     <!-- #footer --> 
     
-    <a href="#" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a> 
+     <a href="#" class="scroll-top"><i class="fa-solid fa-arrow-up"></i></a> 
+    <a href="https://www.messenger.com/t/anyu1989" target="_blank" class="button-action-bottom button-messenger"><img src="/anhduong/images/fbmessenger.svg" /></a> 
+    <a href="tel:0388923998" class="button-action-bottom button-call"><img src="/anhduong/images/calling.svg" /></a>     
+    <a href="https://zalo.me/0388923998" target="_blank" class="button-action-bottom button-zalo"><img src="/anhduong/images/zalo.svg" /></a>
     
 </div><!-- #page --> 
 
@@ -91,7 +94,7 @@ var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Twee
 window.chatBubbleConfig = {
 	"ajax_url":"#",
 	"options":{
-		"enabled":1,
+		"enabled":0,
 		"enabled_font_opensans":1,
 		"class":"",
 		"color":"#ffb30f",

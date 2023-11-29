@@ -26,7 +26,9 @@ use webvimark\modules\UserManagement\models\User;
  * @property string|null $tags
  * @property string|null $site_keywords
  * @property string|null $lang
+ * @property int|null $lang_parent
  * @property int|null $is_static
+ * @property string|null $post_type
  */
 class News extends \app\models\News
 {
@@ -58,10 +60,10 @@ class News extends \app\models\News
             [['title'], 'required'],
             [['slug', 'summary', 'content', 'seo_description'], 'string'],
             [['date_created', 'date_updated', 'catalog', 'taglist'], 'safe'],
-            [['user_created', 'is_static'], 'integer'],
+            [['user_created', 'is_static', 'lang_parent'], 'integer'],
             [['code', 'imgcover', 'catelogies', 'seo_title', 'tags', 'site_keywords'], 'string', 'max' => 200],
             [['title'], 'string', 'max' => 300],
-            [['post_status'], 'string', 'max' => 20],
+            [['post_status', 'post_type'], 'string', 'max' => 20],
             [['lang'], 'string', 'max' => 5],
         ];
     }
@@ -104,6 +106,7 @@ class News extends \app\models\News
                 $this->date_created = date('Y-m-d H:i:s');
                 if($this->lang == null)
                     $this->lang = 'vi';
+                
                     if($this->is_static == null)
                         $this->is_static = 0;
                     

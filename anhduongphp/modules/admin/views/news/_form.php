@@ -125,6 +125,8 @@ use app\modules\admin\models\TagList;
         if($model->isNewRecord)
             $model->lang = $lang;
     ?>
+    
+    
     <?= $form->field($model, 'lang')->dropDownList($model->langs, 
         ['id'=>'lang', 'disabled'=>$model->isNewRecord?false:true])
         ->label($model->isNewRecord?$model->getAttributeLabel('lang'):Yii::t('app', 'Change language') . ' <input id="changeLang" type="checkbox" />') ?>

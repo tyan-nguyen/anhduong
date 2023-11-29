@@ -80,7 +80,7 @@ class NewsController extends BaseController
      * Lists all News models.
      * @return mixed
      */
-    public function actionIndex($lang, $static = false)
+    public function actionIndex($lang='vi', $static=false)
     {  
         if($lang != 'vi' && $lang != 'en'){
             throw new NotFoundHttpException('The requested page does not exist.');

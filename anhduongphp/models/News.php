@@ -24,7 +24,9 @@ use Yii;
  * @property string|null $tags
  * @property string|null $site_keywords
  * @property string|null $lang
+ * @property int|null $lang_parent
  * @property int|null $is_static
+ * @property string|null $post_type
  */
 class News extends \yii\db\ActiveRecord
 {
@@ -44,10 +46,10 @@ class News extends \yii\db\ActiveRecord
         return [
             [['slug', 'summary', 'content', 'seo_description'], 'string'],
             [['date_created', 'date_updated'], 'safe'],
-            [['user_created', 'is_static'], 'integer'],
+            [['user_created', 'lang_parent', 'is_static'], 'integer'],
             [['code', 'imgcover', 'catelogies', 'seo_title', 'tags', 'site_keywords'], 'string', 'max' => 200],
             [['title'], 'string', 'max' => 300],
-            [['post_status'], 'string', 'max' => 20],
+            [['post_status', 'post_type'], 'string', 'max' => 20],
             [['lang'], 'string', 'max' => 5],
         ];
     }
@@ -75,7 +77,9 @@ class News extends \yii\db\ActiveRecord
             'tags' => Yii::t('app', 'Tags'),
             'site_keywords' => Yii::t('app', 'Site Keywords'),
             'lang' => Yii::t('app', 'Lang'),
+            'lang_parent' => Yii::t('app', 'Lang Parent'),
             'is_static' => Yii::t('app', 'Is Static'),
+            'post_type' => Yii::t('app', 'Post Type'),
         ];
     }
 }
