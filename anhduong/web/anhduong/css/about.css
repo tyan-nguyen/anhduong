@@ -1,0 +1,23 @@
+.dflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section{
+	width:100%;
+	min-height: 300px;
+}
+
+.hero-section h2{
+	color: #fff;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px){
+	.hero-section h2{
+	    font-size: 36px;
+	    line-height: 1.4;
+	}
+}

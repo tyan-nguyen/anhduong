@@ -60,8 +60,8 @@ $config = [
         
         'view' => [
              'theme' => [
-                 'pathMap' => ['@app/views' => '@app/themes/anhduong'],
-                 'baseUrl' => '@web/../themes/anhduong',
+                 'pathMap' => ['@app/views' => '@app/themes/anhduong2'],
+                 'baseUrl' => '@web/../themes/anhduong2',
              ],
          ],
         

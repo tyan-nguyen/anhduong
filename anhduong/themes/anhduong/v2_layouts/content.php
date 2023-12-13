@@ -1,9 +1,8 @@
 <div id="main" class="sidebar-right sidebar-divider-vertical" style="padding-top:50px;" >
 <div class="main-gradient"></div>
 <div class="wf-wrap" style="width:100%">
-  <div class="container-fluid">
-  <div class="row">
-    <div id="content" class="content col-md-8" role="main" style="text-align: justify;">
+  <div class="wf-container-main">
+    <div id="content" class="content" role="main">
       <h4 class="uppercase">1. LỊCH SỬ HÌNH THÀNH</h4>
      <p>Công ty TNHH Trang Trí Nội Thất Ánh Dương được thành lập từ năm 2009 với hệ thống máy móc thiết bị được nhập khẩu từ Châu Âu và Nhật Bản, cùng việc kết hợp sử dụng những nguyên liệu loại một, sản phẩm của chúng tôi luôn đạt chất lượng tốt nhất.</p>
 
@@ -23,10 +22,12 @@
 <p>
 Cam kết mang đến những giá trị bền vững, thẩm mỹ cho kiến trúc của công trình và đóng góp vào sự phát triển của xã hội. 
 Luôn luôn tôn trọng khách hàng, phục vụ tận tình và lấy chữ tín làm đầu.</p>
+
+<p><img width="100%" src="/anhduong/images/tam-nhin.png" alt="Tầm nhìn" /></p>
     </div>
     <!-- #content -->
     
-    <aside id="sidebar" class="sidebar col-md-4">
+    <aside id="sidebar" class="sidebar">
       <div class="sidebar-content">
         <section id="woocommerce_product_categories-2" class="widget woocommerce widget_product_categories">
           <div class="widget-title">DANH MỤC SẢN PHẨM</div>
@@ -37,22 +38,20 @@ Luôn luôn tôn trọng khách hàng, phục vụ tận tình và lấy chữ t
           </ul>
         </section>
         <section id="woocommerce_products-2" class="widget woocommerce widget_products">
-          <div class="widget-title">CÔNG TRÌNH NỔI BẬT</div>
+          <div class="widget-title">SẢN PHẨM MỚI</div>
           <ul class="product_list_widget">
-            <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Công trình nổi bật 1</span> </a> </li>
-            <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Công trình nổi bật 2</span> </a> </li>
-             <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Công trình nổi bật 3</span> </a> </li>
-              <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Công trình nổi bật 4</span> </a> </li>
-               <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Công trình nổi bật 5</span> </a> </li>
-                <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Công trình nổi bật 6</span> </a> </li>
+            <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Ốp vách thang máy 1</span> </a> </li>
+            <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Ốp vách thang máy 2</span> </a> </li>
+             <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Ốp vách thang máy 3</span> </a> </li>
+              <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Ốp vách thang máy 4</span> </a> </li>
+               <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Ốp vách thang máy 5</span> </a> </li>
+                <li> <a href="#"> <img width="300" height="300" src="/anhduong/images/product1.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" /> <span class="product-title">Ốp vách thang máy 6</span> </a> </li>
           </ul>
         </section>
       </div>
     </aside>
     <!-- #sidebar --> 
     
-    
-    </div><!-- row -->
   </div>
   <!-- .wf-container --> 
 </div>

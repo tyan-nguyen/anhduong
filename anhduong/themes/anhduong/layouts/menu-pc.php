@@ -68,7 +68,7 @@
           <ul class="sub-nav gradient-hover hover-style-bg level-arrows-on">
             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-95 current_page_item menu-item-184 act first"><a href='/site2/page/' data-level='2'><span class="menu-item-text"><span class="menu-text">Về chúng tôi</span></span></a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183">
-            	<a href='/site2/page/' data-level='2'><span class="menu-item-text"><span class="menu-text">Năng lực nhà máy</span></span></a>
+            	<a href='/site2/single/' data-level='2'><span class="menu-item-text"><span class="menu-text">Năng lực nhà máy</span></span></a>
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523">
             	<a href='/site2/page/' data-level='2'><span class="menu-item-text"><span class="menu-text">Đội ngũ thiết kế</span></span></a>

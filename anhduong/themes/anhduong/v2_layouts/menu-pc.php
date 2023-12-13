@@ -1,15 +1,74 @@
-  <div class='dt-close-mobile-menu-icon'><span></span></div>
-  <div class='dt-mobile-header'>
-    <ul id="mobile-menu" class="mobile-main-nav" role="navigation">
-      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-14 first"><a href='https://anhduongmetal.vnweb.online/' data-level='1'><span class="menu-item-text"><span class="menu-text">TRANG CHỦ</span></span></a></li>
+  <div class="masthead inline-header center widgets full-height small-mobile-menu-icon dt-parent-menu-clickable"  role="banner">
+    <div class="top-bar full-width-line top-bar-line-hide">
+      <div class="top-bar-bg" ></div>
+      <div class="left-widgets mini-widgets">
+        <div class="text-area show-on-desktop in-top-bar-left hide-on-second-switch">
+          <p>CÔNG TY TNHH TRANG TRÍ NỘI THẤT ÁNH DƯƠNG</p>
+        </div>
+      </div>
+      <div class="right-widgets mini-widgets">
       
-      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-64 act has-children">
+      
+            
+      	<a href="#" class="mini-contacts show-on-desktop in-top-bar-left in-menu-second-switch a-in-top"><i class="fa-solid fa-chart-line"></i> Kiến tạo & thi công hoàn thiện</a> &nbsp;
+      	<span class="mini-contacts phone show-on-desktop in-top-bar-left in-menu-second-switch">
+      		<a href="tel:0388923998"><i class="fa-solid fa-headphones"></i> 0388.923.998</a>
+      	</span>
+        <div class="mini-wpml show-on-desktop in-top-bar-right near-logo-second-switch">
+          <div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal">
+            <ul>
+              <li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-item-legacy-list-horizontal"> 
+              	<a href="#" class="wpml-ls-link"><img class="wpml-ls-flag" src="/anhduong/images/en.png" alt="en" title="English"></a> 
+              </li>
+              <li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-vi wpml-ls-current-language wpml-ls-last-item wpml-ls-item-legacy-list-horizontal"> 
+              	<a href="#" class="wpml-ls-link"><img class="wpml-ls-flag" src="/anhduong/images/vi.png" alt="vi" title="Tiếng Việt"></a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+          <div class="search-box mini-contacts show-on-desktop in-top-bar-left in-menu-second-switch a-in-top">
+       <form id="frm1" action="" class="search-form">
+                <div class="form-group has-feedback" style="margin-bottom:0px;border-radius: 40px;">
+            		<label for="search" class="sr-only">Search</label>
+            		<input type="text" class="form-control" name="search" id="search" placeholder="search" style="padding-top:3px;height:25px;font-size: 12px">
+              		<span class="glyphicon glyphicon-search form-control-feedback"></span>
+              		
+            	</div>
+            </form>           
+            
+      </div>
+      
+      <div class="search-box search-box-mobile mini-contacts in-top-bar-left in-menu-second-switch a-in-top" style="margin-top:10px">
+       <form id="frm2" action="" >
+          <div class="input-group">
+            <input type="text" name="search" class="form-control" placeholder="Search" style="margin-bottom:0px;border-top-left-radius: 40px;border-bottom-left-radius: 40px;">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit"  style="padding:11px 15px 4px 15px; border-top-right-radius: 40px;border-bottom-right-radius: 40px;">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      
+      </div>
+    </div>
+    <header class="header-bar">
+      <div class="branding">
+        <div id="site-title" class="assistive-text">Ánh Dương</div>
+        <div id="site-description" class="assistive-text">Công ty TNHH Trang trí Nội thất Ánh Dương</div>
+        <a class="same-logo" href="https://anhduongmetal.vnweb.online/"><img class=" preload-me" src="/anhduong/images/logo.png" width="182" height="36" sizes="182px" alt="Ánh Dương" /></a></div>
+      <ul id="primary-menu" class="main-nav underline-decoration l-to-r-line outside-item-remove-margin" role="navigation">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-14 first"><a href='https://anhduongmetal.vnweb.online/' data-level='1'><span class="menu-item-text"><span class="menu-text">TRANG CHỦ</span></span></a></li>
+        
+        <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-64 act has-children">
         <a href='#' data-level='1'><span class="menu-item-text"><span class="menu-text">GIỚI THIỆU</span></span></a>
         
           <ul class="sub-nav gradient-hover hover-style-bg level-arrows-on">
             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-95 current_page_item menu-item-184 act first"><a href='/site2/page/' data-level='2'><span class="menu-item-text"><span class="menu-text">Về chúng tôi</span></span></a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183">
-            	<a href='/site2/single/' data-level='2'><span class="menu-item-text"><span class="menu-text">Năng lực nhà máy</span></span></a>
+            	<a href='/site2/page/' data-level='2'><span class="menu-item-text"><span class="menu-text">Năng lực nhà máy</span></span></a>
             </li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-523">
             	<a href='/site2/page/' data-level='2'><span class="menu-item-text"><span class="menu-text">Đội ngũ thiết kế</span></span></a>
@@ -47,9 +106,7 @@
         </li> -->
         
         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a href='/site2/lien-he/' data-level='1'><span class="menu-item-text"><span class="menu-text">LIÊN HỆ</span></span></a></li>
-      
-    </ul>
-    <div class='mobile-mini-widgets-in-menu'></div>
+      </ul>
+    </header>
   </div>
-  
-  
+	
