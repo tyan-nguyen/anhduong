@@ -135,15 +135,16 @@
 								</div><!-- .search -->
 						</nav><!-- #site-navigation -->
 
-
-						<div class="shareprice desktop">
+						<!-- shared price desktop -->
+						<!-- <div class="shareprice desktop">
 							<i class="icon-stock_exchange"></i>
 							<div class="price">
 								
 								<span class="st_price"><strong>30.99 €</strong></span><span class="st_changep" style="color:#009900; font-size:11px;"><img  style="float:right; margin-left:2px; margin-top:-2px;" data-src="/wp-content/themes/siteorigin-corp-child/assets/images/up_g.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img  style="float:right; margin-left:2px; margin-top:-2px;" data-src="/wp-content/themes/siteorigin-corp-child/assets/images/up_g.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="/wp-content/themes/siteorigin-corp-child/assets/images/up_g.gif" style="float:right; margin-left:2px; margin-top:-2px;"/></noscript></noscript><strong>0,26%</strong></span>
 								
 							</div>
-						</div>
+						</div> -->
+						<!-- ////shared price desktop -->
 						
 						<div class="lang-switch">
 							<div class="lang-switch__title">Languages</div>
@@ -616,14 +617,14 @@
 		</div><!-- .corp-container -->
 
 		<!-- share nunber for mobile -->
-		<div class="share-number-holder mobile">
+		<!-- <div class="share-number-holder mobile">
 			<i class="icon-stock_exchange"></i>
 			<div class="price">				
 				
 				<span class="st_price" style="font-size: 18px;"><strong>30.99 €</strong></span><span class="st_changep" style="color:#009900; font-size:13px; margin-left:5px;"><img  style="float:right; margin-left:2px; margin-top:-2px;" data-src="/wp-content/themes/siteorigin-corp-child/assets/images/up_g.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img  style="float:right; margin-left:2px; margin-top:-2px;" data-src="/wp-content/themes/siteorigin-corp-child/assets/images/up_g.gif" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="/wp-content/themes/siteorigin-corp-child/assets/images/up_g.gif" style="float:right; margin-left:2px; margin-top:-2px;"/></noscript></noscript><strong>0,26%</strong></span>
 				
 			</div>
-		</div>
+		</div>-->
 
 	</header><!-- #masthead -->
 
@@ -646,569 +647,34 @@
 	
 	<div class="entry-content">
 				<div data-elementor-type="wp-page" data-elementor-id="3155" class="elementor elementor-3155" data-elementor-post-type="page">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-c804fcd grand-header-page text-des elementor-section-content-middle elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="c804fcd" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eb3e805" data-id="eb3e805" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<section class="elementor-section elementor-inner-section elementor-element elementor-element-6f09daa grand-header-page__inner elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6f09daa" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7245102 bloc-text" data-id="7245102" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-cb39b8f elementor-widget elementor-widget-heading" data-id="cb39b8f" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h1 class="elementor-heading-title elementor-size-default">Design & Build</h1>		</div>
-				</div>
-				<div class="elementor-element elementor-element-3054cb2 elementor-widget elementor-widget-text-editor" data-id="3054cb2" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<h4><span style="color: #ffffff;">Ánh Dương là nhà kiến tạo với những ý tưởng độc đáo và thi công thực hiện dự án chuyên nghiệp.</span></h4>						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-69fba47 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="69fba47" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fb59d5e" data-id="fb59d5e" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-4fdae25 elementor-widget elementor-widget-breadcrumbs" data-id="4fdae25" data-element_type="widget" data-widget_type="breadcrumbs.default">
-				<div class="elementor-widget-container">
-			<p id="breadcrumbs"><span><span><a href="https://www.aperam.com/">Home</a></span> <i class="fas fa-arrow-right"></i> <span>Stainless</span> <i class="fas fa-arrow-right"></i> <span>Markets</span> <i class="fas fa-arrow-right"></i> <span class="breadcrumb_last" aria-current="page"><strong>Architecture, Building &#038; Construction</strong></span></span></p>		</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-d995527 elementor-section-content-middle bloc-local-normal elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d995527" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-472ffd0 bloc-local-normal__photo" data-id="472ffd0" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-e6046c0 elementor-widget elementor-widget-image" data-id="e6046c0" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img fetchpriority="high" decoding="async" width="1024" height="683"   alt="" data-srcset="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1024x683.jpg 1024w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-300x200.jpg 300w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-768x512.jpg 768w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1536x1024.jpg 1536w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-272x182.jpg 272w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti.jpg 1920w"  data-src="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1024x683.jpg" data-sizes="(max-width: 1024px) 100vw, 1024px" class="attachment-large size-large wp-image-4369 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img fetchpriority="high" decoding="async" width="1024" height="683" src="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1024x683.jpg" class="attachment-large size-large wp-image-4369" alt="" srcset="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1024x683.jpg 1024w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-300x200.jpg 300w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-768x512.jpg 768w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1536x1024.jpg 1536w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-272x182.jpg 272w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript>															</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b096196 bloc-local-normal__info" data-id="b096196" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-c788b8f elementor-widget elementor-widget-text-editor" data-id="c788b8f" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Thanks to its durability, corrosion resistance, and ease-of-use, stainless steel is particularly well-suited for the building and construction industry. In fact, it’s the material of choice for such architectural applications as roofs, facades, rainwater recovery systems, domestic water pipes, swimming pools, bridges and pedestrian bridges, and interior décor. Stainless steel’s longevity and the fact that it is 100% recyclable fulfills the requirements of sustainable construction. And thanks to a wide range of available finishes, it’s extremely aesthetic too!</p>						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-f06c18a bloc-key-products elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f06c18a" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1d8ae3c" data-id="1d8ae3c" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-6209620 elementor-widget elementor-widget-heading" data-id="6209620" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Our Key Products</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-8aaf257 elementor-widget elementor-widget-text-editor" data-id="8aaf257" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							        <div class="market-products">  
-
- 
-        <div class="market-products__item">                        
-        <div class="market-products__item-info">
-            <div class="market-products__item-title">
-                <a href="https://www.aperam.com/product/304-1-4301/" target="_blank">
-                    304 &#8211; 1.4301                </a>
-            </div>
-            <div class="market-products__item-des">This basic chromium-nickel Austenitic Stainless Steel offers good corrosion resistance, good ductility, and excellent weldability. &nbsp;</div>
-        </div>
-        
-        <div class="market-products__item-addition">
-            <div class="market-products__item-btn">
-                <a href="https://www.aperam.com/product/304-1-4301/" target="_blank">
-                    <i class="fal fa-arrow-circle-right"></i>
-                </a>
-            </div>
-                            <div class="market-products__item-picto">                    
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Tube.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Tube.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Tube.svg" height="60" style="height:60px, width:60px"/></noscript></noscript>                        </div>
-                                    </div>
-                        <div class="market-products__item-btn_adition">
-                
-                <div class="result-products__item-btn_adition-share">
-                    <a href="javascript:void(0)" onclick="callShare(this, '.share-product')" class="tag-share">
-                        <i class="fal fa-share-alt"></i>
-                    </a>
-                    <div id="product-share" class="share-content share-product">                  
-                        <a href="https://www.linkedin.com/cws/share?url=https://www.aperam.com/product/304-1-4301/" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="mailto:?subject=Product : 304 &#8211; 1.4301&amp;body=https://www.aperam.com/product/304-1-4301/" title="Share by Email">
-                            <i class="fal fa-envelope"></i>
-                        </a>                
-                    </div>
-                </div>              
-
-                <a href="javascript:void(0)" onclick="openMailto('stainless@aperam.com')">
-                    <i class="fal fa-envelope"></i>
-                </a>
-
-                                    <a href="https://www.aperam.com/sites/default/files/documents/FT_304_en_web.pdf" target="_blank">
-                        <i class="fal fa-arrow-to-bottom"></i>
-                    </a>
-                                                    </div>
-        </div>
-        
-    </div>
-
-    
-
-
- 
-        <div class="market-products__item">                        
-        <div class="market-products__item-info">
-            <div class="market-products__item-title">
-                <a href="https://www.aperam.com/product/316l-1-4404/" target="_blank">
-                    316L &#8211; 1.4404                </a>
-            </div>
-            <div class="market-products__item-des">A molybdenum-containing Austenitic Stainless Steel with good corrosion resistance.</div>
-        </div>
-        
-        <div class="market-products__item-addition">
-            <div class="market-products__item-btn">
-                <a href="https://www.aperam.com/product/316l-1-4404/" target="_blank">
-                    <i class="fal fa-arrow-circle-right"></i>
-                </a>
-            </div>
-                            <div class="market-products__item-picto">                    
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Tube.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Tube.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Tube.svg" height="60" style="height:60px, width:60px"/></noscript></noscript>                        </div>
-                                    </div>
-                        <div class="market-products__item-btn_adition">
-                
-                <div class="result-products__item-btn_adition-share">
-                    <a href="javascript:void(0)" onclick="callShare(this, '.share-product')" class="tag-share">
-                        <i class="fal fa-share-alt"></i>
-                    </a>
-                    <div id="product-share" class="share-content share-product">                  
-                        <a href="https://www.linkedin.com/cws/share?url=https://www.aperam.com/product/316l-1-4404/" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="mailto:?subject=Product : 316L &#8211; 1.4404&amp;body=https://www.aperam.com/product/316l-1-4404/" title="Share by Email">
-                            <i class="fal fa-envelope"></i>
-                        </a>                
-                    </div>
-                </div>              
-
-                <a href="javascript:void(0)" onclick="openMailto('stainless@aperam.com')">
-                    <i class="fal fa-envelope"></i>
-                </a>
-
-                                    <a href="https://www.aperam.com/sites/default/files/documents/FT_316L_en_web.pdf" target="_blank">
-                        <i class="fal fa-arrow-to-bottom"></i>
-                    </a>
-                                                    </div>
-        </div>
-        
-    </div>
-
-    
-
-
- 
-        <div class="market-products__item">                        
-        <div class="market-products__item-info">
-            <div class="market-products__item-title">
-                <a href="https://www.aperam.com/product/k41-1-4509/" target="_blank">
-                    K41 &#8211; 1.4509                </a>
-            </div>
-            <div class="market-products__item-des">Our KARA range. A 17% chromium Ferritic Stainless Steel stabilised with titanium and niobium.</div>
-        </div>
-        
-        <div class="market-products__item-addition">
-            <div class="market-products__item-btn">
-                <a href="https://www.aperam.com/product/k41-1-4509/" target="_blank">
-                    <i class="fal fa-arrow-circle-right"></i>
-                </a>
-            </div>
-                            <div class="market-products__item-picto">                    
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Flat_Bar.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript>                        </div>
-                                    </div>
-                        <div class="market-products__item-btn_adition">
-                
-                <div class="result-products__item-btn_adition-share">
-                    <a href="javascript:void(0)" onclick="callShare(this, '.share-product')" class="tag-share">
-                        <i class="fal fa-share-alt"></i>
-                    </a>
-                    <div id="product-share" class="share-content share-product">                  
-                        <a href="https://www.linkedin.com/cws/share?url=https://www.aperam.com/product/k41-1-4509/" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="mailto:?subject=Product : K41 &#8211; 1.4509&amp;body=https://www.aperam.com/product/k41-1-4509/" title="Share by Email">
-                            <i class="fal fa-envelope"></i>
-                        </a>                
-                    </div>
-                </div>              
-
-                <a href="javascript:void(0)" onclick="openMailto('stainless@aperam.com')">
-                    <i class="fal fa-envelope"></i>
-                </a>
-
-                                    <a href="https://www.aperam.com/sites/default/files/documents/FT_K41_en_web.pdf" target="_blank">
-                        <i class="fal fa-arrow-to-bottom"></i>
-                    </a>
-                                                    </div>
-        </div>
-        
-    </div>
-
-    
-
-
- 
-        <div class="market-products__item">                        
-        <div class="market-products__item-info">
-            <div class="market-products__item-title">
-                <a href="https://www.aperam.com/product/k44-1-4521/" target="_blank">
-                    K44 &#8211; 1.4521                </a>
-            </div>
-            <div class="market-products__item-des">Our KARA range. A molybdenum-containing 18% chromium Ferritic Stainless Steel stabilised with titanium and niobium.</div>
-        </div>
-        
-        <div class="market-products__item-addition">
-            <div class="market-products__item-btn">
-                <a href="https://www.aperam.com/product/k44-1-4521/" target="_blank">
-                    <i class="fal fa-arrow-circle-right"></i>
-                </a>
-            </div>
-                            <div class="market-products__item-picto">                    
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Coil-1.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Plates.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Precision.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                            <div class="market-products__item-picto__child">
-                        <img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async"  height="60" style="height:60px, width:60px" data-src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" src="https://www.aperam.com/sites/default/files/images/Picto_Disks.svg" height="60" style="height:60px, width:60px"/></noscript></noscript></noscript></noscript>                        </div>
-                                    </div>
-                        <div class="market-products__item-btn_adition">
-                
-                <div class="result-products__item-btn_adition-share">
-                    <a href="javascript:void(0)" onclick="callShare(this, '.share-product')" class="tag-share">
-                        <i class="fal fa-share-alt"></i>
-                    </a>
-                    <div id="product-share" class="share-content share-product">                  
-                        <a href="https://www.linkedin.com/cws/share?url=https://www.aperam.com/product/k44-1-4521/" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="mailto:?subject=Product : K44 &#8211; 1.4521&amp;body=https://www.aperam.com/product/k44-1-4521/" title="Share by Email">
-                            <i class="fal fa-envelope"></i>
-                        </a>                
-                    </div>
-                </div>              
-
-                <a href="javascript:void(0)" onclick="openMailto('stainless@aperam.com')">
-                    <i class="fal fa-envelope"></i>
-                </a>
-
-                                    <a href="https://www.aperam.com/sites/default/files/documents/FT_K44_en_web.pdf" target="_blank">
-                        <i class="fal fa-arrow-to-bottom"></i>
-                    </a>
-                                                    </div>
-        </div>
-        
-    </div>
-
-    
-
-        </div> 
-						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-e5d39ce elementor-section-full_width elementor-section-content-middle bloc-CTA elementor-section-height-default elementor-section-height-default" data-id="e5d39ce" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eedd7f7" data-id="eedd7f7" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<section class="elementor-section elementor-inner-section elementor-element elementor-element-b611bb7 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b611bb7" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-33f6e8d bloc-CTA__text" data-id="33f6e8d" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-24e2c54 elementor-widget elementor-widget-heading" data-id="24e2c54" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">A Product <br>for Every Application</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-e50defe elementor-widget elementor-widget-text-editor" data-id="e50defe" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p><span style="color: #ffffff;">Ready to start working on a tailor-made solution backed by an industry-leading commitment to long-term support? Our experts are standing by and ready to help you choose the right Aperam products for your specific needs.</span></p>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e124304" data-id="e124304" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-09f38a1 elementor-align-center elementor-widget elementor-widget-button" data-id="09f38a1" data-element_type="widget" data-widget_type="button.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="/product/?type_product%5B%5D=9301&#038;pro_markets%5B%5D=9179" target="_blank">
-						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-text">Find your product</span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-		
-		
-		
+				
+				
+				<?= $this->render('home/slide.php') ?>
+				<?= $this->render('home/breadrum.php') ?>
+				
+				
+				<?= $this->render('home/info-1.php') ?>
+				<?= $this->render('home/product-4.php') ?>
+				<?= $this->render('home/banner') ?>
 		
 				<!-- application -->
 				<?= $this->render('home/application') ?>
 				
-				
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-d683bc5 elementor-section-full_width bloc-business-cases elementor-section-height-default elementor-section-height-default" data-id="d683bc5" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-no">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-25f8e1c" data-id="25f8e1c" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-33b5678 elementor-widget elementor-widget-text-editor" data-id="33b5678" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<div class="business-cases-container template-1">
-    <div class="business-cases">
-        
-        <div class="business-cases__item">
-            <div class="business-cases__item-infoholder">
-                    <div class="business-cases__item-infoholder-inner">
-                        <h3>Swimming pools</h3>
-                        <div class="business-cases__item-infoholder__des">
-                            
-As you’re relaxing in the pool, chances are you’re thinking about beating the heat and not stainless steel. But did you know stainless steel can make your swim safer? That’s because stainless steel offers better corrosion resistance than traditional materials. As a result, stainless steel pools are less likely to leak and have a lower risk for bacterial growth. They’re also easier to clean and maintain.
-                        </div>
-                                                    <div class="business-cases__item-infoholder__button">
-                                <button class="btn-aperam" onclick="window.open('https://www.uginox.com/en/')">
-                                                                            <i class="fas fa-arrow-right"></i>
-                                                                        Visit Uginox website                  
-                                </button>
-                            </div>
-                                            </div>
-                
-            </div><!-- .business-cases__item-infoholder -->
-        
-
-            <div class="business-cases__item-photo template-1 " data-count="1">  
-                <!-- full 3 photos -->
-                                    <div class="business-cases__item-photo__col">
-                        <div class="business-cases__item-photo__col-item fix-one"><img decoding="async" width="1024" height="683"   alt="" data-srcset="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-1024x683.jpg 1024w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-300x200.jpg 300w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-768x512.jpg 768w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-1536x1024.jpg 1536w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-272x182.jpg 272w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1.jpg 1920w"  data-src="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-1024x683.jpg" data-sizes="(max-width: 1024px) 100vw, 1024px" class="attachment-large size-large lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" width="1024" height="683" src="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-1024x683.jpg" class="attachment-large size-large" alt="" srcset="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-1024x683.jpg 1024w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-300x200.jpg 300w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-768x512.jpg 768w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-1536x1024.jpg 1536w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1-272x182.jpg 272w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></div>
-                    </div>     
-                            </div><!-- .business-cases__item-photo -->
-        </div>      
-
-        
-        <div class="business-cases__item">
-            <div class="business-cases__item-infoholder">
-                    <div class="business-cases__item-infoholder-inner">
-                        <h3>Miriam Makéba School</h3>
-                        <div class="business-cases__item-infoholder__des">
-                            
-Wanting to ensure that the new school satisfied the city’s commitment to sustainable building, architects decided to use stainless steel – which is 100% recyclable. With a façade clad in Aperam’s Uginox 304 grade, the building has a uniquely bright finish that brings a touch of sparkle to the surrounding neighbourhood.
-                        </div>
-                                                    <div class="business-cases__item-infoholder__button">
-                                <button class="btn-aperam" onclick="window.open('https://www.uginox.com/en/')">
-                                                                            <i class="fas fa-arrow-right"></i>
-                                                                        Visit Uginox website                  
-                                </button>
-                            </div>
-                                            </div>
-                
-            </div><!-- .business-cases__item-infoholder -->
-        
-
-            <div class="business-cases__item-photo template-1 " data-count="1">  
-                <!-- full 3 photos -->
-                                    <div class="business-cases__item-photo__col">
-                        <div class="business-cases__item-photo__col-item fix-one"><img decoding="async" width="1024" height="682"   alt="" data-src="https://www.aperam.com/sites/default/files/images/FK7A9062.jpg" class="attachment-large size-large lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img decoding="async" width="1024" height="682" src="https://www.aperam.com/sites/default/files/images/FK7A9062.jpg" class="attachment-large size-large" alt="" /></noscript></div>
-                    </div>     
-                            </div><!-- .business-cases__item-photo -->
-        </div>      
-
-        
-        <div class="business-cases__item">
-            <div class="business-cases__item-infoholder">
-                    <div class="business-cases__item-infoholder-inner">
-                        <h3>Engraved finishes</h3>
-                        <div class="business-cases__item-infoholder__des">
-                            
-The construction and interior design sectors demand innovative, durable and aesthetic solutions – and stainless steel fits the bill. To meet this demand, Aperam has a range of engraved, or textured, stainless steel products. But these textures offer more than just an aesthetical touch. They also enhance the material’s durability, making it the perfect solution for such high-use applications as the inside of an elevator or a subway station.
-                        </div>
-                                                    <div class="business-cases__item-infoholder__button">
-                                <button class="btn-aperam" onclick="window.open('https://www.uginox.com/en/')">
-                                                                            <i class="fas fa-arrow-right"></i>
-                                                                        Visit Uginox website                  
-                                </button>
-                            </div>
-                                            </div>
-                
-            </div><!-- .business-cases__item-infoholder -->
-        
-
-            <div class="business-cases__item-photo template-1 " data-count="1">  
-                <!-- full 3 photos -->
-                                    <div class="business-cases__item-photo__col">
-                        <div class="business-cases__item-photo__col-item fix-one"><img loading="lazy" decoding="async" width="1024" height="1024"   alt="" data-srcset="https://www.aperam.com/sites/default/files/images/engraved%20finishes%201024x1024.jpg 1024w, https://www.aperam.com/sites/default/files/images/engraved%20finishes%201024x1024-300x300.jpg 300w, https://www.aperam.com/sites/default/files/images/engraved%20finishes%201024x1024-150x150.jpg 150w, https://www.aperam.com/sites/default/files/images/engraved%20finishes%201024x1024-768x768.jpg 768w"  data-src="https://www.aperam.com/sites/default/files/images/engraved finishes 1024x1024.jpg" data-sizes="(max-width: 1024px) 100vw, 1024px" class="attachment-large size-large lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img loading="lazy" decoding="async" width="1024" height="1024" src="https://www.aperam.com/sites/default/files/images/engraved finishes 1024x1024.jpg" class="attachment-large size-large" alt="" srcset="https://www.aperam.com/sites/default/files/images/engraved%20finishes%201024x1024.jpg 1024w, https://www.aperam.com/sites/default/files/images/engraved%20finishes%201024x1024-300x300.jpg 300w, https://www.aperam.com/sites/default/files/images/engraved%20finishes%201024x1024-150x150.jpg 150w, https://www.aperam.com/sites/default/files/images/engraved%20finishes%201024x1024-768x768.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></div>
-                    </div>     
-                            </div><!-- .business-cases__item-photo -->
-        </div>      
-
-        
-        <div class="business-cases__item">
-            <div class="business-cases__item-infoholder">
-                    <div class="business-cases__item-infoholder-inner">
-                        <h3>Uginox Patina</h3>
-                        <div class="business-cases__item-infoholder__des">
-                            
-Our Uginox Patina range consists of tin-coated stainless steels that weather over time. This weathering results in a matt finish that is highly valued for roofing applications, while the tin tones down stainless steel’s natural luster and facilities its assimilation into all types of environments. The tin coating is also environmentally inert and maintains its stainless properties. Uginox Patina is produced using K41 (1.4509) and K44 (1.4521) ferritic stainless steels.
-                        </div>
-                                                    <div class="business-cases__item-infoholder__button">
-                                <button class="btn-aperam" onclick="window.open('https://www.uginox.com/en/')">
-                                                                            <i class="fas fa-arrow-right"></i>
-                                                                        Visit Uginox website                  
-                                </button>
-                            </div>
-                                            </div>
-                
-            </div><!-- .business-cases__item-infoholder -->
-        
-
-            <div class="business-cases__item-photo template-1 " data-count="1">  
-                <!-- full 3 photos -->
-                                    <div class="business-cases__item-photo__col">
-                        <div class="business-cases__item-photo__col-item fix-one"><img loading="lazy" decoding="async" width="1024" height="680"   alt="" data-srcset="https://www.aperam.com/sites/default/files/images/DSC09408-1024x680.jpg 1024w, https://www.aperam.com/sites/default/files/images/DSC09408-300x199.jpg 300w, https://www.aperam.com/sites/default/files/images/DSC09408-768x510.jpg 768w, https://www.aperam.com/sites/default/files/images/DSC09408-1536x1021.jpg 1536w, https://www.aperam.com/sites/default/files/images/DSC09408-2048x1361.jpg 2048w, https://www.aperam.com/sites/default/files/images/DSC09408-272x182.jpg 272w"  data-src="https://www.aperam.com/sites/default/files/images/DSC09408-1024x680.jpg" data-sizes="(max-width: 1024px) 100vw, 1024px" class="attachment-large size-large lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img loading="lazy" decoding="async" width="1024" height="680" src="https://www.aperam.com/sites/default/files/images/DSC09408-1024x680.jpg" class="attachment-large size-large" alt="" srcset="https://www.aperam.com/sites/default/files/images/DSC09408-1024x680.jpg 1024w, https://www.aperam.com/sites/default/files/images/DSC09408-300x199.jpg 300w, https://www.aperam.com/sites/default/files/images/DSC09408-768x510.jpg 768w, https://www.aperam.com/sites/default/files/images/DSC09408-1536x1021.jpg 1536w, https://www.aperam.com/sites/default/files/images/DSC09408-2048x1361.jpg 2048w, https://www.aperam.com/sites/default/files/images/DSC09408-272x182.jpg 272w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></div>
-                    </div>     
-                            </div><!-- .business-cases__item-photo -->
-        </div>      
-
-            </div>
-</div>
-
-
-
-
-
-
-<script>   
-// return;
-jQuery(document).ready(function() {
-
-    if(jQuery('.business-cases').length == 0) return;
-    
-    jQuery('.business-cases').not('.slick-initialized').slick({
-        arrows: false,
-        dots: false,     
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false,   
-        autoplay: true,
-        autoplaySpeed: 3000     
-    });
-
-    var BUSINESS_SLIDER = '.business-cases';
-    var BUSINESS_SLIDER_CONTAINER = '.business-cases-container';
-    
-    if (jQuery(BUSINESS_SLIDER).length > 0) {
-        
-        jQuery(BUSINESS_SLIDER_CONTAINER).find(".icon-arrow_next").click(function() {
-            jQuery(BUSINESS_SLIDER).slick("slickNext");
-            return false;
-        });
-    
-    
-    
-        jQuery(BUSINESS_SLIDER_CONTAINER).find(".icon-arrow_prev").click(function() {
-            jQuery(BUSINESS_SLIDER).slick("slickPrev");
-            return false;
-        });
-       
-    }
-
-    
-});
-</script>
-
-
-						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
+				<?= $this->render('home/info-more') ?>
 		
 		
 		<!-- contact -->
 		<?= $this->render('home/contact') ?>
 		
 		
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-fb0506f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fb0506f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4fa9a9c" data-id="4fa9a9c" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-ddc9166 elementor-widget elementor-widget-text-editor" data-id="ddc9166" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-									<div data-elementor-type="section" data-elementor-id="335" class="elementor elementor-335" data-elementor-post-type="elementor_library">
 								
 								
-								<?= $this->render('home/newsletter') ?>
+		<?= $this->render('home/newsletter') ?>
 								
 								
-								
-						</div>
-								</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-							</div>
-			</div><!-- .entry-content -->
-			
+			</div>
+			</div><!-- .entry-content -->						
+					
 			
 			
 			
@@ -1222,61 +688,13 @@ jQuery(document).ready(function() {
 		</div><!-- .corp-container -->
 	</div><!-- #content -->
 
+	<!-- footer -->
+	<?= $this->render('home/footer') ?>
 	
-	<footer id="colophon" class="site-footer">
-
-		
-					<div class="corp-container">
-										<div class="widgets widgets-5" aria-label="Footer Widgets">
-							<aside id="nav_menu-8" class="widget widget_nav_menu"><div class="menu-main-footer-menu-container"><ul id="menu-main-footer-menu" class="menu"><li id="menu-item-17098" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17098"><a href="https://www.aperam.com/stainless/what-is-stainless-steel/">Stainless</a></li>
-<li id="menu-item-17099" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17099"><a href="https://www.aperam.com/alloys/what-is-alloys/">Alloys</a></li>
-<li id="menu-item-17100" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17100"><a href="https://www.aperam.com/electrical/what-is-electrical/">Electrical</a></li>
-<li id="menu-item-17101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17101"><a href="https://www.aperam.com/steel/what-is-carbon-steel/">Steel</a></li>
-<li id="menu-item-241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241"><a href="https://www.aperam.com/about-us/">About Us</a></li>
-<li id="menu-item-20427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20427"><a href="https://www.aperam.com/investors/equity-investors">Investors</a></li>
-<li id="menu-item-20426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20426"><a href="https://www.aperam.com/sustainability/essentials/">Sustainability</a></li>
-</ul></div></aside><aside id="nav_menu-4" class="widget widget_nav_menu"><div class="menu-top-bar-container"><ul id="menu-top-bar-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="https://www.aperam.com/documentation/">Documentation</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="https://www.aperam.com/media/">Media</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-44"><a href="https://www.aperam.com/careers/">Careers</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="https://www.aperam.com/contact/">Contact</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2625"><a href="https://www.e-aperam.com/">e-aperam</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28359"><a href="https://www.aperam.com/basket/">Request quote</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="https://www.aperam.com/alloys-surcharge/">Surcharge</a></li>
-</ul></div></aside><aside id="nav_menu-6" class="widget widget_nav_menu"><h2 class="widget-title">Our websites</h2><div class="menu-our-websites-container"><ul id="menu-our-websites" class="menu"><li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="https://www.aperam.com/sitemap/">Sitemap</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://www.aperam.com/privacy-policy/">Privacy Policy</a></li>
-<li id="menu-item-20552" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20552"><a href="http://communication.aperam.com/access-preference-center">Preference Center</a></li>
-<li id="menu-item-61416" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61416"><a href="https://www.aperam.com/investors/corporate-governance/whistleblower/">Whistleblower</a></li>
-</ul></div></aside><aside id="sow-social-media-buttons-4" class="widget widget_sow-social-media-buttons"><div
-			
-			class="so-widget-sow-social-media-buttons so-widget-sow-social-media-buttons-wire-df3bebaba07e"
-			
-		>
-
-<div class="social-media-button-container">
-	
-		<a class="ow-button-hover sow-social-media-button-linkedin-0 sow-social-media-button" title="aperam on Linkedin" aria-label="aperam on Linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/aperam" >
-			<span>
-								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf0e1;"
-		 
-		aria-hidden="true"></span>							</span>
-		</a>
-	
-		<a class="ow-button-hover sow-social-media-button-youtube-0 sow-social-media-button" title="aperam on Youtube" aria-label="aperam on Youtube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCQSu0MKC5vQi9h_sbfzo2CQ" >
-			<span>
-								<span class="sow-icon-fontawesome sow-fab" data-sow-icon="&#xf167;"
-		 
-		aria-hidden="true"></span>							</span>
-		</a>
-	</div>
-</div></aside>						</div>
-									</div><!-- .corp-container -->
-				
-
-	
-	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 
+	<!-- scrolltop -->
 	<div id="scroll-to-top">
 		<span class="screen-reader-text">Scroll to top</span>
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
@@ -1285,7 +703,9 @@ jQuery(document).ready(function() {
 				C5.5,10.9,5.3,11,5,11c-0.3,0-0.5-0.1-0.7-0.3C4.1,10.5,4,10.3,4,10c0-0.3,0.1-0.5,0.3-0.7l7-7C11.5,2.1,11.7,2,12,2z"/>
 			</svg>
 			</div>
+	<!-- scrolltop button -->
 
+<!-- button right middle -->
 <a href="https://www.aperam.com/basket/">
 	<div class="sticky-cart">
 	    <div class="sticky-cart__title">REQUEST<br/>A QUOTE</div>
@@ -1299,6 +719,8 @@ jQuery(document).ready(function() {
 	    </div>
 	</div>
 </a>
+<!-- button right middle -->
+
 <script>
 	document.addEventListener("DOMContentLoaded", function() {
 		var body = document.body;
@@ -1357,77 +779,9 @@ jQuery(document).ready(function() {
 <?= $this->render('home/script2') ?>
 
 
-<div class="wpcf7 no-js" id="wpcf7-f29650-o3" lang="en-US" dir="ltr">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="#" method="post" class="wpcf7-form init wpcf7-acceptance-as-validation" id="frm_newsletterpp" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="29650" />
-<input type="hidden" name="_wpcf7_version" value="5.8.4" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f29650-o3" />
-<input type="hidden" name="_wpcf7_container_post" value="0" />
-<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
-</div>
-<div class="newsletterpp">
-	<div class="newsletterpp__photo">
-		<p><img data-src='https://www.aperam.com/sites/default/files/images/aperam newsletter.jpg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' /><noscript><img src="https://www.aperam.com/sites/default/files/images/aperam newsletter.jpg" /></noscript>
-		</p>
-	</div>
-	<div class="newsletterpp__info">
-		<div class="newsletterpp__info-des">
-			<p><b>Aperam Made for Life – Are You Subscribed?</b><br />
-Did you receive the latest edition of Made for Life – Aperam’s official customer newsletter?<br />
-If not, you’re missing out on exciting insights, product information and news.<br />
-Subscribe today and, to thank you, we’ll email you the most recent issue.
-			</p>
-		</div>
-		<div class="newsletterpp__info-input">
-			<p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="255" minlength="5" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" id="newsletter_email_popup" aria-required="true" aria-invalid="false" placeholder="Please provide your email" value="" type="email" name="email" /></span>
-			</p>
-		</div>
-		<div class="newsletterpp__info-input">
-			<p><span class="wpcf7-form-control-wrap" data-name="country"><select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required selectboxsearch" id="contact_pays_newsletter_popup" aria-required="true" aria-invalid="false" name="country"><option value="">Country</option><option value="Afghanistan">Afghanistan</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="Angola">Angola</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahamas">Bahamas</option><option value="Bahrain">Bahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Belarus">Belarus</option><option value="Belau">Belau</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia">Bosnia</option><option value="Botswana">Botswana</option><option value="Brazil">Brazil</option><option value="Brunei">Brunei</option><option value="Bulgaria">Bulgaria</option><option value="Burkina-Faso">Burkina-Faso</option><option value="Burma">Burma</option><option value="Burundi">Burundi</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Canada">Canada</option><option value="Cape Verde Island">Cape Verde Island</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Colombia">Colombia</option><option value="Comoro Islands">Comoro Islands</option><option value="Congo">Congo</option><option value="Cook Islands">Cook Islands</option><option value="Costa Rica">Costa Rica</option><option value="Côte d&#039;Ivoire">Côte d&#039;Ivoire</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option><option value="Denmark">Denmark</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="Gabon">Gabon</option><option value="Gambia">Gambia</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Greece">Greece</option><option value="Grenada">Grenada</option><option value="Guatemala">Guatemala</option><option value="Guinea">Guinea</option><option value="Guinea Bissau">Guinea Bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Honduras">Honduras</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Japan">Japan</option><option value="Jordan">Jordan</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kiribati">Kiribati</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Laos">Laos</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Macedonia">Macedonia</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Marshall Islands">Marshall Islands</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mexico">Mexico</option><option value="Micronesia">Micronesia</option><option value="Moldavia">Moldavia</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Morocco">Morocco</option><option value="Mozambique">Mozambique</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Niue">Niue</option><option value="North Korea">North Korea</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palestine">Palestine</option><option value="Panama">Panama</option><option value="Papua
-            New Guinea">Papua
-            New Guinea</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Qatar">Qatar</option><option value="Romania">Romania</option><option value="Russia">Russia</option><option value="Rwanda">Rwanda</option><option value="Saint
-            Kitts-Nevis">Saint
-            Kitts-Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="San Marino">San Marino</option><option value="Sao Tomé and Principe">Sao Tomé and Principe</option><option value="Saudi
-            Arabia">Saudi
-            Arabia</option><option value="Scotland">Scotland</option><option value="Senegal">Senegal</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Soloman Islands">Soloman Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="South Korea">South Korea</option><option value="Spain">Spain</option><option value="Sri Lanka">Sri Lanka</option><option value="Sudan">Sudan</option><option value="Suriname">Suriname</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syria">Syria</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania">Tanzania</option><option value="Thailand">Thailand</option><option value="Togo">Togo</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Tuvalu">Tuvalu</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="United States">United States</option><option value="Uruguay">Uruguay</option><option value="Uzbekistan">Uzbekistan</option><option value="Vanuatu">Vanuatu</option><option value="Vatican City">Vatican City</option><option value="Venezuela">Venezuela</option><option value="Vietnam">Vietnam</option><option value="Western Samoa">Western Samoa</option><option value="Yemen">Yemen</option><option value="Yugoslavia">Yugoslavia</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option></select></span>
-			</p>
-		</div>
-		<div class="newsletterpp__info-chk newsletterpp__item-check">
-			<p><span class="wpcf7-form-control-wrap" data-name="rgpd"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="rgpd" value="1" class="checkbox" aria-invalid="false" /><span class="wpcf7-list-item-label">GDPR
-            compliance tick box. By registering, you agree that Aperam will use the provided data to contact me via digital
-            means. See our <a class="text-link" href="https://www.aperam.com/privacy-policy/"
-                target="_blank">Privacy Policy</a></span></label></span></span></span>
-			</p>
-		</div>
-		<div class="newsletterpp__info-btn mobile">
-			<p><button type="submit" class="btn-aperam">Subscribe now</button>
-			</p>
-		</div>
-	</div>
-</div>
-<p><span id="miel" class="wpcf7-form-control-wrap miel-wrap" ><input type="hidden" name="miel-time-start" value="1702475748"><input type="hidden" name="miel-time-check" value="4"><input id="miel"  placeholder="miel"  class="wpcf7-form-control wpcf7-text miel" type="text" name="miel" value="" size="40" tabindex="-1" autocomplete="new-password" /></span>
-</p><p style="display: none !important;"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_3" name="_wpcf7_ak_js" value="14"/><script>document.getElementById( "ak_js_3" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div>
-</form>
-</div>
+<?= $this->render('home/popup') ?>
 
-<div class="wpcf7 no-js" id="wpcf7-f47224-o4" lang="en-US" dir="ltr">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="#" method="post" class="wpcf7-form init wpcf7-acceptance-as-validation" id="frm_mailtopp" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="47224" />
-<input type="hidden" name="_wpcf7_version" value="5.8.4" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f47224-o4" />
-<input type="hidden" name="_wpcf7_container_post" value="0" />
-<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-<input type="hidden" name="_wpcf7_recaptcha_response" value="" />
-</div>
-
-
+<!-- 
 <div class="mailtopp">
 	<div class="mailtopp__photo">
 		<p><img data-src='https://www.aperam.com/sites/default/files/images/shutterstock_1129778507-scaled.jpg' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' /><noscript><img src="https://www.aperam.com/sites/default/files/images/shutterstock_1129778507-scaled.jpg" /></noscript>
@@ -1458,15 +812,17 @@ Subscribe today and, to thank you, we’ll email you the most recent issue.
 			</p>
 		</div>
 	</div>
-</div>
+</div> 
 
+-->
 
+<!-- 
 
 <input class="wpcf7-form-control wpcf7-hidden" value="" type="hidden" name="emailto" />
 <p><span id="miel" class="wpcf7-form-control-wrap miel-wrap" ><input type="hidden" name="miel-time-start" value="1702475748"><input type="hidden" name="miel-time-check" value="4"><input id="miel"  placeholder="miel"  class="wpcf7-form-control wpcf7-text miel" type="text" name="miel" value="" size="40" tabindex="-1" autocomplete="new-password" /></span>
 </p><p style="display: none !important;"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_4" name="_wpcf7_ak_js" value="245"/><script>document.getElementById( "ak_js_4" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><div class="wpcf7-response-output" aria-hidden="true"></div>
 </form>
-</div>
+</div>-->
 </body>
 </html>
 
