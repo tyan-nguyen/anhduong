@@ -32,7 +32,7 @@
 <link rel='stylesheet' href='/anhduong2/css/style1.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet' href='/anhduong2/css/merged-icons-font.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=3149e8e5c228fd2a4e9d038ce0988ea5' type='text/css' media='all' />
-<link rel='stylesheet' href='/anhduong2/css/mystyle.css?ver=2' type='text/css' media='all' />
+<link rel='stylesheet' href='/anhduong2/css/mystyle.css?ver=3' type='text/css' media='all' />
 
 <?= $this->render('home/script1') ?>
 
@@ -80,11 +80,12 @@
           <article id="post-3155" class="post-3155 page type-page status-publish post">
             <div class="entry-content">
               <div data-elementor-type="wp-page" data-elementor-id="3155" class="elementor elementor-3155" data-elementor-post-type="page">
-                <?= $this->render('about/slide.php') ?>
+                <?php echo $this->render('about/slide.php') ?>
                 <?php echo $this->render('about/breadrum.php') ?>
                 <?php // $this->render('home/info-1.php') ?>
-                  <?= $this->render('about/info-1.php') ?>
-                <?= $this->render('about/content-header') ?>
+                  <?php // echo $this->render('about/info-1.php') ?>
+                  <?php echo $this->render('about/info-more') ?>
+                <?php //$this->render('about/content-header') ?>
                 
                 <?= $this->render('about/content-fact') ?>
                 
@@ -96,7 +97,7 @@
                 
                 <!-- application -->
                 <?php //$this->render('home/application') ?>
-                <?php echo $this->render('home/info-more') ?>
+                <?php //echo $this->render('home/info-more') ?>
                 
                 <!-- contact -->
                 <?php echo $this->render('home/contact') ?>

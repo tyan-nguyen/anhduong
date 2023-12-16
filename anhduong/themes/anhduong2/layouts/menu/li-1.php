@@ -12,7 +12,7 @@
             <ul class="mega-sub-menu">
               <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-disable-link mega-menu-item-3259' id='mega-menu-item-3259'><a class="mega-menu-link" tabindex="0">VỀ CHÚNG TÔI<span class="mega-indicator"></span></a>
                 <ul class="mega-sub-menu">
-                  <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-3254' id='mega-menu-item-3254'><a class="mega-menu-link" href="#"><i class="fa-solid fa-arrow-right"></i> Về chúng tôi</a></li>
+                  <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-3254' id='mega-menu-item-3254'><a class="mega-menu-link" href="/site2/about"><i class="fa-solid fa-arrow-right"></i> Về chúng tôi</a></li>
                   <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-3255' id='mega-menu-item-3255'><a class="mega-menu-link" href="#"><i class="fa-solid fa-arrow-right"></i> Năng lực nhà máy</a></li>
                   <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-3256' id='mega-menu-item-3256'><a class="mega-menu-link" href="#"><i class="fa-solid fa-arrow-right"></i> Đội ngũ thiế kế</a></li>
                 </ul>

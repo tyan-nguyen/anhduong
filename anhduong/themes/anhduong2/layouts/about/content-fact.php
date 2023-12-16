@@ -1,14 +1,11 @@
 <section class="elementor-section elementor-top-section elementor-element elementor-element-d1ab180 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d1ab180" data-element_type="section"
-style="padding:30px 0px;">
+style="background-color: #f7f7f7; padding:50px 0px;">
   <div class="elementor-container elementor-column-gap-default">
     <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ef0af6f" data-id="ef0af6f" data-element_type="column">
       <div class="elementor-widget-wrap elementor-element-populated">
         <div class="elementor-element elementor-element-9175580 elementor-widget elementor-widget-heading" data-id="9175580" data-element_type="widget" data-widget_type="heading.default">
           <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default">Answering
-              Tomorrow’s
-              Challenges
-              Today</h2>
+            <h2 class="elementor-heading-title elementor-size-default">VÌ SAO CHỌN CHÚNG TÔI?</h2>
           </div>
         </div>
         <div class="elementor-element elementor-element-30cc5e8 elementor-widget elementor-widget-text-editor" data-id="30cc5e8" data-element_type="widget" data-widget_type="text-editor.default">
