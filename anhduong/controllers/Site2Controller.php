@@ -21,4 +21,14 @@ class Site2Controller extends Controller
         $this->layout = 'singleLayout';
         return $this->render('single');
     }
+    
+    public function actionProduct(){
+        $this->layout = 'productLayout';
+        return $this->render('about');
+    }
+    
+    public function actionAbout(){
+        $this->layout = 'aboutLayout';
+        return $this->render('about');
+    }
 }

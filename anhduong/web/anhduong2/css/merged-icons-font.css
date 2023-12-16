@@ -1,0 +1,64 @@
+i.eci { 
+display: block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+     }
+     .select2-container i.eci,
+     .elementor-icon-list-icon i.eci {
+       display: inline-block;
+     }
+     .elementor-icons-manager__tab__item__icon.eci {
+    font-size: 28px;
+}
+.elementor-icons-manager__tab-link i.eci {
+    display: inline-block;
+    font-size: 18px;
+}
+@font-face {
+ font-family: 'aperam';
+  src: url('aperam.zip/fontello-cde51a10/font/fontello.eot?1078870522');
+  src: url('aperam.zip/fontello-cde51a10/font/fontello.eot?1078870522#iefix') format('embedded-opentype'),
+       url('aperam.zip/fontello-cde51a10/font/fontello.woff2?1078870522') format('woff2'),
+       url('aperam.zip/fontello-cde51a10/font/fontello.woff?1078870522') format('woff'),
+       url('aperam.zip/fontello-cde51a10/font/fontello.ttf?1078870522') format('truetype'),
+       url('aperam.zip/fontello-cde51a10/font/fontello.svg?1078870522#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.eci.aperam-arrow::before { content: '\e900'; font-family: 'aperam'; }
+.eci.aperam-arrow_down::before { content: '\e901'; font-family: 'aperam'; }
+.eci.aperam-arrow_prev::before { content: '\e902'; font-family: 'aperam'; }
+.eci.aperam-check::before { content: '\e903'; font-family: 'aperam'; }
+.eci.aperam-check_lg::before { content: '\e904'; font-family: 'aperam'; }
+.eci.aperam-close_lg::before { content: '\e905'; font-family: 'aperam'; }
+.eci.aperam-co2::before { content: '\e906'; font-family: 'aperam'; }
+.eci.aperam-contact::before { content: '\e907'; font-family: 'aperam'; }
+.eci.aperam-country_location::before { content: '\e908'; font-family: 'aperam'; }
+.eci.aperam-document::before { content: '\e909'; font-family: 'aperam'; }
+.eci.aperam-employees::before { content: '\e90a'; font-family: 'aperam'; }
+.eci.aperam-magnifying_glass::before { content: '\e90b'; font-family: 'aperam'; }
+.eci.aperam-menu::before { content: '\e90c'; font-family: 'aperam'; }
+.eci.aperam-production::before { content: '\e90d'; font-family: 'aperam'; }
+.eci.aperam-see::before { content: '\e90e'; font-family: 'aperam'; }
+.eci.aperam-stock_exchange::before { content: '\e90f'; font-family: 'aperam'; }
+
+
+@font-face {
+ font-family: 'aperam-about';
+  src: url('aperam-about.zip/fontello-2687b12b/font/fontello.eot?1598777564');
+  src: url('aperam-about.zip/fontello-2687b12b/font/fontello.eot?1598777564#iefix') format('embedded-opentype'),
+       url('aperam-about.zip/fontello-2687b12b/font/fontello.woff2?1598777564') format('woff2'),
+       url('aperam-about.zip/fontello-2687b12b/font/fontello.woff?1598777564') format('woff'),
+       url('aperam-about.zip/fontello-2687b12b/font/fontello.ttf?1598777564') format('truetype'),
+       url('aperam-about.zip/fontello-2687b12b/font/fontello.svg?1598777564#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.eci.aperam-about-creativity::before { content: '\e900'; font-family: 'aperam-about'; }
+.eci.aperam-about-agile::before { content: '\e901'; font-family: 'aperam-about'; }
+.eci.aperam-about-leadership::before { content: '\e902'; font-family: 'aperam-about'; }
+
+

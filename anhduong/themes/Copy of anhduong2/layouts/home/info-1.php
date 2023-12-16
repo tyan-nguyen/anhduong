@@ -1,0 +1,20 @@
+<section class="elementor-section elementor-top-section elementor-element elementor-element-d995527 elementor-section-content-middle bloc-local-normal elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d995527" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-472ffd0 bloc-local-normal__photo" data-id="472ffd0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e6046c0 elementor-widget elementor-widget-image" data-id="e6046c0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="1024" height="683"   alt="" data-srcset="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1024x683.jpg 1024w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-300x200.jpg 300w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-768x512.jpg 768w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1536x1024.jpg 1536w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-272x182.jpg 272w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti.jpg 1920w"  data-src="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1024x683.jpg" data-sizes="(max-width: 1024px) 100vw, 1024px" class="attachment-large size-large wp-image-4369 lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img fetchpriority="high" decoding="async" width="1024" height="683" src="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1024x683.jpg" class="attachment-large size-large wp-image-4369" alt="" srcset="https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1024x683.jpg 1024w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-300x200.jpg 300w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-768x512.jpg 768w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-1536x1024.jpg 1536w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti-272x182.jpg 272w, https://www.aperam.com/sites/default/files/images/DS_6062_©_Aldo_Amoretti.jpg 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript>															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b096196 bloc-local-normal__info" data-id="b096196" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c788b8f elementor-widget elementor-widget-text-editor" data-id="c788b8f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Thanks to its durability, corrosion resistance, and ease-of-use, stainless steel is particularly well-suited for the building and construction industry. In fact, it’s the material of choice for such architectural applications as roofs, facades, rainwater recovery systems, domestic water pipes, swimming pools, bridges and pedestrian bridges, and interior décor. Stainless steel’s longevity and the fact that it is 100% recyclable fulfills the requirements of sustainable construction. And thanks to a wide range of available finishes, it’s extremely aesthetic too!</p>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
