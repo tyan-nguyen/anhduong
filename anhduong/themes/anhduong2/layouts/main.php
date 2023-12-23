@@ -14,7 +14,7 @@
 <link rel='stylesheet' href='/anhduong2/css/dashicons.min.css?ver=1' type='text/css' media='all' />
 <!-- important -->
 <link rel='stylesheet' href='/anhduong2/css/style1.min.css?ver=1' type='text/css' media='all' />
-<link rel='stylesheet' href='/anhduong2/css/cart.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' href='/anhduong2/css/cart.css?ver=2' type='text/css' media='all' />
 <link rel='stylesheet' href='/anhduong2/css/siteorigin-corp-icons.min.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet' id='siteorigin-google-web-fonts-css' href='https://fonts.googleapis.com/css?family=Nunito%3A600%2Cregular&#038;ver=3149e8e5c228fd2a4e9d038ce0988ea5#038;subset=latin&#038;display=block' type='text/css' media='all' />
 <link rel='stylesheet' href='/anhduong2/css/elementor-icons.min.css?ver=1' type='text/css' media='all' />
@@ -28,10 +28,10 @@
 <link rel='stylesheet' href='/anhduong2/js/customscrollbar/jquery.mCustomScrollbar.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet' href='/anhduong2/js/fancybox/jquery.fancybox.min.css?ver=1' type='text/css' media='all' />
 <!-- important -->
-<link rel='stylesheet' href='/anhduong2/css/style1.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' href='/anhduong2/css/style1.css?ver=2' type='text/css' media='all' />
 <link rel='stylesheet' href='/anhduong2/css/merged-icons-font.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=3149e8e5c228fd2a4e9d038ce0988ea5' type='text/css' media='all' />
-<link rel='stylesheet' href='/anhduong2/css/mystyle.css?ver=2' type='text/css' media='all' />
+<link rel='stylesheet' href='/anhduong2/css/mystyle.css?ver=4' type='text/css' media='all' />
 
 <?= $this->render('home/script1') ?>
 

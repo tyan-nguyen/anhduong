@@ -239,8 +239,12 @@ h5 {
   content: ""
 }
 .sticky-cart {
-  background: #69be28;
-  color: #fff;
+  /* background: #69be28; */
+  background: #f2f2f2;
+  border: 2px solid #f7f7f7;
+  /* color: #fff; */
+  color: #eb5e0b;
+  font-weight:bold;
   position: fixed;
   top: auto;
   bottom: 0;

@@ -18,26 +18,22 @@
 	</div>
 	<div class="newsletterpp__info">
 		<div class="newsletterpp__info-des">
-			<p><b>Are You Subscribed?</b><br />
-Did you receive the latest edition of official customer newsletter?<br />
-If not, you’re missing out on exciting insights, product information and news.<br />
-Subscribe today and, to thank you, we’ll email you the most recent issue.
+			<p><b>Bạn có muốn nhận thông tin từ chúng tôi?</b><br />
+Chúng tôi thường xuyên cập nhật các tin tức về ngành, dự án và các kỹ thuật mới, nếu bạn muốn nhận những thông tin này, hãy đăng kí ngay bằng cách nhập email của bạn phía dưới
 			</p>
 		</div>
 		<div class="newsletterpp__info-input">
-			<p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="255" minlength="5" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" id="newsletter_email_popup" aria-required="true" aria-invalid="false" placeholder="Please provide your email" value="" type="email" name="email" /></span>
+			<p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="255" minlength="5" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" id="newsletter_email_popup" aria-required="true" aria-invalid="false" placeholder="Vui lòng nhập email của bạn" value="" type="email" name="email" /></span>
 			</p>
 		</div>
 		
 		<div class="newsletterpp__info-chk newsletterpp__item-check">
-			<p><span class="wpcf7-form-control-wrap" data-name="rgpd"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="rgpd" value="1" class="checkbox" aria-invalid="false" /><span class="wpcf7-list-item-label">GDPR
-            compliance tick box. By registering, you agree that AnhDuongMetal will use the provided data to contact me via digital
-            means. See our <a class="text-link" href="#"
-                target="_blank">Privacy Policy</a></span></label></span></span></span>
+			<p><span class="wpcf7-form-control-wrap" data-name="rgpd"><span class="wpcf7-form-control wpcf7-acceptance"><span class="wpcf7-list-item"><label><input type="checkbox" name="rgpd" value="1" class="checkbox" aria-invalid="false" /><span class="wpcf7-list-item-label">Bằng cách chọn ô này, bạn đồng ý rằng AnhDuongmetal sử dụng dữ liệu bạn nhập để liên hệ với bạn qua các kênh online.
+</span></label></span></span></span>
 			</p>
 		</div>
 		<div class="newsletterpp__info-btn mobile">
-			<p><button type="submit" class="btn-aperam">Subscribe now</button>
+			<p><button type="submit" class="btn-aperam">Đăng kí ngay</button>
 			</p>
 		</div>
 	</div>

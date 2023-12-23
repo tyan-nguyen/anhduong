@@ -8027,7 +8027,8 @@ ul.stock_ticker li .sqitem .st_changep {
 }
 
 .session-menuinner {
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 0px;
   color: #050504;
   background: white;
 }

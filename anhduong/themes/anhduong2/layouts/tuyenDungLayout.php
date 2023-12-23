@@ -37,8 +37,8 @@
           <article id="post-3155" class="post-3155 page type-page status-publish post">
             <div class="entry-content">
               <div data-elementor-type="wp-page" data-elementor-id="3155" class="elementor elementor-3155" data-elementor-post-type="page">
-                <?= $this->render('page/slide.php') ?>
-                <?php echo $this->render('page/breadrum.php') ?>
+                <?= $this->render('tuyendung/slide.php') ?>
+                <?php echo $this->render('tuyendung/breadrum.php') ?>
                 <?php // $this->render('home/info-1.php') ?>
                 <?= $this->render('page/content-header') ?>
                 <?php // $this->render('page/content-content') ?>

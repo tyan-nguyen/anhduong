@@ -15,7 +15,7 @@
 <link rel='stylesheet' href='/anhduong2/css/dashicons.min.css?ver=1' type='text/css' media='all' />
 <!-- important -->
 <link rel='stylesheet' href='/anhduong2/css/style1.min.css?ver=1' type='text/css' media='all' />
-<link rel='stylesheet' href='/anhduong2/css/cart.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' href='/anhduong2/css/cart.css?ver=2' type='text/css' media='all' />
 <link rel='stylesheet' href='/anhduong2/css/siteorigin-corp-icons.min.css?ver=1' type='text/css' media='all' />
 <link rel='stylesheet' id='siteorigin-google-web-fonts-css' href='https://fonts.googleapis.com/css?family=Nunito%3A600%2Cregular&#038;ver=3149e8e5c228fd2a4e9d038ce0988ea5#038;subset=latin&#038;display=block' type='text/css' media='all' />
 <link rel='stylesheet' href='/anhduong2/css/elementor-icons.min.css?ver=1' type='text/css' media='all' />

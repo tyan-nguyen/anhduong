@@ -17,10 +17,10 @@ class Site2Controller extends Controller
         return $this->render('about');
     }
     
-    public function actionSingle(){
+   /*  public function actionSingle(){
         $this->layout = 'singleLayout';
         return $this->render('single');
-    }
+    } */
     
     public function actionProduct(){
         $this->layout = 'productLayout';
@@ -29,6 +29,16 @@ class Site2Controller extends Controller
     
     public function actionAbout(){
         $this->layout = 'aboutLayout';
+        return $this->render('about');
+    }
+    
+    public function actionNangLuc(){
+        $this->layout = 'nangLucLayout';
+        return $this->render('about');
+    }
+    
+    public function actionTuyenDung(){
+        $this->layout = 'tuyenDungLayout';
         return $this->render('about');
     }
 }
