@@ -32,7 +32,7 @@ class Site2Controller extends Controller
         return $this->render('about');
     }
     
-    public function actionNangLuc(){
+    public function actionNangLucNhaMay(){
         $this->layout = 'nangLucLayout';
         return $this->render('about');
     }

@@ -1,22 +1,18 @@
-<section class="elementor-section elementor-top-section elementor-element elementor-element-c804fcd grand-header-page text-des elementor-section-content-middle elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="c804fcd" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="background-image: url(/anhduong2/images/slide-tuyen-dung.jpg);background-position: center center;">
-  <div class="elementor-container elementor-column-gap-no">
-    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eb3e805" data-id="eb3e805" data-element_type="column">
-      <div class="elementor-widget-wrap elementor-element-populated">
-        <section class="elementor-section elementor-inner-section elementor-element elementor-element-6f09daa grand-header-page__inner elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6f09daa" data-element_type="section">
-          <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7245102 bloc-text" data-id="7245102" data-element_type="column">
-              <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-cb39b8f elementor-widget elementor-widget-heading" data-id="cb39b8f" data-element_type="widget" data-widget_type="heading.default">
-                  <div class="elementor-widget-container">
-                    <h1 class="elementor-heading-title elementor-size-default">Trang tuyển dụng</h1>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+<section class="grand-header-page bs-header" style="background-image: url(/anhduong2/images/slide-tuyen-dung.jpg);background-position: center center;min-height: 450px;height:450px">
+
+	<div class="container container-box">
+    	<div class="row" style="min-height:450px;">
+    		<div class="bs-flex">
+    		
+    				<h1>Làm việc tại Ánh Dương Metal</h1>
+    		
+
+    				<a href="#" class="btn-aperam btn-a-custom">CÁC VỊ TRÍ ĐANG TUYỂN</a>
+    		
+    		</div>
+    		
+    	</div>
     </div>
-  </div>
+
+
 </section>

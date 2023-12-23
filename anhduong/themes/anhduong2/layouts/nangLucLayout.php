@@ -37,15 +37,10 @@
           <article id="post-3155" class="post-3155 page type-page status-publish post">
             <div class="entry-content">
               <div data-elementor-type="wp-page" data-elementor-id="3155" class="elementor elementor-3155" data-elementor-post-type="page">
-                <?= $this->render('tuyendung/slide.php') ?>
-                <?php echo $this->render('tuyendung/breadrum.php') ?>
-                
+                <?= $this->render('nangluc/slide.php') ?>
+                <?php echo $this->render('nangluc/breadrum.php') ?>
                 <?php // $this->render('home/info-1.php') ?>
-                
-                <?= $this->render('tuyendung/content-1') ?>
-                <?= $this->render('tuyendung/content-2') ?>
-                <?= $this->render('tuyendung/content-3') ?>
-                
+                <?= $this->render('nangluc/content') ?>
                 <?php // $this->render('page/content-content') ?>
                 <?php // $this->render('home/product-4.php') ?>
                 <?php // $this->render('home/banner') ?>
@@ -88,6 +83,10 @@
     // add event open newsletter in popup
     openNewsletter();
 }); */
+
+$('[data-fancybox="gallery"]').fancybox({
+	// Options will go here
+});
 </script>
 </body>
 </html>
