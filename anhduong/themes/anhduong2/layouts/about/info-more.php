@@ -28,7 +28,7 @@ style="padding-top:0px;margin-top:0px;padding-bottom: 0px;">
                     <!-- full 3 photos -->
                     <div class="business-cases__item-photo__col">
                       <div class="business-cases__item-photo__col-item fix-one">
-                        <img decoding="async" width="1024" height="683" src="/anhduong2/images/info-1.jpg" class="attachment-large size-large" alt="" sizes="(max-width: 1024px) 100vw, 1024px" />
+                        <img decoding="async" width="1024" height="683" src="/anhduong2/images/info-1-2.jpg" class="attachment-large size-large" alt="" sizes="(max-width: 1024px) 100vw, 1024px" />
                       </div>
                     </div>
                   </div>
@@ -55,7 +55,7 @@ style="padding-top:0px;margin-top:0px;padding-bottom: 0px;">
                     <!-- full 3 photos -->
                     <div class="business-cases__item-photo__col">
                       <div class="business-cases__item-photo__col-item fix-one">
-                        <img decoding="async" width="1024" height="682" src="/anhduong2/images/info-2.jpg" class="attachment-large size-large" alt="" />
+                        <img decoding="async" width="1024" height="682" src="/anhduong2/images/info-1-2.jpg" class="attachment-large size-large" alt="" />
                       </div>
                     </div>
                   </div>
@@ -80,7 +80,7 @@ style="padding-top:0px;margin-top:0px;padding-bottom: 0px;">
                     <!-- full 3 photos -->
                     <div class="business-cases__item-photo__col">
                       <div class="business-cases__item-photo__col-item fix-one">
-                        <img decoding="async" width="1024" height="682" src="/anhduong2/images/info-2.jpg" class="attachment-large size-large" alt="" />
+                        <img decoding="async" width="1024" height="682" src="/anhduong2/images/info-1-2.jpg" class="attachment-large size-large" alt="" />
                       </div>
                     </div>
                   </div>

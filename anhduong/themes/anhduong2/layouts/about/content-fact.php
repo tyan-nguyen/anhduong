@@ -10,7 +10,7 @@ style="background-color: #f7f7f7; padding:50px 0px;">
         </div>
         <div class="elementor-element elementor-element-30cc5e8 elementor-widget elementor-widget-text-editor" data-id="30cc5e8" data-element_type="widget" data-widget_type="text-editor.default">
           <div class="elementor-widget-container">
-            <p>By creating products that solve global challenges and create real social value, Aperam is reshaping the future of our industry.</p>
+            <p>Tạo ra những sản phẩm mang tầm cỡ quốc gia & quốc tế, mang lại gia trị thực sự cho xã hội, chúng tôi tự tin là nhà tiên phong trong ngành kim loại trang trí công trình</p>
           </div>
         </div>
       </div>
@@ -22,8 +22,9 @@ style="background-color: #f7f7f7; padding:50px 0px;">
             <div class="elementor-icon-box-wrapper">
               <div class="elementor-icon-box-icon"> <span class="elementor-icon elementor-animation-"> <i class="fa-solid fa-people-group"></i> </span> </div>
               <div class="elementor-icon-box-content">
-                <h4 class="elementor-icon-box-title"> <span> Leadership </span> </h4>
-                <p class="elementor-icon-box-description"> By being a bold, creative and courageous market player, we will lead the way in promoting sustainable solutions. </p>
+                <h4 class="elementor-icon-box-title"> <span> Dẫn đầu </span> </h4>
+                <p class="elementor-icon-box-description"> Tiên phong đưa ra các giải pháp bền vững
+</p>
               </div>
             </div>
           </div>
@@ -37,8 +38,8 @@ style="background-color: #f7f7f7; padding:50px 0px;">
             <div class="elementor-icon-box-wrapper">
               <div class="elementor-icon-box-icon"> <span class="elementor-icon elementor-animation-"> <i class="fa-solid fa-clipboard-check"></i> </span> </div>
               <div class="elementor-icon-box-content">
-                <h4 class="elementor-icon-box-title"> <span> Agility </span> </h4>
-                <p class="elementor-icon-box-description"> While changing market conditions require us to move quickly and adapt, we must remain flexible enough to meet our customer’s specific requirements. </p>
+                <h4 class="elementor-icon-box-title"> <span> Nhanh nhẹn </span> </h4>
+                <p class="elementor-icon-box-description"> Đáp ứng nhanh chóng các yêu cầu, linh hoạt trong mọi tình huống </p>
               </div>
             </div>
           </div>
@@ -52,8 +53,8 @@ style="background-color: #f7f7f7; padding:50px 0px;">
             <div class="elementor-icon-box-wrapper">
               <div class="elementor-icon-box-icon"> <span class="elementor-icon elementor-animation-"> <i class="fa-solid fa-lightbulb"></i> </span> </div>
               <div class="elementor-icon-box-content">
-                <h4 class="elementor-icon-box-title"> <span> Ingenuity </span> </h4>
-                <p class="elementor-icon-box-description"> Our people are skilled, imaginative and innovative and have a passion for sharing their skills. This ingenuity leads to new ideas and new solutions. </p>
+                <h4 class="elementor-icon-box-title"> <span> Khéo léo </span> </h4>
+                <p class="elementor-icon-box-description"> Đội ngũ của chúng tôi có kỹ năng, sự sáng tạo và niềm đam mê trong lĩnh vực   </p>
               </div>
             </div>
           </div>

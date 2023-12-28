@@ -16,20 +16,22 @@ style="padding:50px 0px;">
           <div class="elementor-widget-container">
             <div class="rubriques-holder">
               <div class="rubriques">
-                <div class="rubriques__item template-redirections" style="background-image: url('https://www.aperam.com/sites/default/files/images/092-scaled-490x515.jpg')">
+                <div class="rubriques__item template-redirections" style="background-image: url('/anhduong2/images/about/may-moc.jpg')">
                   <div class="rubriques__item__info template-redirections" style="height: 185.094px;">
                     <div>
-                      <h3>Our Production Facilities</h3>
-                      <div class="rubriques__item__info-excerpt"> Aperam produces a full range of stainless steel and alloy products from our six core facilities. </div>
+                      <h3>Máy móc</h3>
+                      <div class="rubriques__item__info-excerpt"> Ánh Dương đầu tư các máy móc nhập khẩu từ Châu Âu,Nhật Bản có thể gia công nhiều loại vật liệu kim loại khác nhau, đáp ứng các yêu cầu về kiến trúc đòi hỏi kỹ thuật và tính thẩm mỹ khó. 
+ </div>
                     </div>
-                    <div class="rubriques__item__info-btn"> <a href="https://www.aperam.com/our-production-facilities/"> <i class="fa fa-arrow-circle-right"></i> </a> </div>
+                    <div class="rubriques__item__info-btn"> <a href="/site2/nang-luc-nha-may"> <i class="fa fa-arrow-circle-right"></i> </a> </div>
                   </div>
                   <div class="rubriques__item__hover">
                     <div>
-                      <h3>Our Production Facilities</h3>
-                      <div class="rubriques__item__hover-des"> Each of our six core facilities has their own unique capabilities, which allows us to produce a full-range of stainless steel and alloy products. </div>
+                      <h3>Máy móc</h3>
+                      <div class="rubriques__item__hover-des"> Ánh Dương đầu tư các máy móc nhập khẩu từ Châu Âu,Nhật Bản có thể gia công nhiều loại vật liệu kim loại khác nhau, đáp ứng các yêu cầu về kiến trúc đòi hỏi kỹ thuật và tính thẩm mỹ khó. 
+. </div>
                       <!-- CTA -->
-                      <div class="rubriques__item__hover-btn aperam-btn"> <a href="https://www.aperam.com/about-us/plants/" target="_blank"> EXPLORE OUR PLANTS </a> </div>
+                      <div class="rubriques__item__hover-btn aperam-btn"> <a href="/site2/nang-luc-nha-may"> NĂNG LỰC NHÀ MÁY </a> </div>
                     </div>
                     
                     <!--  <div class="rubriques__item__hover-arrow">
@@ -39,24 +41,20 @@ style="padding:50px 0px;">
                   </div>
                   <!-- .rubriques__item__hover --> 
                 </div>
-                <div class="rubriques__item template-redirections" style="background-image: url('https://www.aperam.com/sites/default/files/images/research_0.jpg')">
+                <div class="rubriques__item template-redirections" style="background-image: url('/anhduong2/images/about/cai-tien.jpg')">
                   <div class="rubriques__item__info template-redirections" style="height: 185.094px;">
                     <div>
-                      <h3>R&amp;D and Innovation</h3>
-                      <div class="rubriques__item__info-excerpt"> The Group’s R&amp;D team is comprised of 143 employees spread across three centres. </div>
+                      <h3>Cải tiến</h3>
+                      <div class="rubriques__item__info-excerpt"> Hằng năm, chúng tôi luôn dành nguồn lực tài chính và thời gian để cập nhật các công nghệ và xu hướng, nhầm cải tiến hơn nữa các giải pháp của mình  </div>
                     </div>
-                    <div class="rubriques__item__info-btn"> <a href="https://www.aperam.com/plants/"> <i class="fa fa-arrow-circle-right"></i> </a> </div>
+                    <div class="rubriques__item__info-btn"> <a href="/site2/doi-ngu-thiet-ke"> <i class="fa fa-arrow-circle-right"></i> </a> </div>
                   </div>
                   <div class="rubriques__item__hover">
                     <div>
-                      <h3>R&amp;D and Innovation</h3>
-                      <div class="rubriques__item__hover-des"> Comprised of more than 140 employees, a network of partnerships, and three dedicated research centres – all backed by a budget of EUR 21 million – Aperam’s Research and Development team is fundamental to our position as an industry leader and the development of our most recognisable brands.
-                        
-                        
-                        
-                        &nbsp; </div>
+                      <h3>Cải tiến</h3>
+                      <div class="rubriques__item__hover-des"> Hằng năm, chúng tôi luôn dành nguồn lực tài chính và thời gian để cập nhật các công nghệ và xu hướng, nhầm cải tiến hơn nữa các giải pháp của mình </div>
                       <!-- CTA -->
-                      <div class="rubriques__item__hover-btn aperam-btn"> <a href="http://www.aperam.com/about-us/innovation-and-rd/" target="_blank"> learn more </a> </div>
+                      <div class="rubriques__item__hover-btn aperam-btn"> <a href="/site2/doi-ngu-thiet-ke"> ĐỘI NGŨ THIẾT KẾ </a> </div>
                     </div>
                     
                     <!--  <div class="rubriques__item__hover-arrow">
@@ -66,20 +64,20 @@ style="padding:50px 0px;">
                   </div>
                   <!-- .rubriques__item__hover --> 
                 </div>
-                <div class="rubriques__item template-redirections" style="background-image: url('https://www.aperam.com/sites/default/files/images/iStock-1176392150_hexagone-490x515.jpg')">
+                <div class="rubriques__item template-redirections" style="background-image: url('/anhduong2/images/about/san-pham.jpg')">
                   <div class="rubriques__item__info template-redirections" style="height: 185.094px;">
                     <div>
-                      <h3>Discover Our Product Finder</h3>
-                      <div class="rubriques__item__info-excerpt"> Our experts are standing by and ready to help you choose the right Aperam products for your needs. </div>
+                      <h3>Sản phẩm & Dịch vụ đa dạng</h3>
+                      <div class="rubriques__item__info-excerpt">Chúng tôi có thể phục vụ nhiều khách hàng, từ trong nước, nước ngoài, từ các hạng mục trong nhà, ngoài trời, đa dạng về vật liệu và hình dáng</div>
                     </div>
-                    <div class="rubriques__item__info-btn"> <a href="https://www.aperam.com/a-product-for-every-application/"> <i class="fa fa-arrow-circle-right"></i> </a> </div>
+                    <div class="rubriques__item__info-btn"> <a href="/site2/product"> <i class="fa fa-arrow-circle-right"></i> </a> </div>
                   </div>
                   <div class="rubriques__item__hover">
                     <div>
-                      <h3>Discover Our Product Finder</h3>
-                      <div class="rubriques__item__hover-des"> Ready to start working on a tailor-made solution backed by an industry-leading commitment to long-term support? Our experts are standing by and ready to help you choose the right Aperam products for your specific needs. </div>
+                      <h3>Sản phẩm & Dịch vụ đa dạng</h3>
+                      <div class="rubriques__item__hover-des"> Chúng tôi có thể phục vụ nhiều khách hàng, từ trong nước, nước ngoài, từ các hạng mục trong nhà, ngoài trời, đa dạng về vật liệu và hình dáng</div>
                       <!-- CTA -->
-                      <div class="rubriques__item__hover-btn aperam-btn"> <a href="/product/?type_product%5B%5D=9301" target="_blank"> learn more </a> </div>
+                      <div class="rubriques__item__hover-btn aperam-btn"> <a href="/site2/product"> SẢN PHẨM </a> </div>
                     </div>
                     
                     <!--  <div class="rubriques__item__hover-arrow">
@@ -92,14 +90,14 @@ style="padding:50px 0px;">
               </div>
             </div>
             <script>
-    jQuery(document).ready(function() {
-        calcHeightRurique();
-    })
-
-    jQuery(window).on('resize orientationchange', function() {  
-        calcHeightRurique();
-     })
-</script> </div>
+                jQuery(document).ready(function() {
+                    calcHeightRurique();
+                })
+                jQuery(window).on('resize orientationchange', function() {  
+                    calcHeightRurique();
+                 })
+       	 	</script>
+       	 	</div>
         </div>
       </div>
     </div>
