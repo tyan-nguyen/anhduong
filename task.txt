@@ -2,3 +2,9 @@ task tiep theo:
 - tao moi bai viet: tu sinh bai viet draft chuyen sang trang update
 - co lien ket dich bai viet sang ngon ngu
 - categories theo post_type va language giong post
+
+
+
+
+
+https://codepen.io/fancyapps/pen/aaerxw
