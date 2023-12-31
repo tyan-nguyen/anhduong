@@ -9,14 +9,26 @@
 	max-width: 1140px;
 }
 
-.div-nang-luc{
+.div-nang-luc, .div-vat-lieu{
 	padding:20px;
 }
 
-.div-nang-luc img{
+.div-nang-luc img, .div-vat-lieu img{
 	width: 100%;
 }
 
+.div-vat-lieu{
+	text-align: center;
+}
+
+.div-vat-lieu h3{
+	font-size: 1.2rem;
+	margin:5px 0px;
+	color:#5f2869;
+}
+.div-vat-lieu .subtitle{
+	font-size: 1.2rem;
+}
 .content-text{
 	font-size: 1.1rem;
 }
@@ -68,6 +80,49 @@
 
 .bs-col a h3:hover{
 	color: #eb5e0b;
+}
+
+.fancy-caption{
+	width:100%; 
+	background:white;
+	min-height:230px; 
+	padding:40px;
+	padding-top:50px;
+	text-align: center;
+}
+
+.fancy-caption-title{
+	font-size: 1.5rem;
+	color:#eb5e0b;
+}
+
+.fancy-caption-content{
+	color:black;
+	font-size:1.2rem
+}
+
+.paging-container a{
+	display: inline-block;
+    font-size: 1em;
+    /*line-height: 1em;*/
+    margin: 0.2em 0.1em 0.2em 0.1em;
+    padding: 0.5em 0;
+    width: 2.7em;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    border-radius: 1.5em;
+    
+    background: transparent;
+    /*text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);*/
+    border: 2px solid #5f2869;
+    color: #1c1c1c;
+}
+
+.paging-container a.active, .paging-container a:hover{
+	background: #5f2869;
+	color:white;
 }
 
 @media (max-width: 720px){

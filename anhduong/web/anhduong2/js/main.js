@@ -967,7 +967,7 @@ function openNewsletter(){
                 opts: {
                     afterShow: function (instance, current) {
                         console.log('done!');
-                        jQuery('#frm_newsletterpp select[name="country"]')[0].sumo.reload(); 
+                        //jQuery('#frm_newsletterpp select[name="country"]')[0].sumo.reload(); 
                         
                         var ttc = 15*24*60*60*1000;
                         // var ttc = 1000*60;

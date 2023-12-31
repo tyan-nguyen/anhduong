@@ -41,4 +41,9 @@ class Site2Controller extends Controller
         $this->layout = 'tuyenDungLayout';
         return $this->render('about');
     }
+    
+    public function actionVatLieu($page=null){
+        $this->layout = 'vatLieuLayout';
+        return $this->render('vat-lieu', ['page'=>$page]);
+    }
 }

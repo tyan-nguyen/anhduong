@@ -1,4 +1,4 @@
-<script type="text/javascript" src="/anhduong2/js/cart.js?ver=1.2.1" id="script-cart-js"></script>
+<!-- <script type="text/javascript" src="/anhduong2/js/cart.js?ver=1.2.1" id="script-cart-js"></script> -->
 <script type="text/javascript" src="/anhduong2/js/libs/jquery.fitvids.min.js?ver=1.1" id="jquery-fitvids-js"></script>
 <script type="text/javascript" id="siteorigin-corp-script-js-extra">
 /* <![CDATA[ */
@@ -27,12 +27,12 @@ var megamenu = {"timeout":"300","interval":"100"};
 <script type="text/javascript" src="/anhduong2/js/webpack.runtime.min.js?ver=3.18.2" id="elementor-webpack-runtime-js"></script>
 <script type="text/javascript" src="/anhduong2/js/frontend-modules.min.js?ver=3.18.2" id="elementor-frontend-modules-js"></script>
 <!-- <script type="text/javascript" src="https://www.aperam.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script> -->
-<script type="text/javascript" src="/anhduong2/js/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<!-- <script type="text/javascript" src="/anhduong2/js/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script> -->
 
 
-<script type="text/javascript" src="/anhduong2/js/frontend.min.js?ver=3.18.1" id="elementor-pro-frontend-js"></script>
+<!-- <script type="text/javascript" src="/anhduong2/js/frontend.min.js?ver=3.18.1" id="elementor-pro-frontend-js"></script> -->
 <script type="text/javascript" src="/anhduong2/js/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script type="text/javascript" src="/anhduong2/js/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
 
-<script type="text/javascript" src="/anhduong2/js/frontend1.min.js?ver=3.18.2" id="elementor-frontend-js"></script>
+<!-- <script type="text/javascript" src="/anhduong2/js/frontend1.min.js?ver=3.18.2" id="elementor-frontend-js"></script> -->
 <script type="text/javascript" src="/anhduong2/js/elements-handlers.min.js?ver=3.18.1" id="pro-elements-handlers-js"></script>

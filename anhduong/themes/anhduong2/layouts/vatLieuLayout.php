@@ -37,18 +37,20 @@
           <article id="post-3155" class="post-3155 page type-page status-publish post">
             <div class="entry-content">
               <div data-elementor-type="wp-page" data-elementor-id="3155" class="elementor elementor-3155" data-elementor-post-type="page">
-                <?= $this->render('home/slide.php') ?>
-                <?php // echo $this->render('home/breadrum.php') ?>
-                <?= $this->render('home/info-1.php') ?>
-                <?= $this->render('home/product-4.php') ?>
-                <?= $this->render('home/banner') ?>
+                <?= $this->render('vatlieu/slide.php') ?>
+                <?php echo $this->render('vatlieu/breadrum.php') ?>
+                <?php // $this->render('home/info-1.php') ?>
+                <?= $content ?>
+                <?php // $this->render('page/content-content') ?>
+                <?php // $this->render('home/product-4.php') ?>
+                <?php // $this->render('home/banner') ?>
                 
                 <!-- application -->
-                <?= $this->render('home/application') ?>
-                <?= $this->render('home/info-more') ?>
+                <?php //$this->render('home/application') ?>
+                <?php // $this->render('home/info-more') ?>
                 
                 <!-- contact -->
-                <?= $this->render('home/contact') ?>
+                <?php // $this->render('home/contact') ?>
                 <?= $this->render('home/newsletter') ?>
               </div>
             </div>
@@ -77,15 +79,40 @@
 <?= $this->render('home/script2') ?>
 <?= $this->render('home/popup') ?>
 
+<style>
+.fancybox-caption{
+padding:0px;
+background:white;
+}
+</style>
 <script>
-jQuery(document).ready(function () {
+/* jQuery(document).ready(function () {
     // add event open newsletter in popup
     openNewsletter();
-    
-     
+}); */
+
+/* $('.fanc').fancybox({
+	// Options will go here
+	caption : function( instance, item ) {
+      return $(this).find('figcaption').html();
+  	}
+}); */
+
+ 
+$('.fanc').on('click', function(e){
+ 	e.preventDefault();
+    jQuery.fancybox.open(
+        $(this).find('figcaption').html(),
+        {
+            smallBtn: true,
+            toolbar: false
+        }
+    );
+
 });
 
-</script>
 
+
+</script>
 </body>
 </html>
