@@ -46,4 +46,17 @@ class Site2Controller extends Controller
         $this->layout = 'vatLieuLayout';
         return $this->render('vat-lieu', ['page'=>$page]);
     }
+    
+    public function actionVatLieuChiTiet($slug){
+        $this->layout = 'vatLieuLayout';
+        $model = [
+            'id'=>1,
+            'slug'=>'vat-lieu-1',
+            'image'=>'vat-lieu-1.jpg',
+            'title'=>'AD008/Cross Hairline Golden',
+            'subTitle'=>'Bề mặt sọc chéo chống vân tay màu vàng',
+            'desc'=>'Inox mạ màu vàng mang tới vẻ đẹp trang nhã, thanh lịch rất hợp với các dạng không gian có phần cổ điển mang tới cho người nhìn sự phá cách, lạ mắt rất ấn tượng, đơn giản không phô trương.'
+        ];
+        return $this->render('vat-lieu-chi-tiet', ['vatLieu'=>$model]);
+    }
 }

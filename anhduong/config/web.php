@@ -48,6 +48,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 '' => 'site2/index',
+                '<slug>' => 'site2/vat-lieu-chi-tiet',
             ],
         ],
         

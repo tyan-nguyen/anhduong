@@ -1,5 +1,45 @@
 <?= $this->render('header') ?>
 
+<style>
+.dwrap {
+    direction: ltr; 
+    white-space: wrap;
+    background: #fff;
+    position: relative;
+    border: 1px solid transparent;
+    padding: 10px;
+}
+.dwrap:hover {
+    /* border: 1px dashed brown; */
+    
+}
+.dwrap img{
+    opacity: 1;
+}
+
+.dwrap:hover img{
+    opacity: 0.5;
+}
+
+.view_link {
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    left:38%;
+}
+.dwrap:hover .view_link {
+    visibility: visible;
+    
+}
+
+@media (max-width: 720px){
+	.view_link {
+        top: 45%;
+        left:45%;
+    }
+}
+
+</style>
 <body class="page-template-default page page-id-3155 page-child parent-pageid-3143 wp-custom-logo mega-menu-menu-1 css3-animations no-js page-layout-full-width-no-sidebar overlap-enabled sidebar no-topbar elementor-default elementor-kit-26685 elementor-page elementor-page-3155">
 <div id="page" class="site"> <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
   <header id="masthead" class="site-header sticky mobile-menu"  >

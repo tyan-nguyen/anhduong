@@ -222,32 +222,43 @@ $vatLieuArray = [
     		?>
     		<div class="col-md-3 col-sm-6 div-vat-lieu">
     		<figure>
-    			<a href="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" class="fanc">
-    				<img src="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" />
-    				<figcaption style="display:none">
-    				<div class="fancy-caption">
-    				<div class="container">
-    					<div class="row">
-        					<div class="col-md-6">
-        						<img src="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" />
+    		<div class="dwrap" style="width: 100%;height:auto;">
+    			<img src="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" />
+    			
+    			<div class="view_link">
+                    <a class="elementor-button elementor-button-link elementor-size-sm fanc" href="#"> 
+                    <span class="elementor-button-content-wrapper"><span class="elementor-button-text"><i class="fa-solid fa-eye"></i></span></span>
+                    
+                    <figcaption style="display:none">
+        				<div class="fancy-caption">
+        				<div class="container">
+        					<div class="row">
+            					<div class="col-md-6">
+            						<img src="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" />
+            					</div>
+            					
+            					<div class="col-md-6 fancy-info">
+            						<h3 class="fancy-caption-title"><?= $vatLieu['title'] ?> <?= $vatLieu['subTitle']!=null?' - ': '' ?> <?= $vatLieu['subTitle'] ?></h3>
+            						<p class="fancy-caption-content"><?= $vatLieu['desc'] ?></p>
+            						
+            						<button class="btn-aperam" onclick="" tabindex="-1"> <i class="fa-solid fa-phone"></i> Gọi Hotline </button> &nbsp;
+            						<button class="btn-aperam" onclick="" tabindex="-1"> <i class="fa-solid fa-envelope"></i>Gửi liên hệ </button>
+            					</div>
         					</div>
-        					
-        					<div class="col-md-6 fancy-info">
-        						<h3 class="fancy-caption-title"><?= $vatLieu['title'] ?> <?= $vatLieu['subTitle']!=null?' - ': '' ?> <?= $vatLieu['subTitle'] ?></h3>
-        						<p class="fancy-caption-content"><?= $vatLieu['desc'] ?></p>
-        						
-        						<button class="btn-aperam" onclick="" tabindex="-1"> <i class="fa-solid fa-phone"></i> Gọi Hotline </button> &nbsp;
-        						<button class="btn-aperam" onclick="" tabindex="-1"> <i class="fa-solid fa-envelope"></i>Gửi liên hệ </button>
-        					</div>
-    					</div>
-    				
-    				</div>
-    				
-    				</div>
+        				
+        				</div>
+        				
+        				</div>
     				</figcaption>
-    			</a>
+                    
+                     </a>
+                </div>
+                
+    		</div>	
     			<h3><?= $vatLieu['title'] ?></h3>
     			<p class="subtitle"><?= $vatLieu['subTitle'] ?></p>
+    			
+    			
     		</figure>
     		</div>
     		<?php 

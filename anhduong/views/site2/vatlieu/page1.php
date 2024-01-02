@@ -2,6 +2,7 @@
 $vatLieuArray = [
     [
         'id'=>1,
+        'slug'=>'vat-lieu-1',
         'image'=>'vat-lieu-1.jpg',
         'title'=>'AD008/Cross Hairline Golden',
         'subTitle'=>'Bề mặt sọc chéo chống vân tay màu vàng',
@@ -10,6 +11,7 @@ $vatLieuArray = [
     
     [
         'id'=>2,
+        'slug'=>'vat-lieu-2',
         'image'=>'vat-lieu-2.jpg',
         'title'=>'AD008/Hairline Golden',
         'subTitle'=>'Bề mặt hairline chống vân tay màu vàng',
@@ -18,6 +20,7 @@ $vatLieuArray = [
     
     [
         'id'=>3,
+        'slug'=>'vat-lieu-3',
         'image'=>'vat-lieu-3.jpg',
         'title'=>'AD008/Sand Balsted Golden',
         'subTitle'=>'Bề mặt phun cát chống vân tay màu vàng',
@@ -26,6 +29,7 @@ $vatLieuArray = [
     
     [
         'id'=>4,
+        'slug'=>'vat-lieu-4',
         'image'=>'vat-lieu-4.jpg',
         'title'=>'AD008/Vibration Golden',
         'subTitle'=>'Bề mặt xước rối chống vân tay màu vàng',
@@ -34,6 +38,7 @@ $vatLieuArray = [
     
     [
         'id'=>5,
+        'slug'=>'vat-lieu-5',
         'image'=>'vat-lieu-5.jpg',
         'title'=>'AD009/Cross Hairline Golden Honey',
         'subTitle'=>'Bề mặt sọc chéo chống vân tay màu golden honey',
@@ -42,6 +47,7 @@ $vatLieuArray = [
     
     [
         'id'=>6,
+        'slug'=>'vat-lieu-6',
         'image'=>'vat-lieu-6.jpg',
         'title'=>'AD009/Sand Balsted Golden Honey',
         'subTitle'=>'Bề mặt phun cát chống vân tay màu golden honey',
@@ -50,6 +56,7 @@ $vatLieuArray = [
     
     [
         'id'=>7,
+        'slug'=>'vat-lieu-7',
         'image'=>'vat-lieu-7.jpg',
         'title'=>'AD009/Sand Balsted Golden Honey',
         'subTitle'=>'Bề mặt phun cát chống vân tay màu golden honey',
@@ -58,6 +65,7 @@ $vatLieuArray = [
     
     [
         'id'=>8,
+        'slug'=>'vat-lieu-8',
         'image'=>'vat-lieu-8.jpg',
         'title'=>'AD009/Vibration Golden Honey',
         'subTitle'=>'Bề mặt xước rối chống vân tay màu golden honey',
@@ -66,6 +74,7 @@ $vatLieuArray = [
     
     [
         'id'=>9,
+        'slug'=>'vat-lieu-9',
         'image'=>'vat-lieu-9.jpg',
         'title'=>'Bề mặt hairline màu light ivory',
         'subTitle'=>'',
@@ -74,6 +83,7 @@ $vatLieuArray = [
     
     [
         'id'=>10,
+        'slug'=>'vat-lieu-10',
         'image'=>'vat-lieu-10.jpg',
         'title'=>'Bề mặt hairline màu goldenrod',
         'subTitle'=>'',
@@ -82,6 +92,7 @@ $vatLieuArray = [
     
     [
         'id'=>11,
+        'slug'=>'vat-lieu-11',
         'image'=>'vat-lieu-11.jpg',
         'title'=>'Bề mặt hairline màu violet',
         'subTitle'=>'',
@@ -90,6 +101,7 @@ $vatLieuArray = [
     
     [
         'id'=>12,
+        'slug'=>'vat-lieu-12',
         'image'=>'vat-lieu-12.jpg',
         'title'=>'Bề mặt hairline màu rosybrown',
         'subTitle'=>'',
@@ -98,6 +110,7 @@ $vatLieuArray = [
     
     [
         'id'=>13,
+        'slug'=>'vat-lieu-13',
         'image'=>'vat-lieu-13.jpg',
         'title'=>'Bề mặt hairline màu copper red',
         'subTitle'=>'',
@@ -106,6 +119,7 @@ $vatLieuArray = [
     
     [
         'id'=>14,
+        'slug'=>'vat-lieu-14',
         'image'=>'vat-lieu-14.jpg',
         'title'=>'Bề mặt hairline màu rock black',
         'subTitle'=>'',
@@ -114,6 +128,7 @@ $vatLieuArray = [
     
     [
         'id'=>15,
+        'slug'=>'vat-lieu-15',
         'image'=>'vat-lieu-15.jpg',
         'title'=>'Bề mặt hairline màu smoky grey',
         'subTitle'=>'',
@@ -122,6 +137,7 @@ $vatLieuArray = [
     
     [
         'id'=>16,
+        'slug'=>'vat-lieu-16',
         'image'=>'vat-lieu-16.jpg',
         'title'=>'Bề mặt hairline màu purple bronze',
         'subTitle'=>'',
@@ -130,6 +146,7 @@ $vatLieuArray = [
     
     [
         'id'=>17,
+        'slug'=>'vat-lieu-17',
         'image'=>'vat-lieu-17.jpg',
         'title'=>'AD006/Cross Hairline Dark Grey ',
         'subTitle'=>'Bề mặt sọc chéo chống vân tay màu xám đen',
@@ -138,6 +155,7 @@ $vatLieuArray = [
     
     [
         'id'=>18,
+        'slug'=>'vat-lieu-18',
         'image'=>'vat-lieu-18.jpg',
         'title'=>'AD006/Vibration Dark Grey',
         'subTitle'=>'Bề mặt xước rối chống vân tay màu xám đen',
@@ -146,6 +164,7 @@ $vatLieuArray = [
     
     [
         'id'=>19,
+        'slug'=>'vat-lieu-19',
         'image'=>'vat-lieu-19.jpg',
         'title'=>'AD006/Hairline Dark Grey',
         'subTitle'=>'Bề mặt hairline chống vân tay màu xám đen',
@@ -154,6 +173,7 @@ $vatLieuArray = [
     
     [
         'id'=>20,
+        'slug'=>'vat-lieu-20',
         'image'=>'vat-lieu-20.jpg',
         'title'=>'AD006/Sand Balsted Dark Grey',
         'subTitle'=>'Bề mặt phun cát chống vân tay màu xám đen',
@@ -162,6 +182,7 @@ $vatLieuArray = [
     
     [
         'id'=>21,
+        'slug'=>'vat-lieu-21',
         'image'=>'vat-lieu-21.jpg',
         'title'=>'AD003/Cross Hairline Carbon Black',
         'subTitle'=>'Bề mặt sọc chéo chống vân tay màu than đen',
@@ -171,6 +192,7 @@ $vatLieuArray = [
     [
         'id'=>22,
         'image'=>'vat-lieu-22.jpg',
+        'slug'=>'vat-lieu-22',
         'title'=>'AD003/Sand Balsted Carbon Black',
         'subTitle'=>'Bề mặt phun cát chống vân tay màu than đen',
         'desc'=>'Ngày nay, người ta còn sử dụng inox mạ màu để tạo ra các sản phẩm bếp và đồ dùng gia dụng như thìa, nĩa, dao, phin café, tách uống nước, kệ giá để hàng hóa hoặc quần áo … Một số bộ dao và thìa nĩa được làm bằng inox màu vàng đồng mang lại vẻ đẹp sang trọng, đẳng cấp cho bàn ăn của gia đình hoặc các sự kiện.'
@@ -179,6 +201,7 @@ $vatLieuArray = [
     [
         'id'=>23,
         'image'=>'vat-lieu-23.jpg',
+        'slug'=>'vat-lieu-23',
         'title'=>'AD003/Vibration Carbon Black',
         'subTitle'=>'Bề mặt xước rối chống vân tay màu than đen',
         'desc'=>'Ngoài trang trí nội ngoại thất, inox màu cũng được sử dụng phổ biến để làm bảng hiệu, bảng quảng cáo, bảng tên công ty, logo, bảng chữ nổi…'
@@ -187,6 +210,7 @@ $vatLieuArray = [
     [
         'id'=>24,
         'image'=>'vat-lieu-24.jpg',
+        'slug'=>'vat-lieu-24',
         'title'=>'AD003/Hairline Carbon Black',
         'subTitle'=>'Bề mặt hairline chống vân tay màu than đen',
         'desc'=>'Nhờ ưu điểm và tính ứng dụng thực tế cao, inox mạ màu ngày càng trở thành lựa chọn phổ biến của nhiều người. Chúng không chỉ mang lại chất lượng cuộc sống đa dạng và nhiều sắc màu hơn, mà còn tiện ích và đẳng cấp hơn.'
@@ -210,32 +234,43 @@ $vatLieuArray = [
     		?>
     		<div class="col-md-3 col-sm-6 div-vat-lieu">
     		<figure>
-    			<a href="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" class="fanc">
-    				<img src="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" />
-    				<figcaption style="display:none">
-    				<div class="fancy-caption">
-    				<div class="container">
-    					<div class="row">
-        					<div class="col-md-6">
-        						<img src="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" />
+    		<div class="dwrap" style="width: 100%;height:auto;">
+    			<img src="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" />
+    			
+    			<div class="view_link">
+                    <div class="elementor-button elementor-button-link elementor-size-sm fanc" style="cursor: pointer;"> 
+                    <span class="elementor-button-content-wrapper"><span class="elementor-button-text"><i class="fa-solid fa-eye"></i></span></span>
+                    
+                    <figcaption style="display:none">
+        				<div class="fancy-caption">
+        				<div class="container">
+        					<div class="row">
+            					<div class="col-md-6">
+            						<img src="/anhduong2/images/vat-lieu/vat-lieu-<?= $vatLieu['id'] ?>.jpg" />
+            					</div>
+            					
+            					<div class="col-md-6 fancy-info">
+            						<h3 class="fancy-caption-title"><?= $vatLieu['title'] ?> <?= $vatLieu['subTitle']!=null?' - ': '' ?> <?= $vatLieu['subTitle'] ?></h3>
+            						<p class="fancy-caption-content"><?= $vatLieu['desc'] ?></p>
+            						
+            						<button class="btn-aperam" onclick="" tabindex="-1"><i class="fa-solid fa-phone"></i> Gọi Hotline</button> &nbsp;
+            						<a class="btn-aperam elementor-button elementor-button-link elementor-size-sm" tabindex="-1" href="/<?= $vatLieu['slug'] ?>"><i class="fa-solid fa-link"></i> Xem chi tiết</a>
+            					</div>
         					</div>
-        					
-        					<div class="col-md-6 fancy-info">
-        						<h3 class="fancy-caption-title"><?= $vatLieu['title'] ?> <?= $vatLieu['subTitle']!=null?' - ': '' ?> <?= $vatLieu['subTitle'] ?></h3>
-        						<p class="fancy-caption-content"><?= $vatLieu['desc'] ?></p>
-        						
-        						<button class="btn-aperam" onclick="" tabindex="-1"> <i class="fa-solid fa-phone"></i> Gọi Hotline </button> &nbsp;
-        						<button class="btn-aperam" onclick="" tabindex="-1"> <i class="fa-solid fa-envelope"></i>Gửi liên hệ </button>
-        					</div>
-    					</div>
-    				
-    				</div>
-    				
-    				</div>
+        				
+        				</div>
+        				
+        				</div>
     				</figcaption>
-    			</a>
-    			<h3><?= $vatLieu['title'] ?></h3>
+                    
+                     </div>
+                </div>
+                
+    		</div>	
+    			<a href="/<?= $vatLieu['slug'] ?>"><h3><?= $vatLieu['title'] ?></h3></a>
     			<p class="subtitle"><?= $vatLieu['subTitle'] ?></p>
+    			
+    			
     		</figure>
     		</div>
     		<?php 
