@@ -26,7 +26,7 @@
                           </div>
                           <div class="elementor-element elementor-element-12221fe elementor-align-center btn elementor-widget elementor-widget-button" data-id="12221fe" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
-                              <div class="elementor-button-wrapper"> <a class="elementor-button elementor-button-link  a-in-sp-menu elementor-size-sm" href="#"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-icon elementor-align-icon-right"> <i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i> </span> <span class="elementor-button-text">Xem thêm</span> </span> </a> </div>
+                              <div class="elementor-button-wrapper"> <a class="elementor-button elementor-button-link  a-in-sp-menu elementor-size-sm" href="/site2/tran-kim-loai"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-icon elementor-align-icon-right"> <i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i> </span> <span class="elementor-button-text">Xem thêm</span> </span> </a> </div>
                             </div>
                           </div>
                         </div>
@@ -62,7 +62,7 @@
                           </div>
                           <div class="elementor-element elementor-element-12221fe elementor-align-center btn elementor-widget elementor-widget-button" data-id="12221fe" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
-                              <div class="elementor-button-wrapper"> <a class="elementor-button elementor-button-link  a-in-sp-menu elementor-size-sm" href="#"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-icon elementor-align-icon-right"> <i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i> </span> <span class="elementor-button-text">Xem thêm</span> </span> </a> </div>
+                              <div class="elementor-button-wrapper"> <a class="elementor-button elementor-button-link  a-in-sp-menu elementor-size-sm" href="/site2/san-pham?type=tam-op"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-icon elementor-align-icon-right"> <i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i> </span> <span class="elementor-button-text">Xem thêm</span> </span> </a> </div>
                             </div>
                           </div>
                         </div>
@@ -96,7 +96,7 @@
                           </div>
                           <div class="elementor-element elementor-element-12221fe elementor-align-center btn elementor-widget elementor-widget-button" data-id="12221fe" data-element_type="widget" data-widget_type="button.default">
                             <div class="elementor-widget-container">
-                              <div class="elementor-button-wrapper"> <a class="elementor-button elementor-button-link  a-in-sp-menu elementor-size-sm" href="#"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-icon elementor-align-icon-right"> <i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i> </span> <span class="elementor-button-text">Xem thêm</span> </span> </a> </div>
+                              <div class="elementor-button-wrapper"> <a class="elementor-button elementor-button-link  a-in-sp-menu elementor-size-sm" href="/site2/san-pham?type=cua-inox"> <span class="elementor-button-content-wrapper"> <span class="elementor-button-icon elementor-align-icon-right"> <i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i> </span> <span class="elementor-button-text">Xem thêm</span> </span> </a> </div>
                             </div>
                           </div>
                         </div>

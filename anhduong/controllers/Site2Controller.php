@@ -1,9 +1,11 @@
 <?php
-
 namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
+use app\models\DataProduct;
+use app\models\DataApplication;
+use app\models\DataSanPham;
 
 class Site2Controller extends Controller
 {
@@ -49,14 +51,118 @@ class Site2Controller extends Controller
     
     public function actionVatLieuChiTiet($slug){
         $this->layout = 'vatLieuLayout';
-        $model = [
-            'id'=>1,
-            'slug'=>'vat-lieu-1',
-            'image'=>'vat-lieu-1.jpg',
-            'title'=>'AD008/Cross Hairline Golden',
-            'subTitle'=>'Bề mặt sọc chéo chống vân tay màu vàng',
-            'desc'=>'Inox mạ màu vàng mang tới vẻ đẹp trang nhã, thanh lịch rất hợp với các dạng không gian có phần cổ điển mang tới cho người nhìn sự phá cách, lạ mắt rất ấn tượng, đơn giản không phô trương.'
-        ];
-        return $this->render('vat-lieu-chi-tiet', ['vatLieu'=>$model]);
+        $data = DataProduct::data();
+        
+        $model = array();
+        foreach($data as $key => $value) {
+            if($slug == $value['slug']) {
+                $model = $value;
+                break;
+            }
+        }
+        return $this->render('vat-lieu-chi-tiet', [
+            'model'=>$model, 
+            'otherVatLieu'=>array_slice($data,0,4)
+        ]);
     }
+    
+    public function actionDuAn($page=null){
+        $this->layout = 'duAnLayout';
+        $data = DataApplication::data();
+        return $this->render('du-an', ['models'=>$data]);
+    }
+    
+    public function actionDuAnChiTiet($slug){
+        $this->layout = 'duAnLayout';
+        $data = DataApplication::data();
+        
+        $needle = $slug;
+        $model = array();
+        foreach($data as $key => $value) {
+            if($needle == $value['slug']) {
+                $model = $value;
+                break;
+            }
+        }
+        return $this->render('du-an-chi-tiet', [
+            'model'=>$model, 
+            'otherDuAn'=>array_slice($data,0,4)
+        ]);
+    }
+    
+    public function actionThietKe($page=null){
+        $this->layout = 'thietKeLayout';
+        $data = DataApplication::data();
+        return $this->render('thiet-ke', ['models'=>$data]);
+    }
+    
+    public function actionSanPham($type){
+        $this->layout = 'sanPhamLayout';
+        $data = DataSanPham::data();
+        $title = '';
+        if($type=='tam-op'){
+            $title = 'Tấm ốp';
+        } else if($type=='cua-inox'){
+            $title = 'Cửa Inox';
+        }
+        
+        $model = array();
+        foreach($data as $key => $value) {
+            if($type == $value['type']) {
+                $model[] = $value;
+            }
+        }
+        return $this->render('san-pham', ['model'=>$model, 'title'=>$title]);
+    }
+    
+    public function actionSanPhamChiTiet($slug){
+        $this->layout = 'sanPhamLayout';
+        $data = DataSanPham::data();
+        
+        $redata = array();
+       
+        
+        $model = array();
+        $title = '';
+        foreach($data as $key => $value) {
+            if($slug == $value['slug']) {
+                $model = $value;
+                if($value['type'] == 'tam-op'){
+                    $title = 'Tấm ốp';
+                    foreach($data as $key1 => $value1) {
+                        if($value1['type'] == 'tam-op') {
+                            $redata[] = $value1;
+                        }
+                    }
+                }else if($value['type'] == 'cua-inox'){
+                    $title = 'Cửa Inox';
+                    foreach($data as $key1 => $value1) {
+                        if($value1['type'] == 'cua-inox') {
+                            $redata[] = $value1;
+                        }
+                    }
+                }
+                break;
+            }
+        }
+        
+        return $this->render('san-pham-chi-tiet', [
+            'model'=>$model,
+            'title'=>$title,
+            'otherVatLieu'=>array_slice($redata,0,4)
+        ]);
+    }
+    
+    public function actionTranKimLoai(){
+        $this->layout = 'sanPhamSingleLayout';
+
+        return $this->render('tran-kim-loai');
+    }
+    
+    public function actionXemTranKimLoai(){
+        $this->layout = 'sanPhamSingleLayout';
+        
+        return $this->render('tran-kim-loai-view');
+    }
+    
 }

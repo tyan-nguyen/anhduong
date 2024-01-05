@@ -1,5 +1,14 @@
 <?= $this->render('header') ?>
+<style>
+.slider-nav-thumbnails .slick-slide {
+	opacity: 0.5;
+}
 
+.slider-nav-thumbnails .slick-slide.slick-active {
+	opacity: 1;
+  background: green;
+}
+</style>
 <body class="page-template-default page page-id-3155 page-child parent-pageid-3143 wp-custom-logo mega-menu-menu-1 css3-animations no-js page-layout-full-width-no-sidebar overlap-enabled sidebar no-topbar elementor-default elementor-kit-26685 elementor-page elementor-page-3155">
 <div id="page" class="site"> <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
   <header id="masthead" class="site-header sticky mobile-menu"  >
@@ -39,10 +48,12 @@
               <div data-elementor-type="wp-page" data-elementor-id="3155" class="elementor elementor-3155" data-elementor-post-type="page">
                 <?= $this->render('product/slide.php') ?>
                 <?php echo $this->render('product/breadrum.php') ?>
+                
+                <?= $this->render('product/product-test') ?>
                 <?php // $this->render('home/info-1.php') ?>
-                <?= $this->render('product/content-header') ?>
-                <?= $this->render('product/content-product') ?>
-                <?= $this->render('page/content-content') ?>
+                <?php // $this->render('product/content-header') ?>
+                <?php // $this->render('product/content-product') ?>
+                <?php // $this->render('page/content-content') ?>
                 <?php // $this->render('home/product-4.php') ?>
                 <?php // $this->render('home/banner') ?>
                 
@@ -85,6 +96,44 @@
     // add event open newsletter in popup
     openNewsletter();
 }); */
+
+$('.fanc').fancybox({
+	// Options will go here
+	/* caption : function( instance, item ) {
+      return $(this).find('figcaption').html();
+  	} */
+});
+
+
+$('.slider').slick({
+ 	slidesToShow: 1,
+ 	slidesToScroll: 1,
+ 	arrows: false,
+ 	fade: false,
+ 	asNavFor: '.slider-nav-thumbnails',
+ });
+
+ $('.slider-nav-thumbnails').slick({
+ 	slidesToShow: 5,
+ 	slidesToScroll: 1,
+ 	asNavFor: '.slider',
+ 	dots: false,
+ 	focusOnSelect: true
+ });
+
+ // Remove active class from all thumbnail slides
+ $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+
+ // Set active class to first thumbnail slides
+ $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
+
+ // On before slide change match active thumbnail to current slide
+ $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+ 	var mySlideNumber = nextSlide;
+ 	$('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+ 	$('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+});
+
 </script>
 </body>
 </html>

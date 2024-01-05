@@ -49,6 +49,10 @@ $config = [
             'rules' => [
                 '' => 'site2/index',
                 '<slug>' => 'site2/vat-lieu-chi-tiet',
+                'du-an' => 'site2/du-an',
+                'xem-du-an/<slug>' => 'site2/du-an-chi-tiet',
+                'san-pham/<type>' => 'site2/san-pham',
+                'xem-san-pham/<slug>' => 'site2/san-pham-chi-tiet',
             ],
         ],
         
