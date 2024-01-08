@@ -17,6 +17,9 @@ $config = [
         'admin' => [
             'class' => 'app\modules\admin\admin',
         ],
+        'dashboard' => [
+            'class' => 'app\modules\dashboard\Module',
+        ],
         'gridview' => [ 'class' => '\kartik\grid\Module' ],
     	'user-management' => [
     				'class' => 'webvimark\modules\UserManagement\UserManagementModule',
@@ -55,12 +58,18 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
     	'view'=> [
-    		'theme' => [
+    		/* 'theme' => [
     			'class' => 'yii\base\Theme',
     			'basePath' => '@app/themes/anhduong',
     			'baseUrl' => '@web/themes/anhduong',
     			'pathMap' => ['@app/views' => '@app/themes/anhduong'],
-    		],
+    		], */
+    	    'theme' => [
+    	        'class' => 'yii\base\Theme',
+    	        'basePath' => '@app/themes/default',
+    	        'baseUrl' => '@web/themes/default',
+    	        'pathMap' => ['@app/views' => '@app/themes/default'],
+    	    ],
     	],
     	'user' => [
 			'class' => 'webvimark\modules\UserManagement\components\UserConfig',
