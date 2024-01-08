@@ -412,12 +412,12 @@ h5 {
 /* --------------------------------- SHADOWN -------------------------------- */
 /* -------------------------------------------------------------------------- */
 html {
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
 
 body {
   font-family: "Nunito", sans-serif !important;
-  font-size: 14px;
+  font-size: 16px;
   color: #050504;
   background: #fff;
   line-height: 1.4;
@@ -927,7 +927,7 @@ header.site-header .site-header-inner .nav-element .top-bar .top-navigation ul l
   position: relative;
   text-transform: capitalize;
   border-left: solid 1px rgba(29, 30, 39, 0.6);
-  font-size: 1rem;
+  font-size: 0.9rem;
   /* @include lg {
       padding: 0 4px;
   }
@@ -2102,10 +2102,10 @@ header.stuck #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.curren
   color: red;
 }
 .bloc-contact .contact-col__item-check {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
 }
 .bloc-contact .contact-col__item-check .wpcf7-list-item-label {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
 }
 .bloc-contact .contact-col__item.mobile {
   text-align: center;
@@ -2379,7 +2379,7 @@ header.stuck #mega-menu-wrap-menu-1 #mega-menu-menu-1 > li.mega-menu-item.curren
   }
 }
 .newsletter__item-check .wpcf7-list-item-label {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
 }
 .newsletter__item .SumoSelect {
   min-width: 100%;
@@ -6718,7 +6718,7 @@ span.wpcf7-not-valid-tip {
   display: -webkit-box;
   -webkit-line-clamp: 3; 
   -webkit-box-orient: vertical; */
-  font-size: 12px;
+  font-size: 1rem;
   letter-spacing: -0.5px;
 }
 .app__item__info-btn {
@@ -6760,7 +6760,7 @@ span.wpcf7-not-valid-tip {
   color: white;
 }
 .app__item__hover-des {
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 .app__item__hover-btn {
   margin-top: 25px;

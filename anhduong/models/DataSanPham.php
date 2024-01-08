@@ -273,7 +273,81 @@ Với các thanh inox chất lượng, được sơn các lớp bảo vệ nên 
 <h3>BẢO ĐẢM TÍNH THẨM MỸ</h3>
 <p>Ngày nay, mẫu cửa này không chỉ đảm bảo về mặt chất lượng mà phải đảm bảo tính thẩm mỹ. Cửa kính cường lực khung inox giúp cho không gian trở nên thoáng hơn. Việc dùng kính cường lực sẽ lấy được ánh sáng tự nhiên, không gian trở nên sáng hơn.</p>'
             ],
+            //tran kim loai
+            [
+                'id'=>21,
+                'type'=>'tran-kim-loai',
+                'slug'=>'tran-kim-loai-6',
+                'image'=>'tran-kim-loai-6.jpg',
+                'images'=>[
+                    0=>'tran-kim-loai-6.jpg',
+                    1=>'tran-kim-loai-6-2.jpg',
+                ],
+                'title'=>'METALWORKS VECTOR and Vector Exterior',
+                'subTitle'=>'',
+                'desc'=>'',
+                'content'=>''
+            ],
             
+            [
+                'id'=>22,
+                'type'=>'tran-kim-loai',
+                'slug'=>'tran-kim-loai-2',
+                'image'=>'tran-kim-loai-2.jpg?v=2',
+                'images'=>[
+                    0=>'tran-kim-loai-2.jpg?v=2',
+                    1=>'tran-kim-loai-2-2.jpg?v=2',
+                ],
+                'title'=>'METALWORKS Linear - Classics',
+                'subTitle'=>'',
+                'desc'=>'',
+                'content'=>''
+            ],
+            
+            [
+                'id'=>23,
+                'type'=>'tran-kim-loai',
+                'slug'=>'tran-kim-loai-3',
+                'image'=>'tran-kim-loai-3.jpg',
+                'images'=>[
+                    0=>'tran-kim-loai-3.jpg',
+                    1=>'tran-kim-loai-3-2.jpg',
+                ],
+                'title'=>'METALWORKS Linear - DIVERGE',
+                'subTitle'=>'',
+                'desc'=>'',
+                'content'=>''
+            ],
+            
+            [
+                'id'=>24,
+                'type'=>'tran-kim-loai',
+                'slug'=>'tran-kim-loai-4',
+                'image'=>'tran-kim-loai-4.jpg',
+                'images'=>[
+                    0=>'tran-kim-loai-4.jpg',
+                    1=>'tran-kim-loai-4-2.jpg',
+                ],
+                'title'=>'METALWORKS IMMIX Linear',
+                'subTitle'=>'',
+                'desc'=>'',
+                'content'=>''
+            ],
+            
+            [
+                'id'=>25,
+                'type'=>'tran-kim-loai',
+                'slug'=>'tran-kim-loai-5',
+                'image'=>'tran-kim-loai-5.jpg',
+                'images'=>[
+                    0=>'tran-kim-loai-5.jpg',
+                    1=>'tran-kim-loai-5-2.jpg',
+                ],
+                'title'=>'METALWORKS IMMIX Blades',
+                'subTitle'=>'',
+                'desc'=>'',
+                'content'=>''
+            ],
             
         ];
         return $sanPhamArray;

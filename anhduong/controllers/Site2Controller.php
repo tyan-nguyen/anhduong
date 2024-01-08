@@ -155,14 +155,40 @@ class Site2Controller extends Controller
     
     public function actionTranKimLoai(){
         $this->layout = 'sanPhamSingleLayout';
-
-        return $this->render('tran-kim-loai');
+        $data = DataSanPham::data();
+        
+        $model = array();
+        foreach($data as $key => $value) {
+            if($value['type'] == 'tran-kim-loai') {
+                $model[] = $value;
+            }
+        }
+        return $this->render('tran-kim-loai', ['model'=>$model]);
     }
     
-    public function actionXemTranKimLoai(){
+    public function actionXemTranKimLoai($slug){
         $this->layout = 'sanPhamSingleLayout';
+        $data = DataSanPham::data();
         
-        return $this->render('tran-kim-loai-view');
+        $redata = array();
+        
+        
+        $model = array();
+        foreach($data as $key => $value) {
+            if($slug == $value['slug']) {
+                $model = $value;
+                if($value['type'] == 'tran-kim-loai'){
+                    foreach($data as $key1 => $value1) {
+                        if($value1['type'] == 'tran-kim-loai' && $value1['slug'] != $slug) {
+                            $redata[] = $value1;
+                        }
+                    }
+                }
+                break;
+            }
+        }
+        return $this->render('tran-kim-loai-view', [ 'model'=>$model,
+            'otherVatLieu'=>array_slice($redata,0,4)]);
     }
     
 }

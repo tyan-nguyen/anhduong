@@ -250,6 +250,65 @@ $('#slider3').slick({
  	$('#slider-nav-thumbnails-3 .slick-slide').eq(mySlideNumber).addClass('slick-active');
 });
 
+
+$('#slider4').slick({
+ 	slidesToShow: 1,
+ 	slidesToScroll: 1,
+ 	arrows: false,
+ 	fade: false,
+ 	asNavFor: '#slider-nav-thumbnails-4',
+ });
+
+ $('#slider-nav-thumbnails-4').slick({
+ 	slidesToShow: 5,
+ 	slidesToScroll: 1,
+ 	asNavFor: '#slider4',
+ 	dots: false,
+ 	focusOnSelect: true
+ });
+
+ // Remove active class from all thumbnail slides
+ $('#slider-nav-thumbnails-4 .slick-slide').removeClass('slick-active');
+
+ // Set active class to first thumbnail slides
+ $('#slider-nav-thumbnails-4 .slick-slide').eq(0).addClass('slick-active');
+
+ // On before slide change match active thumbnail to current slide
+ $('#slide4').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+ 	var mySlideNumber = nextSlide;
+ 	$('#slider-nav-thumbnails-4 .slick-slide').removeClass('slick-active');
+ 	$('#slider-nav-thumbnails-4 .slick-slide').eq(mySlideNumber).addClass('slick-active');
+});
+
+$('#slider5').slick({
+ 	slidesToShow: 1,
+ 	slidesToScroll: 1,
+ 	arrows: false,
+ 	fade: false,
+ 	asNavFor: '#slider-nav-thumbnails-5',
+ });
+
+ $('#slider-nav-thumbnails-5').slick({
+ 	slidesToShow: 5,
+ 	slidesToScroll: 1,
+ 	asNavFor: '#slider5',
+ 	dots: false,
+ 	focusOnSelect: true
+ });
+
+ // Remove active class from all thumbnail slides
+ $('#slider-nav-thumbnails-5 .slick-slide').removeClass('slick-active');
+
+ // Set active class to first thumbnail slides
+ $('#slider-nav-thumbnails-5 .slick-slide').eq(0).addClass('slick-active');
+
+ // On before slide change match active thumbnail to current slide
+ $('#slide5').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+ 	var mySlideNumber = nextSlide;
+ 	$('#slider-nav-thumbnails-5 .slick-slide').removeClass('slick-active');
+ 	$('#slider-nav-thumbnails-5 .slick-slide').eq(mySlideNumber).addClass('slick-active');
+});
+
 </script>
 </body>
 </html>

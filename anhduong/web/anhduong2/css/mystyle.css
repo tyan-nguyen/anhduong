@@ -51,9 +51,16 @@ market product item 3 column
     white-space: normal;
 }
 
+.site-footer .widget .widget-title~*, .site-footer .widget .wp-block-group__inner-container :is(h1,h2,h3,h4,h5,h6)~*, .widget-area .widget .widget-title~*, .widget-area .widget .wp-block-group__inner-container :is(h1,h2,h3,h4,h5,h6)~* {
+    font-size: 1rem !important;
+}
+
 /**
 end market product item 3 column
 */
+
+.so-widget-sow-social-media-buttons-wire-df3bebaba07e .sow-social-media-button {
+    font-size: 0.8rem !important;
 
 @media (max-width: 1100px) {
 	

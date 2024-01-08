@@ -52,7 +52,7 @@
                   <div class="business-cases__item-infoholder">
                     <div class="business-cases__item-infoholder-inner">
                       <h3>Dự án công trình nghệ thuật</h3>
-                      <h3 style="color:#5f2869">SẢNH THANG MÁY</h3>
+                      <!-- <h3 style="color:#5f2869">SẢNH THANG MÁY</h3>-->
                     </div>
                   </div>
                   <!-- .business-cases__item-infoholder -->
