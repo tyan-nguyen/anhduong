@@ -16,7 +16,7 @@ use app\controllers\BaseController;
  */
 class CatelogiesController extends BaseController
 {
-    public $layout = 'admin';
+    public $layout = '/admin';
     /**
      * @inheritdoc
      */

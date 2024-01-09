@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use app\assets\AppAsset;
 use app\modules\admin\models\Settings;
-use app\themes\default\assets\AdminAssets;
+use app\themes\zero\assets\AdminAssets;
 AdminAssets::register($this);
 $setting = Settings::find()->one();
 ?>
@@ -15,6 +15,7 @@ $setting = Settings::find()->one();
    <?= Html::csrfMetaTags() ?>
   <title><?= $this->title ?></title>
   <?php $this->head() ?>
+  <?php /* ?>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -42,7 +43,8 @@ $setting = Settings::find()->one();
   
   <!-- custom style -->
   <link rel="stylesheet" href="<?= Yii::getAlias('@web') ?>/css/customadmin.css">
-
+	
+	<?php */ ?>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -361,6 +363,7 @@ $setting = Settings::find()->one();
 </div>
 <!-- ./wrapper -->
 
+<?php /* ?>
 <!-- jQuery 3 -->
 <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -400,12 +403,30 @@ $setting = Settings::find()->one();
 <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/dist/js/demo.js"></script>
 <script src="<?= Yii::getAlias('@web') ?>/assets/AdminLTE-2.4.12/dist/js/custom.js"></script>
 
+<?php */ ?>
 
- <script>
+
+ <script> /*
 			$("a[href='<?= Yii::$app->request->url ?>']").parent().addClass('active');
 			$("a[href='<?= Yii::$app->request->url ?>']").parent().parent().parent().addClass('active');
-
+*/
       </script>
+      
+
+<?php
+$currentUrl = Yii::$app->request->url;
+$script = <<< JS
+$(document).ready(function() {
+    $("a[href='$currentUrl']").parent().addClass('active');
+    $("a[href='$currentUrl']").parent().parent().parent().addClass('active');
+    $('.btnMessage').on('click', function(){
+    	$('.alert-message').toggle();
+    });
+});
+JS;
+$this->registerJs($script);
+?>
+
 <script>
 /*
 
@@ -425,10 +446,12 @@ Morris.Line({
 	  labels: ['Series A']
 	});
 */
-
+</script>
 <?php
 	$dayArrs = \app\models\PcounterByDay::find()->orderBy('day DESC')->limit(7)->all();
 ?>
+<?php /* ?>
+<script>
 // LINE CHART
 var line = new Morris.Line({
   element: 'line-chart',
@@ -444,18 +467,18 @@ var line = new Morris.Line({
   ykeys: ['item1'],
   labels: ['Truy cập'],
   xLabels: 'day',
- /* lineColors: ['#3c8dbc'],
-  hideHover: 'auto',
-  resize: true*/
+  //lineColors: ['#3c8dbc'],
+  //hideHover: 'auto',
+  //resize: true
 });
 
 </script>
-
+<?php */ ?>
 <script>
 //Date range picker
-$('#txtSearchTuNgay').daterangepicker({
+/* $('#txtSearchTuNgay').daterangepicker({
 	locale: { format: 'DD/MM/YYYY' }
-});
+}); */
 
 
 </script>
@@ -466,9 +489,7 @@ $('#txtSearchTuNgay').daterangepicker({
 <?php $this->endBody() ?>
 
 <script>
-$('.btnMessage').on('click', function(){
-	$('.alert-message').toggle();
-});
+
 </script>
 
 </body>
