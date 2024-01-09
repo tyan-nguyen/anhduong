@@ -12,6 +12,31 @@
         
         <li class="treeview">
           <a href="#">
+            <i class="fa fa-dashboard"></i> <span><?= Yii::t('app', 'New Posts')?></span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+    		<ul class="treeview-menu">
+            <?php if(User::hasRole('bientapvien')) { ?> 
+            <li><a href="<?= Yii::getAlias('@web') ?>/dashboard/news"><i class="fa fa-circle-o"></i> <?= Yii::t('app', 'Manage Posts')?></a></li> 
+            
+            <?php } ?>
+            <?php if(User::hasRole('bientapvien')) { ?> 
+            <li><a href="<?= Yii::getAlias('@web') ?>/dashboard/catelogies"><i class="fa fa-circle-o"></i> <?= Yii::t('app', 'Catelogies')?></a></li> 
+            <?php } ?>
+             <?php if(User::hasRole('bientapvien')) { ?> 
+            <li><a href="<?= Yii::getAlias('@web') ?>/dashboard/tag-list"><i class="fa fa-circle-o"></i> <?= Yii::t('app', 'Tags')?></a></li> 
+            <?php } ?>
+           
+          </ul>
+        </li>
+        
+        
+        
+        
+        <li class="treeview">
+          <a href="#">
             <i class="fa fa-dashboard"></i> <span><?= Yii::t('app', 'Posts')?></span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>

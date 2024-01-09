@@ -28,7 +28,7 @@ use Yii;
  * @property int|null $is_static
  * @property string|null $post_type
  */
-class News extends \yii\db\ActiveRecord
+class Posts extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}

@@ -1,10 +1,10 @@
 <?php
 
-namespace app\modules\admin\controllers;
+namespace app\modules\dashboard\controllers;
 
 use Yii;
-use app\modules\admin\models\Catelogies;
-use app\modules\admin\models\CatelogiesSearch;
+use app\modules\dashboard\models\Catelogies;
+use app\modules\dashboard\models\search\CatelogiesSearch;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use \yii\web\Response;

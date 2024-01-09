@@ -1,23 +1,23 @@
 <?php
 
-namespace app\modules\admin\controllers;
+namespace app\modules\dashboard\controllers;
 
 use Yii;
-use app\modules\admin\models\News;
-use app\modules\admin\models\NewsSearch;
+use app\modules\dashboard\models\Posts;
+use app\modules\dashboard\models\search\PostsSearch;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use \yii\web\Response;
 use yii\helpers\Html;
-use app\modules\admin\models\Catelogies;
+use app\modules\dashboard\models\Catelogies;
 use app\models\Custom;
-use app\modules\admin\models\TagList;
+use app\modules\dashboard\models\TagList;
 use app\controllers\BaseController;
 
 /**
- * NewsController implements the CRUD actions for News model.
+ * PostsController implements the CRUD actions for Posts model.
  */
-class NewsController extends BaseController
+class PostsController extends BaseController
 {
     /**
      * @inheritdoc
@@ -65,7 +65,7 @@ class NewsController extends BaseController
         $whatsInsideDir = scandir($picFolder);
         foreach ($whatsInsideDir as $fileOrDir) {
             if (is_dir($picFolder.$fileOrDir) && $fileOrDir != '.' && $fileOrDir != '..') {
-               $new = News::find()->where(['code'=>$fileOrDir])->one();
+               $new = Posts::find()->where(['code'=>$fileOrDir])->one();
                if($new == null){
                    $this->deleteDir($picFolder.$fileOrDir);
                    echo $picFolder.$fileOrDir;
@@ -76,7 +76,7 @@ class NewsController extends BaseController
     }
 
     /**
-     * Lists all News models.
+     * Lists all Posts models.
      * @return mixed
      */
     public function actionIndex($lang='vi', $static=false)
@@ -85,7 +85,7 @@ class NewsController extends BaseController
             throw new NotFoundHttpException('The requested page does not exist.');
         }
         
-        $searchModel = new NewsSearch();
+        $searchModel = new PostsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $lang, $static);
 
         return $this->render('index', [
@@ -96,7 +96,7 @@ class NewsController extends BaseController
     }
     
     /**
-     * Lists all News models.
+     * Lists all Posts models.
      * @return mixed
      */
     public function actionPage($lang, $static = false)
@@ -105,7 +105,7 @@ class NewsController extends BaseController
             throw new NotFoundHttpException('The requested page does not exist.');
         }
         
-        $searchModel = new NewsSearch();
+        $searchModel = new PostsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $lang, $static);
         
         return $this->render('index-page', [
@@ -117,7 +117,7 @@ class NewsController extends BaseController
 
 
     /**
-     * Displays a single News model.
+     * Displays a single Posts model.
      * @param integer $id
      * @return mixed
      */
@@ -127,7 +127,7 @@ class NewsController extends BaseController
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                    'title'=> "News #".$id,
+                    'title'=> "Posts #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $this->findModel($id),
                     ]),
@@ -142,7 +142,7 @@ class NewsController extends BaseController
     }
 
     /**
-     * Creates a new News model.
+     * Creates a new Posts model.
      * For ajax request will return json object
      * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
@@ -154,7 +154,7 @@ class NewsController extends BaseController
         }
         
         $request = Yii::$app->request;
-        $model = new News();  
+        $model = new Posts();  
         
         $catalogLists = Catelogies::find()->where('pid IS NULL OR pid = 0')->all();
         
@@ -184,15 +184,15 @@ class NewsController extends BaseController
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "Create new News",
-                    'content'=>'<span class="text-success">Create News success</span>',
+                    'title'=> "Create new Posts",
+                    'content'=>'<span class="text-success">Create Posts success</span>',
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
                             Html::a('Create More',['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
         
                 ];         
             }else{           
                 return [
-                    'title'=> "Create new News",
+                    'title'=> "Create new Posts",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -270,7 +270,7 @@ class NewsController extends BaseController
     }
 
     /**
-     * Updates an existing News model.
+     * Updates an existing Posts model.
      * For ajax request will return json object
      * and for non-ajax request if update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
@@ -292,7 +292,7 @@ class NewsController extends BaseController
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "Update News #".$id,
+                    'title'=> "Update Posts #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -302,7 +302,7 @@ class NewsController extends BaseController
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "News #".$id,
+                    'title'=> "Posts #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $model,
                     ]),
@@ -311,7 +311,7 @@ class NewsController extends BaseController
                 ];    
             }else{
                  return [
-                    'title'=> "Update News #".$id,
+                    'title'=> "Update Posts #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -385,7 +385,7 @@ class NewsController extends BaseController
     }
 
     /**
-     * Delete an existing News model.
+     * Delete an existing Posts model.
      * For ajax request will return json object
      * and for non-ajax request if deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
@@ -413,7 +413,7 @@ class NewsController extends BaseController
     }
 
      /**
-     * Delete multiple existing News model.
+     * Delete multiple existing Posts model.
      * For ajax request will return json object
      * and for non-ajax request if deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
@@ -444,15 +444,15 @@ class NewsController extends BaseController
     }
 
     /**
-     * Finds the News model based on its primary key value.
+     * Finds the Posts model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return News the loaded model
+     * @return Posts the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = News::findOne($id)) !== null) {
+        if (($model = Posts::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

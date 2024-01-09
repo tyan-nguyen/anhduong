@@ -1,10 +1,10 @@
 <?php
 
-namespace app\modules\admin\controllers;
+namespace app\modules\dashboard\controllers;
 
 use Yii;
-use app\modules\admin\models\Catelogies;
-use app\modules\admin\models\CatelogiesSearch;
+use app\modules\dashboard\models\TagList;
+use app\modules\dashboard\models\search\TagListSearch;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use \yii\web\Response;
@@ -12,9 +12,9 @@ use yii\helpers\Html;
 use app\controllers\BaseController;
 
 /**
- * CatelogiesController implements the CRUD actions for Catelogies model.
+ * TagListController implements the CRUD actions for TagList model.
  */
-class CatelogiesController extends BaseController
+class TagListController extends BaseController
 {
     /**
      * @inheritdoc
@@ -36,12 +36,12 @@ class CatelogiesController extends BaseController
     }
 
     /**
-     * Lists all Catelogies models.
+     * Lists all TagList models.
      * @return mixed
      */
     public function actionIndex()
     {    
-        $searchModel = new CatelogiesSearch();
+        $searchModel = new TagListSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -52,7 +52,7 @@ class CatelogiesController extends BaseController
 
 
     /**
-     * Displays a single Catelogies model.
+     * Displays a single TagList model.
      * @param integer $id
      * @return mixed
      */
@@ -62,7 +62,7 @@ class CatelogiesController extends BaseController
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                    'title'=> "Catelogies #".$id,
+                    'title'=> "TagList #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $this->findModel($id),
                     ]),
@@ -77,7 +77,7 @@ class CatelogiesController extends BaseController
     }
 
     /**
-     * Creates a new Catelogies model.
+     * Creates a new TagList model.
      * For ajax request will return json object
      * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
@@ -85,7 +85,7 @@ class CatelogiesController extends BaseController
     public function actionCreate()
     {
         $request = Yii::$app->request;
-        $model = new Catelogies();  
+        $model = new TagList();  
 
         if($request->isAjax){
             /*
@@ -94,7 +94,7 @@ class CatelogiesController extends BaseController
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "Create new Catelogies",
+                    'title'=> "Create new TagList",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -105,15 +105,15 @@ class CatelogiesController extends BaseController
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "Create new Catelogies",
-                    'content'=>'<span class="text-success">Create Catelogies success</span>',
+                    'title'=> "Create new TagList",
+                    'content'=>'<span class="text-success">Create TagList success</span>',
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
                             Html::a('Create More',['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
         
                 ];         
             }else{           
                 return [
-                    'title'=> "Create new Catelogies",
+                    'title'=> "Create new TagList",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -138,7 +138,7 @@ class CatelogiesController extends BaseController
     }
 
     /**
-     * Updates an existing Catelogies model.
+     * Updates an existing TagList model.
      * For ajax request will return json object
      * and for non-ajax request if update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
@@ -156,7 +156,7 @@ class CatelogiesController extends BaseController
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "Update Catelogies #".$id,
+                    'title'=> "Update TagList #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -166,7 +166,7 @@ class CatelogiesController extends BaseController
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "Catelogies #".$id,
+                    'title'=> "TagList #".$id,
                     'content'=>$this->renderAjax('view', [
                         'model' => $model,
                     ]),
@@ -175,7 +175,7 @@ class CatelogiesController extends BaseController
                 ];    
             }else{
                  return [
-                    'title'=> "Update Catelogies #".$id,
+                    'title'=> "Update TagList #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -198,7 +198,7 @@ class CatelogiesController extends BaseController
     }
 
     /**
-     * Delete an existing Catelogies model.
+     * Delete an existing TagList model.
      * For ajax request will return json object
      * and for non-ajax request if deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
@@ -226,7 +226,7 @@ class CatelogiesController extends BaseController
     }
 
      /**
-     * Delete multiple existing Catelogies model.
+     * Delete multiple existing TagList model.
      * For ajax request will return json object
      * and for non-ajax request if deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
@@ -257,15 +257,15 @@ class CatelogiesController extends BaseController
     }
 
     /**
-     * Finds the Catelogies model based on its primary key value.
+     * Finds the TagList model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Catelogies the loaded model
+     * @return TagList the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Catelogies::findOne($id)) !== null) {
+        if (($model = TagList::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
