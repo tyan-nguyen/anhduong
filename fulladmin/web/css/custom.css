@@ -46,6 +46,8 @@
     padding: 70px 0 0 0;
 }
 
+
+
 .site-footer .widget {
     margin-bottom: 20px;
 }
@@ -62,4 +64,9 @@ body{
 
 .site-mobile-menu .site-nav-wrap>li {
     margin: 2px auto;
+}
+
+/* 2024-01-09 */
+.content-wrapper {
+  width: auto !important;
 }

@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace app\themes\default\assets;
+namespace app\themes\zero\assets;
 
 use yii\web\AssetBundle;
 
@@ -18,7 +18,9 @@ class AdminAssets extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        /* 'assets/AdminLTE-2.4.12/bower_components/bootstrap/dist/css/bootstrap.min.css',
+         //'css/theme.css',
+        
+         'assets/AdminLTE-2.4.12/bower_components/bootstrap/dist/css/bootstrap.min.css',        
          'assets/AdminLTE-2.4.12/bower_components/font-awesome/css/font-awesome.min.css',
          'assets/AdminLTE-2.4.12/bower_components/Ionicons/css/ionicons.min.css',
          'assets/AdminLTE-2.4.12/dist/css/AdminLTE.min.css',
@@ -27,11 +29,15 @@ class AdminAssets extends AssetBundle
          'assets/AdminLTE-2.4.12/bower_components/jvectormap/jquery-jvectormap.css',
          'assets/AdminLTE-2.4.12/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css',
          'assets/AdminLTE-2.4.12/bower_components/bootstrap-daterangepicker/daterangepicker.css',
-         'assets/AdminLTE-2.4.12/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css', */
+         'assets/AdminLTE-2.4.12/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css',
+         'https://www.responsivefilemanager.com/fancybox/jquery.fancybox-1.3.4.css', 
+        'css/custom.css',
+        'css/customadmin.css'
     ];
     public $js = [
-        /* 'assets/AdminLTE-2.4.12/bower_components/jquery/dist/jquery.min.js',
-         'assets/AdminLTE-2.4.12/bower_components/jquery-ui/jquery-ui.min.js',
+        /*  'assets/AdminLTE-2.4.12/bower_components/jquery/dist/jquery.min.js',*/
+         'assets/AdminLTE-2.4.12/bower_components/jquery-ui/jquery-ui.min.js', 
+      //'https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js',
          'assets/AdminLTE-2.4.12/bower_components/bootstrap/dist/js/bootstrap.min.js',
          'assets/AdminLTE-2.4.12/bower_components/raphael/raphael.min.js',
          'assets/AdminLTE-2.4.12/bower_components/morris.js/morris.min.js',
@@ -46,8 +52,9 @@ class AdminAssets extends AssetBundle
          'assets/AdminLTE-2.4.12/bower_components/jquery-slimscroll/jquery.slimscroll.min.js',
          'assets/AdminLTE-2.4.12/bower_components/fastclick/lib/fastclick.js',
          'assets/AdminLTE-2.4.12/dist/js/adminlte.min.js',
-         'assets/AdminLTE-2.4.12/dist/js/pages/dashboard.js',
-         'assets/AdminLTE-2.4.12/dist/js/demo.js', */
+         //'assets/AdminLTE-2.4.12/dist/js/pages/dashboard.js',
+         //'assets/AdminLTE-2.4.12/dist/js/demo.js',
+         'assets/AdminLTE-2.4.12/dist/js/custom.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

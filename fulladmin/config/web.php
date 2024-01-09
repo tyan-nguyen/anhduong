@@ -66,9 +66,9 @@ $config = [
     		], */
     	    'theme' => [
     	        'class' => 'yii\base\Theme',
-    	        'basePath' => '@app/themes/default',
-    	        'baseUrl' => '@web/themes/default',
-    	        'pathMap' => ['@app/views' => '@app/themes/default'],
+    	        'basePath' => '@app/themes/zero',
+    	        'baseUrl' => '@web/themes/zero',
+    	        'pathMap' => ['@app/views' => '@app/themes/zero'],
     	    ],
     	],
     	'user' => [

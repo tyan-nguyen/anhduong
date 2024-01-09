@@ -2,8 +2,10 @@
 /** 1. VARIABLES
 --------------------------------------------------------------*/
 :root {
-    --admin-primary-color: #b83f26;
-    --admin-secondary-color: #df7e1c;
+  /*  --admin-primary-color: #b83f26;
+    --admin-secondary-color: #df7e1c;*/
+    --admin-primary-color: #2b4f65;
+    --admin-secondary-color: #608296;
 }
 
 .error-summary{

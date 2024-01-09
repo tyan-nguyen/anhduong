@@ -19,7 +19,7 @@ use app\controllers\BaseController;
  */
 class NewsController extends BaseController
 {
-    public $layout = 'admin';
+    public $layout = '/admin';
     /**
      * @inheritdoc
      */
