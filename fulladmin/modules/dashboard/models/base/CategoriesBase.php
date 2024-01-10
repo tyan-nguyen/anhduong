@@ -4,6 +4,7 @@ namespace app\modules\dashboard\models\base;
 
 use Yii;
 use yii\behaviors\SluggableBehavior;
+use app\components\CustomFunc;
 
 /**
  * This is the model class for table "news_catelogies".
@@ -17,10 +18,9 @@ use yii\behaviors\SluggableBehavior;
  * @property string|null $seo_title
  * @property string|null $seo_description
  * @property string|null $lang
- * @property int|null $lang_parent
- * @property string|null $name_en
- * @property string|null $seo_title_en
- * @property string|null $seo_description_en
+ * @property string|null $code
+ * @property string|null $date_created
+ * @property int|null $user_created
  */
 class CategoriesBase extends \app\models\NewsCatelogies
 {
@@ -51,10 +51,11 @@ class CategoriesBase extends \app\models\NewsCatelogies
     {
         return [
             [['name', 'slug'], 'required'],
-            [['pid', 'priority', 'level', 'lang_parent'], 'integer'],
+            [['pid', 'priority', 'level', 'user_created'], 'integer'],
+            [['seo_description'], 'string'],
+            [['date_created'], 'safe'],
+            [['name', 'slug', 'seo_title', 'code'], 'string', 'max' => 200],
             [['lang'], 'string', 'max' => 20],
-            [['name', 'slug', 'seo_title', 'seo_title_en', 'name_en'], 'string', 'max' => 200],
-            [['seo_description', 'seo_description_en'], 'string'],
         ];
     }
     
@@ -74,12 +75,29 @@ class CategoriesBase extends \app\models\NewsCatelogies
             //set lang if null
             if($this->lang == null){
                 $this->lang = Yii::$app->params['mainLang'];
-            }
-            //set parent lang if null
-            if($this->lang_parent == null){
-                $this->lang_parent = 0;
-            }
+            }            
         }
+        
+        //set code
+        if($this->code == null){
+            $this->code = $this->getRandomCode();
+        }
+        
         return true;
+    }
+    
+    /**
+     * tao random code khi them moi
+     * @return string
+     */
+    public function getRandomCode(){
+        $cus = new CustomFunc();
+        $code = rand(10,99) . $cus->generateRandomString();
+        $model = CategoriesBase::findOne(['code'=>$code]);
+        if($model == null){
+            return $code;
+        } else {
+            $this->getRandomCode();
+        }
     }
 }

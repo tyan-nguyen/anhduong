@@ -53,8 +53,10 @@ class CatelogiesController extends BaseController
     /**
      * get data of list categories to reload dropdownlist by seleted lang
      */
-    public function actionChangLang($langid){
-        //$data = Catelogies::findAll();
+    public function actionChangeLang($langid){
+       Yii::$app->response->format = Response::FORMAT_JSON;
+       $data = (new Catelogies())->getList($langid);
+       return $data;
     }
 
 
@@ -89,11 +91,14 @@ class CatelogiesController extends BaseController
      * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($code=NULL)
     {
         $request = Yii::$app->request;
         $model = new Catelogies();  
         $modalTitle = Yii::t('app','Add new') .' '. Yii::t('app','Catelogies');
+        if($code != NULL){
+            $model->code = $code;
+        }
 
         if($request->isAjax){
             /*
@@ -117,7 +122,6 @@ class CatelogiesController extends BaseController
                     'content'=>'<span class="text-success">'. Yii::t('app','Add data successful!') .'</span>',
                     'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
                         Html::a(Yii::t('app','Create more'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
-        
                 ];         
             }else{           
                 return [

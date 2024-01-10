@@ -30,11 +30,20 @@ class Catelogies extends CategoriesBase
      *
      * @return unknown
      */
-    public function getList()
+    public function getList($langid=NULL)
     {
         $this->arr = array();
+        
+        if($langid==NULL){
+            $langid = Yii::$app->params['mainLang'];
+        }
+        
         //lay ds catalog parent
-        $parentCatalogs = $this::find()->where('pid IS NULL OR pid = 0')->all();
+       // if($langid == null){
+       //     $parentCatalogs = $this::find()->where('pid IS NULL OR pid = 0')->all();
+       // } else {
+            $parentCatalogs = $this::find()->where("pid IS NULL OR pid = 0 AND lang = '".$langid."'")->all();
+       // }
         foreach ($parentCatalogs as $i=>$catalog){
             $this->arr[$catalog->id] = $catalog->showName;
             $this->getChildCatalog($this->arr, $catalog->id, '');
@@ -145,6 +154,7 @@ class Catelogies extends CategoriesBase
     }
     
     /**
+     * relation
      * vitual attribute in view
      */
     public function getParent(){
@@ -154,22 +164,24 @@ class Catelogies extends CategoriesBase
             return null;
     }
 
-    public function getParentLang(){
-        if($this->lang_parent > 0)
-             $this->hasOne(Catelogies::class, ['id' => 'lang_parent']);
-        else
-            return null;
-    }
     public function getShowParent(){
         if($this->parent != null){
             return $this->parent->name;
         }
         return null;
     }
-    public function getShowParentLang(){
-        if($this->parentLang != null){
-            return $this->parentLang->name;
-        }
-        return null;
+    
+    public function getLangList(){
+        return Catelogies::find()->select(['id', 'lang'])->where(['code'=>$this->code])->orderBy('lang DESC')->asArray()->all();
     }
+    
+    public function getLangAvailable($code){
+        $langArr = Yii::$app->params['langs'];
+        $cats = Catelogies::find()->where(['code'=>$code])->all();
+        foreach ($cats as $index=>$cat){
+            unset($langArr[$cat->lang]);
+        }
+        return $langArr;
+    }
+
 }

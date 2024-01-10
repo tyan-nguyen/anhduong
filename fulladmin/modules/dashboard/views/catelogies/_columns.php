@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Url;
+use yii\helpers\Html;
 
 return [
     [
@@ -42,6 +43,27 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'lang',
+        'format'=>'raw',
+        'value'=>function($model){
+            $html = '';
+            foreach ($model->langList as $key=>$val){
+                if($model->lang != $val['lang']){
+                    $html .= '&nbsp;' . Html::a($val['lang'], Yii::getAlias('@web/dashboard/catelogies/view?id='.$val['id']),
+                        ['role'=>'modal-remote'],
+                    );
+                } else {
+                    $html .= '&nbsp;' . $val['lang'];
+                }
+                
+            }
+            
+            if(count($model->langList) < count(Yii::$app->params['langs'])){
+                $html .= '&nbsp;' . Html::a('+', Yii::getAlias('@web/dashboard/catelogies/create?code=' . $model->code),
+                    ['role'=>'modal-remote'],
+                    );
+            }
+            return $html;
+        }
     ],
     [
         'class' => 'kartik\grid\ActionColumn',

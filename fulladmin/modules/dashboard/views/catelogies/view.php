@@ -1,6 +1,8 @@
 <?php
 
 use yii\widgets\DetailView;
+use yii\helpers\Html;
+use app\modules\dashboard\models\Catelogies;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Catelogies */
@@ -22,12 +24,29 @@ use yii\widgets\DetailView;
             'level',
             'seo_title',
             'seo_description',
-            'lang',
-            'lang_parent'=>[
-                'attribute'=>'lang_parent',
-                'value'=>$model->showParentLang
+            'lang'=>[
+                'attribute'=>'lang',
+                'format'=>'raw',
+                'value'=>function($model){
+                    $html = '';
+                    foreach ($model->langList as $key=>$val){
+                        if($model->lang != $val['lang']){
+                            $html .= '&nbsp;' . Html::a($val['lang'], Yii::getAlias('@web/dashboard/catelogies/view?id='.$val['id']), 
+                                ['role'=>'modal-remote'],
+                            );
+                        } else {
+                            $html .= '&nbsp;' . $val['lang'];
+                        }
+                    }
+                    return $html;
+                }
             ],
+            'code'
         ],
     ]) ?>
 
 </div>
+
+<?= var_dump($model->langList) ?>
+
+<?= var_dump($model->getList('vi')) ?>

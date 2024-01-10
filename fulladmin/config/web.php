@@ -134,6 +134,10 @@ $config = [
             'autoInstallTables' => true,
             'onlineTime' => 10, // min
         ],
+        'formatter' => [
+            'class' => 'yii\i18n\Formatter',
+            'nullDisplay' => '',
+        ],
         /* 'seo' => [
         		'class' => 'Amirax\SeoTools\Meta'
         ] */

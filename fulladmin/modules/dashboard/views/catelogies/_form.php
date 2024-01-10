@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use app\modules\admin\models\Catelogies;
+use app\modules\dashboard\models\Catelogies;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Catelogies */
@@ -47,14 +47,16 @@ use app\modules\admin\models\Catelogies;
     });
     </script>
     
-     <?= $form->field($model, 'lang')->dropDownList(Yii::$app->params['langs'], [
+     <?= $form->field($model, 'lang')->dropDownList(
+         $model->code == null ? Yii::$app->params['langs'] : $model->getLangAvailable($model->code), 
+         [
          'prompt'=>Yii::t('app', 'Select language'),
          'onchange'=>'ChangeLang()',
          'id'=>'txtLang'
      ]) ?>
     
     <?= $form->field($model,'pid')->dropDownList((new Catelogies())->getList(),
-				['class'=>'form-control', 'prompt'=>'--Chọn--']) ?>
+				['class'=>'form-control', 'prompt'=>'--Chọn--', 'id'=>'txtCat']) ?>
 				
 	<div class="row">
 		<div class="col-md-6">
@@ -82,10 +84,17 @@ function ChangeLang(){
      $.ajax({
             url: '/dashboard/catelogies/change-lang',
            type: 'get',
+           dataType: 'json',
            data: {langid: $("#txtLang").val()},
            success: function (data) {
-              alert(data);
-
+           		console.log(data);
+           		$('#txtCat').children().remove();
+           		$('#txtCat').append('<option value="">--Chọn--</option>');
+           		for (var key in data) {
+                    if (data.hasOwnProperty(key)) {
+                      $('#txtCat').append('<option value="'+key+'">'+ data[key] +'</option>');
+                    }
+                }
            }
 
       });

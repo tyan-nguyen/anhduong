@@ -7,9 +7,8 @@ use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use app\modules\dashboard\models\Catelogies;
 
-
 /**
- * CatelogiesSearch represents the model behind the search form about `app\modules\admin\models\Catelogies`.
+ * CatelogiesSearch represents the model behind the search form about `app\modules\dashboard\models\Catelogies`.
  */
 class CatelogiesSearch extends Catelogies
 {
@@ -19,8 +18,8 @@ class CatelogiesSearch extends Catelogies
     public function rules()
     {
         return [
-            [['id','pid', 'priority', 'level'], 'integer'],
-            [['name', 'name_en', 'slug'], 'safe'],
+            [['id','pid', 'priority', 'level', 'user_created'], 'integer'],
+            [['name', 'slug', 'lang', 'code', 'date_created', 'seo_title', 'seo_description'], 'safe'],
         ];
     }
 
@@ -61,11 +60,16 @@ class CatelogiesSearch extends Catelogies
             'pid' => $this->pid,
             'priority' => $this->priority,
             'level' => $this->level,
+            'lang' => $this->lang,
+            'user_created' => $this->user_created
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'name_en', $this->name_en])
-            ->andFilterWhere(['like', 'slug', $this->slug]);
+            ->andFilterWhere(['like', 'slug', $this->slug])
+            ->andFilterWhere(['like', 'code', $this->code])
+            ->andFilterWhere(['like', 'date_created', $this->date_created])
+            ->andFilterWhere(['like', 'seo_title', $this->seo_title])
+            ->andFilterWhere(['like', 'seo_description', $this->seo_description]);
 
         return $dataProvider;
     }
