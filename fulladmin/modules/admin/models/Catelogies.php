@@ -94,7 +94,7 @@ class Catelogies extends \app\models\NewsCatelogies
      *
      * @return unknown
      */
-    public function getList()
+    public function getList($langid=NULl)
     {
         $this->arr = array();
         //lay ds catalog parent

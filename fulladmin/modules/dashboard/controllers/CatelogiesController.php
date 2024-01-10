@@ -49,6 +49,13 @@ class CatelogiesController extends BaseController
             'dataProvider' => $dataProvider,
         ]);
     }
+    
+    /**
+     * get data of list categories to reload dropdownlist by seleted lang
+     */
+    public function actionChangLang($langid){
+        //$data = Catelogies::findAll();
+    }
 
 
     /**
@@ -62,12 +69,12 @@ class CatelogiesController extends BaseController
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                    'title'=> "Catelogies #".$id,
+                    'title'=> Yii::t('app','Catelogies'),
                     'content'=>$this->renderAjax('view', [
                         'model' => $this->findModel($id),
                     ]),
-                    'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a('Edit',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                            Html::a(Yii::t('app','Edit'),['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
                 ];    
         }else{
             return $this->render('view', [
@@ -86,6 +93,7 @@ class CatelogiesController extends BaseController
     {
         $request = Yii::$app->request;
         $model = new Catelogies();  
+        $modalTitle = Yii::t('app','Add new') .' '. Yii::t('app','Catelogies');
 
         if($request->isAjax){
             /*
@@ -94,31 +102,31 @@ class CatelogiesController extends BaseController
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "Create new Catelogies",
+                    'title'=> $modalTitle,
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
-                    'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                            Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
         
                 ];         
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "Create new Catelogies",
-                    'content'=>'<span class="text-success">Create Catelogies success</span>',
-                    'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a('Create More',['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                    'title'=> $modalTitle,
+                    'content'=>'<span class="text-success">'. Yii::t('app','Add data successful!') .'</span>',
+                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::a(Yii::t('app','Create more'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
         
                 ];         
             }else{           
                 return [
-                    'title'=> "Create new Catelogies",
+                    'title'=> $modalTitle,
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
-                    'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
         
                 ];         
             }
@@ -147,7 +155,8 @@ class CatelogiesController extends BaseController
     public function actionUpdate($id)
     {
         $request = Yii::$app->request;
-        $model = $this->findModel($id);       
+        $model = $this->findModel($id);   
+        $modalTitle = Yii::t('app','Update') .' '. Yii::t('app','Catelogies');
 
         if($request->isAjax){
             /*
@@ -156,31 +165,31 @@ class CatelogiesController extends BaseController
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "Update Catelogies #".$id,
+                    'title'=> $modalTitle,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
-                    'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
                 ];         
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "Catelogies #".$id,
+                    'title'=> Yii::t('app','Catelogies'),
                     'content'=>$this->renderAjax('view', [
                         'model' => $model,
                     ]),
-                    'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a('Edit',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::a(Yii::t('app','Edit'),['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
                 ];    
             }else{
                  return [
-                    'title'=> "Update Catelogies #".$id,
+                    'title'=> $modalTitle,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
-                    'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+                     'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                            Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
                 ];        
             }
         }else{
@@ -268,7 +277,7 @@ class CatelogiesController extends BaseController
         if (($model = Catelogies::findOne($id)) !== null) {
             return $model;
         } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
+            throw new NotFoundHttpException(Yii::t('app','The requested page does not exist.'));
         }
     }
 }

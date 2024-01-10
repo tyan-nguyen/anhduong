@@ -63,3 +63,5 @@ CrudAsset::register($this);
     "footer"=>"",// always need it for jquery plugin
 ])?>
 <?php Modal::end(); ?>
+
+

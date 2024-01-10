@@ -1,76 +1,12 @@
 <?php
 
 namespace app\modules\dashboard\models;
-
 use Yii;
 use yii\behaviors\SluggableBehavior;
+use app\modules\dashboard\models\base\CategoriesBase;
 
-/**
- * This is the model class for table "news_catelogies".
- *
- * @property int $id
- * @property string $name
- * @property string $slug
- * @property int|null $pid
- * @property int|null $priority
- * @property int|null $level
- * @property string|null $seo_title
- * @property string|null $seo_description
- * @property string|null $name_en
- * @property string|null $seo_title_en
- * @property string|null $seo_description_en
- */
-class Catelogies extends \app\models\NewsCatelogies
+class Catelogies extends CategoriesBase
 {
-    CONST URL_CATELOGIES = '/cat/';
-    
-    /**
-     * ---------virtual varible ---------
-     */
-    public $arr;
-    
-    public function behaviors()
-    {
-        return [
-            [
-                'class' => SluggableBehavior::className(),
-                'attribute' => 'name',
-                'immutable' => true,
-                'ensureUnique'=>true,
-                //'uniqueValidator'=>[]
-                // 'slugAttribute' => 'slug',
-            ],
-        ];
-    }
-    /**
-     * {@inheritdoc}
-     */
-    public function rules()
-    {
-        return [
-            [['name', 'slug'], 'required'],
-            [['pid', 'priority', 'level'], 'integer'],
-            [['name', 'slug', 'seo_title', 'seo_title_en', 'name_en'], 'string', 'max' => 200],
-            [['seo_description', 'seo_description_en'], 'string'],
-        ];
-    }
-    
-    /**
-     * before save
-     */
-    public function beforeSave($insert)
-    {
-        if (parent::beforeSave($insert)) {
-            
-            if($this->pid == null){
-                $this->pid = 0;
-                $this->level = 1;
-            } else{
-                $this->level = $this::findOne($this->pid)->level + 1;
-            }          
-        }
-        return true;
-    }
     /**
      * get list index is id
      */
@@ -206,5 +142,34 @@ class Catelogies extends \app\models\NewsCatelogies
     
     public function getSeoDescription(){
         return $this->showSeoDescription == null ? '' : $this->showSeoDescription;
+    }
+    
+    /**
+     * vitual attribute in view
+     */
+    public function getParent(){
+        if($this->pid > 0)
+            return $this->hasOne(Catelogies::class, ['id' => 'pid']);
+        else 
+            return null;
+    }
+
+    public function getParentLang(){
+        if($this->lang_parent > 0)
+             $this->hasOne(Catelogies::class, ['id' => 'lang_parent']);
+        else
+            return null;
+    }
+    public function getShowParent(){
+        if($this->parent != null){
+            return $this->parent->name;
+        }
+        return null;
+    }
+    public function getShowParentLang(){
+        if($this->parentLang != null){
+            return $this->parentLang->name;
+        }
+        return null;
     }
 }

@@ -18,10 +18,10 @@ return [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'name',
     ],
-    [
+    /* [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'name_en',
-    ],
+    ], */
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'slug',
@@ -38,7 +38,11 @@ return [
         'value'=>function($model){
         return number_format($model->getNumberNewsHasThisCatelog());
         }
-        ],
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'lang',
+    ],
     [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,

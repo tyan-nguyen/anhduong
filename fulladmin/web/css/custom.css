@@ -66,6 +66,22 @@ body{
     margin: 2px auto;
 }
 
+/** block form border **/
+.block-form{
+	background: #f2f2f2;
+	padding:10px;
+}
+.block-form-border{
+	border: 1px solid var(--admin-primary-color);
+}
+.block-form-title{
+	color: var(--admin-primary-color);
+}
+.seoButton{
+	cursor: pointer;
+}
+
+
 /* 2024-01-09 */
 .content-wrapper {
   width: auto !important;

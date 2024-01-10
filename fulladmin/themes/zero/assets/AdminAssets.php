@@ -31,8 +31,9 @@ class AdminAssets extends AssetBundle
          'assets/AdminLTE-2.4.12/bower_components/bootstrap-daterangepicker/daterangepicker.css',
          'assets/AdminLTE-2.4.12/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css',
          'https://www.responsivefilemanager.com/fancybox/jquery.fancybox-1.3.4.css', 
+        
+        'css/customadmin.css',
         'css/custom.css',
-        'css/customadmin.css'
     ];
     public $js = [
         /*  'assets/AdminLTE-2.4.12/bower_components/jquery/dist/jquery.min.js',*/

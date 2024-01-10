@@ -10,17 +10,23 @@ use yii\widgets\DetailView;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
+            //'id',
             'name',
-            'name_en',
+            //'name_en',
             'slug',
-            'pid',
+            'pid'=>[
+                'attribute'=>'pid',
+                'value'=>$model->showParent
+            ],
             'priority',
             'level',
             'seo_title',
             'seo_description',
-            'seo_title_en',
-            'seo_description_en'
+            'lang',
+            'lang_parent'=>[
+                'attribute'=>'lang_parent',
+                'value'=>$model->showParentLang
+            ],
         ],
     ]) ?>
 

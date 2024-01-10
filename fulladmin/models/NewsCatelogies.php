@@ -15,6 +15,8 @@ use Yii;
  * @property int|null $level
  * @property string|null $seo_title
  * @property string|null $seo_description
+ * @property string|null $lang
+ * @property int|null $lang_parent
  * @property string|null $name_en
  * @property string|null $seo_title_en
  * @property string|null $seo_description_en
@@ -36,9 +38,10 @@ class NewsCatelogies extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'slug'], 'required'],
-            [['pid', 'priority', 'level'], 'integer'],
+            [['pid', 'priority', 'level', 'lang_parent'], 'integer'],
             [['seo_description', 'seo_description_en'], 'string'],
             [['name', 'slug', 'seo_title', 'name_en', 'seo_title_en'], 'string', 'max' => 200],
+            [['lang'], 'string', 'max' => 20],
         ];
     }
 
@@ -56,6 +59,8 @@ class NewsCatelogies extends \yii\db\ActiveRecord
             'level' => Yii::t('app', 'Level'),
             'seo_title' => Yii::t('app', 'Seo Title'),
             'seo_description' => Yii::t('app', 'Seo Description'),
+            'lang' => Yii::t('app', 'Lang'),
+            'lang_parent' => Yii::t('app', 'Lang Parent'),
             'name_en' => Yii::t('app', 'Name En'),
             'seo_title_en' => Yii::t('app', 'Seo Title En'),
             'seo_description_en' => Yii::t('app', 'Seo Description En'),

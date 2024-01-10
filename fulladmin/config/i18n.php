@@ -8,6 +8,8 @@
  *
  * You can use 'yii message/config-template' command to create
  * template configuration file with detailed description for each parameter.
+ * 
+ * run: ./yii message/extract @app/config/i18n.php
  */
 return [
     
