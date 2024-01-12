@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Url;
 use yii\helpers\Html;
+use app\widgets\PostStatus;
 
 return [
     [
@@ -65,6 +66,16 @@ return [
             return $html;
         }
     ],
+    
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'public',
+        'format'=>'raw',
+        'value'=>function($model){
+            return PostStatus::widget(['value'=>$model->public, 'text'=>$model->getStatusLabel($model->public)]);
+        }
+    ],
+    
     [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,
@@ -72,6 +83,17 @@ return [
         'urlCreator' => function($action, $model, $key, $index) { 
                 return Url::to([$action,'id'=>$key]);
         },
+
+        'template'=>'{view}{update}{updateFull}{delete}',
+        'buttons' => [
+            'updateFull' => function ($url, $model, $key) {
+                return \yii\helpers\Html::a('<i class="fa fa-pencil-square-o" aria-hidden="true"></i>',
+                    Yii::getAlias('@web') . '/dashboard/catelogies/update-full?id='. $model->id, [
+                      'data-pjax'=>0  
+                    ]);
+            },
+        ],
+                
         'viewOptions'=>['role'=>'modal-remote','title'=>'View','data-toggle'=>'tooltip'],
         'updateOptions'=>['role'=>'modal-remote','title'=>'Update', 'data-toggle'=>'tooltip'],
         'deleteOptions'=>['role'=>'modal-remote','title'=>'Delete', 

@@ -28,6 +28,11 @@ CrudAsset::register($this);
                 ['content'=>
                     Html::a('<i class="glyphicon glyphicon-plus"></i>', ['create'],
                         ['role'=>'modal-remote','title'=> Yii::t('app','Create new') .' '. Yii::t('app','Categories'),'class'=>'btn btn-default']).
+                            
+                    Html::a('<i class="glyphicon glyphicon-plus"></i>', ['create-full'],
+                        ['data-pjax'=>0,'title'=> Yii::t('app','Create full') .' '. Yii::t('app','Categories'),'class'=>'btn btn-default']).
+                            
+                    
                     Html::a('<i class="glyphicon glyphicon-repeat"></i>', [''],
                     ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>Yii::t('app', 'Reset Grid')])
                     //'{toggleData}'.

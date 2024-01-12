@@ -17,7 +17,6 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'Send' => '@@@@',
     '-Select-' => '',
     'ACCOUNT' => '',
     'About' => '',
@@ -166,6 +165,7 @@ return [
     'Save and Exit' => '',
     'Select A Service' => '',
     'Select language' => '',
+    'Send' => '',
     'Send Message' => '',
     'Seo Description' => '',
     'Seo Title' => '',
@@ -265,12 +265,4 @@ return [
     'Your Phone' => '',
     'Your change language is exist in database, please check!' => '',
     'Your email' => '',
-    'Appointment' => '@@@@',
-    'Create More' => '@@@@',
-    'Image Name' => '@@@@',
-    'Image Title' => '@@@@',
-    'Opening Hours' => '@@@@',
-    'Seo Description En' => '@@@@',
-    'Seo Title En' => '@@@@',
-    'Turning Waste to Gold' => '@@@@',
 ];

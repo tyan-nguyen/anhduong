@@ -10,15 +10,19 @@ use app\components\CustomFunc;
  * This is the model class for table "news_catelogies".
  *
  * @property int $id
+ * @property string|null $cover
  * @property string $name
  * @property string $slug
  * @property int|null $pid
  * @property int|null $priority
  * @property int|null $level
+ * @property string|null $description
+ * @property string|null $content
  * @property string|null $seo_title
  * @property string|null $seo_description
  * @property string|null $lang
  * @property string|null $code
+ * @property int|null $public
  * @property string|null $date_created
  * @property int|null $user_created
  */
@@ -30,6 +34,35 @@ class CategoriesBase extends \app\models\NewsCatelogies
      * ---------virtual varible ---------
      */
     public $arr;
+    
+    /**
+     * Danh muc trang thai du an
+     * @return string[]
+     */
+    public static function getStatus(){
+        return [
+            'PUBLISH'=>'Công bố',
+            'HIDE'=>'Không công bố',
+            'DRAFT'=>'Bản nháp',
+        ];
+    }
+    
+    /**
+     * Danh muc Loai Kho luu tru label
+     * @param int $val
+     * @return string
+     */
+    public static function getStatusLabel($val){
+        $label = '';
+        if($val == 'PUBLISH'){
+            $label = Yii::t('app', 'PUBLISH');
+        }else if($val == 'HIDE'){
+            $label = Yii::t('app', 'HIDE');
+        }else if($val == 'DRAFT'){
+            $label = 'DRAFT';
+        }
+        return $label;
+    }
     
     public function behaviors()
     {
@@ -52,10 +85,11 @@ class CategoriesBase extends \app\models\NewsCatelogies
         return [
             [['name', 'slug'], 'required'],
             [['pid', 'priority', 'level', 'user_created'], 'integer'],
-            [['seo_description'], 'string'],
+            [['seo_description', 'description', 'content', ], 'string'],
             [['date_created'], 'safe'],
+            [['cover'], 'string', 'max' => 255],
             [['name', 'slug', 'seo_title', 'code'], 'string', 'max' => 200],
-            [['lang'], 'string', 'max' => 20],
+            [['lang', 'public'], 'string', 'max' => 20],
         ];
     }
     
@@ -75,12 +109,25 @@ class CategoriesBase extends \app\models\NewsCatelogies
             //set lang if null
             if($this->lang == null){
                 $this->lang = Yii::$app->params['mainLang'];
-            }            
+            }   
+            
+            //set public
+            if($this->public == null){
+                $this->public = 'DRAFT';
+            }
+            
+            $this->date_created = date('Y-m-d H:i:s');
+            $this->user_created = Yii::$app->user->id;
         }
         
         //set code
         if($this->code == null){
             $this->code = $this->getRandomCode();
+        }
+        
+        $dir = Yii::getAlias('@webroot'). '/images/posts/_categories/' . $this->code;
+        if (!file_exists($dir)  && !is_dir($dir)) {
+            mkdir($dir, 0777, true);
         }
         
         return true;

@@ -19,7 +19,7 @@ return [
     'messagePath' => __DIR__ . DIRECTORY_SEPARATOR .'..'. DIRECTORY_SEPARATOR . 'messages',
     // array, required, list of language codes that the extracted messages
     // should be translated to. For example, ['zh-CN', 'de'].
-    'languages' => ['en','vi'],
+    'languages' => ['en','vi','khmer'],
     
     'color' => null,
     'interactive' => true,

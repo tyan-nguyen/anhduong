@@ -19,7 +19,7 @@ class CatelogiesSearch extends Catelogies
     {
         return [
             [['id','pid', 'priority', 'level', 'user_created'], 'integer'],
-            [['name', 'slug', 'lang', 'code', 'date_created', 'seo_title', 'seo_description'], 'safe'],
+            [['name', 'slug', 'lang', 'code', 'date_created', 'seo_title', 'seo_description', 'description', 'content', 'public'], 'safe'],
         ];
     }
 
@@ -45,6 +45,7 @@ class CatelogiesSearch extends Catelogies
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'sort'=> ['defaultOrder' => ['date_created' => SORT_DESC]],
         ]);
 
         $this->load($params);
@@ -61,7 +62,8 @@ class CatelogiesSearch extends Catelogies
             'priority' => $this->priority,
             'level' => $this->level,
             'lang' => $this->lang,
-            'user_created' => $this->user_created
+            'user_created' => $this->user_created,
+            'public' => $this->public
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
@@ -69,7 +71,9 @@ class CatelogiesSearch extends Catelogies
             ->andFilterWhere(['like', 'code', $this->code])
             ->andFilterWhere(['like', 'date_created', $this->date_created])
             ->andFilterWhere(['like', 'seo_title', $this->seo_title])
-            ->andFilterWhere(['like', 'seo_description', $this->seo_description]);
+            ->andFilterWhere(['like', 'seo_description', $this->seo_description])
+            ->andFilterWhere(['like', 'description', $this->description])
+            ->andFilterWhere(['like', 'content', $this->content]);
 
         return $dataProvider;
     }

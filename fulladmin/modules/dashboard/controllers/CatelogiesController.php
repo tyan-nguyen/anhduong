@@ -110,6 +110,7 @@ class CatelogiesController extends BaseController
                     'title'=> $modalTitle,
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
+                        'code'=>$code
                     ]),
                     'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
                             Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
@@ -128,6 +129,7 @@ class CatelogiesController extends BaseController
                     'title'=> $modalTitle,
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
+                        'code'=>$code
                     ]),
                     'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
                         Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
@@ -143,10 +145,22 @@ class CatelogiesController extends BaseController
             } else {
                 return $this->render('create', [
                     'model' => $model,
+                    'code'=>$code
                 ]);
             }
         }
        
+    }
+    
+    public function actionCreateFull(){
+        $model = new \app\modules\dashboard\models\Catelogies();
+        $model->name = Yii::t('app', 'New Category Title Here...');
+        $model->slug = 'temp';
+        if($model->save()){
+            return $this->redirect(['update-full', 'id' => $model->id]);
+        } else {
+            
+        }
     }
 
     /**
@@ -159,7 +173,8 @@ class CatelogiesController extends BaseController
     public function actionUpdate($id)
     {
         $request = Yii::$app->request;
-        $model = $this->findModel($id);   
+        $model = $this->findModel($id); 
+        $oldModel = $this->findModel($id);//for check change language
         $modalTitle = Yii::t('app','Update') .' '. Yii::t('app','Catelogies');
 
         if($request->isAjax){
@@ -176,16 +191,40 @@ class CatelogiesController extends BaseController
                     'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
                         Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
                 ];         
-            }else if($model->load($request->post()) && $model->save()){
-                return [
-                    'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> Yii::t('app','Catelogies'),
-                    'content'=>$this->renderAjax('view', [
-                        'model' => $model,
-                    ]),
-                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                        Html::a(Yii::t('app','Edit'),['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
-                ];    
+            }else if($model->load($request->post())){
+                
+                if($oldModel->lang != $model->lang){
+                    $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
+                    return [
+                        'title'=> $modalTitle,
+                        'content'=>$this->renderAjax('update', [
+                            'model' => $model,
+                        ]),
+                        'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
+                    ];
+                }
+                
+                if ($model->save()){
+                    return [
+                        'forceReload'=>'#crud-datatable-pjax',
+                        'title'=> Yii::t('app','Catelogies'),
+                        'content'=>$this->renderAjax('view', [
+                            'model' => $model,
+                        ]),
+                        'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                            Html::a(Yii::t('app','Edit'),['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                    ]; 
+                } else {
+                    return [
+                        'title'=> $modalTitle,
+                        'content'=>$this->renderAjax('update', [
+                            'model' => $model,
+                        ]),
+                        'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
+                    ];
+                }
             }else{
                  return [
                     'title'=> $modalTitle,
@@ -207,6 +246,44 @@ class CatelogiesController extends BaseController
                     'model' => $model,
                 ]);
             }
+        }
+    }
+    
+    public function actionUpdateFull($id){
+        $request = Yii::$app->request;
+        $model = $this->findModel($id);
+        $oldModel = $this->findModel($id);//for check change language        
+        /*
+         *   Process for non-ajax request
+         */
+        if ($model->load($request->post())) {
+            
+            if($oldModel->lang != $model->lang){
+                $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
+                return $this->render('_form_full', [
+                    'model' => $model,
+                    'showErrorMessge'=>true
+                ]);
+            }
+            if($model->save()){
+                if(isset($_POST['btnSubmit']) && $_POST['btnSubmit'] == 'saveAndExit'){
+                    return $this->redirect(['index']);
+                } else {
+                return $this->render('_form_full', [
+                    'model' => $model,
+                    'showSuccessMessge'=>true
+                ]);
+                }
+            }else {
+                return $this->render('_form_full', [
+                    'model' => $model,
+                    'showErrorMessge'=>true
+                ]);
+            }
+        } else {
+            return $this->render('_form_full', [
+                'model' => $model,
+            ]);
         }
     }
 

@@ -120,8 +120,13 @@ $config = [
                 '/<slug>' => 'site/news',
                 'pages/<slug>' => 'site/pages',
                 
-                'cat/<slug>' => 'site/cat',
+                //'cat/<slug>' => 'site/cat',
                 'tag/<slug>' => 'site/tag',
+                
+                
+                'lang/<lang>'=>'bug/lang',
+                'cat/<lang>/<slug>'=>'bug/cat',
+                'cat/<slug>'=>'bug/cat',
                 
             ],
         ],

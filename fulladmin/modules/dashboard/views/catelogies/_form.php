@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use app\modules\dashboard\models\Catelogies;
+use webvimark\modules\UserManagement\models\User;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Catelogies */
@@ -48,22 +49,29 @@ use app\modules\dashboard\models\Catelogies;
     </script>
     
      <?= $form->field($model, 'lang')->dropDownList(
-         $model->code == null ? Yii::$app->params['langs'] : $model->getLangAvailable($model->code), 
+         (isset($code) && $code != null) 
+            ? $model->getLangAvailable($model->code) 
+            : Yii::$app->params['langs'], 
          [
-         'prompt'=>Yii::t('app', 'Select language'),
-         'onchange'=>'ChangeLang()',
-         'id'=>'txtLang'
-     ]) ?>
+             'prompt'=>Yii::t('app', 'Select language'),
+             'onchange'=>'ChangeLang()',
+             'id'=>'txtLang'
+         ]) ?>
     
+    <?= $form->field($model, 'description')->textarea(['rows' => 3]) ?>
+            
     <?= $form->field($model,'pid')->dropDownList((new Catelogies())->getList(),
 				['class'=>'form-control', 'prompt'=>'--Chọn--', 'id'=>'txtCat']) ?>
 				
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<?= $form->field($model, 'priority')->textInput(['maxlength' => true]) ?>
     	</div>
-    	<div class="col-md-6">
+    	<div class="col-md-4">
     		<?= $form->field($model, 'level')->textInput(['maxlength' => true]) ?>
+    	</div>
+    	<div class="col-md-4">
+    		<?= $form->field($model, 'public')->dropDownList($model->status, ['prompt'=>'-Select-']) ?>
     	</div>
 	</div>
 
@@ -87,7 +95,6 @@ function ChangeLang(){
            dataType: 'json',
            data: {langid: $("#txtLang").val()},
            success: function (data) {
-           		console.log(data);
            		$('#txtCat').children().remove();
            		$('#txtCat').append('<option value="">--Chọn--</option>');
            		for (var key in data) {
@@ -99,5 +106,4 @@ function ChangeLang(){
 
       });
 }
-
 </script>

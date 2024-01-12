@@ -10,5 +10,6 @@ use yii\helpers\Html;
 <div class="catelogies-create">
     <?= $this->render('_form', [
         'model' => $model,
+        'code'=>$code
     ]) ?>
 </div>

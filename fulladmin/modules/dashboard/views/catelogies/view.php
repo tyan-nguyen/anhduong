@@ -46,7 +46,3 @@ use app\modules\dashboard\models\Catelogies;
     ]) ?>
 
 </div>
-
-<?= var_dump($model->langList) ?>
-
-<?= var_dump($model->getList('vi')) ?>
