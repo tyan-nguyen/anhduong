@@ -19,8 +19,8 @@ class PostsSearch extends Posts
     {
         return [
             [['id'], 'integer'],
-            [['code', 'catelogies', 'title', 'slug', 'summary', 'content', 'date_created',                 
-               'post_status', 'site_keywords', 'is_static'], 'safe'],
+            [['code', 'categories', 'title', 'slug', 'summary', 'content', 'date_created',                 
+               'post_status'], 'safe'],
         ];
     }
 
@@ -57,11 +57,6 @@ class PostsSearch extends Posts
 
         $this->load($params);
         
-        if($static == 'true'){
-            $this->is_static = 1;
-        } else 
-            $this->is_static = 0;
-
         if (!$this->validate()) {
             // uncomment the following line if you do not want to return any records when validation fails
             // $query->where('0=1');
@@ -73,16 +68,14 @@ class PostsSearch extends Posts
             'date_created' => $this->date_created,
             'post_status' => $this->post_status,
             'lang' => $lang,
-            'is_static' => $this->is_static
         ]);
 
         $query->andFilterWhere(['like', 'code', $this->code])
-            ->andFilterWhere(['like', 'catelogies', $this->catelogies])
+            ->andFilterWhere(['like', 'categories', $this->categories])
             ->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'slug', $this->slug])
             ->andFilterWhere(['like', 'summary', $this->summary])
-            ->andFilterWhere(['like', 'content', $this->content])
-            ->andFilterWhere(['like', 'site_keywords', $this->site_keywords]);
+            ->andFilterWhere(['like', 'content', $this->content]);
 
         return $dataProvider;
     }

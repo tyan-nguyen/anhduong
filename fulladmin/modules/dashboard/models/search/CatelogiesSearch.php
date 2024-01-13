@@ -19,7 +19,7 @@ class CatelogiesSearch extends Catelogies
     {
         return [
             [['id','pid', 'priority', 'level', 'user_created'], 'integer'],
-            [['name', 'slug', 'lang', 'code', 'date_created', 'seo_title', 'seo_description', 'description', 'content', 'public'], 'safe'],
+            [['name', 'slug', 'lang', 'code', 'date_created', 'seo_title', 'seo_description', 'description', 'content', 'status'], 'safe'],
         ];
     }
 
@@ -63,7 +63,7 @@ class CatelogiesSearch extends Catelogies
             'level' => $this->level,
             'lang' => $this->lang,
             'user_created' => $this->user_created,
-            'public' => $this->public
+            'status' => $this->status
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])

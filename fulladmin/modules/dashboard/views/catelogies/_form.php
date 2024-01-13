@@ -71,7 +71,7 @@ use webvimark\modules\UserManagement\models\User;
     		<?= $form->field($model, 'level')->textInput(['maxlength' => true]) ?>
     	</div>
     	<div class="col-md-4">
-    		<?= $form->field($model, 'public')->dropDownList($model->status, ['prompt'=>'-Select-']) ?>
+    		<?= $form->field($model, 'status')->dropDownList($model->categoriesStatus, ['prompt'=>'-Select-']) ?>
     	</div>
 	</div>
 

@@ -18,11 +18,12 @@ use app\components\CustomFunc;
  * @property int|null $level
  * @property string|null $description
  * @property string|null $content
+ * @property string|null $seo_image
  * @property string|null $seo_title
  * @property string|null $seo_description
  * @property string|null $lang
  * @property string|null $code
- * @property int|null $public
+ * @property int|null $status
  * @property string|null $date_created
  * @property int|null $user_created
  */
@@ -39,7 +40,7 @@ class CategoriesBase extends \app\models\NewsCatelogies
      * Danh muc trang thai du an
      * @return string[]
      */
-    public static function getStatus(){
+    public static function getCategoriesStatus(){
         return [
             'PUBLISH'=>'Công bố',
             'HIDE'=>'Không công bố',
@@ -87,9 +88,9 @@ class CategoriesBase extends \app\models\NewsCatelogies
             [['pid', 'priority', 'level', 'user_created'], 'integer'],
             [['seo_description', 'description', 'content', ], 'string'],
             [['date_created'], 'safe'],
-            [['cover'], 'string', 'max' => 255],
+            [['cover', 'seo_image'], 'string', 'max' => 255],
             [['name', 'slug', 'seo_title', 'code'], 'string', 'max' => 200],
-            [['lang', 'public'], 'string', 'max' => 20],
+            [['lang', 'status'], 'string', 'max' => 20],
         ];
     }
     
@@ -111,9 +112,9 @@ class CategoriesBase extends \app\models\NewsCatelogies
                 $this->lang = Yii::$app->params['mainLang'];
             }   
             
-            //set public
-            if($this->public == null){
-                $this->public = 'DRAFT';
+            //set status
+            if($this->status == null){
+                $this->status = 'DRAFT';
             }
             
             $this->date_created = date('Y-m-d H:i:s');

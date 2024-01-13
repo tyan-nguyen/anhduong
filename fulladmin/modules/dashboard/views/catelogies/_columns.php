@@ -2,6 +2,8 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 use app\widgets\PostStatus;
+use app\modules\dashboard\models\Catelogies;
+use app\widgets\ShowLang;
 
 return [
     [
@@ -19,6 +21,12 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'name',
+        'format'=>'raw',
+        'value'=>function($model){
+            return Html::a($model->name, Yii::getAlias('@web/dashboard/catelogies/update-full?id='.$model->id),[
+                'data-pjax'=>0
+            ]);
+        }
     ],
     /* [
         'class'=>'\kartik\grid\DataColumn',
@@ -46,7 +54,8 @@ return [
         'attribute'=>'lang',
         'format'=>'raw',
         'value'=>function($model){
-            $html = '';
+            return ShowLang::widget(['model'=>$model]);
+            /* $html = '';
             foreach ($model->langList as $key=>$val){
                 if($model->lang != $val['lang']){
                     $html .= '&nbsp;' . Html::a($val['lang'], Yii::getAlias('@web/dashboard/catelogies/view?id='.$val['id']),
@@ -63,17 +72,21 @@ return [
                     ['role'=>'modal-remote'],
                     );
             }
-            return $html;
-        }
+            return $html; */
+        },
+        'filter'=>Html::activeDropDownList($searchModel, 'lang', Yii::$app->params['langs'], 
+            ['prompt'=>Yii::t('app', '--Select--'), 'class'=>'form-control'])
     ],
     
     [
         'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'public',
+        'attribute'=>'status',
         'format'=>'raw',
         'value'=>function($model){
-            return PostStatus::widget(['value'=>$model->public, 'text'=>$model->getStatusLabel($model->public)]);
-        }
+            return PostStatus::widget(['value'=>$model->status, 'text'=>$model->getStatusLabel($model->status)]);
+        },
+        'filter'=>Html::activeDropDownList($searchModel, 'status', (new Catelogies())->getCategoriesStatus(),
+            ['prompt'=>Yii::t('app', '--Select--'), 'class'=>'form-control'])
     ],
     
     [
@@ -84,7 +97,7 @@ return [
                 return Url::to([$action,'id'=>$key]);
         },
 
-        'template'=>'{view}{update}{updateFull}{delete}',
+       /*  'template'=>'{view}{update}{updateFull}{delete}',
         'buttons' => [
             'updateFull' => function ($url, $model, $key) {
                 return \yii\helpers\Html::a('<i class="fa fa-pencil-square-o" aria-hidden="true"></i>',
@@ -92,7 +105,7 @@ return [
                       'data-pjax'=>0  
                     ]);
             },
-        ],
+        ], */
                 
         'viewOptions'=>['role'=>'modal-remote','title'=>'View','data-toggle'=>'tooltip'],
         'updateOptions'=>['role'=>'modal-remote','title'=>'Update', 'data-toggle'=>'tooltip'],

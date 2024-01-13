@@ -19,7 +19,7 @@
           </a>
     		<ul class="treeview-menu">
             <?php if(User::hasRole('bientapvien')) { ?> 
-            <li><a href="<?= Yii::getAlias('@web') ?>/dashboard/news"><i class="fa fa-circle-o"></i> <?= Yii::t('app', 'Manage Posts')?></a></li> 
+            <li><a href="<?= Yii::getAlias('@web') ?>/dashboard/posts"><i class="fa fa-circle-o"></i> <?= Yii::t('app', 'Manage Posts')?></a></li> 
             
             <?php } ?>
             <?php if(User::hasRole('bientapvien')) { ?> 

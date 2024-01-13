@@ -100,7 +100,7 @@ class Catelogies extends CategoriesBase
      * get number post has this tag
      */
     public function getNumberNewsHasThisCatelog(){
-        return Posts::find()->andFilterWhere(['like', 'catelogies', $this->slug])->count();
+        return Posts::find()->andFilterWhere(['like', 'categories', $this->slug])->count();
     }
     
     /**

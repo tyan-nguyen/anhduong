@@ -7,12 +7,12 @@ use yii\behaviors\SluggableBehavior;
 use webvimark\modules\UserManagement\models\User;
 
 /**
- * This is the model class for table "news".
+ * This is the model class for table "posts".
  *
  * @property int $id
  * @property string|null $code
- * @property string|null $imgcover
- * @property string $catelogies
+ * @property string|null $cover
+ * @property string|null $categories
  * @property string|null $title
  * @property string|null $slug
  * @property string|null $summary
@@ -22,12 +22,10 @@ use webvimark\modules\UserManagement\models\User;
  * @property int|null $user_created
  * @property string|null $seo_title
  * @property string|null $seo_description
+ * @property string|null $seo_image
  * @property string|null $post_status
  * @property string|null $tags
- * @property string|null $site_keywords
  * @property string|null $lang
- * @property int|null $lang_parent
- * @property int|null $is_static
  * @property string|null $post_type
  */
 class PostsBase extends \app\models\Posts
@@ -56,12 +54,20 @@ class PostsBase extends \app\models\Posts
     public function rules()
     {
         return [
-            // [['catelogies', 'title'], 'required'],
+            // [['categories', 'title'], 'required'],
             [['title'], 'required'],
-            [['slug', 'summary', 'content', 'seo_description'], 'string'],
+            /* [['slug', 'summary', 'content', 'seo_description'], 'string'],
             [['date_created', 'date_updated', 'catalog', 'taglist'], 'safe'],
             [['user_created', 'is_static', 'lang_parent'], 'integer'],
-            [['code', 'imgcover', 'catelogies', 'seo_title', 'tags', 'site_keywords'], 'string', 'max' => 200],
+            [['code', 'imgcover', 'categories', 'seo_title', 'tags', 'site_keywords'], 'string', 'max' => 200],
+            [['title'], 'string', 'max' => 300],
+            [['post_status', 'post_type'], 'string', 'max' => 20],
+            [['lang'], 'string', 'max' => 5], */
+            [['slug', 'summary', 'content', 'seo_description'], 'string'],
+            [['date_created', 'date_updated'], 'safe'],
+            [['user_created'], 'integer'],
+            [['code', 'cover', 'seo_title', 'tags'], 'string', 'max' => 200],
+            [['categories', 'seo_image'], 'string', 'max' => 255],
             [['title'], 'string', 'max' => 300],
             [['post_status', 'post_type'], 'string', 'max' => 20],
             [['lang'], 'string', 'max' => 5],
@@ -71,13 +77,13 @@ class PostsBase extends \app\models\Posts
     /**
      * {@inheritdoc}
      */
-    public function attributeLabels()
+    /* public function attributeLabels()
     {
         return [
             'id' => 'ID',
             'code' => 'Code',
             'imgcover' => 'Imgcover',
-            'catelogies' => 'Catelogies',
+            'categories' => 'Categories',
             'title' => 'Title',
             'slug' => 'Slug',
             'summary' => 'Summary',
@@ -92,7 +98,7 @@ class PostsBase extends \app\models\Posts
             'site_keywords' => 'Site Keywords',
             'is_static' => 'Is Static'
         ];
-    }
+    } */
     
     /**
      * before save
@@ -103,13 +109,24 @@ class PostsBase extends \app\models\Posts
             if($this->isNewRecord){
                 if(!Yii::$app->user->isGuest)
                     $this->user_created = Yii::$app->user->id;
-                    $this->date_created = date('Y-m-d H:i:s');
-                    if($this->lang == null)
-                        $this->lang = 'vi';
-                        
-                        if($this->is_static == null)
-                            $this->is_static = 0;
-                            
+                $this->date_created = date('Y-m-d H:i:s');
+                //set lang if null
+                if($this->lang == null){
+                    $this->lang = Yii::$app->params['mainLang'];
+                }
+                //set status
+                if($this->post_status == null){
+                    $this->post_status = 'DRAFT';
+                }
+                
+                //set code
+                if($this->code == null){
+                    $this->code = $this->getRandomCode();
+                }
+                $dir = Yii::getAlias('@webroot'). '/images/posts/' . $this->code;
+                if (!file_exists($dir)  && !is_dir($dir)) {
+                    mkdir($dir, 0777, true);
+                }
             } else {
                 $this->date_updated = date('Y-m-d H:i:s');
             }
@@ -173,7 +190,7 @@ class PostsBase extends \app\models\Posts
      */
     public function getLangs(){
         return [
-            'vi' => 'Tiếng Việt ',
+            'vi' => 'Tiếng Việt',
             'en' => 'English',
         ];
     }

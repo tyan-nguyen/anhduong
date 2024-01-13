@@ -24,11 +24,11 @@ class Posts extends PostsBase
     }
     
     /**
-     * get catelogies
+     * get categories
      */
-    public function getCatelogiesList(){
+    public function getCategoriesList(){
         $result = array();
-        $list = explode(';', $this->catelogies);
+        $list = explode(';', $this->categories);
         foreach ($list as $item){
             $cat = Catelogies::find()->where(['slug'=>$item])->one();
             if($cat != null)
@@ -38,11 +38,11 @@ class Posts extends PostsBase
     }
     
     /**
-     * view catelogies in gridview
+     * view categories in gridview
      */
     public function getCatelogiesView(){
         $result = '';
-        $list = explode(';', $this->catelogies);
+        $list = explode(';', $this->categories);
         foreach ($list as $item){
             $cat = Catelogies::find()->where(['slug'=>$item])->one();
             if($cat != null)

@@ -91,13 +91,18 @@ class CatelogiesController extends BaseController
      * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate($code=NULL)
+    public function actionCreate($id=NULL)
     {
         $request = Yii::$app->request;
         $model = new Catelogies();  
         $modalTitle = Yii::t('app','Add new') .' '. Yii::t('app','Catelogies');
-        if($code != NULL){
-            $model->code = $code;
+        $code = '';
+        if($id != NULL){
+            $modelMain = Catelogies::findOne($id);
+            $code = $modelMain->code;
+            $model->code = $modelMain->code;
+            $model->name = $modelMain->name;
+            $model->slug = $modelMain->slug;
         }
 
         if($request->isAjax){

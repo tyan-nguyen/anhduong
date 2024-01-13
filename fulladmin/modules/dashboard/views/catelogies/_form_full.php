@@ -7,6 +7,7 @@ use webvimark\modules\UserManagement\models\User;
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Catelogies */
 /* @var $form yii\widgets\ActiveForm */
+$this->title = Yii::t('app', 'Categories');
 ?>
 
 <!-- editor -->
@@ -15,8 +16,6 @@ use webvimark\modules\UserManagement\models\User;
 
 
 <div class="catelogies-form">
-
-
 
 <?php 
 if(isset($showSuccessMessge)){
@@ -44,8 +43,6 @@ if(isset($showErrorMessge)){
     <div class="col-md-9">
      <?= $form->errorSummary($model) ?>
      
-     
-     
     <?php $nameLabel = $model->getAttributeLabel('name') 
     	. ' <span class="seoButton label label-warning" title="Thay đổi liên kết"><i class="glyphicon glyphicon-link"></i></span>' ?>
 
@@ -57,7 +54,7 @@ if(isset($showErrorMessge)){
     	<?= $form->field($model, 'description')->textarea(['rows' => 3]) ?>
     	
     	
-    	<div class="dSeo box box-solid block-form" style="display:block">
+    	<div class="dSeo box block-form block-form-border" style="display:block">
     	
     	 <div class="box-header with-border block-form-title">
     	 	<i class="fa fa-bullhorn" aria-hidden="true"></i>
@@ -70,6 +67,16 @@ if(isset($showErrorMessge)){
             <?= $form->field($model, 'seo_title')->textInput(['maxlength' => true]) ?>
             	
             <?= $form->field($model, 'seo_description')->textarea(['rows' => 3]) ?>
+            
+                <?php $nameLabel = $model->getAttributeLabel('seo_image') 
+        	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModalSeo" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
+    	 
+        	 <?= $form->field($model, 'seo_image')->textInput(['maxlength' => true, 'id'=>'fieldID5', /*'onchange'=>'changeCover()'*/])->label($nameLabel) ?>
+        	 	
+        	 <div id="dCover-fieldID5" class="dCover input-append">	  
+            	  <img src="<?= $model->seo_image ?>" />
+            </div>
+        
         </div>
         
         <?php // $form->field($model, 'seo_title_en')->textInput(['maxlength' => true]) ?>
@@ -111,7 +118,7 @@ if(isset($showErrorMessge)){
         		<?= $form->field($model, 'level')->textInput(['maxlength' => true]) ?>
     		</div>
 		</div>
-		<?= $form->field($model, 'public')->dropDownList($model->status, ['prompt'=>'-Select-']) ?>
+		<?= $form->field($model, 'status')->dropDownList($model->categoriesStatus, ['prompt'=>'-Select-']) ?>
 		
 		<?= $form->field($model, 'lang')->dropDownList(
          (isset($code) && $code != null) 
@@ -232,10 +239,32 @@ $(document).on('focusin', function(e) {
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<div class="modal modal2 fade" id="myModalSeo" >
+<div class="modal-dialog1" style="width:900px">
+  <div class="modal-content" style="height:700px;">
+    <div class="modal-header">
+      <button id="btnfieldID5" data-dismiss="modal" type="button" class="close" aria-hidden="true">&times;</button>
+      <h4 class="modal-title">Modal title</h4>
+    </div>
+    <div class="modal-body">
+      <iframe width="850" height="600" src="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID5'&fldr=_categories/<?= $model->code ?>&akey=<?= User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '' ?>" frameborder="0" style="overflow: scroll; overflow-x: hidden; overflow-y: scroll; "></iframe>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <?php 
 $this->registerJsFile(Yii::getAlias('@web') . "/js/script.js", ['position' => \yii\web\View::POS_END, 'depends' => [
     \yii\web\JqueryAsset::className()
 ]]);
+?>
+
+<?php
+$currentUrl = Yii::$app->request->url;
+$script = <<< JS
+//chua co
+JS;
+$this->registerJs($script);
 ?>
 
 <script>

@@ -17,7 +17,7 @@ use app\controllers\BaseController;
 /**
  * PostsController implements the CRUD actions for Posts model.
  */
-class PostsController extends BaseController
+class PostsController_old extends BaseController
 {
     /**
      * @inheritdoc
@@ -60,34 +60,34 @@ class PostsController extends BaseController
         rmdir($dirPath);
     }
     public function actionDelFolderNotUsed()
-    {
+    {        
         $picFolder = Yii::getAlias('@webroot/images/posts/');
         $whatsInsideDir = scandir($picFolder);
         foreach ($whatsInsideDir as $fileOrDir) {
             if (is_dir($picFolder.$fileOrDir) && $fileOrDir != '.' && $fileOrDir != '..') {
-                $new = Posts::find()->where(['code'=>$fileOrDir])->one();
-                if($new == null){
-                    $this->deleteDir($picFolder.$fileOrDir);
-                    echo $picFolder.$fileOrDir;
-                }
+               $new = Posts::find()->where(['code'=>$fileOrDir])->one();
+               if($new == null){
+                   $this->deleteDir($picFolder.$fileOrDir);
+                   echo $picFolder.$fileOrDir;
+               }
             }
         }
         echo 'da scan xong!';
     }
-    
+
     /**
      * Lists all Posts models.
      * @return mixed
      */
     public function actionIndex($lang='vi', $static=false)
-    {
+    {  
         if($lang != 'vi' && $lang != 'en'){
             throw new NotFoundHttpException('The requested page does not exist.');
         }
         
         $searchModel = new PostsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $lang, $static);
-        
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -114,56 +114,47 @@ class PostsController extends BaseController
             'lang'=>$lang
         ]);
     }
-    
-    
+
+
     /**
      * Displays a single Posts model.
      * @param integer $id
      * @return mixed
      */
     public function actionView($id)
-    {
+    {   
         $request = Yii::$app->request;
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                'title'=> "Posts #".$id,
-                'content'=>$this->renderAjax('view', [
-                    'model' => $this->findModel($id),
-                ]),
-                'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                Html::a('Edit',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
-            ];
+                    'title'=> "Posts #".$id,
+                    'content'=>$this->renderAjax('view', [
+                        'model' => $this->findModel($id),
+                    ]),
+                    'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                            Html::a('Edit',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                ];    
         }else{
             return $this->render('view', [
                 'model' => $this->findModel($id),
             ]);
         }
     }
-    
-    /**
-     * action create
-     * create default -> redirect to update page
-     */
-    public function actionCreate(){
-        $model = new Posts();
-        $model->
-    }
-    
+
     /**
      * Creates a new Posts model.
      * For ajax request will return json object
      * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate__old($lang, $static = false)
+    public function actionCreate($lang, $static = false)
     {
         if($lang != 'vi' && $lang != 'en'){
             throw new NotFoundHttpException('The requested page does not exist.');
         }
         
         $request = Yii::$app->request;
-        $model = new Posts();
+        $model = new Posts();  
         
         $catalogLists = Catelogies::find()->where('pid IS NULL OR pid = 0')->all();
         
@@ -174,11 +165,11 @@ class PostsController extends BaseController
                 mkdir($dir, 0777, true);
             }
         }
-        
+
         if($request->isAjax){
             /*
-             *   Process for ajax request
-             */
+            *   Process for ajax request
+            */
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
@@ -187,44 +178,44 @@ class PostsController extends BaseController
                         'model' => $model,
                     ]),
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                    Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
-                    
-                ];
+                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+        
+                ];         
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
                     'title'=> "Create new Posts",
                     'content'=>'<span class="text-success">Create Posts success</span>',
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                    Html::a('Create More',['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
-                    
-                ];
-            }else{
+                            Html::a('Create More',['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+        
+                ];         
+            }else{           
                 return [
                     'title'=> "Create new Posts",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                    Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
-                    
-                ];
+                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+        
+                ];         
             }
         }else{
             /*
-             *   Process for non-ajax request
-             */
+            *   Process for non-ajax request
+            */
             if ($model->load($request->post())) {
-                //categories
+                //catelogies
                 if($model->catalog != null){
                     $arr = array();
                     foreach ($model->catalog as $indexCat=>$valCat){
                         $arr[] = $indexCat;
                     }
-                    $model->categories = implode(';', $arr);
+                    $model->catelogies = implode(';', $arr);
                 }
                 //tags
-                if($model->taglist != null){
+               if($model->taglist != null){
                     $arr = array();
                     foreach ($model->taglist as $indexTag=>$valTag){
                         $checkTag = TagList::find()->where(['name'=>$valTag])->one();
@@ -275,9 +266,9 @@ class PostsController extends BaseController
                 ]);
             }
         }
-        
+       
     }
-    
+
     /**
      * Updates an existing Posts model.
      * For ajax request will return json object
@@ -288,16 +279,16 @@ class PostsController extends BaseController
     public function actionUpdate($id, $fromcreate=false)
     {
         $request = Yii::$app->request;
-        $model = $this->findModel($id);
+        $model = $this->findModel($id);   
         $this->view->title = 'Post #' . $id;
         
         $catalogLists = Catelogies::find()->where('pid IS NULL OR pid = 0')->all();
         
-        
+
         if($request->isAjax){
             /*
-             *   Process for ajax request
-             */
+            *   Process for ajax request
+            */
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
@@ -306,8 +297,8 @@ class PostsController extends BaseController
                         'model' => $model,
                     ]),
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                    Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
-                ];
+                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+                ];         
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
@@ -316,30 +307,30 @@ class PostsController extends BaseController
                         'model' => $model,
                     ]),
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                    Html::a('Edit',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
-                ];
+                            Html::a('Edit',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                ];    
             }else{
-                return [
+                 return [
                     'title'=> "Update Posts #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                    Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
-                ];
+                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+                ];        
             }
         }else{
             /*
-             *   Process for non-ajax request
-             */
+            *   Process for non-ajax request
+            */
             if ($model->load($request->post())) {
-                //categories
+                //catelogies
                 if($model->catalog != null){
                     $arr = array();
                     foreach ($model->catalog as $indexCat=>$valCat){
                         $arr[] = $indexCat;
                     }
-                    $model->categories = implode(';', $arr);
+                    $model->catelogies = implode(';', $arr);
                 }
                 //tags
                 if($model->taglist != null){
@@ -369,7 +360,7 @@ class PostsController extends BaseController
                             return $this->redirect(['index?lang=' . $model->lang]);
                         }
                     } else{
-                        
+                     
                         return $this->render('update', [
                             'model' => $model,
                             'catalogLists' => $catalogLists,
@@ -392,7 +383,7 @@ class PostsController extends BaseController
             }
         }
     }
-    
+
     /**
      * Delete an existing Posts model.
      * For ajax request will return json object
@@ -404,24 +395,24 @@ class PostsController extends BaseController
     {
         $request = Yii::$app->request;
         $this->findModel($id)->delete();
-        
+
         if($request->isAjax){
             /*
-             *   Process for ajax request
-             */
+            *   Process for ajax request
+            */
             Yii::$app->response->format = Response::FORMAT_JSON;
             return ['forceClose'=>true,'forceReload'=>'#crud-datatable-pjax'];
         }else{
             /*
-             *   Process for non-ajax request
-             */
+            *   Process for non-ajax request
+            */
             return $this->redirect(['index']);
         }
-        
-        
+
+
     }
-    
-    /**
+
+     /**
      * Delete multiple existing Posts model.
      * For ajax request will return json object
      * and for non-ajax request if deletion is successful, the browser will be redirected to the 'index' page.
@@ -429,29 +420,29 @@ class PostsController extends BaseController
      * @return mixed
      */
     public function actionBulkDelete()
-    {
+    {        
         $request = Yii::$app->request;
         $pks = explode(',', $request->post( 'pks' )); // Array or selected records primary keys
         foreach ( $pks as $pk ) {
             $model = $this->findModel($pk);
             $model->delete();
         }
-        
+
         if($request->isAjax){
             /*
-             *   Process for ajax request
-             */
+            *   Process for ajax request
+            */
             Yii::$app->response->format = Response::FORMAT_JSON;
             return ['forceClose'=>true,'forceReload'=>'#crud-datatable-pjax'];
         }else{
             /*
-             *   Process for non-ajax request
-             */
+            *   Process for non-ajax request
+            */
             return $this->redirect(['index']);
         }
-        
+       
     }
-    
+
     /**
      * Finds the Posts model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
