@@ -20,7 +20,7 @@ class PostsSearch extends Posts
         return [
             [['id'], 'integer'],
             [['code', 'categories', 'title', 'slug', 'summary', 'content', 'date_created',                 
-               'post_status'], 'safe'],
+               'post_status', 'lang'], 'safe'],
         ];
     }
 
@@ -67,7 +67,7 @@ class PostsSearch extends Posts
             'id' => $this->id,
             'date_created' => $this->date_created,
             'post_status' => $this->post_status,
-            'lang' => $lang,
+            'lang' => $this->lang,
         ]);
 
         $query->andFilterWhere(['like', 'code', $this->code])

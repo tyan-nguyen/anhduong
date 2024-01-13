@@ -39,8 +39,10 @@ CrudAsset::register($this);
             'columns' => require(__DIR__.'/_columns.php'),
             'toolbar'=> [
                 ['content'=>
-                    Html::a('<i class="glyphicon glyphicon-plus"></i> Add New Post', ['create?lang=' . $lang],
-                    ['data-pjax'=>0, 'title'=> 'Create new News','class'=>'btn btn-default']).
+                   /*  Html::a('<i class="glyphicon glyphicon-plus"></i> Add New Post', ['create?lang=' . $lang],
+                    ['data-pjax'=>0, 'title'=> 'Create new News','class'=>'btn btn-default']). */
+                    Html::a('<i class="glyphicon glyphicon-plus"></i> Add New Post 11', ['create'],
+                        ['data-pjax'=>0, 'title'=> 'Create new News','class'=>'btn btn-default']).
                     Html::a('<i class="glyphicon glyphicon-repeat"></i> Reload List', ['?lang=' . $lang],
                     ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Reset Grid'])
                     //'{toggleData}'.

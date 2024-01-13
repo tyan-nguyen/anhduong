@@ -2,6 +2,8 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 use app\modules\admin\models\Catelogies;
+use app\widgets\PostStatus;
+use app\widgets\ShowLangPosts;
 
 return [
     [
@@ -27,13 +29,14 @@ return [
         'format'=>'raw',
         'value'=>function($model){
             return Html::a($model->title, $model->urlEdit, ['data-pjax'=>0]);
-        }
+        },
+        'contentOptions' => ['style' => 'width:50%; white-space: normal;'],
     ],
     
-    [
+    /* [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'summary',
-    ],
+    ], */
     
    /*  [
         'class'=>'\kartik\grid\DataColumn',
@@ -49,6 +52,10 @@ return [
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'post_status',
+        'format'=>'raw',
+        'value'=>function($model){
+            return PostStatus::widget(['value'=>$model->post_status, 'text'=>$model->getStatusLabel($model->post_status)]);
+        },
         'filter'=>Html::activeDropDownList($searchModel, 'post_status', $searchModel->postStatus, 
             ['class'=>'form-control', 'prompt'=>'--Select--'])
     ],
@@ -58,10 +65,16 @@ return [
         'attribute'=>'site_keywords',
     ], */
     
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'lang',
-    ],
+        [
+            'class'=>'\kartik\grid\DataColumn',
+            'attribute'=>'lang',
+            'format'=>'raw',
+            'value'=>function($model){
+                return ShowLangPosts::widget(['model'=>$model]);
+            },
+            'filter'=>Html::activeDropDownList($searchModel, 'lang', Yii::$app->params['langs'],
+                ['prompt'=>Yii::t('app', '--Select--'), 'class'=>'form-control'])
+       ],
     
    /*  [
         'class'=>'\kartik\grid\DataColumn',
@@ -80,7 +93,14 @@ return [
     // ],
     [
         'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'code',
+        'contentOptions' => ['style' => 'width:100px; white-space: normal;text-align:center'],
+    ],
+    [
+        'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'date_created',
+        'value'=>'dateCreated',
+        'contentOptions' => ['style' => 'width:100px; white-space: normal;text-align:center'],
     ],
     /* [
         'class' => 'kartik\grid\ActionColumn',

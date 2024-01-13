@@ -29,21 +29,49 @@ use app\modules\admin\models\TagList;
      <?= $form->errorSummary($model) ?>
 
    	<?php $nameLabel = $model->getAttributeLabel('title') 
-    	. ' <span class="sButton label label-warning" title="Thay đổi liên kết"><i class="glyphicon glyphicon-link"></i></span>' ?>
+    	. ' <span class="seoButton label label-warning" title="Thay đổi liên kết"><i class="glyphicon glyphicon-link"></i></span>' ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true])->label($nameLabel) ?>
 	
-	 <div class="dUrl" style="display:none">
+	<?= $form->field($model, 'summary')->textarea(['rows' => 3]) ?>
+	
+	 <div class="dSeo box block-form block-form-border" style="display:block">
+    	
+    	 <div class="box-header with-border block-form-title">
+    	 	<i class="fa fa-bullhorn" aria-hidden="true"></i>
+    	 	<h3 class="box-title">SEO</h3>
+    	 </div>
+    	 
+    	 <div class="box-body">
     	<?= $form->field($model, 'slug')->textInput(['maxlength' => true]) ?>
     	
     	<?= $form->field($model, 'seo_title')->textInput(['maxlength' => true]) ?>
     	
     	<?= $form->field($model, 'seo_description')->textarea(['rows' => 3]) ?>
+    	
+    	    <?php $nameLabel = $model->getAttributeLabel('seo_image') 
+        	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModalSeo" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
+    	 
+        	 <?= $form->field($model, 'seo_image')->textInput(['maxlength' => true, 'id'=>'fieldID5', /*'onchange'=>'changeCover()'*/])->label($nameLabel) ?>
+        	 	
+        	 <div id="dCover-fieldID5" class="dCover input-append">	  
+            	  <img src="<?= $model->seo_image ?>" />
+            </div>
+        </div>    
 	</div>
 	
-	 <?php if($model->is_static == 0 && (!isset($static) || $static != 'true') ) {?>
-    <?= $form->field($model, 'summary')->textarea(['rows' => 3]) ?>
-	<?php } ?>
+	<?php
+        $currentUrl = Yii::$app->request->url;
+        $script = <<< JS
+        $('.seoButton').on('click', function(){
+        	$('.dSeo').toggle();
+        });
+        JS;
+        $this->registerJs($script);
+    ?>    
+	
+    
+
     <?= $form->field($model, 'content')->textarea(['rows' => 6, 'id'=>'txtContent']) ?>
 
     
@@ -62,10 +90,10 @@ use app\modules\admin\models\TagList;
 	
 	
 	
-	 <?php $nameLabel = $model->getAttributeLabel('imgcover') 
+	 <?php $nameLabel = $model->getAttributeLabel('cover') 
     	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModal" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
 	 
-	 <?= $form->field($model, 'imgcover')->textInput(['maxlength' => true, 'id'=>'fieldID4', /*'onchange'=>'changeCover()'*/])->label($nameLabel) ?>
+	 <?= $form->field($model, 'cover')->textInput(['maxlength' => true, 'id'=>'fieldID4', /*'onchange'=>'changeCover()'*/])->label($nameLabel) ?>
 	 	
 	 <div id="dCover-fieldID4" class="dCover input-append">	  
     	  <img src="<?= $model->cover ?>" />
@@ -78,9 +106,6 @@ use app\modules\admin\models\TagList;
 	 <?= $form->field($model, 'code')->textInput(['maxlength' => true, 'readonly'=>true]) ?>
 	 
 	 <?php //$form->field($model, 'is_static')->checkbox() ?>
-	 
-	 
-	 <?php if($model->is_static == 0 && (!isset($static) || $static != 'true')) {?>
 	 
 	 
 
@@ -109,8 +134,7 @@ use app\modules\admin\models\TagList;
 	]);
 	?>
 	
-	
-	<?php } ?>
+
 	
 	
 	
@@ -197,6 +221,20 @@ $(document).on('focusin', function(e) {
     </div>
     <div class="modal-body">
       <iframe width="850" height="600" src="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID4'&fldr=<?= $model->code ?>&akey=<?= User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '' ?>" frameborder="0" style="overflow: scroll; overflow-x: hidden; overflow-y: scroll; "></iframe>
+    </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal modal2 fade" id="myModalSeo" >
+<div class="modal-dialog1" style="width:900px">
+  <div class="modal-content" style="height:700px;">
+    <div class="modal-header">
+      <button id="btnfieldID5" data-dismiss="modal" type="button" class="close" aria-hidden="true">&times;</button>
+      <h4 class="modal-title">Modal title</h4>
+    </div>
+    <div class="modal-body">
+      <iframe width="850" height="600" src="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID5'&fldr=<?= $model->code ?>&akey=<?= User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '' ?>" frameborder="0" style="overflow: scroll; overflow-x: hidden; overflow-y: scroll; "></iframe>
     </div>
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->

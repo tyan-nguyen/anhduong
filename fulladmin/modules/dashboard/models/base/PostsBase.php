@@ -5,6 +5,7 @@ namespace app\modules\dashboard\models\base;
 use Yii;
 use yii\behaviors\SluggableBehavior;
 use webvimark\modules\UserManagement\models\User;
+use app\components\CustomFunc;
 
 /**
  * This is the model class for table "posts".
@@ -33,6 +34,35 @@ class PostsBase extends \app\models\Posts
     //catalog for create, update
     public $catalog;
     public $taglist;
+    
+    /**
+     * Danh muc trang thai post
+     * @return string[]
+     */
+    public static function getPostStatus(){
+        return [
+            'PUBLISH'=>'Công bố',
+            'HIDE'=>'Không công bố',
+            'DRAFT'=>'Bản nháp',
+        ];
+    }
+    
+    /**
+     * Danh muc trang thai post label
+     * @param int $val
+     * @return string
+     */
+    public static function getStatusLabel($val){
+        $label = '';
+        if($val == 'PUBLISH'){
+            $label = Yii::t('app', 'PUBLISH');
+        }else if($val == 'HIDE'){
+            $label = Yii::t('app', 'HIDE');
+        }else if($val == 'DRAFT'){
+            $label = 'DRAFT';
+        }
+        return $label;
+    }
     
     public function behaviors()
     {
@@ -110,6 +140,7 @@ class PostsBase extends \app\models\Posts
                 if(!Yii::$app->user->isGuest)
                     $this->user_created = Yii::$app->user->id;
                 $this->date_created = date('Y-m-d H:i:s');
+                $this->date_updated = date('Y-m-d H:i:s');
                 //set lang if null
                 if($this->lang == null){
                     $this->lang = Yii::$app->params['mainLang'];
@@ -131,6 +162,21 @@ class PostsBase extends \app\models\Posts
                 $this->date_updated = date('Y-m-d H:i:s');
             }
             return true;
+        }
+    }
+    
+    /**
+     * tao random code khi them moi
+     * @return string
+     */
+    public function getRandomCode(){
+        $cus = new CustomFunc();
+        $code = rand(10,99) . $cus->generateRandomString();
+        $model = CategoriesBase::findOne(['code'=>$code]);
+        if($model == null){
+            return $code;
+        } else {
+            $this->getRandomCode();
         }
     }
     
@@ -172,17 +218,6 @@ class PostsBase extends \app\models\Posts
     public function is_dir_empty($dir) {
         if (!is_readable($dir)) return null;
         return (count(scandir($dir)) == 2);
-    }
-    
-    /*
-     * post status
-     */
-    public function getPostStatus(){
-        return [
-            'DRAFT' => 'Bản nháp',
-            'CRAWL' => 'Bản Crawl',
-            'PUBLISH' => 'Publish'
-        ];
     }
     
     /*

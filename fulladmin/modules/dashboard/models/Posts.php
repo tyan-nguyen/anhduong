@@ -3,9 +3,9 @@
 namespace app\modules\dashboard\models;
 
 use Yii;
-use yii\behaviors\SluggableBehavior;
 use webvimark\modules\UserManagement\models\User;
 use app\modules\dashboard\models\base\PostsBase;
+use app\models\Custom;
 
 class Posts extends PostsBase
 {
@@ -20,7 +20,7 @@ class Posts extends PostsBase
      * get new link edited
      */
     public function getUrlEdit(){
-        return Yii::getAlias('@web/admin/news/update?id=') . $this->id;
+        return Yii::getAlias('@web/dashboard/posts/update?id=') . $this->id;
     }
     
     /**
@@ -40,7 +40,7 @@ class Posts extends PostsBase
     /**
      * view categories in gridview
      */
-    public function getCatelogiesView(){
+    public function getCategoriesView(){
         $result = '';
         $list = explode(';', $this->categories);
         foreach ($list as $item){
@@ -84,35 +84,14 @@ class Posts extends PostsBase
     }
     
     /**
-     * get summarry
+     * get summary
      */
-    public function getSummary150(){
-        if($this->summary != '' && strlen($this->summary) > 150){
-            $pos=strpos($this->summary, ' ', 150);
-            return substr($this->summary,0,$pos ) . '...';
-        } else {
-            return $this->summary;
+    public function getSummaryByChars($numChar=NULL){
+        if($numChar == NULL){
+            $numChar = 100;
         }
-    }
-    
-    /**
-     * get summarry
-     */
-    public function getSummary300(){
-        if($this->summary != '' && strlen($this->summary) > 300){
-            $pos=strpos($this->summary, ' ', 300);
-            return substr($this->summary,0,$pos ) . '...'; 
-        } else {
-            return $this->summary;
-        }
-    }
-    
-    /**
-     * get summarry
-     */
-    public function getSummary500(){
-        if($this->summary != '' && strlen($this->summary) > 500){
-            $pos=strpos($this->summary, ' ', 500);
+        if($this->summary != '' && strlen($this->summary) > $numChar){
+            $pos=strpos($this->summary, ' ', $numChar);
             return substr($this->summary,0,$pos ) . '...';
         } else {
             return $this->summary;
@@ -128,6 +107,16 @@ class Posts extends PostsBase
         } else {
             return User::findOne($this->user_created)->username;
         }
+    }
+    
+    /**
+     * get date created
+     */
+    public function getDateCreated(){
+        if($this->date_created != null){
+            return (new Custom())->convertYMDHIStoDMY($this->date_created);
+        }
+        return null;
     }
     
     /**
@@ -175,7 +164,11 @@ class Posts extends PostsBase
         
     } */
     
-    public function getCover(){
+    /**
+     * test lại
+     * @return unknown|string|boolean
+     */
+    public function getImgCover(){
         if($this->imgcover != null)
             return $this->imgcover;
         else 
@@ -183,6 +176,10 @@ class Posts extends PostsBase
             //return $this->getImageCover();
     }
     
+    /**
+     * xem lại
+     * @return string|string|boolean
+     */
     public function getImageCover(){
         /* $picFolder = Yii::getAlias('@webroot/images/posts/'. $this->code . '/');
         $fi = new \FilesystemIterator($picFolder);
@@ -243,6 +240,20 @@ class Posts extends PostsBase
     
     public function getSeoDescription(){
         return $this->seo_description == null ? $this->summary : $this->seo_description;
+    }
+    
+    
+    public function getLangList(){
+        return Posts::find()->select(['id', 'lang'])->where(['code'=>$this->code])->orderBy('lang DESC')->asArray()->all();
+    }
+    
+    public function getLangAvailable($code){
+        $langArr = Yii::$app->params['langs'];
+        $cats = Posts::find()->where(['code'=>$code])->all();
+        foreach ($cats as $index=>$cat){
+            unset($langArr[$cat->lang]);
+        }
+        return $langArr;
     }
     
 }

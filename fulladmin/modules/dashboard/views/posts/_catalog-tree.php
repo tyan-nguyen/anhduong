@@ -9,7 +9,7 @@ function getChildCatalog($model, $pid, $level){
 	if($listChildCatalogs != null){
 		foreach ($listChildCatalogs as $j=>$catalog1){
 			$postHasThisCatalog = false;
-			foreach ($model->catelogiesList as $indexCat1=>$cat1){
+			foreach ($model->categoriesList as $indexCat1=>$cat1){
 			    if($indexCat1 == $catalog1->slug){
 			        $postHasThisCatalog = true;
 			    }
@@ -19,7 +19,7 @@ function getChildCatalog($model, $pid, $level){
 			//echo Html::checkbox("dm[$catalog1->id]", ($postHasThisCatalog && $check == true)!=null?true:false);
 			//echo '&nbsp;' . $catalog1->name;
 			
-			echo Html::checkbox("News[catalog][$catalog1->slug]", $postHasThisCatalog);
+			echo Html::checkbox("Posts[catalog][$catalog1->slug]", $postHasThisCatalog);
 			echo '&nbsp;' . $catalog1->name;
 			
 			getChildCatalog($model, $catalog1->id, $marginLeft);
@@ -31,7 +31,7 @@ function getChildCatalog($model, $pid, $level){
 foreach ($catalogLists as $i=>$catalog){
 	//check model has this catalog
     $postHasCatalog = false;
-    foreach ($model->catelogiesList as $indexCat=>$cat){
+    foreach ($model->categoriesList as $indexCat=>$cat){
         if($indexCat == $catalog->slug){
             $postHasCatalog = true;
         }
@@ -42,7 +42,7 @@ foreach ($catalogLists as $i=>$catalog){
 	//echo Html::checkbox("dm[$catalog->id]", ($postHasCatalog !=null && !$model->isNewRecord)?true:false);
 	//echo '&nbsp;' . $catalog->name;
 	
-	echo Html::checkbox("News[catalog][$catalog->slug]", $postHasCatalog);
+	echo Html::checkbox("Posts[catalog][$catalog->slug]", $postHasCatalog);
 	echo '&nbsp;' . $catalog->name;
 	getChildCatalog($model, $catalog->id, 0);
 }

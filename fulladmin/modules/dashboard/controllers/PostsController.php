@@ -147,7 +147,12 @@ class PostsController extends BaseController
      */
     public function actionCreate(){
         $model = new Posts();
-        $model->
+        $model->title = Yii::t('app', 'New Post Title here...');
+        if($model->save()){
+            return $this->redirect(['update?id=' . $model->id]);
+        }else{
+            //process
+        }
     }
     
     /**
@@ -156,7 +161,7 @@ class PostsController extends BaseController
      * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate__old($lang, $static = false)
+    public function actionCreate___Old($lang, $static = false)
     {
         if($lang != 'vi' && $lang != 'en'){
             throw new NotFoundHttpException('The requested page does not exist.');
@@ -363,24 +368,20 @@ class PostsController extends BaseController
                 
                 if($model->save()){
                     if(isset($_POST['btnSubmit']) && $_POST['btnSubmit'] == 'saveAndExit'){
-                        if($model->is_static == 1){
                             return $this->redirect(['index?lang=' . $model->lang . '&static=true']);
-                        } else {
-                            return $this->redirect(['index?lang=' . $model->lang]);
-                        }
                     } else{
                         
                         return $this->render('update', [
                             'model' => $model,
                             'catalogLists' => $catalogLists,
-                            'status'=>'success',
+                            'showSuccessMessge'=>true
                         ]);
                     }
                 } else {
                     return $this->render('update', [
                         'model' => $model,
                         'catalogLists' => $catalogLists,
-                        'status'=>'failed',
+                        'showErrorMessge'=>true
                     ]);
                 }
             } else {

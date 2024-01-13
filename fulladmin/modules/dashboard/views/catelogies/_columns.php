@@ -3,7 +3,7 @@ use yii\helpers\Url;
 use yii\helpers\Html;
 use app\widgets\PostStatus;
 use app\modules\dashboard\models\Catelogies;
-use app\widgets\ShowLang;
+use app\widgets\ShowLangCategories;
 
 return [
     [
@@ -18,6 +18,7 @@ return [
         // 'class'=>'\kartik\grid\DataColumn',
         // 'attribute'=>'id',
     // ],
+
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'name',
@@ -26,16 +27,17 @@ return [
             return Html::a($model->name, Yii::getAlias('@web/dashboard/catelogies/update-full?id='.$model->id),[
                 'data-pjax'=>0
             ]);
-        }
+        },
+        'contentOptions' => ['style' => 'width:35%; white-space: normal;'],
     ],
     /* [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'name_en',
     ], */
-    [
+    /* [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'slug',
-    ],
+    ], */
     [
         'class'=>'\kartik\grid\DataColumn',
         'attribute'=>'priority',
@@ -48,34 +50,6 @@ return [
         'value'=>function($model){
         return number_format($model->getNumberNewsHasThisCatelog());
         }
-    ],
-    [
-        'class'=>'\kartik\grid\DataColumn',
-        'attribute'=>'lang',
-        'format'=>'raw',
-        'value'=>function($model){
-            return ShowLang::widget(['model'=>$model]);
-            /* $html = '';
-            foreach ($model->langList as $key=>$val){
-                if($model->lang != $val['lang']){
-                    $html .= '&nbsp;' . Html::a($val['lang'], Yii::getAlias('@web/dashboard/catelogies/view?id='.$val['id']),
-                        ['role'=>'modal-remote'],
-                    );
-                } else {
-                    $html .= '&nbsp;' . $val['lang'];
-                }
-                
-            }
-            
-            if(count($model->langList) < count(Yii::$app->params['langs'])){
-                $html .= '&nbsp;' . Html::a('+', Yii::getAlias('@web/dashboard/catelogies/create?code=' . $model->code),
-                    ['role'=>'modal-remote'],
-                    );
-            }
-            return $html; */
-        },
-        'filter'=>Html::activeDropDownList($searchModel, 'lang', Yii::$app->params['langs'], 
-            ['prompt'=>Yii::t('app', '--Select--'), 'class'=>'form-control'])
     ],
     
     [
@@ -90,13 +64,32 @@ return [
     ],
     
     [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'lang',
+        'format'=>'raw',
+        'value'=>function($model){
+        return ShowLangCategories::widget(['model'=>$model]);
+        },
+        'filter'=>Html::activeDropDownList($searchModel, 'lang', Yii::$app->params['langs'],
+            ['prompt'=>Yii::t('app', '--Select--'), 'class'=>'form-control'])
+    ],
+    
+    [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'code',
+        'contentOptions' => ['style' => 'width:100px; white-space: normal;text-align:center'],
+    ],
+    
+    [
         'class' => 'kartik\grid\ActionColumn',
+        'header' => Yii::t('app', 'View in Popup'),
         'dropdown' => false,
         'vAlign'=>'middle',
         'urlCreator' => function($action, $model, $key, $index) { 
                 return Url::to([$action,'id'=>$key]);
         },
-
+        
+        'template'=>'{view}{update}',
        /*  'template'=>'{view}{update}{updateFull}{delete}',
         'buttons' => [
             'updateFull' => function ($url, $model, $key) {

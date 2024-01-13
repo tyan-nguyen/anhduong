@@ -22,8 +22,8 @@ if(isset($showSuccessMessge)){
 ?>
 <div class="alert alert-info alert-dismissible">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-    <h4><i class="icon fa fa-info"></i><?= Yii::t('app', 'Notification!') ?></h4>
-    <?= Yii::t('app', 'Data save successfull') ?>
+    <h4><?= Yii::t('app', 'Notification!') ?></h4>
+    <span class="glyphicon glyphicon-ok"></span> <?= Yii::t('app', 'Data save successfull') ?>
 </div>
 <?php } ?>
 <?php 
@@ -93,7 +93,7 @@ if(isset($showErrorMessge)){
         });
         JS;
         $this->registerJs($script);
-        ?>    	
+    ?>    	
         
             	
     	<?= $form->field($model, 'content')->textarea(['rows' => 3, 'id'=>'txtContent']) ?>
