@@ -41,9 +41,9 @@ CrudAsset::register($this);
                 ['content'=>
                    /*  Html::a('<i class="glyphicon glyphicon-plus"></i> Add New Post', ['create?lang=' . $lang],
                     ['data-pjax'=>0, 'title'=> 'Create new News','class'=>'btn btn-default']). */
-                    Html::a('<i class="glyphicon glyphicon-plus"></i> Add New Post 11', ['create'],
-                        ['data-pjax'=>0, 'title'=> 'Create new News','class'=>'btn btn-default']).
-                    Html::a('<i class="glyphicon glyphicon-repeat"></i> Reload List', ['?lang=' . $lang],
+                    Html::a('<i class="glyphicon glyphicon-plus"></i> ' . Yii::t('app', 'Add new post'), ['create'],
+                        ['data-pjax'=>0, 'title'=> Yii::t('app', 'Add new post'),'class'=>'btn btn-default']).
+                    Html::a('<i class="glyphicon glyphicon-repeat"></i> Reload List', [''],
                     ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Reset Grid'])
                     //'{toggleData}'.
                     //'{export}'
@@ -81,3 +81,22 @@ CrudAsset::register($this);
     ]
 ])?>
 <?php Modal::end(); ?>
+
+<?php
+   /*  $currentUrl = Yii::$app->request->url;
+    $script = <<< JS
+       function ChangeLang(){
+         $.ajax({
+                url: '/dashboard/posts/change-lang',
+               type: 'get',
+               //dataType: 'json',
+               data: {postid:, langid: $("#txtLang").val()},
+               success: function (data) {
+               		$('#list-catalog').html(data);
+               }
+    
+          });
+        }
+    JS;
+    $this->registerJs($script); */
+?>   

@@ -218,16 +218,5 @@ class PostsBase extends \app\models\Posts
     public function is_dir_empty($dir) {
         if (!is_readable($dir)) return null;
         return (count(scandir($dir)) == 2);
-    }
-    
-    /*
-     * langs
-     */
-    public function getLangs(){
-        return [
-            'vi' => 'Tiếng Việt',
-            'en' => 'English',
-        ];
-    }
-    
+    }    
 }

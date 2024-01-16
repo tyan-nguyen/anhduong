@@ -53,10 +53,21 @@ class CatelogiesController extends BaseController
     /**
      * get data of list categories to reload dropdownlist by seleted lang
      */
-    public function actionChangeLang($langid){
-       Yii::$app->response->format = Response::FORMAT_JSON;
+    public function actionChangeLang($langid=NULL){
+        //phien ban json
+       /* Yii::$app->response->format = Response::FORMAT_JSON;
        $data = (new Catelogies())->getList($langid);
-       return $data;
+       return $data; */
+        //phien ban echo html
+        $this->layout = '/noLayout';
+        $html = '<option value>--' . Yii::t('app', 'Select') . '--</option>';
+        if($langid != null){
+            $data = (new Catelogies())->getList($langid);           
+            foreach ($data as $indexCat=>$cat){
+                $html .= '<option value="' . $indexCat . '">' . $cat . '</option>';
+            }
+        }
+        echo $html;
     }
 
 
@@ -199,15 +210,22 @@ class CatelogiesController extends BaseController
             }else if($model->load($request->post())){
                 
                 if($oldModel->lang != $model->lang){
-                    $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
-                    return [
-                        'title'=> $modalTitle,
-                        'content'=>$this->renderAjax('update', [
-                            'model' => $model,
-                        ]),
-                        'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                        Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
-                    ];
+                    
+                    $modelCheck = Catelogies::findOne([
+                        'lang' => $model->lang,
+                        'code' => $model->code,
+                    ]);
+                    if($modelCheck != null){
+                        $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
+                        return [
+                            'title'=> $modalTitle,
+                            'content'=>$this->renderAjax('update', [
+                                'model' => $model,
+                            ]),
+                            'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                            Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
+                        ];
+                    }
                 }
                 
                 if ($model->save()){
@@ -263,12 +281,18 @@ class CatelogiesController extends BaseController
          */
         if ($model->load($request->post())) {
             
-            if($oldModel->lang != $model->lang){
-                $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
-                return $this->render('_form_full', [
-                    'model' => $model,
-                    'showErrorMessge'=>true
+            if($oldModel->lang != $model->lang){                
+                $modelCheck = Catelogies::findOne([
+                    'lang' => $model->lang,
+                    'code' => $model->code,
                 ]);
+                if($modelCheck != null){
+                    $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
+                    return $this->render('_form_full', [
+                        'model' => $model,
+                        'showErrorMessge'=>true
+                    ]);
+                }
             }
             if($model->save()){
                 if(isset($_POST['btnSubmit']) && $_POST['btnSubmit'] == 'saveAndExit'){

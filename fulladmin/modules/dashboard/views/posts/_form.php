@@ -108,12 +108,31 @@ use app\modules\admin\models\TagList;
 	 <?php //$form->field($model, 'is_static')->checkbox() ?>
 	 
 	 
+	 <?php 
+        if($model->isNewRecord)
+            $model->lang = $lang;
+    ?>
+    
+    
+    <?php /* $form->field($model, 'lang')->dropDownList($model->langs, 
+        ['id'=>'lang', 'disabled'=>$model->isNewRecord?false:true])
+        ->label($model->isNewRecord?$model->getAttributeLabel('lang'):Yii::t('app', 'Change language') . ' <input id="changeLang" type="checkbox" />') */ ?>
+    
+	 <?=  $form->field($model, 'lang')->dropDownList(
+         (isset($code) && $code != null) 
+            ? $model->getLangAvailable($model->code) 
+            : Yii::$app->params['langs'], 
+         [
+             'prompt'=>Yii::t('app', 'Select language'),
+             'onchange'=>'ChangeLang()',
+             'id'=>'txtLang'
+         ]) ?>
 
     <?php // $form->field($model, 'catelogies')->textInput(['maxlength' => true]) ?>
     
     <div class="form-group">
     	<label>Catelogies</label>
-    	<div class="list-catalog">
+    	<div id="list-catalog" class="list-catalog">
 			<?= $this->render('_catalog-tree', [
 					'model'=>$model,
 					'catalogLists'=>$catalogLists
@@ -145,15 +164,6 @@ use app\modules\admin\models\TagList;
     <?= $form->field($model, 'date_updated')->textInput(['id'=>'dateUpdated', 'disabled'=>true])
         ->label(Yii::t('app', 'Change date updated') . ' <input id="changeDateUpdated" type="checkbox" />') ?>
     
-    <?php 
-        if($model->isNewRecord)
-            $model->lang = $lang;
-    ?>
-    
-    
-    <?= $form->field($model, 'lang')->dropDownList($model->langs, 
-        ['id'=>'lang', 'disabled'=>$model->isNewRecord?false:true])
-        ->label($model->isNewRecord?$model->getAttributeLabel('lang'):Yii::t('app', 'Change language') . ' <input id="changeLang" type="checkbox" />') ?>
     
 	<?php if (!Yii::$app->request->isAjax){ ?>
 	  	<div class="form-group">
@@ -275,6 +285,29 @@ function changeLang(){
 	$('#btnModal2').click();	
 } */
 
+</script>
+
+<script>
+function ChangeLang(){
+     $.ajax({
+            url: '/dashboard/posts/change-lang',
+           type: 'get',
+           //dataType: 'json',
+           data: {postid:<?= $model->id ?>, langid: $("#txtLang").val()},
+           success: function (data) {
+           		//alert(data);
+           		$('#list-catalog').html(data);
+           		/* $('#txtCat').children().remove();
+           		$('#txtCat').append('<option value="">--Chọn--</option>');
+           		for (var key in data) {
+                    if (data.hasOwnProperty(key)) {
+                      $('#txtCat').append('<option value="'+key+'">'+ data[key] +'</option>');
+                    }
+                } */
+           }
+
+      });
+}
 </script>
 
 

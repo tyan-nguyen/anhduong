@@ -1,18 +1,22 @@
 <?php
 use yii\helpers\Html;
-use app\modules\admin\models\Catelogies;
+use app\modules\dashboard\models\Catelogies;
 
 
-function getChildCatalog($model, $pid, $level){
+function getChildCatalog($model=NULL, $pid, $level){
 	$marginLeft = $level+30;
 	$listChildCatalogs = Catelogies::find()->where(['pid'=>$pid])->all();
 	if($listChildCatalogs != null){
+
 		foreach ($listChildCatalogs as $j=>$catalog1){
 			$postHasThisCatalog = false;
-			foreach ($model->categoriesList as $indexCat1=>$cat1){
-			    if($indexCat1 == $catalog1->slug){
-			        $postHasThisCatalog = true;
-			    }
+			
+			if($model != NULL){
+    			foreach ($model->categoriesList as $indexCat1=>$cat1){
+    			    if($indexCat1 == $catalog1->slug){
+    			        $postHasThisCatalog = true;
+    			    }
+    			}
 			}
 			
 			echo '<br/><span style="margin-left:'.$marginLeft.'px"></span>';
@@ -31,9 +35,11 @@ function getChildCatalog($model, $pid, $level){
 foreach ($catalogLists as $i=>$catalog){
 	//check model has this catalog
     $postHasCatalog = false;
-    foreach ($model->categoriesList as $indexCat=>$cat){
-        if($indexCat == $catalog->slug){
-            $postHasCatalog = true;
+    if($model != NULL){
+        foreach ($model->categoriesList as $indexCat=>$cat){
+            if($indexCat == $catalog->slug){
+                $postHasCatalog = true;
+            }
         }
     }
 	

@@ -34,7 +34,7 @@ class ShowLangPosts extends Widget
             }
         }
         if(count($this->model->langList) < count(Yii::$app->params['langs'])){
-            $html .= '&nbsp;' . Html::a('+', Yii::getAlias('@web/dashboard/posts/create?id=' . $this->model->id),
+            $html .= '&nbsp;' . Html::a('+', Yii::getAlias('@web/dashboard/posts/create-by-lang?id=' . $this->model->id),
                 ['role'=>'modal-remote'],
                 );
         }

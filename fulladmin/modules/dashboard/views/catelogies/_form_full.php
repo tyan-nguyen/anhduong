@@ -130,7 +130,7 @@ if(isset($showErrorMessge)){
              'id'=>'txtLang'
          ]) ?>
          
-          <?= $form->field($model,'pid')->dropDownList((new Catelogies())->getList(),
+          <?= $form->field($model,'pid')->dropDownList($model->lang==NULL ? [] : (new Catelogies())->getList($model->lang),
 				['class'=>'form-control', 'prompt'=>'--Chọn--', 'id'=>'txtCat']) ?>
 		
 		<?php if (!Yii::$app->request->isAjax){ ?>
@@ -160,26 +160,31 @@ if(isset($showErrorMessge)){
 </div>
 
 
+
 <script>
 function ChangeLang(){
      $.ajax({
             url: '/dashboard/catelogies/change-lang',
            type: 'get',
-           dataType: 'json',
+           //dataType: 'json',
            data: {langid: $("#txtLang").val()},
            success: function (data) {
            		$('#txtCat').children().remove();
-           		$('#txtCat').append('<option value="">--Chọn--</option>');
+           		//ver json
+           		/*$('#txtCat').append('<option value="">--Chọn--</option>');
            		for (var key in data) {
                     if (data.hasOwnProperty(key)) {
                       $('#txtCat').append('<option value="'+key+'">'+ data[key] +'</option>');
                     }
-                }
+                }*/
+                //ver html
+                $('#txtCat').html(data);
            }
 
       });
 }
 </script>
+
 
 <script>
 tinymce.remove();

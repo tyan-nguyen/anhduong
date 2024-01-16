@@ -39,6 +39,23 @@ class PostsController extends BaseController
     }
     
     /**
+     * get data of list categories to reload dropdownlist by seleted lang
+     */
+    public function actionChangeLang($postid=NULL, $langid){
+        $this->layout = '/noLayout';
+        if($postid!=null){
+            $model = $this->findModel($postid);
+        }
+        $catalogLists = Catelogies::find()->where("pid IS NULL OR pid = 0 AND lang='" . $langid . "'")->all();
+        echo $this->render('_catalog-tree', [
+            'model'=>$postid==null?NULL:$model,
+            'catalogLists'=>$catalogLists
+        ]);
+        
+       
+    }
+    
+    /**
      * dell folder not used
      * @return mixed
      */
@@ -148,11 +165,89 @@ class PostsController extends BaseController
     public function actionCreate(){
         $model = new Posts();
         $model->title = Yii::t('app', 'New Post Title here...');
+        
         if($model->save()){
             return $this->redirect(['update?id=' . $model->id]);
         }else{
             //process
         }
+    }
+    
+    /**
+     * Creates a new Catelogies model.
+     * For ajax request will return json object
+     * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
+     * @return mixed
+     */
+    public function actionCreateByLang($id=NULL)
+    {
+        $request = Yii::$app->request;
+        $model = new Posts();
+        $modalTitle = Yii::t('app','Add new') .' '. Yii::t('app','Post');
+        
+        $catalogLists = Catelogies::find()->where('pid IS NULL OR pid = 0')->all();
+        
+        $code = '';
+        if($id != NULL){
+            $modelMain = Posts::findOne($id);
+            $code = $modelMain->code;
+            $model->code = $modelMain->code;
+            $model->title = $modelMain->title;
+            $model->slug = $modelMain->slug;
+        }
+        
+        if($request->isAjax){
+            /*
+             *   Process for ajax request
+             */
+            Yii::$app->response->format = Response::FORMAT_JSON;
+            if($request->isGet){
+                return [
+                    'title'=> $modalTitle,
+                    'content'=>$this->renderAjax('create-lang', [
+                        'model' => $model,
+                        'code'=>$code,
+                        'catalogLists' => $catalogLists,
+                    ]),
+                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                    Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
+                    
+                ];
+            }else if($model->load($request->post()) && $model->save()){
+                return [
+                    'forceReload'=>'#crud-datatable-pjax',
+                    'title'=> $modalTitle,
+                    'content'=>'<span class="text-success">'. Yii::t('app','Add data successful!') .'</span>',
+                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"])
+                ];
+            }else{
+                return [
+                    'title'=> $modalTitle,
+                    'content'=>$this->renderAjax('create-lang', [
+                        'model' => $model,
+                        'code'=>$code,
+                        'catalogLists' => $catalogLists,
+                    ]),
+                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                    Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
+                    
+                ];
+            }
+        }else{
+            /*
+             *   Process for non-ajax request
+             */
+            if ($model->load($request->post()) && $model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            } else {
+                return $this->render('create-lang', [
+                    'model' => $model,
+                    'code'=>$code,
+                    'catalogLists' => $catalogLists,
+                ]);
+            }
+        }
+        
     }
     
     /**
@@ -294,9 +389,10 @@ class PostsController extends BaseController
     {
         $request = Yii::$app->request;
         $model = $this->findModel($id);
+        $oldModel = $this->findModel($id);
         $this->view->title = 'Post #' . $id;
         
-        $catalogLists = Catelogies::find()->where('pid IS NULL OR pid = 0')->all();
+        $catalogLists = Catelogies::find()->where("pid IS NULL OR pid = 0 AND lang = '" . $model->lang . "'")->all();
         
         
         if($request->isAjax){
@@ -313,16 +409,40 @@ class PostsController extends BaseController
                     'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
                     Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
                 ];
-            }else if($model->load($request->post()) && $model->save()){
-                return [
-                    'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "Posts #".$id,
-                    'content'=>$this->renderAjax('view', [
-                        'model' => $model,
-                    ]),
-                    'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                    Html::a('Edit',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
-                ];
+            }else if($model->load($request->post())){
+                
+                if($oldModel->lang != $model->lang){
+                    $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
+                    return [
+                        'title'=> "Update Posts #".$id,
+                        'content'=>$this->renderAjax('update', [
+                            'model' => $model,
+                        ]),
+                        'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+                    ];
+                }
+                
+                if($model->save()){
+                    return [
+                        'forceReload'=>'#crud-datatable-pjax',
+                        'title'=> "Posts #".$id,
+                        'content'=>$this->renderAjax('view', [
+                            'model' => $model,
+                        ]),
+                        'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::a('Edit',['update','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                    ];
+                } else {
+                    return [
+                        'title'=> "Update Posts #".$id,
+                        'content'=>$this->renderAjax('update', [
+                            'model' => $model,
+                        ]),
+                        'footer'=> Html::button('Close',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+                    ];
+                }
             }else{
                 return [
                     'title'=> "Update Posts #".$id,
@@ -366,9 +486,20 @@ class PostsController extends BaseController
                     $model->tags = '';
                 }
                 
+                
+                if($oldModel->lang != $model->lang){
+                    $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
+                    return $this->render('update', [
+                        'model' => $model,
+                        'catalogLists' => $catalogLists,
+                        'showErrorMessge'=>true
+                    ]);
+                }
+                
                 if($model->save()){
                     if(isset($_POST['btnSubmit']) && $_POST['btnSubmit'] == 'saveAndExit'){
-                            return $this->redirect(['index?lang=' . $model->lang . '&static=true']);
+                            //return $this->redirect(['index?lang=' . $model->lang . '&static=true']);
+                            return $this->redirect(['index']);
                     } else{
                         
                         return $this->render('update', [

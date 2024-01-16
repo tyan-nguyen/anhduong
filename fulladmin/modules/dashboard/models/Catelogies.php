@@ -21,7 +21,7 @@ class Catelogies extends CategoriesBase
         $listChildCatalogs = $this::find()->where(['pid'=>$pid])->all();
         if($listChildCatalogs != null){
             foreach ($listChildCatalogs as $j=>$catalog1){
-                $this->arr["'" . $catalog1->id . "'"] = $left . ' ' .$catalog1->name;
+                $this->arr[$catalog1->id] = $left . ' ' .$catalog1->name;
                 $this->getChildCatalog($this->arr, $catalog1->id, $left);
             }
         }
@@ -45,7 +45,7 @@ class Catelogies extends CategoriesBase
             $parentCatalogs = $this::find()->where("pid IS NULL OR pid = 0 AND lang = '".$langid."'")->all();
        // }
         foreach ($parentCatalogs as $i=>$catalog){
-            $this->arr["'" .$catalog->id . "'"] = $catalog->showName;
+            $this->arr[$catalog->id] = $catalog->showName;
             $this->getChildCatalog($this->arr, $catalog->id, '');
         }
         return $this->arr;
