@@ -11,6 +11,7 @@ use Yii;
  * @property string $name
  * @property string|null $slug
  * @property string|null $date_created
+ * @property int|null $user_created
  * @property string|null $seo_title
  * @property string|null $seo_description
  */
@@ -32,6 +33,7 @@ class TagList extends \yii\db\ActiveRecord
         return [
             [['name'], 'required'],
             [['date_created'], 'safe'],
+            [['user_created'], 'integer'],
             [['seo_description'], 'string'],
             [['name', 'slug', 'seo_title'], 'string', 'max' => 200],
         ];
@@ -43,12 +45,13 @@ class TagList extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'name' => 'Name',
-            'slug' => 'Slug',
-            'date_created' => 'Date Created',
-            'seo_title' => 'Seo Title',
-            'seo_description' => 'Seo Description',
+            'id' => Yii::t('app', 'ID'),
+            'name' => Yii::t('app', 'Name'),
+            'slug' => Yii::t('app', 'Slug'),
+            'date_created' => Yii::t('app', 'Date Created'),
+            'user_created' => Yii::t('app', 'User Created'),
+            'seo_title' => Yii::t('app', 'Seo Title'),
+            'seo_description' => Yii::t('app', 'Seo Description'),
         ];
     }
 }

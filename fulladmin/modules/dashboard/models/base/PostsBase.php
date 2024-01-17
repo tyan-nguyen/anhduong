@@ -94,7 +94,7 @@ class PostsBase extends \app\models\Posts
             [['post_status', 'post_type'], 'string', 'max' => 20],
             [['lang'], 'string', 'max' => 5], */
             [['slug', 'summary', 'content', 'seo_description'], 'string'],
-            [['date_created', 'date_updated'], 'safe'],
+            [['date_created', 'date_updated', 'catalog', 'taglist'], 'safe'],
             [['user_created'], 'integer'],
             [['code', 'cover', 'seo_title', 'tags'], 'string', 'max' => 200],
             [['categories', 'seo_image'], 'string', 'max' => 255],

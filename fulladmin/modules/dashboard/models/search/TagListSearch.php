@@ -5,7 +5,7 @@ namespace app\modules\dashboard\models\search;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\modules\admin\models\TagList;
+use app\modules\dashboard\models\TagList;
 
 /**
  * TagListSearch represents the model behind the search form about `app\modules\admin\models\TagList`.

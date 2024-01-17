@@ -130,7 +130,7 @@ use app\modules\admin\models\TagList;
 
     <?php // $form->field($model, 'catelogies')->textInput(['maxlength' => true]) ?>
     
-    <div class="form-group">
+    <div class="form-group <?= isset($model->errors['catalog']) ? 'has-error' : '' ?>">
     	<label>Catelogies</label>
     	<div id="list-catalog" class="list-catalog">
 			<?= $this->render('_catalog-tree', [

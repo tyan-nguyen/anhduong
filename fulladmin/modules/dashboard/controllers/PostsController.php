@@ -185,7 +185,11 @@ class PostsController extends BaseController
         $model = new Posts();
         $modalTitle = Yii::t('app','Add new') .' '. Yii::t('app','Post');
         
-        $catalogLists = Catelogies::find()->where('pid IS NULL OR pid = 0')->all();
+        if($model->lang == null){
+            $catalogLists = [];
+        } else {
+            $catalogLists = Catelogies::find()->where("pid IS NULL OR pid = 0 AND lang = '" . $model->lang . "'")->all();
+        }
         
         $code = '';
         if($id != NULL){
@@ -213,13 +217,74 @@ class PostsController extends BaseController
                     Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
                     
                 ];
-            }else if($model->load($request->post()) && $model->save()){
-                return [
-                    'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> $modalTitle,
-                    'content'=>'<span class="text-success">'. Yii::t('app','Add data successful!') .'</span>',
-                    'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"])
-                ];
+            }else if($model->load($request->post())){
+                
+                //categories
+                if($model->catalog != null){
+                    $arr = array();
+                    foreach ($model->catalog as $indexCat=>$valCat){
+                        $arr[] = $indexCat;
+                    }
+                    $model->categories = implode(';', $arr);
+                    
+                } else {
+                    $model->addError('catalog', Yii::t('app', 'A post must belong to a category!'));
+                    return $this->render('update', [
+                        'model' => $model,
+                        'catalogLists' => $catalogLists,
+                        'showErrorMessge'=>true
+                    ]);
+                }
+                //tags
+                if($model->taglist != null){
+                    $arr = array();
+                    foreach ($model->taglist as $indexTag=>$valTag){
+                        $checkTag = TagList::find()->where(['name'=>$valTag])->one();
+                        if($checkTag == null){
+                            $newTag = new TagList();
+                            $newTag->name = $valTag;
+                            if($newTag->save())
+                                $arr[] = $newTag->slug;
+                        }else{
+                            $arr[] = $checkTag->slug;
+                        }
+                    }
+                    $model->tags = implode(';', $arr);
+                }
+                else {
+                    $model->tags = '';
+                }
+                
+                $checkModelExist = Posts::findOne(['lang'=>$model->lang, 'code'=>$model->code]);
+                if($checkModelExist != null){
+                    $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
+                    return $this->render('update', [
+                        'model' => $model,
+                        'catalogLists' => $catalogLists,
+                        'showErrorMessge'=>true
+                    ]);
+                }
+                
+                if($model->save()){
+                    return [
+                        'forceReload'=>'#crud-datatable-pjax',
+                        'title'=> $modalTitle,
+                        'content'=>'<span class="text-success">'. Yii::t('app','Add data successful!') .'</span>',
+                        'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"])
+                    ];
+                }else{
+                    return [
+                        'title'=> $modalTitle,
+                        'content'=>$this->renderAjax('create-lang', [
+                            'model' => $model,
+                            'code'=>$code,
+                            'catalogLists' => $catalogLists,
+                        ]),
+                        'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                        Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
+                        
+                    ];
+                }
             }else{
                 return [
                     'title'=> $modalTitle,
@@ -410,7 +475,7 @@ class PostsController extends BaseController
                     Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
                 ];
             }else if($model->load($request->post())){
-                
+               
                 if($oldModel->lang != $model->lang){
                     $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
                     return [
@@ -458,6 +523,9 @@ class PostsController extends BaseController
              *   Process for non-ajax request
              */
             if ($model->load($request->post())) {
+                //reload theo lang moi
+                $catalogLists = Catelogies::find()->where("pid IS NULL OR pid = 0 AND lang = '" . $model->lang . "'")->all();
+                
                 //categories
                 if($model->catalog != null){
                     $arr = array();
@@ -465,6 +533,14 @@ class PostsController extends BaseController
                         $arr[] = $indexCat;
                     }
                     $model->categories = implode(';', $arr);
+                    
+                } else {
+                    $model->addError('catalog', Yii::t('app', 'A post must belong to a category!'));
+                    return $this->render('update', [
+                        'model' => $model,
+                        'catalogLists' => $catalogLists,
+                        'showErrorMessge'=>true
+                    ]);
                 }
                 //tags
                 if($model->taglist != null){
@@ -495,6 +571,7 @@ class PostsController extends BaseController
                         'showErrorMessge'=>true
                     ]);
                 }
+                
                 
                 if($model->save()){
                     if(isset($_POST['btnSubmit']) && $_POST['btnSubmit'] == 'saveAndExit'){
