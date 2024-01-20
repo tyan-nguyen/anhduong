@@ -4,7 +4,12 @@ use yii\widgets\ActiveForm;
 use webvimark\modules\UserManagement\models\User;
 use kartik\select2\Select2;
 use app\modules\admin\models\TagList;
+use yii\bootstrap\Modal;
+use app\widgets\DocumentWidget;
+use app\widgets\ImageWidget;
+use johnitvn\ajaxcrud\CrudAsset;
 
+CrudAsset::register($this);
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\News */
 /* @var $form yii\widgets\ActiveForm */
@@ -15,7 +20,7 @@ use app\modules\admin\models\TagList;
 
 <!-- editor -->
 <script src="<?= Yii::getAlias('@web') ?>/assets/editor/tinymce/tinymce.min.js"></script>
-<script src="https://www.responsivefilemanager.com/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript" ></script>
+
 <div class="row">
 	<?php $form = ActiveForm::begin([
         'id' => 'frmPost',
@@ -26,7 +31,7 @@ use app\modules\admin\models\TagList;
 
     
     
-     <?= $form->errorSummary($model) ?>
+     <?= $form->errorSummary($model) ?>     
 
    	<?php $nameLabel = $model->getAttributeLabel('title') 
     	. ' <span class="seoButton label label-warning" title="Thay đổi liên kết"><i class="glyphicon glyphicon-link"></i></span>' ?>
@@ -49,8 +54,11 @@ use app\modules\admin\models\TagList;
     	
     	<?= $form->field($model, 'seo_description')->textarea(['rows' => 3]) ?>
     	
-    	    <?php $nameLabel = $model->getAttributeLabel('seo_image') 
-        	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModalSeo" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
+    	    <?php /* $nameLabel = $model->getAttributeLabel('seo_image') 
+        	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModalSeo" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' */ ?>
+        	
+        	 <?php $nameLabel = $model->getAttributeLabel('seo_image') 
+        	. ' <a href="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID5&fldr=' . $model->code . '&akey=' . (User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '') .'" class="btn iframe-btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
     	 
         	 <?= $form->field($model, 'seo_image')->textInput(['maxlength' => true, 'id'=>'fieldID5', /*'onchange'=>'changeCover()'*/])->label($nameLabel) ?>
         	 	
@@ -90,8 +98,11 @@ use app\modules\admin\models\TagList;
 	
 	
 	
-	 <?php $nameLabel = $model->getAttributeLabel('cover') 
-    	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModal" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
+	 <?php /* $nameLabel = $model->getAttributeLabel('cover') 
+    	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModal" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' */ ?>
+    	
+    	 <?php $nameLabel = $model->getAttributeLabel('cover') 
+        	. ' <a href="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID4&fldr=' . $model->code . '&akey=' . (User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '') .'" class="btn iframe-btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
 	 
 	 <?= $form->field($model, 'cover')->textInput(['maxlength' => true, 'id'=>'fieldID4', /*'onchange'=>'changeCover()'*/])->label($nameLabel) ?>
 	 	
@@ -165,6 +176,20 @@ use app\modules\admin\models\TagList;
         ->label(Yii::t('app', 'Change date updated') . ' <input id="changeDateUpdated" type="checkbox" />') ?>
     
     
+    <!-- document -->
+     <?php if(!$model->isNewRecord): ?>
+        <?= DocumentWidget::widget([
+            'id_tham_chieu' => $model->id
+        ]) ?>
+        <?php endif; ?>
+        
+        <!-- images -->
+     <?php if(!$model->isNewRecord): ?>
+        <?= ImageWidget::widget([
+            'id_tham_chieu' => $model->id
+        ]) ?>
+        <?php endif; ?>
+            
 	<?php if (!Yii::$app->request->isAjax){ ?>
 	  	<div class="form-group">
 	        <?php // Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
@@ -215,11 +240,11 @@ tinymce.init({
 });
 
 //prevent Bootstrap from hijacking TinyMCE modal focus
-$(document).on('focusin', function(e) {
+/* $(document).on('focusin', function(e) {
   if ($(e.target).closest(".mce-window").length) {
     e.stopImmediatePropagation();
   }
-});
+}); */
 </script>
 
 <div class="modal modal2 fade" id="myModal" >
@@ -257,37 +282,6 @@ $this->registerJsFile(Yii::getAlias('@web') . "/js/script.js", ['position' => \y
 ?>
 
 <script>
-
-/* $('#changeLang2').on('click', function(){ // on change of state
-  // if(this.checked) // if changed state is CHECKED
- //   {
-       alert('kkk');
-  //  }
-}); */
-
-/* 
-/* $(function() {
-    $("input[type='checkbox']:checked").change(function() {
-		alert('kkk');
-    })
-}) */
-
-function changeLang(){
-	alert('kkk');
-} */
-
-/* function responsive_filemanager_callback(field_id){
-	//console.log(field_id);
-	var url=jQuery('#'+field_id).val();
-	//alert('update '+field_id+" with "+url);
-	//alert(url);
-	$('#dCover img').attr('src', url);
-	$('#btnModal2').click();	
-} */
-
-</script>
-
-<script>
 function ChangeLang(){
      $.ajax({
             url: '/dashboard/posts/change-lang',
@@ -310,5 +304,27 @@ function ChangeLang(){
 }
 </script>
 
+ <?php
+        $currentUrl = Yii::$app->request->url;
+        $script = <<< JS
+         $('.iframe-btn').fancybox({	
+        	'width'		: 900,
+        	'height'	: 600,
+        	'type'		: 'iframe',
+                'autoScale'    	: false
+            });
+        JS;
+        $this->registerJs($script);
+    ?>    
+
+
+<?php Modal::begin([
+    "id"=>"ajaxCrudModal",
+    "footer"=>"",// always need it for jquery plugin
+    "clientOptions" => [
+        "backdrop" => "static", "keyboard" => false
+    ]
+])  ?>
+<?php Modal::end(); ?>
 
   

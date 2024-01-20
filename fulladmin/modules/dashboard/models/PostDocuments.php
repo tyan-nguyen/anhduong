@@ -3,37 +3,57 @@
 namespace app\modules\dashboard\models;
 
 use Yii;
+use webvimark\modules\UserManagement\models\User;
+use app\models\Custom;
+use app\modules\dashboard\models\base\PostDocumentsBase;
 
-/**
- * This is the model class for table "post_documents".
- *
- * @property int $id
- * @property int $pid
- * @property string|null $name
- * @property string|null $url
- * @property string|null $file_name
- * @property string|null $file_extension
- * @property float|null $file_size
- * @property string|null $summary
- * @property string|null $date_created
- * @property int|null $user_created
- */
-class PostDocuments extends PostDocuments
-{
+class PostDocuments extends PostDocumentsBase
+{    
+    /**
+     * get tai lieu thuoc id tham chieu
+     * @param string $loai
+     * @param int $idthamchieu
+     * @return \yii\db\ActiveRecord[]
+     */
+    public static function getTaiLieuThamChieu($pid){
+        return PostDocuments::find()->where([
+            'pid' => $pid
+        ])->orderBy('ID DESC')->all();
+    }
     
     /**
-     * {@inheritdoc}
+     * xoa tat ca tai lieu thuoc id tham chieu(khi xoa tham chieu)
+     * @param string $loai
+     * @param int $idthamchieu
      */
-    public function rules()
-    {
-        return [
-            [['pid'], 'required'],
-            [['pid', 'user_created'], 'integer'],
-            [['file_size'], 'number'],
-            [['summary'], 'string'],
-            [['date_created'], 'safe'],
-            [['name', 'url', 'file_name'], 'string', 'max' => 255],
-            [['file_extension'], 'string', 'max' => 10],
-        ];
+    public static function xoaTaiLieuThamChieu($pid){
+        $models = PostDocuments::getTaiLieuThamChieu($pid);
+        foreach ($models as $indexMod=>$model){
+            $model->delete();
+        }
+    }
+    
+    /**
+     * get tai lieu ext url image
+     * @return string
+     */
+    public function getExtUrl(){
+        return Yii::getAlias('@web') . $this::FOLDER_DOCUMENTS_ICONS . $this->file_extension . '.' . 'png';
+    }
+    
+    /**
+     * get tai lieu url
+     * @return string
+     */
+    public function getFileUrl(){
+        return $this->post->folderWeb . $this->url;
+    }
+    
+    /**
+     * file size by KB
+     * @return string
+     */
+    public function getSizeKB(){
+        return ceil($this->file_size/1024) . ' KB';
     }
 }

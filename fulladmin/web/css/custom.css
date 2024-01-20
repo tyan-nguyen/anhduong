@@ -86,3 +86,8 @@ body{
 .content-wrapper {
   width: auto !important;
 }
+
+.box-widget-form{
+	max-height: 300px;
+	overflow-y: scroll;
+}

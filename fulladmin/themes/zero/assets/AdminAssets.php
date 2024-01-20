@@ -23,7 +23,8 @@ class AdminAssets extends AssetBundle
          'assets/AdminLTE-2.4.12/bower_components/bootstrap/dist/css/bootstrap.min.css',        
          'assets/AdminLTE-2.4.12/bower_components/font-awesome/css/font-awesome.min.css',
          'assets/AdminLTE-2.4.12/bower_components/Ionicons/css/ionicons.min.css',
-         'assets/AdminLTE-2.4.12/dist/css/AdminLTE.min.css',
+         //'assets/AdminLTE-2.4.12/dist/css/AdminLTE.min.css',
+         'js/adminlte-2.18/css/AdminLTE.min.css',
          'assets/AdminLTE-2.4.12/dist/css/skins/_all-skins.min.css',
          'assets/AdminLTE-2.4.12/bower_components/morris.js/morris.css',
          'assets/AdminLTE-2.4.12/bower_components/jvectormap/jquery-jvectormap.css',
@@ -34,6 +35,7 @@ class AdminAssets extends AssetBundle
         
         'css/customadmin.css',
         'css/custom.css',
+        'js/fancybox-master/dist/jquery.fancybox.min.css'
     ];
     public $js = [
         /*  'assets/AdminLTE-2.4.12/bower_components/jquery/dist/jquery.min.js',*/
@@ -56,6 +58,9 @@ class AdminAssets extends AssetBundle
          //'assets/AdminLTE-2.4.12/dist/js/pages/dashboard.js',
          //'assets/AdminLTE-2.4.12/dist/js/demo.js',
          'assets/AdminLTE-2.4.12/dist/js/custom.js',
+        //'js/ajaxcrud.js',
+        //'js/ModalRemote.js',
+        'js/fancybox-master/dist/jquery.fancybox.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

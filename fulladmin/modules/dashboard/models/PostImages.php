@@ -3,40 +3,39 @@
 namespace app\modules\dashboard\models;
 
 use Yii;
+use webvimark\modules\UserManagement\models\User;
+use app\models\Custom;
+use app\modules\dashboard\models\base\PostImagesBase;
 
-/**
- * This is the model class for table "post_images".
- *
- * @property int $id
- * @property int $pid
- * @property string|null $name
- * @property string|null $url
- * @property string|null $img_name
- * @property string|null $img_extension
- * @property float|null $img_size
- * @property string|null $img_wh
- * @property string|null $summary
- * @property string|null $date_created
- * @property int|null $user_created
- */
-class PostImages extends PostImages
-{
+class PostImages extends PostImagesBase
+{  
+    /**
+     * get hinh anh thuoc id tham chieu
+     * @param int $idthamchieu
+     * @return \yii\db\ActiveRecord[]
+     */
+    public static function getHinhAnhThamChieu($idthamchieu){
+        return PostImages::find()->where([
+            'pid' => $idthamchieu
+        ])->orderBy('ID DESC')->all();
+    }
     
     /**
-     * {@inheritdoc}
+     * xoa tat ca hinh anh thuoc id tham chieu(khi xoa tham chieu)
+     * @param int $idthamchieu
      */
-    public function rules()
-    {
-        return [
-            [['pid'], 'required'],
-            [['pid', 'user_created'], 'integer'],
-            [['img_size'], 'number'],
-            [['summary'], 'string'],
-            [['date_created'], 'safe'],
-            [['name', 'url', 'img_name'], 'string', 'max' => 255],
-            [['img_extension'], 'string', 'max' => 10],
-            [['img_wh'], 'string', 'max' => 20],
-        ];
+    public static function xoaHinhAnhThamChieu($idthamchieu){
+        $models = PostImages::getHinhAnhThamChieu($idthamchieu);
+        foreach ($models as $indexMod=>$model){
+            $model->delete();
+        }
     }
-
+    
+    /**
+     * get hinh anh url
+     * @return string
+     */
+    public function getHinhAnhUrl(){
+        return $this->post->folderWeb . $this->url;
+    }
 }

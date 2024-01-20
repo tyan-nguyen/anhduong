@@ -10,6 +10,7 @@ use Yii;
  * @property int $id
  * @property string $code
  * @property string $name
+ * @property int|null $enable
  * @property int|null $enable_images
  * @property int|null $enable_documents
  * @property int|null $enable_cover
@@ -34,7 +35,7 @@ class PostTypes extends \yii\db\ActiveRecord
     {
         return [
             [['code', 'name'], 'required'],
-            [['enable_images', 'enable_documents', 'enable_cover', 'enable_seo', 'enable_summary', 'enable_content'], 'integer'],
+            [['enable', 'enable_images', 'enable_documents', 'enable_cover', 'enable_seo', 'enable_summary', 'enable_content'], 'integer'],
             [['code'], 'string', 'max' => 20],
             [['name'], 'string', 'max' => 200],
         ];
@@ -49,6 +50,7 @@ class PostTypes extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'code' => Yii::t('app', 'Code'),
             'name' => Yii::t('app', 'Name'),
+            'enable' => Yii::t('app', 'Enable'),
             'enable_images' => Yii::t('app', 'Enable Images'),
             'enable_documents' => Yii::t('app', 'Enable Documents'),
             'enable_cover' => Yii::t('app', 'Enable Cover'),

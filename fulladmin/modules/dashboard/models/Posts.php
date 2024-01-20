@@ -256,4 +256,12 @@ class Posts extends PostsBase
         return $langArr;
     }
     
+    public function getFolderWeb(){
+        return Yii::getAlias('@web/images/posts/'. $this->code . '/');
+    }
+    
+    public function getFolderRoot(){
+        return Yii::getAlias('@webroot/images/posts/'. $this->code . '/');
+    }
+    
 }
