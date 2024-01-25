@@ -272,4 +272,5 @@ return [
     'Opening Hours' => '@@Giờ làm việc@@',
     'Seo Description En' => '@@@@',
     'Seo Title En' => '@@@@',
+    'SLIDE'=>'Trình chiếu'
 ];

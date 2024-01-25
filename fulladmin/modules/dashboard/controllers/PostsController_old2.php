@@ -13,7 +13,6 @@ use app\modules\dashboard\models\Catelogies;
 use app\models\Custom;
 use app\modules\dashboard\models\TagList;
 use app\controllers\BaseController;
-use app\modules\dashboard\models\PostType;
 
 /**
  * PostsController implements the CRUD actions for Posts model.
@@ -97,21 +96,19 @@ class PostsController extends BaseController
      * Lists all Posts models.
      * @return mixed
      */
-    public function actionIndex(/* $lang='vi', */ $post_type='post')
+    public function actionIndex($lang='vi', $static=false)
     {
-        /* if($lang != 'vi' && $lang != 'en'){
+        if($lang != 'vi' && $lang != 'en'){
             throw new NotFoundHttpException('The requested page does not exist.');
-        } */
+        }
         
         $searchModel = new PostsSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $post_type);
-        $postType = PostType::findOne(['code'=>strtoupper($post_type)]);
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $lang, $static);
         
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-            //'lang'=>$lang
-            'labels' => $postType!=NULL ? $postType->postLabels : PostType::defaultPostLabels()
+            'lang'=>$lang
         ]);
     }
     
@@ -165,11 +162,9 @@ class PostsController extends BaseController
      * action create
      * create default -> redirect to update page
      */
-    public function actionCreate($post_type=NULL, $lang='vi'){
+    public function actionCreate(){
         $model = new Posts();
         $model->title = Yii::t('app', 'New Post Title here...');
-        $model->post_type = strtoupper($post_type);
-        $model->lang = $lang;
         
         if($model->save()){
             return $this->redirect(['update?id=' . $model->id]);

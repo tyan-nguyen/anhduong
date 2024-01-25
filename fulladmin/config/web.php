@@ -127,6 +127,8 @@ $config = [
                 'lang/<lang>'=>'bug/lang',
                 'cat/<lang>/<slug>'=>'bug/cat',
                 'cat/<slug>'=>'bug/cat',
+                //admin
+                'dashboard/content/<post_type>'=>'dashboard/posts',
                 
             ],
         ],

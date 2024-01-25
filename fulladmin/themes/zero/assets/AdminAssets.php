@@ -41,7 +41,7 @@ class AdminAssets extends AssetBundle
         /*  'assets/AdminLTE-2.4.12/bower_components/jquery/dist/jquery.min.js',*/
          'assets/AdminLTE-2.4.12/bower_components/jquery-ui/jquery-ui.min.js', 
       //'https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js',
-         'assets/AdminLTE-2.4.12/bower_components/bootstrap/dist/js/bootstrap.min.js',
+         //'assets/AdminLTE-2.4.12/bower_components/bootstrap/dist/js/bootstrap.min.js',
          'assets/AdminLTE-2.4.12/bower_components/raphael/raphael.min.js',
          'assets/AdminLTE-2.4.12/bower_components/morris.js/morris.min.js',
          'assets/AdminLTE-2.4.12/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js',

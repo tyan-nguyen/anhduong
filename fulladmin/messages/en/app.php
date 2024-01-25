@@ -273,4 +273,5 @@ return [
     'Seo Description En' => '@@@@',
     'Seo Title En' => '@@@@',
     'Turning Waste to Gold' => '@@@@',
+    'SLIDE'=>'Slide'
 ];

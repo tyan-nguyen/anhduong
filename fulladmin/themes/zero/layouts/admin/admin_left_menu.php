@@ -1,5 +1,6 @@
  <?php
  	use webvimark\modules\UserManagement\models\User;
+use app\modules\dashboard\models\PostType;
  ?>
       <ul class="sidebar-menu" data-widget="tree">
       	<li>
@@ -19,6 +20,16 @@
           </a>
     		<ul class="treeview-menu">
             <?php if(User::hasRole('bientapvien')) { ?> 
+            <?php 
+                $postTypes = PostType::find()->where(['enable'=>1])->all();
+                foreach ($postTypes as $iPostType=>$postType){
+            ?>
+            <li><a href="<?= $postType->adminLink ?>"><i class="fa fa-circle-o"></i> <?= Yii::t('app', $postType->code) ?></a></li> 
+            <?php 
+                }
+            ?>
+            
+            
             <li><a href="<?= Yii::getAlias('@web') ?>/dashboard/posts"><i class="fa fa-circle-o"></i> <?= Yii::t('app', 'Manage Posts')?></a></li> 
             
             <?php } ?>

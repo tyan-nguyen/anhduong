@@ -3,17 +3,18 @@ use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\bootstrap\Modal;
 use kartik\grid\GridView;
-//use johnitvn\ajaxcrud\CrudAsset; 
+use johnitvn\ajaxcrud\CrudAsset; 
 use johnitvn\ajaxcrud\BulkButtonWidget;
+use app\widgets\ShowLangAdd;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\modules\admin\models\NewsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'News';
+$this->title = $labels['title'];
 $this->params['breadcrumbs'][] = $this->title;
 
-//CrudAsset::register($this);
+CrudAsset::register($this);
 
 ?>
 
@@ -27,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
    }
 }
 </style>
-
+                    
 <div class="news-index">
     <div id="ajaxCrudDatatable">
         <?=GridView::widget([
@@ -41,9 +42,23 @@ $this->params['breadcrumbs'][] = $this->title;
                 ['content'=>
                    /*  Html::a('<i class="glyphicon glyphicon-plus"></i> Add New Post', ['create?lang=' . $lang],
                     ['data-pjax'=>0, 'title'=> 'Create new News','class'=>'btn btn-default']). */
-                    Html::a('<i class="glyphicon glyphicon-plus"></i> ' . Yii::t('app', 'Add new post'), ['create'],
-                        ['data-pjax'=>0, 'title'=> Yii::t('app', 'Add new post'),'class'=>'btn btn-default']).
-                    Html::a('<i class="glyphicon glyphicon-repeat"></i> Reload List', [''],
+                    /* Html::a('<i class="glyphicon glyphicon-plus"></i> ' . Yii::t('app', 'Add new'), [$labels['createLink']],
+                        ['data-pjax'=>0, 'title'=> Yii::t('app', 'Add new'),'class'=>'btn btn-default']). */
+                    
+                   /*  '<div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <i class="glyphicon glyphicon-plus"></i> ' . Yii::t('app', 'Add new') . ' <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                    </div>'.  */
+                    ShowLangAdd::widget() .
+                    Html::a('<i class="glyphicon glyphicon-repeat"></i> Reload List', [$labels['reloadLink']],
                     ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Reset Grid'])
                     //'{toggleData}'.
                     //'{export}'

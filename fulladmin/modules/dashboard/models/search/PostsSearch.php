@@ -20,7 +20,7 @@ class PostsSearch extends Posts
         return [
             [['id'], 'integer'],
             [['code', 'categories', 'title', 'slug', 'summary', 'content', 'date_created',                 
-               'post_status', 'lang'], 'safe'],
+               'post_status', 'lang', 'post_type'], 'safe'],
         ];
     }
 
@@ -40,7 +40,7 @@ class PostsSearch extends Posts
      *
      * @return ActiveDataProvider
      */
-    public function search($params, $lang, $static)
+    public function search($params, $post_type)
     {
         $query = Posts::find();
 
@@ -76,7 +76,12 @@ class PostsSearch extends Posts
             ->andFilterWhere(['like', 'slug', $this->slug])
             ->andFilterWhere(['like', 'summary', $this->summary])
             ->andFilterWhere(['like', 'content', $this->content]);
-
+        
+        if($post_type != NULL){
+            $query->andFilterWhere([
+                'post_type' => $post_type,
+            ]);
+        }
         return $dataProvider;
     }
 }
