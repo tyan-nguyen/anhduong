@@ -111,7 +111,8 @@ class PostsController extends BaseController
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             //'lang'=>$lang
-            'labels' => $postType!=NULL ? $postType->postLabels : PostType::defaultPostLabels()
+            'labels' => $postType!=NULL ? $postType->postLabels : PostType::defaultPostLabels(),
+            'postType'=>$post_type
         ]);
     }
     

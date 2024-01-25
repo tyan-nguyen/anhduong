@@ -5,6 +5,7 @@ namespace app\widgets;
 use Yii;
 use yii\base\Widget;
 use yii\helpers\Html;
+use app\modules\dashboard\models\PostType;
 
 /**
  * PostStatus Widget for display status for post/categories in grid and other views
@@ -12,6 +13,7 @@ use yii\helpers\Html;
  */
 class ShowLangAdd extends Widget
 {    
+    public $post_type;
     /**
      * {@inheritdoc}
      */
@@ -27,7 +29,7 @@ class ShowLangAdd extends Widget
         foreach (Yii::$app->params['langs'] as $key=>$val){
             $html .= '<li>' . Html::a(
                     Html::img(Yii::getAlias("@web/images/").$key.'.png', ['width'=>'20px']) .'&nbsp;'. $val, 
-                '', ['data-pjax'=>0]) . '</li>';
+                PostType::getPostLinkByPostType($this->post_type) .'&lang='.$key, ['data-pjax'=>0]) . '</li>';
         }
            /*  <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>

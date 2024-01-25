@@ -57,7 +57,7 @@ CrudAsset::register($this);
                         <li><a href="#">Separated link</a></li>
                       </ul>
                     </div>'.  */
-                    ShowLangAdd::widget() .
+                    ShowLangAdd::widget(['post_type'=>$postType]) .
                     Html::a('<i class="glyphicon glyphicon-repeat"></i> Reload List', [$labels['reloadLink']],
                     ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Reset Grid'])
                     //'{toggleData}'.

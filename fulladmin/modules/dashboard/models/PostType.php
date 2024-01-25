@@ -39,7 +39,6 @@ class PostType extends \app\models\PostTypes
     
     public function getPostLabels(){
         $labelArr = array();
-        
         $labelArr['title'] = $this->name;
         $labelArr['createLink'] = 'create?post_type=' . strtolower($this->code);
         $labelArr['reloadLink'] = $this->adminLink;
@@ -55,6 +54,10 @@ class PostType extends \app\models\PostTypes
         $labelArr['reloadLink'] = '';
         
         return $labelArr;
+    }
+    
+    public static function getPostLinkByPostType($post_type){
+        return Yii::getAlias('@web/dashboard/posts/') . 'create?post_type=' . strtolower($post_type);
     }
     
 }
