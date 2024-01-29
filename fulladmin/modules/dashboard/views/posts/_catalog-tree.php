@@ -3,7 +3,7 @@ use yii\helpers\Html;
 use app\modules\dashboard\models\Catelogies;
 
 
-function getChildCatalog($model=NULL, $pid, $level){
+function getChildCatalog($model=NULL, $pid=NULL, $level=NULL){
 	$marginLeft = $level+30;
 	$listChildCatalogs = Catelogies::find()->where(['pid'=>$pid])->all();
 	if($listChildCatalogs != null){

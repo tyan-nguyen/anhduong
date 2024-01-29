@@ -58,8 +58,8 @@ class AdminAssets extends AssetBundle
          //'assets/AdminLTE-2.4.12/dist/js/pages/dashboard.js',
          //'assets/AdminLTE-2.4.12/dist/js/demo.js',
          'assets/AdminLTE-2.4.12/dist/js/custom.js',
-        //'js/ajaxcrud.js',
-        //'js/ModalRemote.js',
+        'js/ajaxcrud.js',
+        'js/ModalRemote.js',
         'js/fancybox-master/dist/jquery.fancybox.min.js',
     ];
     public $depends = [

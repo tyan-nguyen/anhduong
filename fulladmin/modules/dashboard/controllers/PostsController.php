@@ -42,7 +42,7 @@ class PostsController extends BaseController
     /**
      * get data of list categories to reload dropdownlist by seleted lang
      */
-    public function actionChangeLang($postid=NULL, $langid){
+    public function actionChangeLang($postid=NULL, $langid=NULL){
         $this->layout = '/noLayout';
         if($postid!=null){
             $model = $this->findModel($postid);

@@ -7,9 +7,9 @@ use app\modules\admin\models\TagList;
 use yii\bootstrap\Modal;
 use app\widgets\DocumentWidget;
 use app\widgets\ImageWidget;
-use johnitvn\ajaxcrud\CrudAsset;
+//use johnitvn\ajaxcrud\CrudAsset;
 
-CrudAsset::register($this);
+//CrudAsset::register($this);
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\News */
 /* @var $form yii\widgets\ActiveForm */
