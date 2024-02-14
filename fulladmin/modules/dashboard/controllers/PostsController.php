@@ -112,7 +112,7 @@ class PostsController extends BaseController
             'dataProvider' => $dataProvider,
             //'lang'=>$lang
             'labels' => $postType!=NULL ? $postType->postLabels : PostType::defaultPostLabels(),
-            'postType'=>$post_type
+            'postType'=>$postType
         ]);
     }
     
@@ -191,10 +191,14 @@ class PostsController extends BaseController
         $model = new Posts();
         $modalTitle = Yii::t('app','Add new') .' '. Yii::t('app','Post');
         
-        if($model->lang == null){
-            $catalogLists = [];
+        if($model->postType->enable_languages){
+            if($model->lang == null){
+                $catalogLists = [];
+            } else {
+                $catalogLists = Catelogies::find()->where("pid IS NULL OR pid = 0 AND lang = '" . $model->lang . "'")->all();
+            }
         } else {
-            $catalogLists = Catelogies::find()->where("pid IS NULL OR pid = 0 AND lang = '" . $model->lang . "'")->all();
+            $catalogLists = Catelogies::find()->where('pid IS NULL OR pid = 0')->all();
         }
         
         $code = '';
@@ -204,6 +208,10 @@ class PostsController extends BaseController
             $model->code = $modelMain->code;
             $model->title = $modelMain->title;
             $model->slug = $modelMain->slug;
+            $model->post_type = $modelMain->post_type;
+            if($model->postType->enable_tags){
+                $model->tags = $modelMain->tags;
+            }
         }
         
         if($request->isAjax){
@@ -224,51 +232,80 @@ class PostsController extends BaseController
                     
                 ];
             }else if($model->load($request->post())){
-                
-                //categories
-                if($model->catalog != null){
-                    $arr = array();
-                    foreach ($model->catalog as $indexCat=>$valCat){
-                        $arr[] = $indexCat;
+                //get lai categories list by lang by post
+                if($model->postType->enable_languages){
+                    if($model->lang == null){
+                        $catalogLists = [];
+                    } else {
+                        $catalogLists = Catelogies::find()->where("pid IS NULL OR pid = 0 AND lang = '" . $model->lang . "'")->all();
                     }
-                    $model->categories = implode(';', $arr);
-                    
                 } else {
-                    $model->addError('catalog', Yii::t('app', 'A post must belong to a category!'));
-                    return $this->render('update', [
-                        'model' => $model,
-                        'catalogLists' => $catalogLists,
-                        'showErrorMessge'=>true
-                    ]);
+                    $catalogLists = Catelogies::find()->where('pid IS NULL OR pid = 0')->all();
                 }
-                //tags
-                if($model->taglist != null){
-                    $arr = array();
-                    foreach ($model->taglist as $indexTag=>$valTag){
-                        $checkTag = TagList::find()->where(['name'=>$valTag])->one();
-                        if($checkTag == null){
-                            $newTag = new TagList();
-                            $newTag->name = $valTag;
-                            if($newTag->save())
-                                $arr[] = $newTag->slug;
-                        }else{
-                            $arr[] = $checkTag->slug;
+                //categories
+                
+                if($model->postType->enable_categories){
+                    if($model->catalog != null){
+                        $arr = array();
+                        foreach ($model->catalog as $indexCat=>$valCat){
+                            $arr[] = $indexCat;
                         }
+                        $model->categories = implode(';', $arr);
+                        
+                    } else {
+                        $model->addError('catalog', Yii::t('app', 'A post must belong to a category!'));
+                        return [
+                            'title'=> $modalTitle,
+                            'content'=>$this->renderAjax('create-lang', [
+                                'model' => $model,
+                                'code'=>$code,
+                                'catalogLists' => $catalogLists,
+                            ]),
+                            'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                            Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
+                            
+                        ];
                     }
-                    $model->tags = implode(';', $arr);
-                }
-                else {
-                    $model->tags = '';
                 }
                 
-                $checkModelExist = Posts::findOne(['lang'=>$model->lang, 'code'=>$model->code]);
-                if($checkModelExist != null){
-                    $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
-                    return $this->render('update', [
-                        'model' => $model,
-                        'catalogLists' => $catalogLists,
-                        'showErrorMessge'=>true
-                    ]);
+                //tags
+                if($model->postType->enable_tags){
+                    if($model->taglist != null){
+                        $arr = array();
+                        foreach ($model->taglist as $indexTag=>$valTag){
+                            $checkTag = TagList::find()->where(['name'=>$valTag])->one();
+                            if($checkTag == null){
+                                $newTag = new TagList();
+                                $newTag->name = $valTag;
+                                if($newTag->save())
+                                    $arr[] = $newTag->slug;
+                            }else{
+                                $arr[] = $checkTag->slug;
+                            }
+                        }
+                        $model->tags = implode(';', $arr);
+                    }
+                    else {
+                        $model->tags = '';
+                    }
+                }
+                
+                if($model->postType->enable_languages){
+                    $checkModelExist = Posts::findOne(['lang'=>$model->lang, 'code'=>$model->code]);
+                    if($checkModelExist != null){
+                        $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
+                        return [
+                            'title'=> $modalTitle,
+                            'content'=>$this->renderAjax('create-lang', [
+                                'model' => $model,
+                                'code'=>$code,
+                                'catalogLists' => $catalogLists,
+                            ]),
+                            'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                            Html::button(Yii::t('app','Save'),['class'=>'btn btn-primary','type'=>"submit"])
+                            
+                        ];
+                    }
                 }
                 
                 if($model->save()){
@@ -462,9 +499,12 @@ class PostsController extends BaseController
         $model = $this->findModel($id);
         $oldModel = $this->findModel($id);
         $this->view->title = 'Post #' . $id;
-        
-        $catalogLists = Catelogies::find()->where("pid IS NULL OR pid = 0 AND lang = '" . $model->lang . "'")->all();
-        
+        $catalogLists = array();
+        if($model->postType->enable_categories){
+            $catalogLists = Catelogies::find()->where("pid IS NULL OR pid = 0 AND lang = '" . $model->lang . "'")->all();
+        }else{
+            $catalogLists = Catelogies::find()->where('pid IS NULL OR pid = 0')->all();
+        }
         
         if($request->isAjax){
             /*
@@ -541,48 +581,54 @@ class PostsController extends BaseController
                     $model->categories = implode(';', $arr);
                     
                 } else {
-                    $model->addError('catalog', Yii::t('app', 'A post must belong to a category!'));
-                    return $this->render('update', [
-                        'model' => $model,
-                        'catalogLists' => $catalogLists,
-                        'showErrorMessge'=>true
-                    ]);
+                    if($model->postType->enable_categories){
+                        $model->addError('catalog', Yii::t('app', 'A post must belong to a category!'));
+                        return $this->render('update', [
+                            'model' => $model,
+                            'catalogLists' => $catalogLists,
+                            'showErrorMessge'=>true
+                        ]);
+                    }
                 }
                 //tags
-                if($model->taglist != null){
-                    $arr = array();
-                    foreach ($model->taglist as $indexTag=>$valTag){
-                        $checkTag = TagList::find()->where(['name'=>$valTag])->one();
-                        if($checkTag == null){
-                            $newTag = new TagList();
-                            $newTag->name = $valTag;
-                            if($newTag->save())
-                                $arr[] = $newTag->slug;
-                        }else{
-                            $arr[] = $checkTag->slug;
+                if($model->postType->enable_tags){
+                    if($model->taglist != null){
+                        $arr = array();
+                        foreach ($model->taglist as $indexTag=>$valTag){
+                            $checkTag = TagList::find()->where(['name'=>$valTag])->one();
+                            if($checkTag == null){
+                                $newTag = new TagList();
+                                $newTag->name = $valTag;
+                                if($newTag->save())
+                                    $arr[] = $newTag->slug;
+                            }else{
+                                $arr[] = $checkTag->slug;
+                            }
                         }
+                        $model->tags = implode(';', $arr);
                     }
-                    $model->tags = implode(';', $arr);
-                }
-                else {
-                    $model->tags = '';
+                    else {
+                        $model->tags = '';
+                    }
                 }
                 
                 
-                if($oldModel->lang != $model->lang){
-                    $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
-                    return $this->render('update', [
-                        'model' => $model,
-                        'catalogLists' => $catalogLists,
-                        'showErrorMessge'=>true
-                    ]);
+                if($model->postType->enable_languages){
+                    if($oldModel->lang != NULL && $model->lang != NULL && $oldModel->lang != $model->lang){
+                        $model->addError('lang', Yii::t('app', 'Your change language is exist in database, please check!'));
+                        return $this->render('update', [
+                            'model' => $model,
+                            'catalogLists' => $catalogLists,
+                            'showErrorMessge'=>true
+                        ]);
+                    }
                 }
                 
                 
                 if($model->save()){
                     if(isset($_POST['btnSubmit']) && $_POST['btnSubmit'] == 'saveAndExit'){
                             //return $this->redirect(['index?lang=' . $model->lang . '&static=true']);
-                            return $this->redirect(['index']);
+                            return $this->redirect([$model->adminLink]);
                     } else{
                         
                         return $this->render('update', [

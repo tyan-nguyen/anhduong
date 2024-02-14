@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use app\modules\admin\models\Catelogies;
 use app\widgets\PostStatus;
 use app\widgets\ShowLangPosts;
+use app\modules\dashboard\models\PostType;
 
 return [
     [
@@ -73,7 +74,8 @@ return [
                 return ShowLangPosts::widget(['model'=>$model]);
             },
             'filter'=>Html::activeDropDownList($searchModel, 'lang', Yii::$app->params['langs'],
-                ['prompt'=>Yii::t('app', '--Select--'), 'class'=>'form-control'])
+                ['prompt'=>Yii::t('app', '--Select--'), 'class'=>'form-control']),
+            'visible'=>PostType::getSettingByAttribute($postType->code, 'enable_languages')
        ],
     
    /*  [

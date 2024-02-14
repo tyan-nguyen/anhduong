@@ -57,7 +57,13 @@ CrudAsset::register($this);
                         <li><a href="#">Separated link</a></li>
                       </ul>
                     </div>'.  */
-                    ShowLangAdd::widget(['post_type'=>$postType]) .
+                    ( $postType->enable_languages ? ShowLangAdd::widget(['post_type'=>$postType->code]) :
+                    Html::a('<i class="glyphicon glyphicon-plus"></i> Add New Post', ['create?post_type=' . $postType->code],
+                        ['data-pjax'=>0, 'title'=> 'Create new News','class'=>'btn btn-default']) )
+                    .
+                    Html::a('<i class="glyphicon glyphicon-th"></i> Categories', ['cat/' . $postType->code],
+                        ['data-pjax'=>0, 'title'=> 'Manage Categories','class'=>'btn btn-default'])
+                    .
                     Html::a('<i class="glyphicon glyphicon-repeat"></i> Reload List', [$labels['reloadLink']],
                     ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Reset Grid'])
                     //'{toggleData}'.

@@ -19,7 +19,7 @@ class CatelogiesSearch extends Catelogies
     {
         return [
             [['id','pid', 'priority', 'level', 'user_created'], 'integer'],
-            [['name', 'slug', 'lang', 'code', 'date_created', 'seo_title', 'seo_description', 'description', 'content', 'status'], 'safe'],
+            [['name', 'slug', 'lang', 'code', 'date_created', 'seo_title', 'seo_description', 'description', 'content', 'status', 'post_type'], 'safe'],
         ];
     }
 
@@ -39,7 +39,7 @@ class CatelogiesSearch extends Catelogies
      *
      * @return ActiveDataProvider
      */
-    public function search($params)
+    public function search($params, $post_type)
     {
         $query = Catelogies::find();
 
@@ -74,7 +74,13 @@ class CatelogiesSearch extends Catelogies
             ->andFilterWhere(['like', 'seo_description', $this->seo_description])
             ->andFilterWhere(['like', 'description', $this->description])
             ->andFilterWhere(['like', 'content', $this->content]);
-
+        
+        if($post_type != NULL){
+            $query->andFilterWhere([
+                'post_type' => $post_type,
+            ]);
+        }
+            
         return $dataProvider;
     }
 }

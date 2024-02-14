@@ -17,6 +17,9 @@ use Yii;
  * @property int|null $enable_seo
  * @property int|null $enable_summary
  * @property int|null $enable_content
+ * @property int|null $enable_categories
+ * @property int|null $enable_languages
+ * @property int|null $enable_tags
  */
 class PostTypes extends \yii\db\ActiveRecord
 {
@@ -35,7 +38,7 @@ class PostTypes extends \yii\db\ActiveRecord
     {
         return [
             [['code', 'name'], 'required'],
-            [['enable', 'enable_images', 'enable_documents', 'enable_cover', 'enable_seo', 'enable_summary', 'enable_content'], 'integer'],
+            [['enable', 'enable_images', 'enable_documents', 'enable_cover', 'enable_seo', 'enable_summary', 'enable_content', 'enable_categories', 'enable_languages', 'enable_tags'], 'integer'],
             [['code'], 'string', 'max' => 20],
             [['name'], 'string', 'max' => 200],
         ];
@@ -57,6 +60,9 @@ class PostTypes extends \yii\db\ActiveRecord
             'enable_seo' => Yii::t('app', 'Enable Seo'),
             'enable_summary' => Yii::t('app', 'Enable Summary'),
             'enable_content' => Yii::t('app', 'Enable Content'),
+            'enable_categories' => Yii::t('app', 'Enable Categories'),
+            'enable_languages' => Yii::t('app', 'Enable Languages'),
+            'enable_tags' => Yii::t('app', 'Enable Tags'),
         ];
     }
 }

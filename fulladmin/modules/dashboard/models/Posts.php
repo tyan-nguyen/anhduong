@@ -10,6 +10,15 @@ use app\models\Custom;
 class Posts extends PostsBase
 {
     /**
+     * Gets query for [[PostType]].
+     * 1 post must belong 1 post_type
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPostType()
+    {
+        return $this->hasOne(PostType::class, ['code' => 'post_type']);
+    }
+    /**
      * get new link publish
      */
     public function getUrl(){
@@ -263,5 +272,11 @@ class Posts extends PostsBase
     public function getFolderRoot(){
         return Yii::getAlias('@webroot/images/posts/'. $this->code . '/');
     }
+    
+    public function getAdminLink(){
+        return Yii::getAlias('@web/dashboard/content/'. strtolower($this->post_type));
+    }
+    
+    
     
 }

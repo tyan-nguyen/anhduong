@@ -17,6 +17,9 @@ use app\models\Custom;
  * @property int|null $enable_seo
  * @property int|null $enable_summary
  * @property int|null $enable_content
+ * @property int|null $enable_categories
+ * @property int|null $enable_languages
+ * @property int|null $enable_tags
  */
 class PostType extends \app\models\PostTypes 
 {
@@ -27,7 +30,7 @@ class PostType extends \app\models\PostTypes
     {
         return [
             [['code', 'name'], 'required'],
-            [['enable', 'enable_images', 'enable_documents', 'enable_cover', 'enable_seo', 'enable_summary', 'enable_content'], 'integer'],
+            [['enable', 'enable_images', 'enable_documents', 'enable_cover', 'enable_seo', 'enable_summary', 'enable_content', 'enable_categories', 'enable_languages', 'enable_tags'], 'integer'],
             [['code'], 'string', 'max' => 20],
             [['name'], 'string', 'max' => 200],
         ];
@@ -58,6 +61,15 @@ class PostType extends \app\models\PostTypes
     
     public static function getPostLinkByPostType($post_type){
         return Yii::getAlias('@web/dashboard/posts/') . 'create?post_type=' . strtolower($post_type);
+    }
+    
+    public static function getSettingByAttribute($code, $attr){
+        $model = PostType::findOne(['code'=>$code]);
+        if($model->$attr == 1){
+            return TRUE;
+        } else {
+            return FALSE;
+        }
     }
     
 }

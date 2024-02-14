@@ -22,6 +22,7 @@ use Yii;
  * @property string|null $lang
  * @property string|null $code
  * @property string|null $status
+ * @property string|null $post_type
  * @property string|null $date_created
  * @property int|null $user_created
  */
@@ -47,7 +48,7 @@ class NewsCatelogies extends \yii\db\ActiveRecord
             [['date_created'], 'safe'],
             [['cover', 'seo_image'], 'string', 'max' => 255],
             [['name', 'slug', 'seo_title', 'code'], 'string', 'max' => 200],
-            [['lang', 'status'], 'string', 'max' => 20],
+            [['lang', 'status', 'post_type'], 'string', 'max' => 20],
         ];
     }
 
@@ -72,6 +73,7 @@ class NewsCatelogies extends \yii\db\ActiveRecord
             'lang' => Yii::t('app', 'Lang'),
             'code' => Yii::t('app', 'Code'),
             'status' => Yii::t('app', 'Status'),
+            'post_type' => Yii::t('app', 'Post Type'),
             'date_created' => Yii::t('app', 'Date Created'),
             'user_created' => Yii::t('app', 'User Created'),
         ];

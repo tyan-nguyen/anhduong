@@ -83,28 +83,55 @@ $model->taglist = $model->listTagName;
 	 
 	 <?php //$form->field($model, 'is_static')->checkbox() ?>
 	 
+	 <?php if($model->postType->enable_languages){ 
 	  <?= $form->field($model, 'lang')->dropDownList(
          (isset($code) && $code != null) 
             ? $model->getLangAvailable($model->code) 
             : Yii::$app->params['langs'], 
          [
              'prompt'=>Yii::t('app', 'Select language'),
-             'onchange'=>'ChangeLang()',
+             'onchange'=>$model->postType->enable_categories ? 'ChangeLang()' : '',
              'id'=>'txtLang'
          ]) ?>
-
-    <?php // $form->field($model, 'catelogies')->textInput(['maxlength' => true]) ?>
+	
+	<?php } //enable languages ?>
     
+    
+    <?php if($model->postType->enable_categories){ ?>
     <div class="form-group">
     	<label>Catelogies</label>
     	<div id="list-catalog" class="list-catalog">
-			<?= $this->render('_catalog-tree', [
+			<?= $model->lang!=null ? $this->render('_catalog-tree', [
 					'model'=>false,
-					'catalogLists'=>$model->lang!=null ? $catalogLists : []
-			]) ?>
+					'catalogLists'=> $catalogLists
+			]) : Yii::t('app', 'Please select language.') ?>
 		</div>
     </div>
+    <script>
+        function ChangeLang(){
+             $.ajax({
+                    url: '/dashboard/posts/change-lang',
+                   type: 'get',
+                   //dataType: 'json',
+                   data: {postid:'', langid: $("#txtLang").val()},
+                   success: function (data) {
+                   		//alert(data);
+                   		$('#list-catalog').html(data);
+                   		/* $('#txtCat').children().remove();
+                   		$('#txtCat').append('<option value="">--Chọn--</option>');
+                   		for (var key in data) {
+                            if (data.hasOwnProperty(key)) {
+                              $('#txtCat').append('<option value="'+key+'">'+ data[key] +'</option>');
+                            }
+                        } */
+                   }
+        
+              });
+        }
+    </script>
+    <?php } //enable catalog ?>
     
+    <?php  if($model->postType->enable_tags){ ?>
     <?= $form->field($model, 'taglist')->widget(Select2::classname(), [
 	    'data' => (new TagList())->getListName(),
 	    'language' => 'en',
@@ -117,6 +144,7 @@ $model->taglist = $model->listTagName;
 	    ],
 	]);
 	?>
+	<?php } //enable tags ?>
 	
 
 	
@@ -146,31 +174,6 @@ $model->taglist = $model->listTagName;
 </div> 
 <?php ActiveForm::end(); ?> 
 </div>
-
-    
-<script>
-
-function ChangeLang(){
-     $.ajax({
-            url: '/dashboard/posts/change-lang',
-           type: 'get',
-           //dataType: 'json',
-           data: {postid:'', langid: $("#txtLang").val()},
-           success: function (data) {
-           		//alert(data);
-           		$('#list-catalog').html(data);
-           		/* $('#txtCat').children().remove();
-           		$('#txtCat').append('<option value="">--Chọn--</option>');
-           		for (var key in data) {
-                    if (data.hasOwnProperty(key)) {
-                      $('#txtCat').append('<option value="'+key+'">'+ data[key] +'</option>');
-                    }
-                } */
-           }
-
-      });
-}
-</script>
 
 
   

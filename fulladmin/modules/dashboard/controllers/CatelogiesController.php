@@ -10,6 +10,7 @@ use yii\filters\VerbFilter;
 use \yii\web\Response;
 use yii\helpers\Html;
 use app\controllers\BaseController;
+use app\modules\dashboard\models\PostType;
 
 /**
  * CatelogiesController implements the CRUD actions for Catelogies model.
@@ -39,14 +40,17 @@ class CatelogiesController extends BaseController
      * Lists all Catelogies models.
      * @return mixed
      */
-    public function actionIndex()
+    public function actionIndex($post_type='post')
     {    
         $searchModel = new CatelogiesSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $post_type);
+        $postType = PostType::findOne(['code'=>strtoupper($post_type)]);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'labels' => $postType!=NULL ? $postType->postLabels : PostType::defaultPostLabels(),
+            'postType'=>$postType
         ]);
     }
     
@@ -97,7 +101,7 @@ class CatelogiesController extends BaseController
     }
 
     /**
-     * Creates a new Catelogies model.
+     * Creates a new Catelogies model(in popup)
      * For ajax request will return json object
      * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed

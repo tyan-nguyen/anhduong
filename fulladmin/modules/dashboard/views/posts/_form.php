@@ -13,10 +13,8 @@ use app\widgets\ImageWidget;
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\News */
 /* @var $form yii\widgets\ActiveForm */
-
     $model->taglist = $model->listTagName;
 ?>
-
 
 <!-- editor -->
 <script src="<?= Yii::getAlias('@web') ?>/assets/editor/tinymce/tinymce.min.js"></script>
@@ -27,19 +25,23 @@ use app\widgets\ImageWidget;
         //'enableAjaxValidation' => false,
         'options' => [ 'enctype' => 'multipart/form-data' ]
     ]); ?>
+    
+    <!-- left content -->
 	<div class="col-md-9">
+	
+    <?= $form->errorSummary($model) ?>
 
-    
-    
-     <?= $form->errorSummary($model) ?>     
-
-   	<?php $nameLabel = $model->getAttributeLabel('title') 
-    	. ' <span class="seoButton label label-warning" title="Thay đổi liên kết"><i class="glyphicon glyphicon-link"></i></span>' ?>
+   	<?php $nameLabel = $model->getAttributeLabel('title');
+   	        if($model->postType->enable_seo){
+           	    $nameLabel .= ' <span class="seoButton label label-warning" title="Thay đổi liên kết"><i class="glyphicon glyphicon-link"></i></span>';
+           	}
+    ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true])->label($nameLabel) ?>
 	
-	<?= $form->field($model, 'summary')->textarea(['rows' => 3]) ?>
+	<?= $model->postType->enable_summary ? $form->field($model, 'summary')->textarea(['rows' => 3]) : '' ?>
 	
+	<?php if($model->postType->enable_seo){ ?>
 	 <div class="dSeo box block-form block-form-border" style="display:block">
     	
     	 <div class="box-header with-border block-form-title">
@@ -67,7 +69,7 @@ use app\widgets\ImageWidget;
             </div>
         </div>    
 	</div>
-	
+		
 	<?php
         $currentUrl = Yii::$app->request->url;
         $script = <<< JS
@@ -78,37 +80,28 @@ use app\widgets\ImageWidget;
         $this->registerJs($script);
     ?>    
 	
-    
-
+	<?php } // enable seo ?>
+	
+	<?php if($model->postType->enable_content){ ?>
     <?= $form->field($model, 'content')->textarea(['rows' => 6, 'id'=>'txtContent']) ?>
-
+	<?php } //enable content ?>
+	    
+    </div><!-- left content -->
     
-
-  
+    <!-- right content -->
+    <div class="col-md-3">
 	
-
-   
-    
-</div>
-<div class="col-md-3">
-
-
-	
-	
-	
-	
-	
-	 <?php /* $nameLabel = $model->getAttributeLabel('cover') 
-    	. ' <a data-toggle="modal"  href="javascript:;" data-target="#myModal" class="btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' */ ?>
-    	
-    	 <?php $nameLabel = $model->getAttributeLabel('cover') 
-        	. ' <a href="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID4&fldr=' . $model->code . '&akey=' . (User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '') .'" class="btn iframe-btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>' ?>
-	 
-	 <?= $form->field($model, 'cover')->textInput(['maxlength' => true, 'id'=>'fieldID4', /*'onchange'=>'changeCover()'*/])->label($nameLabel) ?>
+	<?php if($model->postType->enable_cover){ 
+	    $nameLabel = $model->getAttributeLabel('cover') 
+    	. ' <a href="/filemanager/filemanager/dialog.php?type=2&field_id=fieldID4&fldr=' . $model->code . '&akey=' . (User::hasRole('bientapvien') ? '1fdb7184e697ab9355a3f1438ddc6ef9' : '') .'" class="btn iframe-btn" type="button"><i class="glyphicon glyphicon-picture"></i></a>';
+	   echo $form->field($model, 'cover')->textInput(['maxlength' => true, 'id'=>'fieldID4'])->label($nameLabel); ?>
 	 	
 	 <div id="dCover-fieldID4" class="dCover input-append">	  
     	  <img src="<?= $model->cover ?>" />
-    </div>
+    </div>    
+    <?php } //enable cover ?>
+    
+    
     
      <?= $form->field($model, 'post_status')->dropDownList($model->postStatus, []) ?>
      
@@ -117,14 +110,12 @@ use app\widgets\ImageWidget;
 	 <?= $form->field($model, 'code')->textInput(['maxlength' => true, 'readonly'=>true]) ?>
 	 
 	 <?php //$form->field($model, 'is_static')->checkbox() ?>
-	 
-	 
-	 <?php 
-        if($model->isNewRecord)
-            $model->lang = $lang;
-    ?>
-    
-    
+
+	 <?php if($model->postType->enable_languages){ 
+        /* if($model->isNewRecord)
+            $model->lang = $lang; */
+        ?>
+
     <?php /* $form->field($model, 'lang')->dropDownList($model->langs, 
         ['id'=>'lang', 'disabled'=>$model->isNewRecord?false:true])
         ->label($model->isNewRecord?$model->getAttributeLabel('lang'):Yii::t('app', 'Change language') . ' <input id="changeLang" type="checkbox" />') */ ?>
@@ -135,12 +126,15 @@ use app\widgets\ImageWidget;
             : Yii::$app->params['langs'], 
          [
              'prompt'=>Yii::t('app', 'Select language'),
-             'onchange'=>'ChangeLang()',
+             'onchange'=>$model->postType->enable_categories ? 'ChangeLang()' : '',
              'id'=>'txtLang'
          ]) ?>
-
+	
+	<?php } //enable languages ?>
+	
     <?php // $form->field($model, 'catelogies')->textInput(['maxlength' => true]) ?>
     
+    <?php if($model->postType->enable_categories){ ?>
     <div class="form-group <?= isset($model->errors['catalog']) ? 'has-error' : '' ?>">
     	<label>Catelogies</label>
     	<div id="list-catalog" class="list-catalog">
@@ -151,6 +145,32 @@ use app\widgets\ImageWidget;
 		</div>
     </div>
     
+    <script>
+        function ChangeLang(){
+             $.ajax({
+                    url: '/dashboard/posts/change-lang',
+                   type: 'get',
+                   //dataType: 'json',
+                   data: {postid:<?= $model->id ?>, langid: $("#txtLang").val()},
+                   success: function (data) {
+                   		//alert(data);
+                   		$('#list-catalog').html(data);
+                   		/* $('#txtCat').children().remove();
+                   		$('#txtCat').append('<option value="">--Chọn--</option>');
+                   		for (var key in data) {
+                            if (data.hasOwnProperty(key)) {
+                              $('#txtCat').append('<option value="'+key+'">'+ data[key] +'</option>');
+                            }
+                        } */
+                   }
+        
+              });
+        }
+    </script>
+
+    <?php } //enable catalog ?>
+    
+    <?php  if($model->postType->enable_tags){ ?>
     <?= $form->field($model, 'taglist')->widget(Select2::classname(), [
 	    'data' => (new TagList())->getListName(),
 	    'language' => 'en',
@@ -163,12 +183,8 @@ use app\widgets\ImageWidget;
 	    ],
 	]);
 	?>
-	
+	<?php } //enable tags ?>
 
-	
-	
-	
-    
     <?= $form->field($model, 'date_created')->textInput(['id'=>'dateCreated', 'disabled'=>true])
     	 ->label(Yii::t('app', 'Change date created') . ' <input id="changeDateCreated" type="checkbox" />') ?>
     
@@ -177,14 +193,14 @@ use app\widgets\ImageWidget;
     
     
     <!-- document -->
-     <?php if(!$model->isNewRecord): ?>
+     <?php if(!$model->isNewRecord && $model->postType->enable_documents): ?>
         <?= DocumentWidget::widget([
             'id_tham_chieu' => $model->id
         ]) ?>
         <?php endif; ?>
         
         <!-- images -->
-     <?php if(!$model->isNewRecord): ?>
+     <?php if(!$model->isNewRecord && $model->postType->enable_images): ?>
         <?= ImageWidget::widget([
             'id_tham_chieu' => $model->id
         ]) ?>
@@ -203,6 +219,8 @@ use app\widgets\ImageWidget;
 <?php ActiveForm::end(); ?> 
 </div>
 
+
+<?php if($model->postType->enable_content){ ?>
 <script>
 tinymce.remove();
 //editor for content
@@ -246,7 +264,10 @@ tinymce.init({
   }
 }); */
 </script>
+<?php } // enable content?>
 
+
+<?php if($model->postType->enable_cover){ ?>
 <div class="modal modal2 fade" id="myModal" >
 <div class="modal-dialog1" style="width:900px">
   <div class="modal-content" style="height:700px;">
@@ -260,7 +281,9 @@ tinymce.init({
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<?php } //enable cover ?>
 
+<?php if($model->postType->enable_seo){ ?>
 <div class="modal modal2 fade" id="myModalSeo" >
 <div class="modal-dialog1" style="width:900px">
   <div class="modal-content" style="height:700px;">
@@ -274,35 +297,14 @@ tinymce.init({
   </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<?php } //enable seo ?>
+
 
 <?php 
 $this->registerJsFile(Yii::getAlias('@web') . "/js/script.js", ['position' => \yii\web\View::POS_END, 'depends' => [
     \yii\web\JqueryAsset::className()
 ]]);
 ?>
-
-<script>
-function ChangeLang(){
-     $.ajax({
-            url: '/dashboard/posts/change-lang',
-           type: 'get',
-           //dataType: 'json',
-           data: {postid:<?= $model->id ?>, langid: $("#txtLang").val()},
-           success: function (data) {
-           		//alert(data);
-           		$('#list-catalog').html(data);
-           		/* $('#txtCat').children().remove();
-           		$('#txtCat').append('<option value="">--Chọn--</option>');
-           		for (var key in data) {
-                    if (data.hasOwnProperty(key)) {
-                      $('#txtCat').append('<option value="'+key+'">'+ data[key] +'</option>');
-                    }
-                } */
-           }
-
-      });
-}
-</script>
 
  <?php
         $currentUrl = Yii::$app->request->url;

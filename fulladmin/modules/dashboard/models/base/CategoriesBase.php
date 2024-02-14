@@ -24,6 +24,7 @@ use app\components\CustomFunc;
  * @property string|null $lang
  * @property string|null $code
  * @property int|null $status
+ * @property string|null $post_type
  * @property string|null $date_created
  * @property int|null $user_created
  */
@@ -90,7 +91,7 @@ class CategoriesBase extends \app\models\NewsCatelogies
             [['date_created'], 'safe'],
             [['cover', 'seo_image'], 'string', 'max' => 255],
             [['name', 'slug', 'seo_title', 'code'], 'string', 'max' => 200],
-            [['lang', 'status'], 'string', 'max' => 20],
+            [['lang', 'status', 'post_type'], 'string', 'max' => 20],
         ];
     }
     

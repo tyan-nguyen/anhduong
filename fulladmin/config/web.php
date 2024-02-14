@@ -129,6 +129,7 @@ $config = [
                 'cat/<slug>'=>'bug/cat',
                 //admin
                 'dashboard/content/<post_type>'=>'dashboard/posts',
+                'dashboard/cat/<post_type>'=>'dashboard/catelogies',
                 
             ],
         ],
