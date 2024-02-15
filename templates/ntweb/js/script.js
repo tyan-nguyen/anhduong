@@ -17,16 +17,20 @@ jQuery(function ($) {
 			if ($(window).scrollTop() > headerTopBar + headerOneTopSpace) {
 				$(headerOneELement).addClass('navbar-fixed');
 				$('.header-one').css('margin-bottom', headerOneELement.outerHeight());
+				$('.nav-item-logo').addClass('nav-logo-display');
 			} else {
 				$(headerOneELement).removeClass('navbar-fixed');
 				$('.header-one').css('margin-bottom', 0);
+				$('.nav-item-logo').removeClass('nav-logo-display');
 			}
 			if ($(window).scrollTop() > headerTopBar) {
 				$(headerTwoELement).addClass('navbar-fixed');
 				$('.header-two').css('margin-bottom', headerTwoELement.outerHeight());
+				$('.nav-item-logo').addClass('nav-logo-display');
 			} else {
 				$(headerTwoELement).removeClass('navbar-fixed');
 				$('.header-two').css('margin-bottom', 0);
+				$('.nav-item-logo').removeClass('nav-logo-display');
 			}
 		}
 		fixedHeader();
