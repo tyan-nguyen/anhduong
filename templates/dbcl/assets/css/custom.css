@@ -25,3 +25,68 @@
 .logo-sm{
     width: 64px;
 }
+
+.banner-home.banner-tplnc .item img {
+    height: auto;
+    object-fit: fill;
+}
+
+.banner-home.banner-tplnc .item {
+    height: auto;
+}
+
+.about-home-bs {
+    padding: 40px 0px;
+}
+
+
+
+
+
+
+#back-to-top {
+  right: 40px;
+  top: auto;
+  z-index: 10;
+  display: none;
+  background: none;
+}
+
+#back-to-top .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  #back-to-top {
+    right: 15px;
+  }
+}
+
+#back-to-top.position-fixed {
+  bottom: 20px;
+}
+
+#back-to-top .button-top {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 3px;
+  color: #f48220;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  #back-to-top .button-top {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+  }
+}
+
+#back-to-top .button-top:hover {
+  color: #1f4f9f;
+}
