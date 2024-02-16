@@ -129,7 +129,8 @@ jQuery(function ($) {
 				slidesToScroll: 1,
 				autoplay: true,
 				dots: true,
-				speed: 1200,
+				speed: 600,
+				autoplaySpeed: 5000,
 				arrows: true,
 				prevArrow: '<button type="button" class="carousel-control left" aria-label="carousel-control"><i class="fas fa-chevron-left"></i></button>',
 				nextArrow: '<button type="button" class="carousel-control right" aria-label="carousel-control"><i class="fas fa-chevron-right"></i></button>'
