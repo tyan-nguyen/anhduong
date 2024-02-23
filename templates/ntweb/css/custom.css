@@ -80,7 +80,7 @@ ul.navbar-nav > li:hover > a, ul.navbar-nav > li.active > a {
 
 .slide-sub-title {
     font-style: normal;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 58px;
     margin: 20px 0;
     color: #fff;
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px 0 0 50px;
 }
 
-.bg-overlay:after {
+/*.bg-overlay:after {
     background-color: var(--third-color);
     z-index: 0;
     position: absolute;
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     top: 0;
     left: 0;
-}
+}*/
 
 .ts-facts .ts-facts-content .ts-facts-title {
     font-size: 16px;
@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-dark {
-    background: var(--third-color);
+    background: var(--second-color);
 }
 
 .section-sub-title {
@@ -237,10 +237,21 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     top: 0;
     left: 0;
+    background: none;
+
+    
+}
+
+#footer{
+    background-color: #efefef;
+    background-image: url(../images/bg_footer.png);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .copyright {
-    background: var(--third-color);
+    /*background: var(--third-color);*/
+    background: none;
     color:white;
     padding: 25px 0;
     position: relative;
@@ -340,6 +351,24 @@ ul.navbar-nav > li > a {
     margin: -15px 0;
 }
 
+.clients-logo img {
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(10%);
+    -webkit-filter: gray;
+    filter: gray;
+}
+.footer-main {
+    padding: 80px 0 60px;
+
+}
+.quote-item .quote-text {
+    background-color: #f9f9f9; 
+}
+.clients-logo {
+    background: white;
+}
+
+
 
 .nav-item-logo{
     display: none;
@@ -374,3 +403,5 @@ ul.navbar-nav > li > a {
         background-size: 100% auto;
     }
 }
+
+
