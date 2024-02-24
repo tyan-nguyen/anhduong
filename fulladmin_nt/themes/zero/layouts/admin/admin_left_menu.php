@@ -1,6 +1,7 @@
  <?php
  	use webvimark\modules\UserManagement\models\User;
 use app\modules\dashboard\models\PostType;
+use app\modules\dashboard\models\Links;
  ?>
       <ul class="sidebar-menu" data-widget="tree">
       	<li>
@@ -39,6 +40,24 @@ use app\modules\dashboard\models\PostType;
            
           </ul>
         </li>
+        
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>New Settings</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+    		<ul class="treeview-menu">
+    			<?php 
+    			$linkTypes = (new Links())->getTypeLink();
+    			foreach ($linkTypes as $indexType=>$nameType){
+    			?>
+           		<li><a href="/dashboard/links/index?type=<?= $indexType ?>"><i class="fa fa-circle-o"></i><?= $nameType ?></a></li>
+           		<?php }?>
+          	</ul>
+        </li>
+        
         
         <li class="treeview">
           <a href="#">

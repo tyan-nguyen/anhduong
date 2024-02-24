@@ -110,6 +110,7 @@ $config = [
                 'post/<slug>' => 'site/post',
                 'posts/<slug>' => 'site/posts',
                 'posts' => 'site/posts',
+                'tag/<slug>' => 'site/tag',
             	/* '/'=>'admin/default/index',
                 //'/'=>'site2/index',
                 '/contact' => 'site/contact',

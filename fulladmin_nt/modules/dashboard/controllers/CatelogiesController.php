@@ -40,7 +40,7 @@ class CatelogiesController extends BaseController
      * Lists all Catelogies models.
      * @return mixed
      */
-    public function actionIndex($post_type='post')
+    public function actionIndex($post_type='POST')
     {    
         $searchModel = new CatelogiesSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $post_type);
@@ -106,10 +106,11 @@ class CatelogiesController extends BaseController
      * and for non-ajax request if creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate($id=NULL)
+    public function actionCreate($post_type='POST', $id=NULL)
     {
         $request = Yii::$app->request;
         $model = new Catelogies();  
+        $model->post_type = $post_type;
         $modalTitle = Yii::t('app','Add new') .' '. Yii::t('app','Catelogies');
         $code = '';
         if($id != NULL){
@@ -118,6 +119,7 @@ class CatelogiesController extends BaseController
             $model->code = $modelMain->code;
             $model->name = $modelMain->name;
             $model->slug = $modelMain->slug;
+            $model->post_type = $modelMain->post_type;
         }
 
         if($request->isAjax){
@@ -142,7 +144,7 @@ class CatelogiesController extends BaseController
                     'title'=> $modalTitle,
                     'content'=>'<span class="text-success">'. Yii::t('app','Add data successful!') .'</span>',
                     'footer'=> Html::button(Yii::t('app','Close'),['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                        Html::a(Yii::t('app','Create more'),['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                        Html::a(Yii::t('app','Create more'),['create?post_type='.$post_type],['class'=>'btn btn-primary','role'=>'modal-remote'])
                 ];         
             }else{           
                 return [
@@ -172,8 +174,9 @@ class CatelogiesController extends BaseController
        
     }
     
-    public function actionCreateFull(){
+    public function actionCreateFull($post_type='POST'){
         $model = new \app\modules\dashboard\models\Catelogies();
+        $model->post_type = $post_type;
         $model->name = Yii::t('app', 'New Category Title Here...');
         $model->slug = 'temp';
         if($model->save()){

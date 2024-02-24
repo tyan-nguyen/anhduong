@@ -41,7 +41,11 @@ use app\modules\dashboard\models\Catelogies;
                     return $html;
                 }
             ],
-            'code'
+            'code',
+            [
+                'attribute'=>'url',
+                'value'=>$model->url
+            ],
         ],
     ]) ?>
 

@@ -5,6 +5,7 @@ use Yii;
 use app\modules\dashboard\models\Catelogies;
 use app\modules\dashboard\models\Posts;
 use app\modules\dashboard\models\PostPublic;
+use app\modules\dashboard\models\TagList;
 
 class SiteController extends BaseController
 {
@@ -48,7 +49,7 @@ class SiteController extends BaseController
         //for one category
         if($slug != NULL){
             $category = Catelogies::find()->where(['slug'=>$slug])->one();
-            $this->view->params['image'] = $category->cover;
+            $this->view->params['image'] = ($category->cover!=null?$category->cover:'/ntweb/images/banner/default.jpg');
             $this->view->params['title'] = $category->name;
             $this->view->params['breadcrumb'] = [
                 [
@@ -73,7 +74,7 @@ class SiteController extends BaseController
         $numPerPage = 10;
         $numPage = ceil($numPost/$numPerPage);
         
-        $listPosts = $listPosts->offset($page*$numPerPage-$numPerPage)->limit(10)
+        $listPosts = $listPosts->offset($page*$numPerPage-$numPerPage)->limit($numPerPage)
             ->orderBy(['date_created'=>SORT_DESC])->all();
         
         return $this->render('posts', [
@@ -93,9 +94,56 @@ class SiteController extends BaseController
         $this->layout = 'post';
         $this->view->params['showBanner'] = false;
         $model = PostPublic::find()->where(['slug'=>$slug])->one();
+        $postOthers = PostPublic::getPostsPublic('POST')->andWhere('id <> '.$model->id)->limit(3)->orderBy(['date_created'=>SORT_DESC])->all();
         return $this->render('post', [
-            'post'=>$model
+            'post'=>$model,
+            'postOthers'=>$postOthers
         ]);
+    }
+    
+    /**
+     * tags
+     */
+    public function actionTag($slug, $page=NULL)
+    {
+        $this->layout = 'post';
+        $this->view->params['showBanner'] = true;
+        
+        $tag = TagList::findOne(['slug'=>$slug]);
+        
+        $this->view->params['image'] = '/ntweb/images/banner/default.jpg';
+        $this->view->params['title'] = $tag->name;
+        $this->view->params['breadcrumb'] = [
+            [
+                'label'=>'Trang chủ',
+                'url' => '#',
+                'active'=>false
+            ],
+            [
+                'label'=>$tag->name,
+                'url' => '',
+                'active'=>true
+            ]
+        ];
+        
+        $listPosts = PostPublic::getPostsPublicByTag('POST', $slug);
+        
+        $numPost = $listPosts->count();
+        if($page == NULL)
+            $page = 1;
+            $numPerPage = 10;
+            $numPage = ceil($numPost/$numPerPage);
+            
+            $listPosts = $listPosts->offset($page*$numPerPage-$numPerPage)->limit($numPerPage)
+            ->orderBy(['date_created'=>SORT_DESC])->all();
+            
+            return $this->render('posts', [
+                'listPosts'=>$listPosts,
+                'prev' => $page>1 ? ($page-1) : null,
+                'next' => $page < $numPage ? ($page+1) : null,
+                'current' => $page,
+                'total' => $numPage
+            ]);
     }
     
     /**

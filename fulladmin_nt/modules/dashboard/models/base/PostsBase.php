@@ -185,7 +185,10 @@ class PostsBase extends \app\models\Posts
      */
     public function beforeDelete()
     {
-        $this->deleteDir(Yii::getAlias('@webroot/images/posts/'). $this->code);
+        $dirPath = Yii::getAlias('@webroot/images/posts/'). $this->code;
+        if(is_dir($dirPath)){
+            $this->deleteDir(Yii::getAlias('@webroot/images/posts/'). $this->code);
+        }
         parent::beforeDelete();
         return true;
     }

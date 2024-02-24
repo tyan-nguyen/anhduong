@@ -23,6 +23,22 @@ class PostPublic extends Posts
     }
     
     /**
+     * get new public by tag
+     * if $tag exist load new by $tag
+     */
+    public static function getPostsPublicByTag($postType, $tag=NULL){
+        $query = PostPublic::find()->where([
+            'post_type'=>$postType,
+            'post_status'=>'PUBLISH'
+        ]);
+        if($tag!=null){
+            $query = $query->andFilterWhere(['like', 'tags', $tag]);
+        }
+        return $query;
+    }
+    
+    
+    /**
      * get categories public
      * if $cat exist load category by $cat
      */
@@ -67,7 +83,7 @@ class PostPublic extends Posts
             foreach ($tagSlugs as $indexTag=>$tagSlug){
                 $tagModel = TagList::find()->where(['slug'=>$tagSlug])->one();
                 if($tagModel != null){
-                    $result .= '<a href="/tag/'. $tagModel->name .'">'. $tagModel->name .'</a>';
+                    $result .= '<a href="/tag/'. $tagModel->slug .'">'. $tagModel->name .'</a>';
                 }
             }
         }

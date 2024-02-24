@@ -20,6 +20,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 $listNewPosts = PostPublic::getPostsPublic('POST')->limit(4)->orderBy(['date_created'=>SORT_DESC])->all();
 $listCategories = PostPublic::getCategoriesPublic('POST')->all();
 $listTags = (new TagList())->getList();
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

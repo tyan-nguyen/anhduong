@@ -35,6 +35,7 @@
         </div>
     </div><!-- post-body end -->
 </div><!-- post content end -->
+<?php if($postOthers != NULL){?>
 <section id="news" class="news" style="padding:20px 0">
     <div class="container">
         <div class="row">
@@ -44,65 +45,32 @@
         </div>
         <!--/ Title row end -->
         <div class="row">
+        
+        	<?php foreach ($postOthers as $iPost=>$post){?>        
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="latest-post">
                     <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="/ntweb/images/news/news1.jpg" alt="img">
+                        <a href="<?= $post->url ?>" class="latest-post-img">
+                            <img loading="lazy" class="img-fluid" src="<?= $post->imgCover ?>" alt="img">
                         </a>
                     </div>
                     <div class="post-body">
                         <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block">We Just Completes $17.6 million Medical Clinic in Mid-Missouri</a>
+                            <a href="news-single.html" class="d-inline-block"><?= $post->title ?></a>
                         </h4>
                         <div class="latest-post-meta">
                             <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> July 20, 2017
+                                <i class="fa fa-clock-o"></i> <?= $post->dateCreated ?>
                             </span>
                         </div>
                     </div>
                 </div><!-- Latest post end -->
             </div><!-- 1st post col end -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="/ntweb/images/news/news2.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block">Thandler Airport Water Reclamation Facility Expansion Project Named</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> June 17, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 2nd post col end -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="/ntweb/images/news/news3.jpg" alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block">Silicon Bench and Cornike Begin Construction Solar Facilities</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> Aug 13, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 3rd post col end -->
+            <?php } ?>
+            
         </div>
         <!--/ Content row end -->
     </div>
     <!--/ Container end -->
 </section>
+<?php } ?>

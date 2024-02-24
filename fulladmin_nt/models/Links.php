@@ -13,8 +13,10 @@ use Yii;
  * @property string $link
  * @property string $link_en
  * @property int $open_new_tab
+ * @property int|null $pid
  * @property int $priority
  * @property string|null $type
+ * @property string|null $lang
  */
 class Links extends \yii\db\ActiveRecord
 {
@@ -33,9 +35,9 @@ class Links extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'name_en', 'link', 'link_en', 'open_new_tab', 'priority'], 'required'],
-            [['open_new_tab', 'priority'], 'integer'],
+            [['open_new_tab', 'pid', 'priority'], 'integer'],
             [['name', 'name_en', 'link', 'link_en'], 'string', 'max' => 200],
-            [['type'], 'string', 'max' => 20],
+            [['type', 'lang'], 'string', 'max' => 20],
         ];
     }
 
@@ -51,8 +53,10 @@ class Links extends \yii\db\ActiveRecord
             'link' => Yii::t('app', 'Link'),
             'link_en' => Yii::t('app', 'Link En'),
             'open_new_tab' => Yii::t('app', 'Open New Tab'),
+            'pid' => Yii::t('app', 'Pid'),
             'priority' => Yii::t('app', 'Priority'),
             'type' => Yii::t('app', 'Type'),
+            'lang' => Yii::t('app', 'Lang'),
         ];
     }
 }
