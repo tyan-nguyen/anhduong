@@ -38,7 +38,10 @@
 .about-home-bs {
     padding: 40px 0px;
 }
-
+.header-menu .header-menu-wrap .has-sub.menu-child>.sub-menu {
+    overflow-y:visible;
+    max-height: 1000px;
+}
 
 
 
@@ -90,3 +93,6 @@
 #back-to-top .button-top:hover {
   color: #1f4f9f;
 }
+
+
+
