@@ -1,22 +1,19 @@
-<?php 
-$setting = \app\modules\dashboard\models\Options::getOptions('SETTING');
-?>
 <header>
     <div class="header-top header-top-basic">
         <div class="container">
             <div class="header-top-wrap">
-                <a href="/" class="header-logo">
-                    <img src="<?= $setting['site_logo'] ?>" alt="" class="img-fluid logo-head" />
+                <a href="https://tmu.edu.vn" class="header-logo">
+                    <img src="/dbcl/images/logo2.png" alt="" class="img-fluid logo-head" />
                     <div class="name">
                         <h2>Phòng Đảm bảo Chất lượng</h2>
                         <h3>Quality Assurance Department</h3>
                     </div>
                 </a>
                 <div class="box-search">
-                    <form action="/search" id="formHome" class="search-form">
+                    <form action="https://khaothi.tmu.edu.vn/search" id="formHome" class="search-form">
                         <button type="submit">
                             <span class="icon">
-                                <img src="/dbcl/images/ic-search.png" alt="" width="20" height="20" class="img-fluid">
+                                <img src="https://khaothi.tmu.edu.vn/template_dhtm/images/ic-search.png" alt="" width="20" height="20" class="img-fluid">
                             </span>
                         </button>
                         <input type="text" name="key" value="" class="keyword-search" placeholder="Tìm kiếm"></form>
@@ -25,7 +22,7 @@ $setting = \app\modules\dashboard\models\Options::getOptions('SETTING');
                     <a href="javascript:;" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         <div class="langitem current-lang">
                             <span class="icon">
-                                <img src="/dbcl/images/ic-f-vn.png" alt="VIE" class="img-fluid">
+                                <img src="https://khaothi.tmu.edu.vn/html/images/ic-f-vn.png" alt="VIE" class="img-fluid">
                             </span>
                             VIE</div>
                         <span class="icon-dropdown">
@@ -36,16 +33,16 @@ $setting = \app\modules\dashboard\models\Options::getOptions('SETTING');
                     </a>
                     <ul class="dropdown-box dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <li>
-                            <a class="langitem" href="/change-language/vi">
+                            <a class="langitem" href="https://khaothi.tmu.edu.vn/localizations/change-language/vi">
                                 <span class="icon">
-                                    <img src="/dbcl/images/lang-vie.png" alt="" class="img-fluid">
+                                    <img src="https://khaothi.tmu.edu.vn/template_dhtm/images/lang-vie.png" alt="" class="img-fluid">
                                 </span>
                                 VIE
                             </a></li>
                         <li>
-                            <a class="langitem" href="/change-language/en">
+                            <a class="langitem" href="https://khaothi.tmu.edu.vn/localizations/change-language/en">
                                 <span class="icon">
-                                    <img src="/dbcl/images/lang-eng.png" alt="" class="img-fluid">
+                                    <img src="https://khaothi.tmu.edu.vn/template_dhtm/images/lang-eng.png" alt="" class="img-fluid">
                                 </span>
                                 ENG
                             </a></li>

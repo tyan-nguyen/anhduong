@@ -21,9 +21,9 @@ class IndexAssets extends AssetBundle
         'dbcl/assets/jquery.mmenu.all.css',
         'dbcl/assets/animate/animate.min.css',
         'dbcl/assets/aos/aos.css',
-        'dbcl/assets/swiper/swiper-bundle.min.css',
+        //'dbcl/assets/swiper/swiper-bundle.min.css',
         'dbcl/assets/css/style.css',
-        'dbcl/assets/css/custom.css',
+        'dbcl/assets/css/custom.css?v=1',
         'dbcl/assets/fontawesome-free-5.15.4-web/css/all.min.css'
         //Template styles
         /* 'ntweb/css/theme.css',
@@ -34,7 +34,7 @@ class IndexAssets extends AssetBundle
         //'dbcl/assets/jquery/jquery-3.4.1.js',
         'dbcl/assets/bootstrap/bootstrap.bundle.min.js',
         'dbcl/assets/lazyload/jquery.lazy.min.js',
-        'dbcl/assets/swiper/swiper-bundle.min.js',
+        //'dbcl/assets/swiper/swiper-bundle.min.js',
         'dbcl/assets/mansonry/masonry.pkgd.min.js',
         'dbcl/assets/mmenu/jquery.mmenu.all.js',
         'dbcl/assets/aos/aos.js',
@@ -43,6 +43,8 @@ class IndexAssets extends AssetBundle
         'dbcl/assets/custom.js',
         'dbcl/assets/search.js',
         'dbcl/assets/sweetalert2/sweetalert2@10.js',
+        //https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js
+        'dbcl/assets/swiper/swiper-element-bundle.min.js'
         //Template custom
         /* 'ntweb/js/script.js' */
     ];

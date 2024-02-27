@@ -29,6 +29,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 		<?= $this->render('guest/banner') ?>
 		<?= $this->render('guest/about') ?>
 		<?= $this->render('guest/news') ?>
+		<?= $this->render('guest/news') ?>
+		<?= $this->render('guest/news') ?>
 	</main>
 	<?= $this->render('guest/footer') ?>
 	
@@ -37,6 +39,9 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
       </button>
     </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     
 <?php 
 

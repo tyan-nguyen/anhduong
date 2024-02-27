@@ -27,45 +27,25 @@ class SiteController extends BaseController
     public function actionPosts($slug=NULL, $page=NULL)
     {
         $this->layout = 'post';
-        $this->view->params['showBanner'] = true;
+        $this->view->params['showNavigation'] = true;
         //all posts
-        $this->view->params['image'] = '/ntweb/images/banner/default.jpg';
         $this->view->params['title'] = 'Bài viết mới';
-        $this->view->params['breadcrumb'] = [
+        $this->view->params['links'] = [
             [
                 'label'=>'Trang chủ',
                 'url' => '#',
-                'active'=>false
             ],
             [
                 'label'=>'Bài viết',
                 'url' => '',
-                'active'=>true
             ]
         ];
         
-        //$listPosts = Posts::getPostByType('POST',10);
         $listPosts = PostPublic::getPostsPublic('POST');
         
         //for one category
         if($slug != NULL){
             $category = Catelogies::find()->where(['slug'=>$slug])->one();
-            $this->view->params['image'] = ($category->cover!=null?$category->cover:'/ntweb/images/banner/default.jpg');
-            $this->view->params['title'] = $category->name;
-            $this->view->params['breadcrumb'] = [
-                [
-                    'label'=>'Trang chủ',
-                    'url' => '#',
-                    'active'=>false
-                ],
-                [
-                    'label'=>$category->name,
-                    'url' => '',
-                    'active'=>true
-                ]
-            ];
-            
-            //$listPosts = Posts::getPostByType('POST',10,$category->slug);
             $listPosts = PostPublic::getPostsPublic('POST',$category->slug);
             
         }

@@ -44,6 +44,18 @@ class PostPublic extends Posts
         return $query;
     }
     
+    /**
+     * get new public by categories
+     * if $tag exist load new by $tag
+     */
+    public static function getPostsPublicByCategory($postType, $cat){
+        $query = PostPublic::find()->where([
+            'post_type'=>$postType,
+            'post_status'=>'PUBLISH'
+        ])->andFilterWhere(['like', 'categories', $cat]);
+        return $query;
+    }
+    
     
     /**
      * get categories public
@@ -102,6 +114,14 @@ class PostPublic extends Posts
             }
         }
         return $result;
+    }
+    /**
+     * get post by slug
+     * @param unknown $slug
+     * @return unknown
+     */
+    public static function getPostBySlug($slug){
+        return PostPublic::findOne(['slug'=>$slug, 'post_status'=>'PUBLISH']);
     }
     
     
